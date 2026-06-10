@@ -1,0 +1,118 @@
+---
+- name: Deployment
+  hosts: localhost
+  vars:
+    app_name: "elcar-api"
+    app_repo: "git@bitbucket.org:kamal_balaev/elcar-api.git"
+    app_repo_branch: "master"
+    app_dest: "/home/ubuntu/www/elcar/api"
+    ssh_key: "~/.ssh/id_rsa"
+    ssh_key_dir: "/home/ubuntu/.ssh/id_rsa"
+    log_dir: "/home/ubuntu/log"
+
+  tasks:
+    - name: Create ansible log if doesn't exist
+      copy:
+        content: ""
+        dest: /home/ubuntu/log/ansible.log
+        force: false
+
+    - name: Populate ansible config
+      blockinfile:
+        path: /etc/ansible/ansible.cfg
+        block: |
+          [defaults]
+          log_path=~/log/ansible.log
+          no_target_syslog=False
+          syslog_facility=LOG_USER
+        create: yes
+      become: yes
+
+    - name: Create "{{ app_name }}" directory
+      file:
+        path: "{{ app_dest }}"
+        state: directory
+        mode: '0775'
+
+    - name: Ensure that git is installed
+      apt:
+        name: git
+        state: present
+      become: yes
+
+    - name: Change key permissions
+      file:
+        path: "{{ ssh_key_dir }}"
+        mode: '0600'
+      become: yes
+
+    - name: Start the ssh-agent and add the key
+      shell: eval `ssh-agent` && ssh-add "{{ ssh_key_dir }}"
+
+    - name: Clone "{{ app_repo }}" repo
+      git:
+        repo: "{{ app_repo }}"
+        dest: "{{ app_dest }}"
+        version: "{{ app_repo_branch }}"
+        key_file: "{{ ssh_key }}"
+        accept_hostkey: yes
+        force: yes
+
+    - name: npm install on APP
+      command: npm install
+      args:
+        chdir: "{{ app_dest }}"
+      register: npm_be_install_out
+
+    - name: register npm output
+      copy:
+        content: "{{ npm_be_install_out.stdout }}"
+        dest: "{{ log_dir }}/npm_be_install.log"
+
+    - name: Check "{{ app_name }}" status
+      shell: pm2 status | grep "{{ app_name }}" | awk '{print $4}'
+      register: app_status
+
+    - name: Start "{{ app_name }}" if not started
+      command: pm2 start npm --name "{{ app_name }}" -- start
+      args:
+        chdir: "{{ app_dest }}"
+      when: app_status.stdout == ""
+
+    - name: Restart "{{ app_name }}" if was started
+      command: pm2 restart "{{ app_name }}"
+      args:
+        chdir: "{{ app_dest }}"
+      when: app_status.stdout == "{{ app_name }}"
+
+    - name: Delete defaults from available config
+      file:
+        path: /etc/nginx/sites-available/default
+        state: absent
+      become: yes
+
+    - name: Delete defaults from enabled config
+      file:
+        path: /etc/nginx/sites-enabled/default
+        state: absent
+      become: yes
+
+    - name: Copy the "{{ app_name }}" nginx config file
+      command: cp "{{app_dest}}"/nginx.conf /etc/nginx/sites-available/"{{ app_name }}".conf
+      become: yes
+
+    - name: Create an "{{ app_name }}" nginx symlink
+      command: ln -sf /etc/nginx/sites-available/"{{ app_name }}".conf /etc/nginx/sites-enabled/"{{ app_name }}".conf
+      become: yes
+
+    - name: Access to "{{ app_dest }}" folder
+      command: chown -R ubuntu "{{ app_dest }}"
+      become: yes
+
+    - name: Restart nginx
+      command: service nginx restart
+      become: yes
+
+    - name: Restart "{{ app_name }}"
+      command: pm2 restart "{{ app_name }}"
+...

@@ -1,0 +1,1364 @@
+[{
+  "_id": {
+    "$oid": "63f24a205504ced7c52c2f22"
+  },
+  "name": "HM10132EN",
+  "slug": "hm10132en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63f5a5dd5504ced7c52caed4"
+  },
+  "name": "e-tron",
+  "slug": "e-tron",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a5f55504ced7c52caefc"
+  },
+  "name": "A6",
+  "slug": "a6",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a6045504ced7c52caf24"
+  },
+  "name": "A7",
+  "slug": "a7",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a60d5504ced7c52caf4c"
+  },
+  "name": "Q8",
+  "slug": "q8",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a6175504ced7c52caf74"
+  },
+  "name": "A5",
+  "slug": "a5",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a6245504ced7c52caf9c"
+  },
+  "name": "Q5",
+  "slug": "q5",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a6325504ced7c52cafc4"
+  },
+  "name": "ID.4",
+  "slug": "id-4",
+  "brand": {
+    "$oid": "63edbec63b01f4a8154e6066"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a67d5504ced7c52cb03a"
+  },
+  "name": "ID.6",
+  "slug": "id-6",
+  "brand": {
+    "$oid": "63edbec63b01f4a8154e6066"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a68c5504ced7c52cb062"
+  },
+  "name": "ID.3",
+  "slug": "id-3",
+  "brand": {
+    "$oid": "63edbec63b01f4a8154e6066"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a6cf5504ced7c52cb08a"
+  },
+  "name": "Corolla",
+  "slug": "corolla",
+  "brand": {
+    "$oid": "63edbf3d3b01f4a8154e611e"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a7005504ced7c52cb0b2"
+  },
+  "name": "RAV 4",
+  "slug": "rav-4",
+  "brand": {
+    "$oid": "63edbf3d3b01f4a8154e611e"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a77a5504ced7c52cb0da"
+  },
+  "name": "Highlander",
+  "slug": "highlander",
+  "brand": {
+    "$oid": "63edbf3d3b01f4a8154e611e"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a7855504ced7c52cb102"
+  },
+  "name": "Camry",
+  "slug": "camry",
+  "brand": {
+    "$oid": "63edbf3d3b01f4a8154e611e"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a7bd5504ced7c52cb12a"
+  },
+  "name": "HAN",
+  "slug": "han",
+  "brand": {
+    "$oid": "63edc10f3b01f4a8154e63a8"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a82f5504ced7c52cb152"
+  },
+  "name": "bZ4X",
+  "slug": "bz4x",
+  "brand": {
+    "$oid": "63edbf3d3b01f4a8154e611e"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a8535504ced7c52cb17a"
+  },
+  "name": "e:NS1",
+  "slug": "e:ns1",
+  "brand": {
+    "$oid": "63edbf833b01f4a8154e61ac"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a8695504ced7c52cb1a2"
+  },
+  "name": "Q5 e-tron",
+  "slug": "q5-e-tron",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a8795504ced7c52cb1ca"
+  },
+  "name": "Q4 e-tron",
+  "slug": "q4-e-tron",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a8ad5504ced7c52cb1f2"
+  },
+  "name": "009",
+  "slug": "009",
+  "brand": {
+    "$oid": "63edc2aa3b01f4a8154e6529"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a8e25504ced7c52cb21a"
+  },
+  "name": "001",
+  "slug": "001",
+  "brand": {
+    "$oid": "63edc2aa3b01f4a8154e6529"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a8f65504ced7c52cb242"
+  },
+  "name": "Model S",
+  "slug": "model-s",
+  "brand": {
+    "$oid": "63edc2393b01f4a8154e649b"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a9015504ced7c52cb26a"
+  },
+  "name": "Model 3",
+  "slug": "model-3",
+  "brand": {
+    "$oid": "63edc2393b01f4a8154e649b"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a90d5504ced7c52cb292"
+  },
+  "name": "Model Y",
+  "slug": "model-y",
+  "brand": {
+    "$oid": "63edc2393b01f4a8154e649b"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a9195504ced7c52cb2ba"
+  },
+  "name": "Model X",
+  "slug": "model-x",
+  "brand": {
+    "$oid": "63edc2393b01f4a8154e649b"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a94a5504ced7c52cb2e2"
+  },
+  "name": "Model S Plaid",
+  "slug": "model-s-plaid",
+  "brand": {
+    "$oid": "63edc2393b01f4a8154e649b"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a9575504ced7c52cb30a"
+  },
+  "name": "Model X Plaid",
+  "slug": "model-x-plaid",
+  "brand": {
+    "$oid": "63edc2393b01f4a8154e649b"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5a9e65504ced7c52cb35a"
+  },
+  "name": "Seal",
+  "slug": "seal",
+  "brand": {
+    "$oid": "63edc10f3b01f4a8154e63a8"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5aa285504ced7c52cb382"
+  },
+  "name": "TANG",
+  "slug": "tang",
+  "brand": {
+    "$oid": "63edc10f3b01f4a8154e63a8"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5aa725504ced7c52cb3aa"
+  },
+  "name": "ATTO 3",
+  "slug": "atto-3",
+  "brand": {
+    "$oid": "63edc10f3b01f4a8154e63a8"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5ab1e5504ced7c52cb422"
+  },
+  "name": "Polestar 2",
+  "slug": "polestar-2",
+  "brand": {
+    "$oid": "63edc2eb3b01f4a8154e65b7"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5ad5d5504ced7c52cb782"
+  },
+  "name": "L7",
+  "slug": "l7",
+  "brand": {
+    "$oid": "63f5ad435504ced7c52cb747"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5ad6c5504ced7c52cb7aa"
+  },
+  "name": "L8",
+  "slug": "l8",
+  "brand": {
+    "$oid": "63f5ad435504ced7c52cb747"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5ada45504ced7c52cb7d2"
+  },
+  "name": "L9",
+  "slug": "l9",
+  "brand": {
+    "$oid": "63f5ad435504ced7c52cb747"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5adc65504ced7c52cb7fa"
+  },
+  "name": "EQE",
+  "slug": "eqe",
+  "brand": {
+    "$oid": "63f5aca35504ced7c52cb69a"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5addc5504ced7c52cb84a"
+  },
+  "name": "Polestar 3",
+  "slug": "polestar-3",
+  "brand": {
+    "$oid": "63edc2eb3b01f4a8154e65b7"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5adf25504ced7c52cb872"
+  },
+  "name": "EQB",
+  "slug": "eqb",
+  "brand": {
+    "$oid": "63f5aca35504ced7c52cb69a"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5ae065504ced7c52cb8ee"
+  },
+  "name": "EQA",
+  "slug": "eqa",
+  "brand": {
+    "$oid": "63f5aca35504ced7c52cb69a"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5aea75504ced7c52cb916"
+  },
+  "name": "i3",
+  "slug": "i3",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5aec35504ced7c52cb93e"
+  },
+  "name": "EQS",
+  "slug": "eqs",
+  "brand": {
+    "$oid": "63f5aca35504ced7c52cb69a"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5af385504ced7c52cb966"
+  },
+  "name": "iX",
+  "slug": "ix",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5af4a5504ced7c52cb98e"
+  },
+  "name": "iX M60",
+  "slug": "ix-m60",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5af595504ced7c52cb9b6"
+  },
+  "name": "i7",
+  "slug": "i7",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5af6a5504ced7c52cb9de"
+  },
+  "name": "i4",
+  "slug": "i4",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5af7c5504ced7c52cba06"
+  },
+  "name": "i4 M50",
+  "slug": "i4-m50",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5af8b5504ced7c52cba2e"
+  },
+  "name": "iX3",
+  "slug": "ix3",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5af9b5504ced7c52cba56"
+  },
+  "name": "iX1",
+  "slug": "ix1",
+  "brand": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b0845504ced7c52cbb91"
+  },
+  "name": "eT7",
+  "slug": "et7",
+  "brand": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b0975504ced7c52cbbb9"
+  },
+  "name": "eT5",
+  "slug": "et5",
+  "brand": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b0ae5504ced7c52cbbe1"
+  },
+  "name": "eS8",
+  "slug": "es8",
+  "brand": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b0bb5504ced7c52cbc09"
+  },
+  "name": "eS7",
+  "slug": "es7",
+  "brand": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b0ca5504ced7c52cbc31"
+  },
+  "name": "eS6",
+  "slug": "es6",
+  "brand": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b0da5504ced7c52cbc59"
+  },
+  "name": "eC7",
+  "slug": "ec7",
+  "brand": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b0e75504ced7c52cbc81"
+  },
+  "name": "eC6",
+  "slug": "ec6",
+  "brand": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f5b24d5504ced7c52cbca9"
+  },
+  "name": "HN10132EN",
+  "slug": "hn10132en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63f5b26d5504ced7c52cbcd1"
+  },
+  "name": "M3W",
+  "slug": "m3w",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63f5b27a5504ced7c52cbcf9"
+  },
+  "name": "M3P",
+  "slug": "m3p",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63f5b2b25504ced7c52cbd9f"
+  },
+  "name": "M3G",
+  "slug": "m3g",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63f5b2c25504ced7c52cbdc7"
+  },
+  "name": "M4F",
+  "slug": "m4f",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63f64e52267a280e84f01813"
+  },
+  "name": "Q7",
+  "slug": "q7",
+  "brand": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "6406d9edbb186567846d7b8c"
+  },
+  "name": "HM10332EN",
+  "slug": "hm10332en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6406daefbb186567846d7c2a"
+  },
+  "name": "HN10332EN",
+  "slug": "hn10332en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "640dbbfcfe72794d1d34a0f4"
+  },
+  "name": "Type 2 To GB/T AC",
+  "slug": "type-2-to-gbt-ac",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "64107c25f0806609e4b3e56d"
+  },
+  "name": "M3W132EN",
+  "slug": "m3w132en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64107c92f0806609e4b3e5f8"
+  },
+  "name": "M3W332EN",
+  "slug": "m3w332en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64108b9cf0806609e4b47a56"
+  },
+  "name": "HP20132",
+  "slug": "hp20132",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64108bb4f0806609e4b47a7e"
+  },
+  "name": "HP20332",
+  "slug": "hp20332",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6411963ff0806609e4b4d05c"
+  },
+  "name": "M3W316EN",
+  "slug": "m3w316en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6411968df0806609e4b4d104"
+  },
+  "name": "M3W316EN",
+  "slug": "m3w316en",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6411ba5cf0806609e4b50a5b"
+  },
+  "name": "M4FDC",
+  "slug": "m4fdc",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6414353947484a3be28537b1"
+  },
+  "name": "HP20116",
+  "slug": "hp20116",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6414357f47484a3be28537db"
+  },
+  "name": "HP20316",
+  "slug": "hp20316",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6415e5b958bdf2b947bd6e74"
+  },
+  "name": "Type 2 To Type 1",
+  "slug": "type-2-to-type-1",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "641d41fd45bd3413e58cdcba"
+  },
+  "name": "32A Charging Cable Type 1",
+  "slug": "32a-charging-cable-type-1",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "641d420745bd3413e58cdce2"
+  },
+  "name": "32A Charging Cable Type 2",
+  "slug": "32a-charging-cable-type-2",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "641d424345bd3413e58cdd0a"
+  },
+  "name": "16A Charging Cable Type 2",
+  "slug": "16a-charging-cable-type-2",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "641d425c45bd3413e58cddd8"
+  },
+  "name": "16A EV Charging Cable Type 1",
+  "slug": "16a-ev-charging-cable-type-1",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "641d42a445bd3413e58cdf5a"
+  },
+  "name": "16A EV Charging Cable Type 2",
+  "slug": "16a-ev-charging-cable-type-2",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "641d42ba45bd3413e58cdf82"
+  },
+  "name": "16A EV Charging Cable GB/T",
+  "slug": "16a-ev-charging-cable-gbt",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "641d42c645bd3413e58cdfaa"
+  },
+  "name": "32A EV Charging Cable GB/T",
+  "slug": "32a-ev-charging-cable-gbt",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "6436befdac8e07bd41a8246f"
+  },
+  "name": "Uni-K",
+  "slug": "uni-k",
+  "brand": {
+    "$oid": "6436b019ac8e07bd41a7e2ce"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "6437d660ac8e07bd41a86abe"
+  },
+  "name": "Uni-T",
+  "slug": "uni-t",
+  "brand": {
+    "$oid": "6436b019ac8e07bd41a7e2ce"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "6438015aac8e07bd41a88810"
+  },
+  "name": "Uni-V",
+  "slug": "uni-v",
+  "brand": {
+    "$oid": "6436b019ac8e07bd41a7e2ce"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "64382b3eac8e07bd41a8c194"
+  },
+  "name": "Song Plus DM-i",
+  "slug": "song-plus-dm-i",
+  "brand": {
+    "$oid": "63edc10f3b01f4a8154e63a8"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "6438fd72ac8e07bd41a8f895"
+  },
+  "name": "H6",
+  "slug": "h6",
+  "brand": {
+    "$oid": "6438fd05ac8e07bd41a8f6f1"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "643ba22fac8e07bd41a92598"
+  },
+  "name": "Zeekr-X",
+  "slug": "zeekr-x",
+  "brand": {
+    "$oid": "63edc2aa3b01f4a8154e6529"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "64469c39e285e3cd34526290"
+  },
+  "name": "GW 92072",
+  "slug": "gw-92072",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "64469c4ee285e3cd345262b4"
+  },
+  "name": "CSU - 1012",
+  "slug": "csu-1012",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "64469c5ee285e3cd345262d8"
+  },
+  "name": "GW 92011",
+  "slug": "gw-92011",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "64469c7ee285e3cd345262fc"
+  },
+  "name": "KABEL TTR",
+  "slug": "kabel-ttr",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "64469c8de285e3cd34526320"
+  },
+  "name": "CSU - 1034",
+  "slug": "csu-1034",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "6447b956e285e3cd345299d6"
+  },
+  "name": "EVA07B",
+  "slug": "eva07b",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64734002041427b613562a4d"
+  },
+  "name": "BCP-A1S-L",
+  "slug": "bcp-a1s-l",
+  "brand": {
+    "$oid": "64733feb041427b613562956"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64737081041427b613563bc7"
+  },
+  "name": "EvCOME",
+  "slug": "evcome",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64737e19041427b6135645eb"
+  },
+  "name": "EvCome AC 7 kW",
+  "slug": "evcome-ac-7-kw",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64737fd0041427b6135650ee"
+  },
+  "name": "EVSE Box",
+  "slug": "evse-box",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64738113041427b613565d98"
+  },
+  "name": "EvCome 22 kW",
+  "slug": "evcome-22-kw",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64e5a51303d3c555cc6c5aa8"
+  },
+  "name": "ET 5",
+  "slug": "et-5",
+  "brand": {
+    "$oid": "64e5a4e803d3c555cc6c5a06"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "64ef388203d3c555cc6d8fe1"
+  },
+  "name": "WallBox Type 1",
+  "slug": "wallbox-type-1",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64ef591403d3c555cc6d9e96"
+  },
+  "name": "CAAT007K1",
+  "slug": "caat007k1",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64f094d203d3c555cc6dc8fa"
+  },
+  "name": "DC Charger",
+  "slug": "dc-charger",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64f1e19003d3c555cc6e340f"
+  },
+  "name": "SC15750",
+  "slug": "sc15750",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64f1e19d03d3c555cc6e343f"
+  },
+  "name": "SC20750",
+  "slug": "sc20750",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64f1e1a703d3c555cc6e346f"
+  },
+  "name": "SC30750",
+  "slug": "sc30750",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64f1e1b403d3c555cc6e349f"
+  },
+  "name": "SC40750",
+  "slug": "sc40750",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "64f1e39903d3c555cc6e3aa5"
+  },
+  "name": "XC15750",
+  "slug": "xc15750",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "656c7782c9b82d43b30c1170"
+  },
+  "name": "EVA03B",
+  "slug": "eva03b",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65b39993c9b82d43b317cfb7"
+  },
+  "name": "Type2 - Tesla",
+  "slug": "type2-tesla",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "65b74a78c9b82d43b31873e8"
+  },
+  "name": "GBT - Type 2",
+  "slug": "gbt-type-2",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "65b74c9ec9b82d43b3187418"
+  },
+  "name": "GBT - Type 1",
+  "slug": "gbt-type-1",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "accessories"
+},
+{
+  "_id": {
+    "$oid": "65bb5645c9b82d43b31942e3"
+  },
+  "name": "EVA03BG",
+  "slug": "eva03bg",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65bb56b8c9b82d43b3194320"
+  },
+  "name": "EVA03BU",
+  "slug": "eva03bu",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65bb5785c9b82d43b3196454"
+  },
+  "name": "EVA07BG",
+  "slug": "eva07bg",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65bb5799c9b82d43b3196484"
+  },
+  "name": "EVA07BU",
+  "slug": "eva07bu",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9b616c9b82d43b31bc0ac"
+  },
+  "name": "M3W132GD",
+  "slug": "m3w132gd",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9b626c9b82d43b31bc0dc"
+  },
+  "name": "M3W332GD",
+  "slug": "m3w332gd",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9b63ac9b82d43b31bc10c"
+  },
+  "name": "M3W316GD",
+  "slug": "m3w316gd",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9c32ec9b82d43b31c5c26"
+  },
+  "name": "HN10332GD",
+  "slug": "hn10332gd",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9c37ac9b82d43b31c5d85"
+  },
+  "name": "HN10132GD",
+  "slug": "hn10132gd",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9c392c9b82d43b31c5db5"
+  },
+  "name": "HM10132GD",
+  "slug": "hm10132gd",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9c408c9b82d43b31c5e91"
+  },
+  "name": "HM10332GD",
+  "slug": "hm10332gd",
+  "brand": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9f422c9b82d43b31ce068"
+  },
+  "name": "WallBox Type 2",
+  "slug": "wallbox-type-2",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "65c9f435c9b82d43b31ce098"
+  },
+  "name": "WallBox GBT/AC",
+  "slug": "wallbox-gbtac",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "6688f8832a6590982274239c"
+  },
+  "name": "EVA07B (AUTO)",
+  "slug": "eva07b-auto",
+  "brand": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "section": "charging-stations"
+}]

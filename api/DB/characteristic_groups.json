@@ -1,0 +1,221 @@
+[{
+  "_id": {
+    "$oid": "63d193af7896d6d8d8aece34"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Ana xarakteristikalar",
+    "en": "Main characteristics",
+    "ru": "Main characteristics"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Texniki xarakteristikalar",
+    "en": "Technical characteristics",
+    "ru": "Technical characteristics"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Interior",
+    "en": "Interior",
+    "ru": "Interior"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45ada4b9dad6f20a7de48"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Eksteryer",
+    "en": "Exterior",
+    "ru": "Exterior"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Güc Spesifikasiyası",
+    "en": "Power Specification",
+    "ru": "Спецификация мощности"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "İstifadəçi interfeysi və nəzarət",
+    "en": "User Interface & Control",
+    "ru": "Пользовательский интерфейс и управление"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63e53406e1890b59bb9ea68b"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Ətraf mühit",
+    "en": "Environmental",
+    "ru": "Окружающая среда"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Qoruma",
+    "en": "Protection",
+    "ru": "Защита"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Divar qurğusu",
+    "en": "Wall box mechanical",
+    "ru": "Коробка настенная"
+  },
+  "photo": {
+    "display": true,
+    "multiple": true,
+    "background": false
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63e53482e1890b59bb9ea6bf"
+  },
+  "hasDescription": true,
+  "name": {
+    "az": "Fərdiləşdirmə seçimləri",
+    "en": "OEM customize options",
+    "ru": "Параметры настройки OEM"
+  },
+  "photo": {
+    "display": true,
+    "multiple": false,
+    "background": false
+  },
+  "section": "charging-stations"
+},
+{
+  "_id": {
+    "$oid": "63f311af5504ced7c52c7a59"
+  },
+  "section": "accessories",
+  "photo": {
+    "display": true,
+    "multiple": true,
+    "background": false
+  },
+  "name": {
+    "az": "Doldurma konnektoru",
+    "en": "Charging connector",
+    "ru": "Разъемы для зарядки"
+  },
+  "hasDescription": true
+},
+{
+  "_id": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "section": "accessories",
+  "photo": {
+    "display": true,
+    "multiple": true,
+    "background": false
+  },
+  "name": {
+    "az": "Digər",
+    "en": "Others",
+    "ru": "другой"
+  },
+  "hasDescription": true
+},
+{
+  "_id": {
+    "$oid": "641441d847484a3be2855c0e"
+  },
+  "section": "charging-stations",
+  "photo": {
+    "display": false,
+    "multiple": false,
+    "background": false
+  },
+  "hasDescription": false,
+  "name": {
+    "az": "DC Şarj Stansiyasının Parametrləri",
+    "en": "DC Station Parameters",
+    "ru": "Параметры Cтанции Постоянного Тока"
+  }
+}]

@@ -1,0 +1,25 @@
+# Deployment
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Copy ansible files to target
+          script:
+            - pipe: atlassian/scp-deploy:1.2.1
+              variables:
+                USER: 'ubuntu'
+                SERVER: '217.76.57.237'
+                REMOTE_PATH: '/home/ubuntu'
+                LOCAL_PATH: 'ansible'
+                EXTRA_ARGS: "-r"
+                trigger: automatic
+      - step:
+          name: Execute ansible playbook
+          script:
+            - pipe: atlassian/ssh-run:0.4.1
+              variables:
+                SSH_USER: ubuntu
+                SERVER: 217.76.57.237
+                MODE: 'command'
+                COMMAND: 'ansible-playbook ~/ansible/deploy.yml'

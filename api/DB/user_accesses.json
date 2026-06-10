@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "63d190cbca5d9899369fd1e8"
+  },
+  "createdAt": {
+    "$date": "2023-01-25T20:27:55.742Z"
+  },
+  "permissions": [],
+  "role": {
+    "$oid": "629a8a948de01ed4e3a9708c"
+  },
+  "updatedAt": {
+    "$date": "2023-01-25T20:27:55.742Z"
+  },
+  "user": {
+    "$oid": "63d190cbca5d9899369fd1dd"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  }
+},
+{
+  "_id": {
+    "$oid": "63ecd5c43b01f4a8154e2413"
+  },
+  "user": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "role": {
+    "$oid": "63751df89599fe208b318d88"
+  },
+  "permissions": [
+    {
+      "$oid": "6393cb757cf29fcde9b61443"
+    },
+    {
+      "$oid": "642de82cc7f87588fa73deae"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-02-15T12:53:24.812Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T13:57:54.330Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f24ee95504ced7c52c495a"
+  },
+  "user": {
+    "$oid": "63f24ee95504ced7c52c4952"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "role": {
+    "$oid": "63751df89599fe208b318d88"
+  },
+  "permissions": [
+    {
+      "$oid": "6393cb757cf29fcde9b61443"
+    },
+    {
+      "$oid": "642de82cc7f87588fa73deae"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-02-19T16:31:37.740Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T13:19:31.022Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640a07eb9fe3cb2c613a3a4a"
+  },
+  "user": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "role": {
+    "$oid": "63751e0a9599fe208b318d89"
+  },
+  "permissions": [
+    {
+      "$oid": "63ec21687ab109bab536aff7"
+    },
+    {
+      "$oid": "642de85ec7f87588fa73deb3"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-03-09T16:23:07.166Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T12:40:27.336Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "644f4922e285e3cd3453a01b"
+  },
+  "user": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "role": {
+    "$oid": "63751e0a9599fe208b318d89"
+  },
+  "permissions": [
+    {
+      "$oid": "63ec21687ab109bab536aff7"
+    },
+    {
+      "$oid": "642de85ec7f87588fa73deb3"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-05-01T05:07:46.172Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T21:35:29.602Z"
+  }
+}]

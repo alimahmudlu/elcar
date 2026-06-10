@@ -1,0 +1,40 @@
+{
+    "name": "elcar",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@casl/ability": "^3.4.0",
+        "@casl/vue": "^1.2.3",
+        "@mdi/js": "^7.3.67",
+        "@nuxtjs/auth": "^4.9.1",
+        "@nuxtjs/axios": "^5.13.6",
+        "@nuxtjs/dayjs": "^1.4.1",
+        "@nuxtjs/i18n": "^7.3.1",
+        "@nuxtjs/pwa": "^3.3.5",
+        "@nuxtjs/universal-storage": "^0.5.9",
+        "@tinymce/tinymce-vue": "^3.2.8",
+        "animate.css": "^4.1.1",
+        "chart.js": "^2.7.3",
+        "nuxt": "^2.17.2",
+        "nuxt-webfontloader": "^1.1.0",
+        "png-cutter": "^1.0.9",
+        "vue": "^2.7.15",
+        "vue-chartjs": "^3.4.2",
+        "vue-server-renderer": "^2.7.15",
+        "vue-template-compiler": "^2.7.15",
+        "vue-the-mask": "^0.11.1",
+        "vuedraggable": "^2.24.3",
+        "vuelidate": "^0.7.7",
+        "vuetify": "^2.7.2"
+    },
+    "devDependencies": {
+        "@nuxt/image": "0.7.1",
+        "@nuxtjs/vuetify": "^1.12.3"
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "workspace": "63d190cbca5d9899369fd1e0",
+    "baseUrl": "https://admin.elcar.az",
+    "name": {
+        "az": "ELCAR",
+        "en": "ELCAR",
+        "ru": "ELCAR"
+    },
+    "meta": {
+        "title": {
+            "az": "Elektrikli Avtomobil Distribüteri",
+            "en": "Electric Vehicle Distributor",
+            "ru": "Дистрибьютор электромобилей"
+        },
+        "description": {
+            "az": null,
+            "en": null,
+            "ru": null
+        },
+        "keywords": {
+            "az": null,
+            "en": null,
+            "ru": null
+        }
+    },
+
+    "locales": {
+
+        "default": "az",
+
+        "list": [
+            {"code": "az", "iso": "az", "file": "az_AZ", "name": "Azərbaycanca"},
+            {"code": "en", "iso": "en", "file": "en_EN", "name": "English"},
+            {"code": "ru", "iso": "ru", "file": "ru_RU", "name": "Русский"}
+        ]
+    },
+
+    "pwa": {
+        "shortName": null,
+        "description": null,
+        "categories": [],
+        "screenshots": [],
+        "shortcuts": [],
+        "themeColor": null,
+        "backgroundColor": null
+    },
+
+    "creator": {
+        "name": "Easys.io",
+        "link": ""
+    },
+
+    "theme": {
+        "logo": {
+            "light": null,
+            "dark": null,
+            "title": {
+                "az": "ELCAR",
+                "en": "ELCAR",
+                "ru": "ELCAR"
+            }
+        },
+        "icons": {
+            "favicon": null
+        },
+        "cover": null,
+        "colors": {
+            "light": {
+                "primary": "#006965",
+                "lighten": "#f6f7fb",
+                "background": "#ffffff"
+            },
+            "dark": {
+                "primary": "#006965",
+                "lighten": "#080c10",
+                "background": "#000000"
+            }
+        }
+    }
+}

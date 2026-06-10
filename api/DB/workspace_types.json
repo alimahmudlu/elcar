@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "643c491bb56d677a8d76878e"
+  },
+  "name": {
+    "en": "Organization",
+    "az": "Orqanizasiya",
+    "ru": "Organization"
+  }
+},
+{
+  "_id": {
+    "$oid": "643c4975b56d677a8d76878f"
+  },
+  "name": {
+    "en": "Personal",
+    "az": "Şəxsi",
+    "ru": "Personal"
+  }
+}]

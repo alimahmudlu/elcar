@@ -1,0 +1,204 @@
+{
+  "pages": {
+    "home": "Ana səhifə",
+    "chargingStations": "Yükləmə Stansiyaları",
+    "electricVehicles": "Elektrikli Nəqliyyat Vasitələri",
+    "connectors": "Bağlayıcılar və Aksesuarlar",
+    "blog": "Bloq",
+    "ourCompany": "Şirkətimiz",
+    "about": "Haqqımızda",
+    "contact": "Əlaqə"
+  },
+
+  "header": {
+    "title": "Elektrikli Avtomobillər",
+    "cart": "Səbət",
+    "emptyCart": "Səbətiniz boşdur",
+    "clear": "Təmizlə",
+    "confirmOrder": "Sifarişi tamamla",
+    "confirmModal": {
+      "title": "Sifarişi tamamla",
+      "subtitle": "Müştəri məlumatları",
+      "form": {
+        "fullName": "Tam ad",
+        "phone": "Telefon",
+        "email": "E-poçt",
+        "note": "Qeyd"
+      },
+      "table": {
+        "products": "Məhsullar",
+        "photo": "Şəkil",
+        "product": "Məhsul",
+        "quantity": "Miqdar",
+        "discount": "Endirim",
+        "oldPrice": "Köhnə qiymət",
+        "price": "Qiymət",
+        "total": "Ümumi",
+        "createOrder": "Sifariş ver"
+      }
+    }
+  },
+  "hero": {
+    "sub-category": {
+      "output": "Çıxış gücü",
+      "voltage": "Güc sərfiyyatı",
+      "phase": "Faza sayı",
+      "rating": "Reyting"
+    },
+    "buttons": {
+      "buy": "Səbətə əlavə et",
+      "see": "Detalları gör"
+    }
+  },
+  "services": {
+    "main": {
+      "title": "ELCAR - Azərbaycanda Elektrikli Avtomobillərin Distribüteri",
+      "subtitle": "ELCAR şirkəti <strong>Elektrikli Avtomobillər</strong>, bu avtomobillər üçün lazım olan hər növ <strong>Elektrik stansiyaları</strong>, <strong>Aksesuarlar</strong> və digər Elektrikli cihazları Çindən ən sərfəli qiymətlərlə sifariş verilərək Azərbaycana gətirilməsini təşkil edir.",
+      "button": "Ətraflı məlumat"
+    },
+    "second": {
+      "title": "Elektrikli Avtomobillər",
+      "subtitle": "Günümüzün müasir, ekoloji cəhətdən təmiz və qənaətcil texnologiyalara sahib Elektrikli Avtomobillər ilə tanış olun."
+    },
+    "third": {
+      "title": "Şarj stansiyaları",
+      "subtitle": "Elektrikli Avtomobillər üçün enerji doldurma sürətləri və konnektor növlərinə görə fərqlənən yeni Şarj Stansiyaları ilə tanış olun"
+    }
+  },
+  "popular-cars": {
+    "title": "Ən Çox Tərcih Edilən Elektrikli Avtomobillər",
+    "subtitle": "Sizə həm rahatlığı, həm funksionallıqları həm də müasir dizaynı ilə ən çox bəyənilən və tərcih edilən Elektrikli Avtomobilləri təqdim edirik",
+    "battery": "Batareya",
+    "fuel-type": "Yanacaq növü",
+    "max-speed": "Maks. sürət",
+    "max-horsepower": "Maks. at gücü"
+  },
+  "brands": {
+    "title": "Ən Çox Satılan Elektrikli Avtomobil İstehsalçıları",
+    "subtitle": "Bütün dünyada və ölkəmizdə ən tanınan, keyfiyyəti ilə önə çıxan və ən çox satılan Elektrikli Avtomobil İstehsalçılarını sizə təqdim edirik"
+  },
+  "charging-stations": {
+    "title": "Ən Yeni Şarj Stansiyaları",
+    "subtitle": "Elektrikli Avtomobilləriniz üçün keyfiyyəti və istifadə rahatlığı ilə seçilən bütün növ Şarj Stansiyaları"
+  },
+  "connectors-and-accessories": {
+    "title": "Elektrikli Avtomobillər Üçün Ən Yeni Baglayicilar və Aksesuarlar",
+    "subtitle": "Elektrikli Avtomobilləriniz üçün keyfiyyəti və istifadə rahatlığı ilə seçilən bütün növ baglayicilar və aksesuarlar"
+  },
+  "blog": {
+    "title": "Elektrikli Avtomobillər, Şarj Stansiyaları və Bağlayıcılar və Aksesuarlar ilə bağlı faydalı məlumatlar",
+    "subtitle": "Bloq bölməmizdə Elektrikli Avtomobillər, Şarj Stansiyaları, Bağlayıcılar, Aksesuarlar və bütün bu Elektrikli Sistemlərin sifariş edilərək Azərbaycana gətirilməsi ilə bağlı ətraflı məlumatları əldə edə bilərsiniz.",
+    "similar-posts": "Bənzır məqalələr"
+  },
+  "contact": {
+    "title": "Bizimlə Əlaqə",
+    "subtitle": "Elektrikli avtomobillər, şarj stansiyaları və bağlayıcılar ilə bağlı sualınız və ya istəkləriniz varsa əlaqə məlumatlarında istifadə edərək bizimlə əlaqə qurun. Ən qısa zamanda sizə geri dönüş edəcəyik",
+    "info": {
+      "title": "Bizimlə əlaqə saxlayın",
+      "subtitle": "Aşağıda qeyd olunan əlaqə məlumatlarından istifadə edərək bizimlə əlaqə saxlaya bilərsiz",
+      "phone": "Telefon:",
+      "email": "E-poçt:",
+      "address": "Ünvan:",
+      "address-info": "Nərimanov rayonu, Həsənoğlu küçəsi 4."
+    },
+    "form": {
+      "title": "Bizə mesaj göndərin",
+      "subtitle": "Sizi maraqlandıran suallarınız və ya istəkləriniz varsa aşağıdakı formu dolduraraq bizə göndərin",
+      "full-name": "Tam ad",
+      "email": "E-poçt",
+      "phone": "Telefon",
+      "message": "Mesaj",
+      "send": "Mesaj göndər",
+      "errors": {
+        "full-name": "Ad soyad tələb olunur",
+        "email": "Email düzgün deyil",
+        "phone": "Telefon nömrəsi düzgün deyil",
+        "message": "Mesaj tələb olunur"
+      }
+    }
+  },
+  "about": {
+    "title": "Şirkətimiz haqqında",
+    "subtitle": "ELCAR şirkəti Elektrikli Avtomobillər, bu avtomobillər üçün lazım olan hər növ Elektrik stansiyaları, Bağlayıcılar və Aksesuarlar və digər Elektrikli cihazları Çindən ən sərfəli qiymətlərlə sifariş verilərək Azərbaycana gətirilməsini təşkil edir.",
+    "section1": "Şirkətimiz 2022-ci ildə Azərbaycanda, Bakı şəhərində təsis edilib və <strong>Elektrikli Avtomobillər üçün Şarj Cihazlarının Satışı</strong>, eləcə də <strong>Elektriklə İşləyən Avtomobillərin İdxalı və Satışı</strong> ilə məşğuldur. Biz elektriklə işləyən avtomobillərə keçidin müasir dünyada atılan ən mühüm addımlardan biri olduğuna inanırıq və biz müştərilərimizə avtomobillərini doldurmaq və dəstəkləmək üçün ən yaxşı həllər təqdim etməyə sadiqik.",
+    "section2": "Müştərilərimizin ehtiyacları üçün ən uyğun variantı seçə bilmələri üçün biz qürurla müxtəlif marka və modellərdə elektrik avtomobillərinin geniş çeşidini təqdim edirik. Komandamız seçimdə sizə kömək edəcək və elektrikli nəqliyyat vasitələri ilə bağlı istənilən sualları cavablandıracaq təcrübəli mütəxəssislərdən ibarətdir.",
+    "section3": "Əminik ki, təcrübəmiz və peşəkarlığımız müştərilərimizə <strong>Elektromobillərin satışı və texniki xidməti</strong> sahəsində ən yaxşı xidməti göstərməyə imkan verir.<strong>Elektrikli avtomobillər və əlaqəli xidmətlər</strong> üzrə tərəfdaşınız kimi şirkətimizi seçdiyiniz üçün təşəkkür edirik."
+  },
+  "buttons": {
+    "add-to-cart": "Səbətə əlavə et"
+  },
+  "alerts": {
+    "contact": {
+      "success": {
+        "title": "Uğurlu",
+        "message": "Mesajınız göndərildi. Ən qısa zamanda cavab veriləcək. Bizimlə əlaqə saxladığınız üçün təşəkkür edirik."
+      },
+      "error": {
+        "title": "Xəta",
+        "message": "Mesaj göndərilərkən xəta baş verdi. Zəhmət olmasa bir az sonra yenidən cəhd edin."
+      },
+      "info": {
+        "title": "Məlumat",
+        "message": "Əlavə sualınız olarsa bizimlə əlaqə saxlamaqdan çəkinməyin."
+      },
+      "warning": {
+        "title": "Xəbərdarlıq",
+        "message": "Bəzi sahələr düzgün doldurulmayıb. Lütfən yoxlayın və yenidən cəhd edin."
+      }
+    },
+    "close": "Bağla"
+  },
+
+  "pages-content": {
+    "electric-vehicles": {
+      "title": "Azərbaycanda Elektrikli Avtomobillərin Satışı və Sifarişi",
+      "subtitle": "ELCAR Şirkəti Çindən ən yeni və yüksək keyfiyyətli Elektrikli Avtomobilləri Azərbaycana sərfəli qiymətlərlə gətirərək sizlərə təqdim edir.",
+      "filters": {
+        "title": "Filter",
+        "clear": "Təmizlə",
+        "categories": "Kateqoriyalar",
+        "brands": "Markalar",
+        "model": "Model",
+        "price": "Qiymət aralığı",
+        "charging-controls": "Şarj nəzarəti",
+        "phase": "Faza sayı",
+        "steering-system": "Sükan sistemi",
+        "braking-system": "Əyləc sistemi",
+        "all": "Hamısı",
+        "apply": "Təsdiqlə"
+      },
+
+      "all-cars": "Bütün Avtomobillər",
+      "sort": {
+        "title": "Sırala",
+        "byDate": "Tarixə görə",
+        "asc": "Qiymət: Ucuzdan bahaya",
+        "desc": "Qiymət: Bahadan ucuza"
+      },
+      "models": "Modellər",
+      "noResults": "Məhsul tapılmadı",
+      "details": {
+        "main": "Ana xarakteristikalar",
+        "technical": "Texniki xarakteristikalar",
+        "interior": "Interior",
+        "exterior": "Eksteryer",
+        "yes": "Bəli",
+        "no": "Xeyr"
+      }
+    },
+    "chargingStations": {
+      "title": "Elektrikli Avtomobillər üçün Şarj Stansiyaları",
+      "subtitle": "ELCAR Şirkəti Azərbaycanda yeni nəsil Elektrikli Avtomobillər üçün müasir Şarj Stansiyalarının ən sərfəli qiymətlərlə satışını və online sifarişini təşkil edir.",
+      "all-products": "Bütün Şarj Stansiyaları"
+    },
+    "connectors": {
+      "title": "Azərbaycanda Elektrikli Avtomobillər üçün Bağlayıcılar və Aksesuarlar",
+      "subtitle": "ELCAR Şirkəti Azərbaycanda yeni nəsil Elektrikli Avtomobillər üçün bütün növ Bağlayıcılar və Aksesuarların ən sərfəli qiymətlərlə satışını və online sifarişini təşkil edir.",
+      "all-products": "Elektrikli Avtomobillər üçün bütün növ Baglayicilar və Aksesuarlar"
+    }
+  },
+
+  "footer": {
+    "title": "Bütün haqqları qorunur!"
+  }
+}

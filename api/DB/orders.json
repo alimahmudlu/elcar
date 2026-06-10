@@ -1,0 +1,541 @@
+[{
+  "_id": {
+    "$oid": "65575296c9b82d43b308ce30"
+  },
+  "purchaser": "Kamal Balayev",
+  "phone": "(+994 77) 309 78 79",
+  "email": null,
+  "products": [
+    {
+      "detail": {
+        "$oid": "64e5aa6d03d3c555cc6c6390"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "65575296c9b82d43b308ce31"
+      }
+    }
+  ],
+  "note": "Test order",
+  "status": "DECLINED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-11-17T11:46:30.274Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-17T11:49:31.507Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b6be3c9b82d43b30991ae"
+  },
+  "purchaser": "Kamal Balayev",
+  "phone": "(+994 77) 309 78 79",
+  "email": null,
+  "products": [
+    {
+      "detail": {
+        "$oid": "64e5aa6d03d3c555cc6c6390"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "655b6be3c9b82d43b30991af"
+      }
+    }
+  ],
+  "note": "Test order",
+  "status": "DECLINED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2023-11-20T14:23:31.153Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T14:26:32.461Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6564ea2ac9b82d43b30b014c"
+  },
+  "purchaser": "stokic sasa",
+  "phone": "(+994 77) 300 60 60",
+  "email": "alarmkdo@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "64f098e503d3c555cc6dd0a2"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6564ea2ac9b82d43b30b014d"
+      }
+    }
+  ],
+  "note": null,
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-11-27T19:12:42.598Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T09:04:28.986Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6570d99cc9b82d43b30ce462"
+  },
+  "purchaser": "Vüsal ",
+  "phone": "(+994 50) 630 00 57",
+  "email": "abbasovvusal057@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "6436bbe7ac8e07bd41a80292"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6570d99cc9b82d43b30ce463"
+      }
+    }
+  ],
+  "note": "Hansı rəng çeşidləri var?\nKredit və ya barter təklifi varmı?\nYanacaq olaraq hansı yanacaq nəzərdə tutulmuşdur?\n",
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-12-06T20:29:16.789Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T09:04:00.538Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65843109c9b82d43b30fea9f"
+  },
+  "purchaser": "Imamverdi Behbudlu",
+  "phone": "(+994 51) 699 09 65",
+  "email": "behbudlu.imamverdi@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "643ba2b3ac8e07bd41a9372b"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "65843109c9b82d43b30feaa0"
+      }
+    }
+  ],
+  "note": "Taksitlə ödəniş barəsində maraqlanmaq istəyirəm. Mən ZeekrX və Dostum da Zeekr001 almaq istəyir.",
+  "status": "CREATED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2023-12-21T12:35:21.877Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-21T12:38:23.089Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6588361bc9b82d43b3107753"
+  },
+  "purchaser": "Emin a",
+  "phone": "(+994 77) 990 00 90",
+  "email": "aliyev.al001@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "656c799ec9b82d43b30c19cd"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6588361bc9b82d43b3107754"
+      }
+    }
+  ],
+  "note": "Gbt , Li L9 avtomibili ucun",
+  "status": "CREATED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2023-12-24T13:46:03.953Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-24T13:49:05.247Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6588361dc9b82d43b310775f"
+  },
+  "purchaser": "Emin a",
+  "phone": "(+994 77) 990 00 90",
+  "email": "aliyev.al001@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "656c799ec9b82d43b30c19cd"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6588361dc9b82d43b3107760"
+      }
+    }
+  ],
+  "note": "Gbt , Li L9 avtomibili ucun",
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-12-24T13:46:05.028Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T13:57:35.090Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "658e7a03c9b82d43b31154b5"
+  },
+  "purchaser": "YYYYY",
+  "phone": "(+994 50) 562 80 99",
+  "email": null,
+  "products": [
+    {
+      "detail": {
+        "$oid": "64ef3c5f03d3c555cc6d9ab5"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "658e7a03c9b82d43b31154b6"
+      }
+    }
+  ],
+  "note": "111",
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-12-29T07:49:23.718Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T13:59:51.788Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66115ce82a659098226309a2"
+  },
+  "purchaser": "TESTO",
+  "phone": "(+994 50) 000 00 00",
+  "email": null,
+  "products": [
+    {
+      "detail": {
+        "$oid": "65c9bd1dc9b82d43b31c1f4b"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "66115ce82a659098226309a3"
+      }
+    }
+  ],
+  "note": null,
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-04-06T14:32:09.015Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T15:07:48.844Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6618d21b2a65909822641dbc"
+  },
+  "purchaser": "Həsənov Bəxtiyar ",
+  "phone": "(+994 51) 533 00 60",
+  "email": "quliyev2300@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "640c2808fe72794d1d3335e7"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6618d21b2a65909822641dbd"
+      }
+    }
+  ],
+  "note": "Salam \nDaxili kredit mümkündür ?",
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-04-12T06:18:03.953Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T15:07:18.819Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6634b0cd2a65909822682a37"
+  },
+  "purchaser": "Lutfiyar Aliyev",
+  "phone": "(+994 77) 324 16 69",
+  "email": "lutfiyar888lutfiyar@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "643ba2b3ac8e07bd41a9372b"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6634b0cd2a65909822682a38"
+      }
+    }
+  ],
+  "note": "ASalam",
+  "status": "CREATED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-05-03T09:39:25.328Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T09:42:26.686Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6634d3922a65909822683d93"
+  },
+  "purchaser": "murad",
+  "phone": "(+994 51) 644 75 85",
+  "email": null,
+  "products": [
+    {
+      "detail": {
+        "$oid": "643ba2b3ac8e07bd41a9372b"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6634d3922a65909822683d94"
+      }
+    }
+  ],
+  "note": null,
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-05-03T12:07:46.169Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T13:30:03.822Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "668507e92a65909822737003"
+  },
+  "purchaser": "Svetlana ",
+  "phone": "(+994 55) 504 88 16",
+  "email": null,
+  "products": [
+    {
+      "detail": {
+        "$oid": "6425d48745bd3413e58e2ec0"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "668507e92a65909822737004"
+      }
+    }
+  ],
+  "note": null,
+  "status": "CREATED",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-07-03T08:12:25.052Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T13:29:14.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6697ed402a6590982276e589"
+  },
+  "purchaser": "Zamin",
+  "phone": "(+994 55) 493 48 87",
+  "email": "aazmud@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "643ba2b3ac8e07bd41a9372b"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6697ed402a6590982276e58a"
+      }
+    }
+  ],
+  "note": "Burda əlavə dəsilik etmek olur..",
+  "status": "CREATED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-07-17T16:11:44.912Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-17T16:14:46.168Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6697ed412a6590982276e595"
+  },
+  "purchaser": "Zamin",
+  "phone": "(+994 55) 493 48 87",
+  "email": "aazmud@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "643ba2b3ac8e07bd41a9372b"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "6697ed412a6590982276e596"
+      }
+    }
+  ],
+  "note": "Burda əlavə dəsilik etmek olur..",
+  "status": "CANCELED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-07-17T16:11:45.858Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-17T16:14:47.081Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a660d42a659098227956b7"
+  },
+  "purchaser": "test test",
+  "phone": "(+994 10) 000 00 00",
+  "email": "a@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "643ba2b3ac8e07bd41a9372b"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "66a660d42a659098227956b8"
+      }
+    }
+  ],
+  "note": "test",
+  "status": "CREATED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-07-28T15:16:36.294Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-28T15:19:37.544Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ad024a2a659098227a83b6"
+  },
+  "purchaser": "Hezret Niftelizade",
+  "phone": "(+994 55) 780 00 60",
+  "email": "hazratzn@code.edu.az",
+  "products": [
+    {
+      "detail": {
+        "$oid": "6688fa8f2a65909822742e8f"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "66ad024a2a659098227a83b7"
+      }
+    }
+  ],
+  "note": "Rozetkasida lazimdir",
+  "status": "CREATED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-08-02T15:59:06.735Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-02T16:02:08.138Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b0c7e62a659098227b2ebe"
+  },
+  "purchaser": "Nicat Quliyev",
+  "phone": "(+994 50) 250 92 95",
+  "email": "nijatg@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "65c9f4acc9b82d43b31cfc8a"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "66b0c7e62a659098227b2ebf"
+      }
+    },
+    {
+      "detail": {
+        "$oid": "65bb573dc9b82d43b319605e"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "66b0c7e62a659098227b2ec0"
+      }
+    }
+  ],
+  "note": null,
+  "status": "CANCELED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-08-05T12:39:02.930Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-05T12:42:04.597Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c0b3112a659098227e3077"
+  },
+  "purchaser": " Azer",
+  "phone": "(+994 50) 351 31 31",
+  "email": "vahid.musayev059@gmail.com",
+  "products": [
+    {
+      "detail": {
+        "$oid": "6688fa8f2a65909822742e8f"
+      },
+      "amount": 1,
+      "_id": {
+        "$oid": "66c0b3112a659098227e3078"
+      }
+    }
+  ],
+  "note": "Salam men masinima sarj alamak isteyirem",
+  "status": "CREATED",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-08-17T14:26:25.388Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T14:29:26.592Z"
+  }
+}]

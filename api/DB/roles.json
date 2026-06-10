@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "629a8a948de01ed4e3a9708c"
+  },
+  "key": "root",
+  "name": "Developer"
+},
+{
+  "_id": {
+    "$oid": "63751df89599fe208b318d88"
+  },
+  "key": "owner",
+  "name": "Owner"
+},
+{
+  "_id": {
+    "$oid": "63751e0a9599fe208b318d89"
+  },
+  "key": "admin",
+  "name": "Admin"
+},
+{
+  "_id": {
+    "$oid": "63cd03214f40012e89150940"
+  },
+  "key": "user",
+  "name": "User"
+}]

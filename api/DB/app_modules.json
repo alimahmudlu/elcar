@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "642de7c2c7f87588fa73dea7"
+  },
+  "color": "teal",
+  "content": null,
+  "default": true,
+  "description": {
+    "en": null,
+    "ru": null,
+    "az": null
+  },
+  "icon": "mdiStar",
+  "image": "null",
+  "key": "general",
+  "name": {
+    "en": null,
+    "ru": null,
+    "az": null
+  }
+},
+{
+  "_id": {
+    "$oid": "6438cc063832796aa37bb38f"
+  },
+  "color": "teal",
+  "content": null,
+  "default": true,
+  "description": {
+    "en": "ElCar Description",
+    "ru": "ElCar Description",
+    "az": "ElCar Description"
+  },
+  "icon": "mdiSpeedometer",
+  "image": "null",
+  "key": "elcar",
+  "name": {
+    "en": "ELCAR",
+    "ru": "ELCAR",
+    "az": "ELCAR"
+  }
+}]

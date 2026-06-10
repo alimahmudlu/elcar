@@ -1,0 +1,1273 @@
+[{
+  "_id": {
+    "$oid": "65575296c9b82d43b308ce3a"
+  },
+  "order": {
+    "$oid": "65575296c9b82d43b308ce30"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "676230",
+    "sessionId": "3675377D4B8FAE7B45A87DFFCE0F98D9",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-11-17T11:46:30.886Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-17T11:46:30.886Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6557534bc9b82d43b308d1bd"
+  },
+  "order": {
+    "$oid": "65575296c9b82d43b308ce30"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "676230",
+    "sessionId": "3675377D4B8FAE7B45A87DFFCE0F98D9",
+    "encryptedId": "45E2C30D08884379",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "7600000",
+    "currency": "944",
+    "orderStatus": "DECLINED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Test order",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "16281327",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-11-17 15:46:30",
+    "lastUpdateDate": "2023-11-17 15:46:54",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-11-17T11:49:31.521Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-17T11:49:31.521Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b6be3c9b82d43b30991b8"
+  },
+  "order": {
+    "$oid": "655b6be3c9b82d43b30991ae"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "676733",
+    "sessionId": "A50EA6757FEE8F5C4BC9D9B5566F3A92",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-11-20T14:23:31.878Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T14:23:31.878Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b6c98c9b82d43b3099242"
+  },
+  "order": {
+    "$oid": "655b6be3c9b82d43b30991ae"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "676733",
+    "sessionId": "A50EA6757FEE8F5C4BC9D9B5566F3A92",
+    "encryptedId": "511EEFDC81B1EC65",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "7600000",
+    "currency": "944",
+    "orderStatus": "DECLINED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Test order",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "16320683",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-11-20 18:23:31",
+    "lastUpdateDate": "2023-11-20 18:24:06",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-11-20T14:26:32.479Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T14:26:32.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6564ea2bc9b82d43b30b0156"
+  },
+  "order": {
+    "$oid": "6564ea2ac9b82d43b30b014c"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "678515",
+    "sessionId": "DAC413C15160715B70D4F42EE487CFD6",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-11-27T19:12:43.308Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T19:12:43.308Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6564eadfc9b82d43b30b0167"
+  },
+  "order": {
+    "$oid": "6564ea2ac9b82d43b30b014c"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "678515",
+    "sessionId": "DAC413C15160715B70D4F42EE487CFD6",
+    "encryptedId": "82B68DB1B39C4837",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "299460",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "EN",
+    "description": "null",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-11-27 23:12:43",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-11-27T19:15:43.913Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T19:15:43.913Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6570d99dc9b82d43b30ce46c"
+  },
+  "order": {
+    "$oid": "6570d99cc9b82d43b30ce462"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "681887",
+    "sessionId": "03386A0E8E7BC7B4F0478DAA86AADB73",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-12-06T20:29:17.389Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-06T20:29:17.389Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6570da52c9b82d43b30ce500"
+  },
+  "order": {
+    "$oid": "6570d99cc9b82d43b30ce462"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "681887",
+    "sessionId": "03386A0E8E7BC7B4F0478DAA86AADB73",
+    "encryptedId": "A0C35784EA8FE698",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "5248750",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Hansı rəng çeşidləri var?\nKredit və ya barter təklifi varmı?\nYanacaq olaraq hansı yanacaq nəzərdə tutulmuşdur?\n",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-12-07 00:29:17",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-12-06T20:32:18.038Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-06T20:32:18.038Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6584310ac9b82d43b30feaa9"
+  },
+  "order": {
+    "$oid": "65843109c9b82d43b30fea9f"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "684979",
+    "sessionId": "2093C99F577620A620846B4A5B351B12",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-12-21T12:35:22.470Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-21T12:35:22.470Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "658431bfc9b82d43b30feaba"
+  },
+  "order": {
+    "$oid": "65843109c9b82d43b30fea9f"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "684979",
+    "sessionId": "2093C99F577620A620846B4A5B351B12",
+    "encryptedId": "57D6D755B9CEE480",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "5700000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Taksitlə ödəniş barəsində maraqlanmaq istəyirəm. Mən ZeekrX və Dostum da Zeekr001 almaq istəyir.",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-12-21 16:35:22",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-12-21T12:38:23.107Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-21T12:38:23.107Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6588361cc9b82d43b310775d"
+  },
+  "order": {
+    "$oid": "6588361bc9b82d43b3107753"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "685422",
+    "sessionId": "55494CCE304C98792CFBF6B18EAB0753",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-12-24T13:46:04.607Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-24T13:46:04.607Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6588361dc9b82d43b3107769"
+  },
+  "order": {
+    "$oid": "6588361dc9b82d43b310775f"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "685423",
+    "sessionId": "19D2227699CB22C6DD4419E3DCDBB465",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-12-24T13:46:05.444Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-24T13:46:05.444Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "658836d1c9b82d43b310776d"
+  },
+  "order": {
+    "$oid": "6588361bc9b82d43b3107753"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "685422",
+    "sessionId": "55494CCE304C98792CFBF6B18EAB0753",
+    "encryptedId": "678E51250ED1C7E3",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "31200",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Gbt , Li L9 avtomibili ucun",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-12-24 17:46:04",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-12-24T13:49:05.264Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-24T13:49:05.264Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "658836d2c9b82d43b3107771"
+  },
+  "order": {
+    "$oid": "6588361dc9b82d43b310775f"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "685423",
+    "sessionId": "19D2227699CB22C6DD4419E3DCDBB465",
+    "encryptedId": "A14E0EFEFC0F5D4E",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "31200",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Gbt , Li L9 avtomibili ucun",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-12-24 17:46:05",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-12-24T13:49:06.032Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-24T13:49:06.032Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "658e7a04c9b82d43b31154bf"
+  },
+  "order": {
+    "$oid": "658e7a03c9b82d43b31154b5"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "686427",
+    "sessionId": "A5656B59FCE58F52D4FBAA324CB67F9C",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2023-12-29T07:49:24.301Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T07:49:24.301Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "658e7ab9c9b82d43b31154c3"
+  },
+  "order": {
+    "$oid": "658e7a03c9b82d43b31154b5"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "686427",
+    "sessionId": "A5656B59FCE58F52D4FBAA324CB67F9C",
+    "encryptedId": "C59EC99122A11158",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "59500",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "111",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2023-12-29 11:49:24",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2023-12-29T07:52:25.714Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T07:52:25.714Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66115ce92a659098226309ac"
+  },
+  "order": {
+    "$oid": "66115ce82a659098226309a2"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "769356",
+    "sessionId": "756E36BCC601546D0710C1C7FCE69BA0",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-04-06T14:32:09.644Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-06T14:32:09.644Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66115d9e2a659098226309b0"
+  },
+  "order": {
+    "$oid": "66115ce82a659098226309a2"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "769356",
+    "sessionId": "756E36BCC601546D0710C1C7FCE69BA0",
+    "encryptedId": "4806A2D83E4E7FEA",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "23800",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "null",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-04-06 18:32:09",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-04-06T14:35:10.455Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-06T14:35:10.455Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6618d21c2a65909822641dc6"
+  },
+  "order": {
+    "$oid": "6618d21b2a65909822641dbc"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "771145",
+    "sessionId": "AE796D6CD39AB98E01DCCDAE9EC90BE3",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-04-12T06:18:04.483Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T06:18:04.483Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6618d2d12a65909822641e11"
+  },
+  "order": {
+    "$oid": "6618d21b2a65909822641dbc"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "771145",
+    "sessionId": "AE796D6CD39AB98E01DCCDAE9EC90BE3",
+    "encryptedId": "9E4E7BF94A7EAABD",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "6790000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Salam \nDaxili kredit mümkündür ?",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-04-12 10:18:04",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-04-12T06:21:05.283Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T06:21:05.283Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6634b0cd2a65909822682a41"
+  },
+  "order": {
+    "$oid": "6634b0cd2a65909822682a37"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "776969",
+    "sessionId": "882068E17AF7CCA6B327C269CE4881A5",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-05-03T09:39:25.891Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T09:39:25.891Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6634b1822a65909822682a45"
+  },
+  "order": {
+    "$oid": "6634b0cd2a65909822682a37"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "776969",
+    "sessionId": "882068E17AF7CCA6B327C269CE4881A5",
+    "encryptedId": "E9C7C9AE73DC1741",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "6076000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "EN",
+    "description": "ASalam",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-05-03 13:39:25",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-05-03T09:42:26.706Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T09:42:26.706Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6634d3922a65909822683d9d"
+  },
+  "order": {
+    "$oid": "6634d3922a65909822683d93"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "777014",
+    "sessionId": "5F3207B18D4B66DBF92F2580F42B52D9",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-05-03T12:07:46.600Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T12:07:46.600Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6634d4472a65909822683e5d"
+  },
+  "order": {
+    "$oid": "6634d3922a65909822683d93"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "777014",
+    "sessionId": "5F3207B18D4B66DBF92F2580F42B52D9",
+    "encryptedId": "0B254D7B618D29FC",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "6076000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "null",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-05-03 16:07:46",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-05-03T12:10:47.463Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T12:10:47.463Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "668507e92a6590982273700d"
+  },
+  "order": {
+    "$oid": "668507e92a65909822737003"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "794879",
+    "sessionId": "2E2AF5FC869C6D900755EA46E2731714",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-07-03T08:12:25.561Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-03T08:12:25.561Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6685089e2a65909822737011"
+  },
+  "order": {
+    "$oid": "668507e92a65909822737003"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "794879",
+    "sessionId": "2E2AF5FC869C6D900755EA46E2731714",
+    "encryptedId": "35DBCBAA8ABC28F0",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "21000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "null",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-07-03 12:12:25",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-07-03T08:15:26.358Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-03T08:15:26.358Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6697ed412a6590982276e593"
+  },
+  "order": {
+    "$oid": "6697ed402a6590982276e589"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "798265",
+    "sessionId": "B9BCC6E275AE8BD71607DE08BF44B769",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-07-17T16:11:45.395Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-17T16:11:45.395Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6697ed422a6590982276e59f"
+  },
+  "order": {
+    "$oid": "6697ed412a6590982276e595"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "798266",
+    "sessionId": "4C7B6B899EEE7116EC198FCE195CD21C",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-07-17T16:11:46.297Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-17T16:11:46.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6697edf62a6590982276e5a7"
+  },
+  "order": {
+    "$oid": "6697ed402a6590982276e589"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "798265",
+    "sessionId": "B9BCC6E275AE8BD71607DE08BF44B769",
+    "encryptedId": "D183F6720CAE3ED1",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "6076000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Burda əlavə dəsilik etmek olur..",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-07-17 20:11:41",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-07-17T16:14:46.182Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-17T16:14:46.182Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6697edf72a6590982276e5ab"
+  },
+  "order": {
+    "$oid": "6697ed412a6590982276e595"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "798266",
+    "sessionId": "4C7B6B899EEE7116EC198FCE195CD21C",
+    "encryptedId": "2C50208C66D1A997",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "6076000",
+    "currency": "944",
+    "orderStatus": "CANCELED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Burda əlavə dəsilik etmek olur..",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-07-17 20:11:41",
+    "lastUpdateDate": "2024-07-17 20:12:22",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-07-17T16:14:47.084Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-17T16:14:47.084Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a660d42a659098227956c1"
+  },
+  "order": {
+    "$oid": "66a660d42a659098227956b7"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "800776",
+    "sessionId": "59BC05580A5BB75AA9B4E0D3AF9AB4F1",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-07-28T15:16:36.779Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-28T15:16:36.779Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a661892a659098227956c5"
+  },
+  "order": {
+    "$oid": "66a660d42a659098227956b7"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "800776",
+    "sessionId": "59BC05580A5BB75AA9B4E0D3AF9AB4F1",
+    "encryptedId": "F5717CFBCBC88146",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "6076000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "test",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-07-28 19:16:27",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-07-28T15:19:37.556Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-28T15:19:37.556Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ad024b2a659098227a83c0"
+  },
+  "order": {
+    "$oid": "66ad024a2a659098227a83b6"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "802029",
+    "sessionId": "F771D47D3EC2F8A5E28D323C83756190",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-08-02T15:59:07.277Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-02T15:59:07.277Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ad03002a659098227a8407"
+  },
+  "order": {
+    "$oid": "66ad024a2a659098227a83b6"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "802029",
+    "sessionId": "F771D47D3EC2F8A5E28D323C83756190",
+    "encryptedId": "07146BB6255EFBDF",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "51000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Rozetkasida lazimdir",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-08-02 19:58:55",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-08-02T16:02:08.157Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-02T16:02:08.157Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b0c7e72a659098227b2eca"
+  },
+  "order": {
+    "$oid": "66b0c7e62a659098227b2ebe"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "802312",
+    "sessionId": "B3387E6BFE5DCD3E7D607EF74EDA3522",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-08-05T12:39:03.891Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-05T12:39:03.891Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b0c89c2a659098227b2f05"
+  },
+  "order": {
+    "$oid": "66b0c7e62a659098227b2ebe"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "802312",
+    "sessionId": "B3387E6BFE5DCD3E7D607EF74EDA3522",
+    "encryptedId": "284051848EBD95D6",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "93500",
+    "currency": "944",
+    "orderStatus": "CANCELED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "null",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-08-05 16:38:50",
+    "lastUpdateDate": "2024-08-05 16:39:06",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-08-05T12:42:04.617Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-05T12:42:04.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c0b3112a659098227e3081"
+  },
+  "order": {
+    "$oid": "66c0b3112a659098227e3077"
+  },
+  "operation": "CreateOrder",
+  "status": "00",
+  "bank": {
+    "orderId": "811100",
+    "sessionId": "CD277A60CAA4C186DC45C4A718B3A2C1",
+    "url": "https://tstpg.kapitalbank.az/index.jsp"
+  },
+  "createdAt": {
+    "$date": "2024-08-17T14:26:25.899Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T14:26:25.899Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c0b3c62a659098227e30d5"
+  },
+  "order": {
+    "$oid": "66c0b3112a659098227e3077"
+  },
+  "operation": "GetOrderInformation",
+  "status": "00",
+  "bank": {
+    "orderId": "811100",
+    "sessionId": "CD277A60CAA4C186DC45C4A718B3A2C1",
+    "encryptedId": "953A3A0835D2151A",
+    "merchantID": "E1000010",
+    "terminalID": "",
+    "amount": "51000",
+    "currency": "944",
+    "orderStatus": "CREATED",
+    "orderType": "Purchase",
+    "orderSubType": "",
+    "orderLanguage": "AZ",
+    "description": "Salam men masinima sarj alamak isteyirem",
+    "approveURL": "https://elcar.az/approve",
+    "cancelURL": "https://elcar.az/cancel",
+    "declineURL": "https://elcar.az/decline",
+    "receipt": "",
+    "twoId": "",
+    "extSystemProcess": "0",
+    "fee": "0",
+    "email": "",
+    "refundAmount": "0",
+    "refundCurrency": "",
+    "refundDate": "0000-00-00 00:00:00",
+    "createDate": "2024-08-17 18:26:07",
+    "lastUpdateDate": "",
+    "payDate": "",
+    "TWODate": "",
+    "TWOTime": ""
+  },
+  "createdAt": {
+    "$date": "2024-08-17T14:29:26.622Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T14:29:26.622Z"
+  }
+}]

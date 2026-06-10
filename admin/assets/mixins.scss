@@ -1,0 +1,19 @@
+@mixin box-shadow($value, $color){
+    -webkit-box-shadow: $value $color !important;
+    -moz-box-shadow: $value $color !important;
+    box-shadow: $value $color !important;
+}
+
+@mixin line-clamp($value) {
+    -webkit-line-clamp: $value;
+    -moz-line-clamp: $value;
+    -ms-line-clamp: $value;
+    -o-line-clamp: $value;
+}
+
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+}

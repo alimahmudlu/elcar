@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "63d19c1f81089a4b9393adf7"
+  },
+  "name": {
+    "az": "Elektrik Mühərrikli",
+    "en": "Electric Motor",
+    "ru": "Электромобили"
+  },
+  "section": "vehicles",
+  "slug": {
+    "az": "elektrik-muherrikli",
+    "en": "electric-motor",
+    "ru": "elektromobili"
+  }
+},
+{
+  "_id": {
+    "$oid": "63d470024b9dad6f20a7ecd6"
+  },
+  "name": {
+    "az": "Hibrid Mühərrikli",
+    "en": "Hybrid Engine",
+    "ru": "Гибридный двигатель"
+  },
+  "section": "vehicles",
+  "slug": {
+    "az": "hibrid-muherrikli",
+    "en": "hybrid-engine",
+    "ru": "gibridnyj-dvigatel"
+  }
+},
+{
+  "_id": {
+    "$oid": "63d470634b9dad6f20a7ece3"
+  },
+  "name": {
+    "az": "Plug-In Hibrid",
+    "en": "Plug-In-Hybrid",
+    "ru": "Подключаемый гибрид"
+  },
+  "section": "vehicles",
+  "slug": {
+    "az": "plug-in-hibrid",
+    "en": "plug-in-hybrid",
+    "ru": "podklyuchaemyj-gibrid"
+  }
+},
+{
+  "_id": {
+    "$oid": "63d470974b9dad6f20a7ecf0"
+  },
+  "name": {
+    "az": "Daxili yanma mühərrikli",
+    "en": "Internal combustion engine",
+    "ru": "Двигатель внутреннего сгорания"
+  },
+  "section": "vehicles",
+  "slug": {
+    "az": "daxili-yanma-muherrikli",
+    "en": "internal-combustion-engine",
+    "ru": "dvigatel-vnutrennego-sgoraniya"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e537b875aee2122f79648e"
+  },
+  "name": {
+    "az": "AC Stansiyalar",
+    "en": "AC Stations",
+    "ru": "Станции переменного тока"
+  },
+  "section": "charging-stations",
+  "slug": {
+    "az": "ac-stansiyalar",
+    "en": "ac-stations",
+    "ru": "stancii-peremennogo-toka"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e537e675aee2122f79649b"
+  },
+  "name": {
+    "az": "DC Stansiyalar",
+    "en": "DC Stations",
+    "ru": "Станции постоянного тока"
+  },
+  "section": "charging-stations",
+  "slug": {
+    "az": "dc-stansiyalar",
+    "en": "dc-stations",
+    "ru": "stancii-postoyannogo-toka"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e5380075aee2122f7964a8"
+  },
+  "name": {
+    "az": "Daşına Bilən Stansiyalar",
+    "en": "Portable Stations",
+    "ru": "Портативные станции"
+  },
+  "section": "charging-stations",
+  "slug": {
+    "az": "dasina-bilen-stansiyalar",
+    "en": "portable-stations",
+    "ru": "portativnye-stancii"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f64188267a280e84f011f2"
+  },
+  "section": "accessories",
+  "name": {
+    "az": "Bağlayıcılar",
+    "en": "Connectors",
+    "ru": "Соединители"
+  },
+  "slug": {
+    "az": "baglayicilar",
+    "en": "connectors",
+    "ru": "soediniteli"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f641b6267a280e84f01219"
+  },
+  "section": "accessories",
+  "name": {
+    "az": "Digərləri",
+    "en": "Others",
+    "ru": "Другое"
+  },
+  "slug": {
+    "az": "digerleri",
+    "en": "others",
+    "ru": "drugoe"
+  }
+}]

@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/admin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/api" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/site" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/site/elcar.az" vcs="Git" />
   </component>
 </project>
