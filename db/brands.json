@@ -1,0 +1,357 @@
+[{
+  "_id": {
+    "$oid": "63d198bedb5a4430ff332c34"
+  },
+  "logo": {
+    "$oid": "640af61ffe72794d1d330595"
+  },
+  "name": "Audi",
+  "sections": [
+    "vehicles",
+    "charging-stations"
+  ],
+  "slug": "audi",
+  "description": {
+    "az": "Avtomobillər və elektrik avtomobilləri istehsal edən Almaniya şirkətidir.\n\n",
+    "en": "İs a German automotive manufacturer\nof luxury vehicles and electric cars.\n",
+    "ru": "Немецкий производитель автомобилей и электромобилей.\n"
+  },
+  "top": false
+},
+{
+  "_id": {
+    "$oid": "63edbec63b01f4a8154e6066"
+  },
+  "name": "Volkswagen",
+  "slug": "volkswagen",
+  "logo": {
+    "$oid": "640af5e6fe72794d1d3304e9"
+  },
+  "sections": [
+    "vehicles",
+    "charging-stations",
+    "accessories"
+  ],
+  "description": {
+    "az": "VW kimi tanınan Almaniya mühərrik və elektrik avtomobil istehsalçısıdır.\n\n",
+    "en": "Abbreviated as VW is a German motor and electric vehicle manufacturer.\n",
+    "ru": "Известкая как VW — немецкий производитель автомобилей и электромобилей.\n"
+  },
+  "top": true
+},
+{
+  "_id": {
+    "$oid": "63edbf3d3b01f4a8154e611e"
+  },
+  "name": "Toyota",
+  "slug": "toyota",
+  "logo": {
+    "$oid": "640ef6e0dca0fc77c4393c80"
+  },
+  "sections": [
+    "vehicles",
+    "accessories"
+  ],
+  "description": {
+    "az": "Dünyanın ən böyük elektrik avtomobil istehsalçılarından biridir.\n\n",
+    "en": "İs one of the largest automobile manufacturers in the world.\n",
+    "ru": "Один из крупнейших производителей автомобилей в мире.\n"
+  },
+  "top": false
+},
+{
+  "_id": {
+    "$oid": "63edbf833b01f4a8154e61ac"
+  },
+  "name": "Honda",
+  "slug": "honda",
+  "logo": {
+    "$oid": "640ef8addca0fc77c4394084"
+  },
+  "sections": [
+    "vehicles",
+    "accessories"
+  ],
+  "description": {
+    "az": "Avtomobil, motosiklet və enerji avadanlıqları istehsalçısıdır.\n\n",
+    "en": "Company manufacturer of automobiles, motorcycles and energy equipment.\n",
+    "ru": "Производитель автомобилей, мотоциклов и энергетического оборудования.\n"
+  },
+  "top": false
+},
+{
+  "_id": {
+    "$oid": "63edc10f3b01f4a8154e63a8"
+  },
+  "name": "BYD",
+  "slug": "byd",
+  "logo": {
+    "$oid": "640af447fe72794d1d3302e5"
+  },
+  "sections": [
+    "vehicles",
+    "accessories"
+  ],
+  "description": {
+    "az": "Avtomobil istehsalı üzrə BYD Auto, akkumulyator istehsalı isə BYD Electronic Çin şirkətlədir.\n\n",
+    "en": "A Chinese company that includes car manufacturer BYD Auto and batteries BYD Electronic.\n",
+    "ru": "Китайская компания, включающий в себя производителя автомобилей BYD Auto и аккумуляторов BYD Electronic.\n"
+  },
+  "top": true
+},
+{
+  "_id": {
+    "$oid": "63edc2393b01f4a8154e649b"
+  },
+  "name": "Tesla",
+  "slug": "tesla",
+  "logo": {
+    "$oid": "640af3d8fe72794d1d330239"
+  },
+  "sections": [
+    "vehicles",
+    "charging-stations",
+    "accessories"
+  ],
+  "description": {
+    "az": "Elektrik avtomobillər,akkumulyator,\nenerjisinin saxlanması ilə bağlı məhsul istehsalçısıdır.\n\n",
+    "en": "Designs and manufactures electric vehicles, battery energy storage and related services. \n",
+    "ru": "Разрабатывает и производит электромобили, аккумуляторные батареи и сопутствующие услуги.\n"
+  },
+  "top": false
+},
+{
+  "_id": {
+    "$oid": "63edc2aa3b01f4a8154e6529"
+  },
+  "name": "Zeekr",
+  "slug": "zeekr",
+  "logo": {
+    "$oid": "640af27dfe72794d1d33018d"
+  },
+  "sections": [
+    "vehicles",
+    "accessories"
+  ],
+  "description": {
+    "az": "Geely Automobile Holdings-ə məxsus elektrik avtomobil markasıdır.\n\n",
+    "en": "Electric automobile brand owned by Geely Automobile Holdings, specializes in ev.\n",
+    "ru": "Принадлежащий Geely Automobile Holdings производитель электромобилей.\n"
+  },
+  "top": true
+},
+{
+  "_id": {
+    "$oid": "63edc2eb3b01f4a8154e65b7"
+  },
+  "name": "Polestar",
+  "slug": "polestar",
+  "logo": {
+    "$oid": "640a22949fe3cb2c613aa595"
+  },
+  "sections": [
+    "vehicles",
+    "accessories"
+  ],
+  "description": {
+    "az": "Volvo-nun elektrik avtomobil markası kimi tanınan istehsalçıdır.\n\n",
+    "en": "Volvo's electric-vehicle producing brand.\n",
+    "ru": "Подразделение Volvo производящая автомобили и электромобили.\n"
+  },
+  "top": true
+},
+{
+  "_id": {
+    "$oid": "63f249ff5504ced7c52c2ddb"
+  },
+  "name": "ELCAR",
+  "slug": "elcar",
+  "logo": {
+    "$oid": "6409fcb59fe3cb2c613a357e"
+  },
+  "sections": [
+    "charging-stations",
+    "accessories"
+  ],
+  "description": {
+    "az": "Elektrik avtomobilləri üçün şarj cihazları və enerjisi saxlama həlləri istehsalçısıdır.\n\n",
+    "en": "Manufacturer of electric vehicle chargers and energy storage solutions.\n",
+    "ru": "Производитель зарядных устройств для электромобилей и решений для хранения энергии. \n"
+  },
+  "top": false
+},
+{
+  "_id": {
+    "$oid": "63f5ab535504ced7c52cb5b4"
+  },
+  "name": "BMW",
+  "slug": "bmw",
+  "logo": {
+    "$oid": "640a22029fe3cb2c613aa4e9"
+  },
+  "sections": [
+    "vehicles",
+    "charging-stations",
+    "accessories"
+  ],
+  "description": {
+    "az": "Avtomobil, elektrik avtomobil və motosiklet istehsalçısıdır.\n\n\n",
+    "en": "Manufacturer of vehicles, electric cars and \nmotorcycles.\n",
+    "ru": "Производитель транспортных средств, электромобилей и мотоциклов.\n"
+  },
+  "top": false
+},
+{
+  "_id": {
+    "$oid": "63f5aca35504ced7c52cb69a"
+  },
+  "name": "Mercedes-Benz",
+  "slug": "mercedes-benz",
+  "logo": {
+    "$oid": "640a21079fe3cb2c613a9d42"
+  },
+  "sections": [
+    "charging-stations",
+    "accessories",
+    "vehicles"
+  ],
+  "description": {
+    "az": "Elektrik, minik və yük avtomobilləri, istehsal edən Almaniya şirkətidir.\n\n",
+    "en": "Manufacturer of cars,trucks,electric cars.\n",
+    "ru": "Производитель легковых и грузовых автомобилей, электрокаров.\n\n"
+  },
+  "top": false
+},
+{
+  "_id": {
+    "$oid": "63f5ad435504ced7c52cb747"
+  },
+  "name": "Li Auto",
+  "slug": "li-auto",
+  "logo": {
+    "$oid": "640a09429fe3cb2c613a407f"
+  },
+  "sections": [
+    "vehicles",
+    "accessories"
+  ],
+  "description": {
+    "az": "Həmçinin Li Xiang kimi tanınan, Çin elektrikli avtomobil istehsalçısıdır.\n\n",
+    "en": "Also known as Li Xiang, is a Chinese electric vehicle manufacturer.\n\n",
+    "ru": "Также известная как Li Xiang, является китайским производителем электромобилей.\n"
+  },
+  "top": true
+},
+{
+  "_id": {
+    "$oid": "63f5b06b5504ced7c52cbb56"
+  },
+  "name": "NIO",
+  "slug": "nio",
+  "logo": {
+    "$oid": "640a08e29fe3cb2c613a3f01"
+  },
+  "sections": [
+    "vehicles",
+    "charging-stations",
+    "accessories"
+  ],
+  "description": {
+    "az": "Elektrik avtomobillərinin dizaynı və inkişafı üzrə ixtisaslaşmış Çin avtomobil istehsalçısıdır.",
+    "en": "Chinese automotive manufacturer specializing in the design and development of electric vehicles.",
+    "ru": "Китайский автомобильный производитель,специализирующийся на проектировании и разработке электромобилей."
+  },
+  "top": true
+},
+{
+  "_id": {
+    "$oid": "6436b019ac8e07bd41a7e2ce"
+  },
+  "name": "Changan",
+  "slug": "changan",
+  "logo": {
+    "$oid": "6436868ded15289398c978b9"
+  },
+  "top": false,
+  "sections": [
+    "vehicles"
+  ],
+  "description": {
+    "az": "Elektrik avtomobillərinin dizaynı və inkişafı üzrə ixtisaslaşmış Çin avtomobil istehsalçısıdır.",
+    "en": "It is a Chinese car manufacturer specializing in the design and development of electric vehicles.",
+    "ru": "Это китайский производитель автомобилей, специализирующийся на проектировании и разработке электромобилей."
+  }
+},
+{
+  "_id": {
+    "$oid": "6438fd05ac8e07bd41a8f6f1"
+  },
+  "name": "Haval",
+  "slug": "haval",
+  "logo": {
+    "$oid": "6438f4f4ac8e07bd41a8ebae"
+  },
+  "top": false,
+  "sections": [
+    "vehicles"
+  ],
+  "description": {
+    "az": "Elektrik avtomobillərinin dizaynı və inkişafı üzrə ixtisaslaşmış Çin avtomobil istehsalçısıdır.",
+    "en": "It is a Chinese car manufacturer specializing in the design and development of electric vehicles.",
+    "ru": "Это китайский производитель автомобилей, специализирующийся на проектировании и разработке электромобилей."
+  }
+},
+{
+  "_id": {
+    "$oid": "64733feb041427b613562956"
+  },
+  "name": "BENY",
+  "slug": "beny",
+  "logo": {
+    "$oid": "64733f0e041427b6135628cb"
+  },
+  "top": false,
+  "sections": [
+    "charging-stations",
+    "accessories"
+  ],
+  "description": {
+    "az": "Beny, yaşayış və kommersiya yerləri kimi yerlərdə EV doldurma həlləri təklif edir ki, bu da EV sürücülərinə evlərindən, işlərindən və ya biznes müəssisələrindən şarj portlarına daxil olmaq imkanı verir.",
+    "en": "Beny offers EV charging solutions in locations such as residential and commercial locations, allowing EV drivers to access charging ports from their home, work or business establishment.",
+    "ru": "Beny предлагает решения для зарядки электромобилей в таких местах, как жилые и коммерческие, позволяя водителям электромобилей получать доступ к зарядным портам из дома, на работе или в коммерческом учреждении."
+  }
+},
+{
+  "_id": {
+    "$oid": "64e5a4e803d3c555cc6c5a06"
+  },
+  "name": "Skywell",
+  "slug": "skywell",
+  "logo": {
+    "$oid": "64e5a4d503d3c555cc6c59c1"
+  },
+  "top": false,
+  "sections": [
+    "vehicles"
+  ],
+  "description": {
+    "az": null,
+    "en": null,
+    "ru": null
+  }
+},
+{
+  "_id": {
+    "$oid": "65c9bf91c9b82d43b31c277c"
+  },
+  "name": "INJET",
+  "slug": "injet",
+  "logo": {
+    "$oid": "65c9bf87c9b82d43b31c2737"
+  },
+  "top": false,
+  "sections": [
+    "charging-stations",
+    "accessories"
+  ]
+}]

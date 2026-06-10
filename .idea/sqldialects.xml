@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/app_modules.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/bank_transactions.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/blogs.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/brands.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/categories.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/characteristic_groups.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/characteristic_options.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/characteristics.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/contacts.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/currencies.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/file_folders.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/messages.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/models.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/module_permissions.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/orders.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/packages.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/price_plans.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/prices.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/products.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/roles.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/teams.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/uploads.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/user_accesses.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/user_invitations.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/user_modules.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/users.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/workspace_types.json" dialect="MongoDB" />
+    <file url="file://$PROJECT_DIR$/../../../../../../../Elcar-DB/DB/workspaces.json" dialect="MongoDB" />
+  </component>
+</project>

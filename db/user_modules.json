@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "6438ccbc3832796aa37bb39e"
+  },
+  "createdAt": {
+    "$date": "2023-01-25T20:27:55.738Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "module": {
+    "$oid": "6438cc063832796aa37bb38f"
+  },
+  "pricePlan": {
+    "$oid": "629b883b428758f46d9a061b"
+  },
+  "updatedAt": {
+    "$date": "2023-01-25T20:27:55.738Z"
+  }
+}]

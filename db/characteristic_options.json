@@ -1,0 +1,595 @@
+[{
+  "_id": {
+    "$oid": "63d44b955976dd037bd59af8"
+  },
+  "characteristic": {
+    "$oid": "63d4461b5976dd037bd59549"
+  },
+  "name": {
+    "az": "Mexaniki",
+    "en": "Mechanical",
+    "ru": "Механический"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d44ebb4b9dad6f20a7da9a"
+  },
+  "characteristic": {
+    "$oid": "63d4461b5976dd037bd59549"
+  },
+  "name": {
+    "az": "Avtomat",
+    "en": "Automatic",
+    "ru": "Автоматический"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d44ef84b9dad6f20a7db13"
+  },
+  "characteristic": {
+    "$oid": "63d4461b5976dd037bd59549"
+  },
+  "name": {
+    "az": "Robotlaşdırılmış",
+    "en": "Robotized",
+    "ru": "Роботизированный"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d44f054b9dad6f20a7db20"
+  },
+  "characteristic": {
+    "$oid": "63d4461b5976dd037bd59549"
+  },
+  "name": {
+    "az": "Variator",
+    "en": "Variator",
+    "ru": "Вариатор"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d4511e4b9dad6f20a7dc12"
+  },
+  "characteristic": {
+    "$oid": "63d450fd4b9dad6f20a7dc05"
+  },
+  "name": {
+    "az": "Arxa",
+    "en": "Back",
+    "ru": "Назад"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d451444b9dad6f20a7dc8b"
+  },
+  "characteristic": {
+    "$oid": "63d450fd4b9dad6f20a7dc05"
+  },
+  "name": {
+    "az": "Ön",
+    "en": "Front",
+    "ru": "Фронт"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d451504b9dad6f20a7dc98"
+  },
+  "characteristic": {
+    "$oid": "63d450fd4b9dad6f20a7dc05"
+  },
+  "name": {
+    "az": "Tam",
+    "en": "AWD",
+    "ru": "Полный"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45c214b9dad6f20a7de62"
+  },
+  "characteristic": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "name": {
+    "az": "Benzin",
+    "en": "Gasoline",
+    "ru": "Бензин"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45c3c4b9dad6f20a7dedb"
+  },
+  "characteristic": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "name": {
+    "az": "Dizel",
+    "en": "Diesel",
+    "ru": "Дизель"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45c464b9dad6f20a7dee8"
+  },
+  "characteristic": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "name": {
+    "az": "Qaz",
+    "en": "Gas",
+    "ru": "Газ"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45c544b9dad6f20a7def5"
+  },
+  "characteristic": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "name": {
+    "az": "Electro",
+    "en": "Electro",
+    "ru": "Электро"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45c5e4b9dad6f20a7df02"
+  },
+  "characteristic": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "name": {
+    "az": "Hibrid",
+    "en": "Hybrid",
+    "ru": "Гибридный"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45c694b9dad6f20a7df0f"
+  },
+  "characteristic": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "name": {
+    "az": "Plug-in Hibrid",
+    "en": "Plug-in Hybrid",
+    "ru": "Подключаемый гибрид"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63d45c794b9dad6f20a7df1c"
+  },
+  "characteristic": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "name": {
+    "az": "Hidrogen",
+    "en": "Hydrogen",
+    "ru": "Водород"
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "section": "vehicles"
+},
+{
+  "_id": {
+    "$oid": "63f3ad045504ced7c52c88af"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f242fe4b72673b4c3f7bea"
+  },
+  "name": {
+    "az": "Type 1",
+    "en": "Type 1",
+    "ru": "Type 1"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f3ad295504ced7c52c88d9"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f242fe4b72673b4c3f7bea"
+  },
+  "name": {
+    "az": "Type 2",
+    "en": "Type 2",
+    "ru": "Type 2"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f3ad535504ced7c52c8903"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f242fe4b72673b4c3f7bea"
+  },
+  "name": {
+    "az": "GBT/AC",
+    "en": "GBT/AC",
+    "ru": "GBT/AC"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f3ad7c5504ced7c52c892d"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f242fe4b72673b4c3f7bea"
+  },
+  "name": {
+    "az": "CCS 1",
+    "en": "CCS 1",
+    "ru": "CCS 1"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f3ae0f5504ced7c52c8957"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f242fe4b72673b4c3f7bea"
+  },
+  "name": {
+    "az": "CCS 2",
+    "en": "CCS 2",
+    "ru": "CCS 2"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f3ae2f5504ced7c52c8981"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f242fe4b72673b4c3f7bea"
+  },
+  "name": {
+    "az": "GBT/DC",
+    "en": "GBT/DC",
+    "ru": "GBT/DC"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f3afc75504ced7c52c8b37"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f23fab05ad36981cde8fae"
+  },
+  "name": {
+    "az": "1 Faza",
+    "en": "1 Phase",
+    "ru": "1 фаза"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f3b0065504ced7c52c8b61"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "characteristic": {
+    "$oid": "63f23fab05ad36981cde8fae"
+  },
+  "name": {
+    "az": "3 Faza",
+    "en": "3 Phase",
+    "ru": "3 фазный"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f459f95504ced7c52c99f7"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "characteristic": {
+    "$oid": "63f30dc05504ced7c52c76d4"
+  },
+  "name": {
+    "az": "Ethernet (RJ-45)",
+    "en": "Ethernet (RJ-45)",
+    "ru": "Ethernet (RJ-45)"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f45a2d5504ced7c52c9a21"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "characteristic": {
+    "$oid": "63f30dc05504ced7c52c76d4"
+  },
+  "name": {
+    "az": "Wi-Fi (2.4 GHz)",
+    "en": "Wi-Fi (2.4 GHz)",
+    "ru": "Wi-Fi (2.4 GHz)"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f45a5f5504ced7c52c9a4b"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "characteristic": {
+    "$oid": "63f30d3e5504ced7c52c7659"
+  },
+  "name": {
+    "az": "Plag & Play",
+    "en": "Plag & Play",
+    "ru": "Plag & Play"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f45a835504ced7c52c9a75"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "characteristic": {
+    "$oid": "63f30d3e5504ced7c52c7659"
+  },
+  "name": {
+    "az": "RFID Card",
+    "en": "RFID Card",
+    "ru": "RFID Card"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f45a9a5504ced7c52c9a9f"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "characteristic": {
+    "$oid": "63f30d3e5504ced7c52c7659"
+  },
+  "name": {
+    "az": "APP",
+    "en": "APP",
+    "ru": "APP"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f5f5dd5504ced7c52d0b0b"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "characteristic": {
+    "$oid": "63d4620f4b9dad6f20a7e1aa"
+  },
+  "name": {
+    "az": "Çoxfunksiyalı sükan",
+    "en": "Multifunction steering wheel",
+    "ru": "Многофункциональное рулевое колесо"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f5f6895504ced7c52d0c40"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "characteristic": {
+    "$oid": "63d461fd4b9dad6f20a7e19d"
+  },
+  "name": {
+    "az": "Əyləc enerjisinin bərpası sistemləri",
+    "en": "Braking energy recovery systems",
+    "ru": "Системы рекуперации энергии торможения"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f5f6d45504ced7c52d0c68"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "characteristic": {
+    "$oid": "63d461fd4b9dad6f20a7e19d"
+  },
+  "name": {
+    "az": "EBA/BAS/BA",
+    "en": "EBA/BAS/BA",
+    "ru": "EBA/BAS/BA"
+  }
+},
+{
+  "_id": {
+    "$oid": "640dac88fe72794d1d341b76"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "characteristic": {
+    "$oid": "63f30dc05504ced7c52c76d4"
+  },
+  "name": {
+    "az": "Bluetooth",
+    "en": "Bluetooth",
+    "ru": "Bluetooth"
+  }
+},
+{
+  "_id": {
+    "$oid": "64100f95be394baf257bee63"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "characteristic": {
+    "$oid": "64100f61be394baf257bee12"
+  },
+  "name": {
+    "az": "Plastik",
+    "en": "Plastic",
+    "ru": "Пластик"
+  }
+},
+{
+  "_id": {
+    "$oid": "64100ff0be394baf257bee8c"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "characteristic": {
+    "$oid": "64100f61be394baf257bee12"
+  },
+  "name": {
+    "az": "Paslanmaz Polad",
+    "en": "Stainless Steel",
+    "ru": "Нержавеющая Сталь"
+  }
+},
+{
+  "_id": {
+    "$oid": "641080bdf0806609e4b3f1fc"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "characteristic": {
+    "$oid": "64100f61be394baf257bee12"
+  },
+  "name": {
+    "az": "Bərkidilmiş şüşə",
+    "en": "Tempered glass",
+    "ru": "Закалённое стекло"
+  }
+},
+{
+  "_id": {
+    "$oid": "64108152f0806609e4b3f225"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "characteristic": {
+    "$oid": "64100f61be394baf257bee12"
+  },
+  "name": {
+    "az": "Metal lövhə",
+    "en": "Metal plate",
+    "ru": "Металлическая пластина"
+  }
+}]

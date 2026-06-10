@@ -1,0 +1,147 @@
+[{
+  "_id": {
+    "$oid": "63d190cbca5d9899369fd1dd"
+  },
+  "accessList": [
+    {
+      "$oid": "63d190cbca5d9899369fd1e8"
+    }
+  ],
+  "avatar": {
+    "$oid": "63e665883d7b294065145661"
+  },
+  "createdAt": {
+    "$date": "2023-01-25T20:27:55.635Z"
+  },
+  "currentAccess": {
+    "$oid": "63d190cbca5d9899369fd1e8"
+  },
+  "defaultAccess": {
+    "$oid": "63d190cbca5d9899369fd1e8"
+  },
+  "email": "root@elcar.az",
+  "name": "Kamal",
+  "password": "$2a$10$xGInMowVapQZokLDtO1rsevhU8TniTkdxhu5npdXdi20BLGdwzxAK",
+  "surname": "Balayev",
+  "updatedAt": {
+    "$date": "2023-02-15T12:47:18.386Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "email": "owner@elcar.az",
+  "password": "$2a$10$GwQewZhDw2yw2tLetfYdreq8MX0eM7pGzoRMBRuSlcJjsQFMRFZLG",
+  "name": "Fakhri",
+  "surname": "Akhundov",
+  "avatar": {
+    "$oid": "63e665883d7b294065145661"
+  },
+  "accessList": [
+    {
+      "$oid": "63ecd5c43b01f4a8154e2413"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-02-15T12:53:24.654Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T13:57:54.258Z"
+  },
+  "currentAccess": {
+    "$oid": "63ecd5c43b01f4a8154e2413"
+  },
+  "defaultAccess": {
+    "$oid": "63ecd5c43b01f4a8154e2413"
+  },
+  "photo": {
+    "$oid": "64511558b9281cb815718d7c"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f24ee95504ced7c52c4952"
+  },
+  "email": "elchin.allahverdiyev@gmail.com",
+  "password": "$2a$10$cyoRFZeL2UaL/IxWAk6BU.YS/G5HNmQOJ7VSB3268COAghvxIobvm",
+  "name": "Elchin",
+  "surname": "Allahverdiyev",
+  "avatar": null,
+  "accessList": [
+    {
+      "$oid": "63f24ee95504ced7c52c495a"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-02-19T16:31:37.607Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T13:19:30.982Z"
+  },
+  "currentAccess": {
+    "$oid": "63f24ee95504ced7c52c495a"
+  },
+  "defaultAccess": {
+    "$oid": "63f24ee95504ced7c52c495a"
+  },
+  "photo": null
+},
+{
+  "_id": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "email": "nazimabbasov422@gmail.com",
+  "password": "$2a$10$kY/ngjKqf/jI2ChP7RNRuOP7nDR/HU.TFHAHgMDKODwQK88oFRsGy",
+  "name": "Nazim",
+  "surname": "Abbasov",
+  "avatar": {
+    "$oid": "6409fcb59fe3cb2c613a357e"
+  },
+  "accessList": [
+    {
+      "$oid": "640a07eb9fe3cb2c613a3a4a"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-03-09T16:23:07.019Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T12:40:27.279Z"
+  },
+  "currentAccess": {
+    "$oid": "640a07eb9fe3cb2c613a3a4a"
+  },
+  "defaultAccess": {
+    "$oid": "640a07eb9fe3cb2c613a3a4a"
+  },
+  "photo": null
+},
+{
+  "_id": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "name": "Chingiz",
+  "surname": "Melikov",
+  "email": "melikovcina@gmail.com",
+  "password": "$2a$10$X.1mYCqB5ECH3HnVKz2HwuUcIQWgHnLUOm.nd3Y1oSSMQz3IY.6dW",
+  "photo": null,
+  "teams": [],
+  "accessList": [
+    {
+      "$oid": "644f4922e285e3cd3453a01b"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-05-01T05:07:46.029Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T21:35:29.536Z"
+  },
+  "currentAccess": {
+    "$oid": "644f4922e285e3cd3453a01b"
+  },
+  "defaultAccess": {
+    "$oid": "644f4922e285e3cd3453a01b"
+  }
+}]

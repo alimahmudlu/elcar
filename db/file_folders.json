@@ -1,0 +1,1294 @@
+[{
+  "_id": {
+    "$oid": "63d548a2646f342edf4a4f08"
+  },
+  "createdAt": {
+    "$date": "2023-01-28T16:09:06.236Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "folder": null,
+  "name": "Products",
+  "updatedAt": {
+    "$date": "2023-01-28T16:10:23.690Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "createdAt": {
+    "$date": "2023-01-28T16:09:25.137Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "folder": {
+    "$oid": "63d548a2646f342edf4a4f08"
+  },
+  "name": "Vehicles",
+  "updatedAt": {
+    "$date": "2023-01-28T16:12:05.776Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63d54958646f342edf4a5076"
+  },
+  "createdAt": {
+    "$date": "2023-01-28T16:12:08.690Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "folder": {
+    "$oid": "63d548a2646f342edf4a4f08"
+  },
+  "name": "Charging Stations",
+  "updatedAt": {
+    "$date": "2023-01-28T16:12:08.690Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63d5495f646f342edf4a5092"
+  },
+  "createdAt": {
+    "$date": "2023-01-28T16:12:15.245Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "folder": {
+    "$oid": "63d548a2646f342edf4a4f08"
+  },
+  "name": "Accessories",
+  "updatedAt": {
+    "$date": "2023-01-28T16:12:15.245Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63d549b9646f342edf4a5216"
+  },
+  "createdAt": {
+    "$date": "2023-01-28T16:13:45.597Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "folder": {
+    "$oid": "63d548a2646f342edf4a4f08"
+  },
+  "name": "Brands",
+  "updatedAt": {
+    "$date": "2023-01-28T16:13:45.597Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63dda98a8de764dae2b541bf"
+  },
+  "createdAt": {
+    "$date": "2023-02-04T00:40:42.002Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "folder": null,
+  "name": "Blog",
+  "updatedAt": {
+    "$date": "2023-02-04T18:20:11.994Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "name": "AC Charging Stations",
+  "folder": {
+    "$oid": "63d54958646f342edf4a5076"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-02-15T14:51:41.346Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-15T14:51:41.346Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f5e7305504ced7c52cfc83"
+  },
+  "name": "Audi",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-02-22T09:58:08.917Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-22T09:58:08.917Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640a08329fe3cb2c613a3cd6"
+  },
+  "name": "Car Logo",
+  "folder": {
+    "$oid": "63d549b9646f342edf4a5216"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-09T16:24:18.880Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-09T16:24:18.880Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640a0b7f9fe3cb2c613a4a3f"
+  },
+  "name": "Volkswagen",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-09T16:38:23.900Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-09T16:38:23.900Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640a0ba29fe3cb2c613a4a9f"
+  },
+  "name": "Volkswagen ID.4",
+  "folder": {
+    "$oid": "640a0b7f9fe3cb2c613a4a3f"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-09T16:38:58.967Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-09T16:38:58.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640a17e09fe3cb2c613a7747"
+  },
+  "name": "HM10",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-09T17:31:12.457Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-09T17:31:12.457Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640c24a1fe72794d1d3333d3"
+  },
+  "name": "Zeekr",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-11T06:50:09.882Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T06:50:09.882Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640c24a8fe72794d1d333433"
+  },
+  "name": "001",
+  "folder": {
+    "$oid": "640c24a1fe72794d1d3333d3"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-11T06:50:16.418Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T06:50:16.418Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640c313bfe72794d1d336077"
+  },
+  "name": "Volkswagen ID.6",
+  "folder": {
+    "$oid": "640a0b7f9fe3cb2c613a4a3f"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-11T07:43:55.848Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T07:43:55.848Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "640dbab4fe72794d1d349723"
+  },
+  "name": "Connectors",
+  "folder": {
+    "$oid": "63d5495f646f342edf4a5092"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-12T11:42:44.156Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-12T11:42:44.156Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64101aecbe394baf257c1d98"
+  },
+  "name": "HN10",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-14T06:57:48.216Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-14T06:57:48.216Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64104b80be394baf257ca1cc"
+  },
+  "name": "Rav 4",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-14T10:25:04.393Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-14T10:25:04.393Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6410799bf0806609e4b3c00a"
+  },
+  "name": "M3W",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-14T13:41:47.324Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-14T13:41:47.324Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64108c80f0806609e4b481e9"
+  },
+  "name": "HP20",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-14T15:02:24.633Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-14T15:02:24.633Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6411bbfbf0806609e4b5195a"
+  },
+  "name": "M4F DC",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-03-15T12:37:15.515Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-15T12:37:15.515Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6411bf9ff0806609e4b52425"
+  },
+  "name": "DC Charging Stations",
+  "folder": {
+    "$oid": "63d54958646f342edf4a5076"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640da30cfe72794d1d33d7dd"
+  },
+  "createdAt": {
+    "$date": "2023-03-15T12:52:47.509Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-15T12:52:47.509Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64159cc358bdf2b947bd1fca"
+  },
+  "name": "connector",
+  "folder": {
+    "$oid": "640dbab4fe72794d1d349723"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640da30cfe72794d1d33d7dd"
+  },
+  "createdAt": {
+    "$date": "2023-03-18T11:13:07.843Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-18T11:13:07.843Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6415d7a958bdf2b947bd6276"
+  },
+  "name": "BMW",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640da30cfe72794d1d33d7dd"
+  },
+  "createdAt": {
+    "$date": "2023-03-18T15:24:25.944Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-18T15:24:25.944Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6415f06558bdf2b947bd7c3f"
+  },
+  "name": "i4 - 2022",
+  "folder": {
+    "$oid": "6415d7a958bdf2b947bd6276"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-03-18T17:09:57.641Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-18T17:09:57.641Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64340d6bed15289398c948c7"
+  },
+  "name": "BYD",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63f24ee95504ced7c52c4952"
+  },
+  "createdAt": {
+    "$date": "2023-04-10T13:21:47.862Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-10T13:21:47.862Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64340d78ed15289398c9491d"
+  },
+  "name": "TANG DM-p",
+  "folder": {
+    "$oid": "64340d6bed15289398c948c7"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "63f24ee95504ced7c52c4952"
+  },
+  "createdAt": {
+    "$date": "2023-04-10T13:22:00.189Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-10T13:22:00.189Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6436ab65ac8e07bd41a7d55e"
+  },
+  "name": "HAN",
+  "folder": {
+    "$oid": "64340d6bed15289398c948c7"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640da30cfe72794d1d33d7dd"
+  },
+  "createdAt": {
+    "$date": "2023-04-12T13:00:21.089Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T13:00:21.089Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6436b159ac8e07bd41a7e8f0"
+  },
+  "name": "Changan ",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-04-12T13:25:45.992Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-13T13:29:54.163Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6438033bac8e07bd41a89a10"
+  },
+  "name": "Uni-K",
+  "folder": {
+    "$oid": "6436b159ac8e07bd41a7e8f0"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-04-13T13:27:23.532Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-13T13:27:23.532Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "643803e4ac8e07bd41a89d07"
+  },
+  "name": "Uni-T",
+  "folder": {
+    "$oid": "6436b159ac8e07bd41a7e8f0"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-04-13T13:30:12.138Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-13T13:30:12.138Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6438044eac8e07bd41a89ed1"
+  },
+  "name": "Uni-V",
+  "folder": {
+    "$oid": "6436b159ac8e07bd41a7e8f0"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-04-13T13:31:58.769Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-13T13:31:58.769Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64382b71ac8e07bd41a8c3c1"
+  },
+  "name": "Song Plus DM-i",
+  "folder": {
+    "$oid": "64340d6bed15289398c948c7"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640da30cfe72794d1d33d7dd"
+  },
+  "createdAt": {
+    "$date": "2023-04-13T16:18:57.298Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-13T16:18:57.298Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6438fa8aac8e07bd41a8ecf8"
+  },
+  "name": "Haval",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-04-14T07:02:34.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-14T07:02:34.302Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6438fa9eac8e07bd41a8ed4e"
+  },
+  "name": "H6",
+  "folder": {
+    "$oid": "6438fa8aac8e07bd41a8ecf8"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-04-14T07:02:54.542Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-14T07:02:54.542Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "643ba29aac8e07bd41a9369c"
+  },
+  "name": "Zeekr-X",
+  "folder": {
+    "$oid": "640c24a1fe72794d1d3333d3"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-04-16T07:24:10.599Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-16T07:24:10.599Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6447b988e285e3cd3452a0c8"
+  },
+  "name": "EVA07B",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-04-25T11:29:12.120Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-25T11:29:12.120Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64511477b9281cb815718cac"
+  },
+  "name": "Owner photo",
+  "folder": null,
+  "modules": [
+    {
+      "$oid": "642de7c2c7f87588fa73dea7"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "createdAt": {
+    "$date": "2023-05-02T13:47:35.090Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T13:47:35.090Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64708e7f041427b61355a09c"
+  },
+  "name": "Benny",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T10:48:31.127Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T10:48:31.127Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64733efb041427b61356282a"
+  },
+  "name": "Beny",
+  "folder": {
+    "$oid": "63d549b9646f342edf4a5216"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-05-28T11:46:03.943Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T11:46:03.943Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64737146041427b613563ed3"
+  },
+  "name": "EVCOME",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-05-28T15:20:38.394Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T15:20:38.394Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64737e6d041427b613564808"
+  },
+  "name": "EVcome 7 kw",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-05-28T16:16:45.584Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T16:16:45.584Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64738008041427b6135652b1"
+  },
+  "name": "EVSE Box",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-05-28T16:23:36.003Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T16:23:36.003Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64e5a70103d3c555cc6c6108"
+  },
+  "name": "skywell",
+  "folder": {
+    "$oid": "63d548b5646f342edf4a4f24"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-08-23T06:28:17.924Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-23T06:28:17.924Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64e5a71603d3c555cc6c6192"
+  },
+  "name": "ET 5",
+  "folder": {
+    "$oid": "64e5a70103d3c555cc6c6108"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "640a07eb9fe3cb2c613a3a42"
+  },
+  "createdAt": {
+    "$date": "2023-08-23T06:28:38.100Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-23T06:28:38.100Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64ef38c703d3c555cc6d91a4"
+  },
+  "name": "ALPHA Wallbox",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-08-30T12:40:39.127Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-30T12:40:39.127Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64ef597f03d3c555cc6da0ce"
+  },
+  "name": "CAAT007K1",
+  "folder": {
+    "$oid": "63ecf17d3b01f4a8154e3012"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-08-30T15:00:15.437Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-30T15:00:15.437Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64f0951e03d3c555cc6dcd71"
+  },
+  "name": "SC Charger",
+  "folder": {
+    "$oid": "6411bf9ff0806609e4b52425"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-08-31T13:26:54.071Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T13:15:27.408Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64f1e3f803d3c555cc6e403f"
+  },
+  "name": "XC CHARGER",
+  "folder": {
+    "$oid": "6411bf9ff0806609e4b52425"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "644f4922e285e3cd3453a013"
+  },
+  "createdAt": {
+    "$date": "2023-09-01T13:15:36.780Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T13:15:36.780Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b39aadc9b82d43b317d3cc"
+  },
+  "name": "Tesla",
+  "folder": {
+    "$oid": "640dbab4fe72794d1d349723"
+  },
+  "modules": [
+    {
+      "$oid": "6438cc063832796aa37bb38f"
+    }
+  ],
+  "workspace": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdBy": {
+    "$oid": "63f24ee95504ced7c52c4952"
+  },
+  "createdAt": {
+    "$date": "2024-01-26T11:42:37.783Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-26T11:42:37.783Z"
+  }
+}]

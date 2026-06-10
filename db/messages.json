@@ -1,0 +1,544 @@
+[{
+  "_id": {
+    "$oid": "6479ef85041427b613574c77"
+  },
+  "fullName": "Ruslan",
+  "email": "ruslan@stelltechnology.com",
+  "phone": "0552756580",
+  "message": "Salam, biz tuncmatik şirkətinin Azərbaycanda distribyutoruyuq, hazırda anbarımızda bu şarj stansiyaları mövcuddur, maraqlı olsa mənimlə əlaqə saxlaya bilərsiz.\nhttps://tuncmatik.com/urun/genel-bakis/my-charger-7-22-kw.html ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-06-02T13:32:53.388Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-14T10:42:29.928Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6479ef90041427b613574c79"
+  },
+  "fullName": "Ruslan",
+  "email": "ruslan@stelltechnology.com",
+  "phone": "0552756580",
+  "message": "Salam, biz tuncmatik şirkətinin Azərbaycanda distribyutoruyuq, hazırda anbarımızda bu şarj stansiyaları mövcuddur, maraqlı olsa mənimlə əlaqə saxlaya bilərsiz.\nhttps://tuncmatik.com/urun/genel-bakis/my-charger-7-22-kw.html ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-06-02T13:33:04.876Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T06:14:44.217Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "648ed60203d3c555cc662238"
+  },
+  "fullName": "zaur",
+  "email": "hashimov.zaur@inbox.ru",
+  "phone": "0502154767",
+  "message": "salam.xaish edirem menimle elane saxlayasiz",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-06-18T10:01:38.768Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-14T10:42:47.845Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64d1a76103d3c555cc6a9bdf"
+  },
+  "fullName": "Ceci Chen",
+  "email": "ceci.chen@en-plus.com.cn",
+  "phone": "008618588224363",
+  "message": "Dear Sir/Madam, I'm Ceci from EN+, EV charger and solution provider. \n\nWe are looking for opportunity to provide EV charging station in Azbaijan. \n\nWe have 8 years experience in EV charger,  and shipped 220K chargers in 2022. Our partners include Toyota, Sungrow, Eaton etc.\n\nCould you please advise how can we support the sustainable industry in Azbaijan? Thank you.",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-08-08T02:24:33.015Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T06:14:31.070Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64d1a7be03d3c555cc6a9be1"
+  },
+  "fullName": "Ceci Chen",
+  "email": "ceci.chen@en-plus.com.cn",
+  "phone": "008618588224363",
+  "message": "Dear Sir/Madam, I'm Ceci from EN+, EV charger and solution provider. \n\nWe are looking for opportunity to provide EV charging station in Azbaijan. \n\nWe have 8 years experience in EV charger,  and shipped 220K chargers in 2022. Our partners include Toyota, Sungrow, Eaton etc.\n\nCould you please advise how can we support the sustainable industry in Azbaijan? Thank you.",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-08-08T02:26:06.710Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T06:14:25.315Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65119f741b9a541511de4de4"
+  },
+  "fullName": "ilqar",
+  "email": "ilqar_sov@mail.ru",
+  "phone": "0504153514",
+  "message": "Я хочу купить авто Фольсваген ID6.Я хочу узнат как мне купит. у вас авто.в/у у вас",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-09-25T14:55:48.579Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T06:14:15.100Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655dda67c9b82d43b309f51c"
+  },
+  "fullName": "Peter cairns",
+  "email": "peter@chi-lec.com",
+  "phone": "07415223156",
+  "message": "I’ve been asked to install your HP20132 charger for a client but they don’t have WiFi on the property. Will this product still function without the connectivity and would I be able to do the initial setup using 4G signal?",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-11-22T10:39:35.260Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-24T08:51:06.395Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65782626c9b82d43b30e34ba"
+  },
+  "fullName": "chris",
+  "email": "chris_xu@sinexcel.com",
+  "phone": "+86 15734084405",
+  "message": "Hello, I would like to ask what standard for AC charging connector, such  as CCS1 and Type 1 or China's GB/T,  is used for electric vehicles in Azerbaijan and what kind of socket does your EVs use?",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-12-12T09:21:42.605Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T05:35:58.236Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65882f0ac9b82d43b3107623"
+  },
+  "fullName": "Imamverdi Behbudlu",
+  "email": "behbudlu.imamverdi@gmail.com",
+  "phone": "+994516990962",
+  "message": "Biz maşın almaq istəyirik. Lütfən əlaqə saxlayın.",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-12-24T13:15:54.081Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T05:35:50.716Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65882f0bc9b82d43b3107625"
+  },
+  "fullName": "Imamverdi Behbudlu",
+  "email": "behbudlu.imamverdi@gmail.com",
+  "phone": "+994516990962",
+  "message": "Biz maşın almaq istəyirik. Lütfən əlaqə saxlayın.",
+  "seen": true,
+  "createdAt": {
+    "$date": "2023-12-24T13:15:55.668Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T05:35:40.624Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b31964c9b82d43b317a919"
+  },
+  "fullName": "Andrew Meng",
+  "email": "contact@hardhitter.cn",
+  "phone": "86-18754217251",
+  "message": "Dear Friend,\n\nNoticed you are in the market for electric vehicle charging station. We can supply you the cutting edge EV charging station and intelligent charging solution on content-based charging of mobile communication network. \nWe are Qingdao Hardhitter Electric Co., Ltd. We are professional DC and AC charging station manufacturer in China. Do you want our catalog? Or we can have a on-line meeting, we can show the truly our to you?\nOur 60kW and 120kW integrated DC EV charging station are hot sale in the market. But we can base your requirement details to OEM the best charging station to you. And we can design your charging cloud solution to help you enlarge your market. \nIf you have any other questions, pls contact me. We will happy to supply you the best service.\n\nBest regards\nAndrew\n\nTelephone:86-18754217251\nWhatsApp:+86-18754217251\nEmail: contact@hardhitter.cn\nwww.hardhitter.cn ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-01-26T02:31:00.119Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T05:35:35.242Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b31a02c9b82d43b317a91b"
+  },
+  "fullName": "Andrew Meng",
+  "email": "contact@hardhitter.cn",
+  "phone": "86-18754217251",
+  "message": "Dear Friend,\n\nNoticed you are in the market for electric vehicle charging station. We can supply you the cutting edge EV charging station and intelligent charging solution on content-based charging of mobile communication network. \nWe are Qingdao Hardhitter Electric Co., Ltd. We are professional DC and AC charging station manufacturer in China. Do you want our catalog? Or we can have a on-line meeting, we can show the truly our to you?\nOur 60kW and 120kW integrated DC EV charging station are hot sale in the market. But we can base your requirement details to OEM the best charging station to you. And we can design your charging cloud solution to help you enlarge your market. \nIf you have any other questions, pls contact me. We will happy to supply you the best service.\n\nBest regards\nAndrew\n\nTelephone:86-18754217251\nWhatsApp:+86-18754217251\nEmail: contact@hardhitter.cn\nwww.hardhitter.cn ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-01-26T02:33:38.924Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T05:35:26.237Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65c4e3b9c9b82d43b31b1911"
+  },
+  "fullName": "Ramil",
+  "email": "feyzullayev9@yahoo.com",
+  "phone": "+994514557778",
+  "message": "Salam,\n\nElektrik doldurma menteqesi (zapravka) acmaq isteyirik. Bunun ucun ilk once 5 sharj cihazi almaq isteyirik. Bunun ucun Dovletden hansi icazeler (hansi qurumlardan), senedler lazimdir? Texniki destek nece olacaq? Cihazi (sharj cihazini) qurashdirmaq lazimdir, yoxsa nece?\nYer Bakidadir (ozumuze aiddir), podstansiya var. \n\nHormetle, Ramil",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-02-08T14:22:49.026Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T05:35:22.076Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65c4e3e7c9b82d43b31b1913"
+  },
+  "fullName": "Ramil",
+  "email": "feyzullayev9@yahoo.com",
+  "phone": "+994514557778",
+  "message": "Salam,\n\nElektrik doldurma menteqesi (zapravka) acmaq isteyirik. Bunun ucun ilk once 5 sharj cihazi almaq isteyirik. Bunun ucun Dovletden hansi icazeler (hansi qurumlardan), senedler lazimdir? Texniki destek nece olacaq? Cihazi (sharj cihazini) qurashdirmaq lazimdir, yoxsa nece?\nYer Bakidadir (ozumuze aiddir), podstansiya var. \n\nHormetle, Ramil",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-02-08T14:23:35.199Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T05:34:35.497Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e03c33c9b82d43b320b151"
+  },
+  "fullName": "Tracy ",
+  "email": "info@stonspring.com",
+  "phone": "994 359072680",
+  "message": "Hello, do you provide ev charging management system platform?\nThank you",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-02-29T08:11:31.828Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-06T06:53:34.471Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e03c36c9b82d43b320b153"
+  },
+  "fullName": "Tracy ",
+  "email": "info@stonspring.com",
+  "phone": "994 359072680",
+  "message": "Hello, do you provide ev charging management system platform?\nThank you",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-02-29T08:11:34.817Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-06T06:53:23.052Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e03cecc9b82d43b320b1f9"
+  },
+  "fullName": "Tracy ",
+  "email": "info@stonspring.com",
+  "phone": "994 359072680",
+  "message": "Hello, do you provide ev charging management system platform?\nThank you",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-02-29T08:14:36.905Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-06T06:28:14.337Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65eee010c9b82d43b3233c00"
+  },
+  "fullName": "Said Mammadov",
+  "email": "s.mammadov@butasupply.az",
+  "phone": "+994102302945",
+  "message": "Dear Sir/Madam,\n\nPlease  advise email address where I can send the request. \n\nThere is request for car electric charge. \n\nBest Regards, \n\nSaid Mammadov ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-03-11T10:42:24.671Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-14T15:10:00.899Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6628feaf2a65909822666cf8"
+  },
+  "fullName": "Ceferob Bextiyar",
+  "email": "Bextiyarceferov97@gmail.com",
+  "phone": "0702001019",
+  "message": "salam mende e carc aparatlari var pakofpa halinda acilmayib sadece ucuz qiymete satmaq isteyirem cox ucuz qiytymete ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-04-24T12:44:31.031Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T15:08:18.313Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66376a8f2a65909822689890"
+  },
+  "fullName": "Pieter van Oord",
+  "email": "royalvanoordl@gmail.com",
+  "phone": "982200121",
+  "message": "Hello\n\n\nI'm the  CEO: Pieter van Oord owner of Royal Van Oord is a Dutch maritime contracting company that specializes in dredging, land reclamation and constructing man made islands. Royal Van Oord has undertaken many projects throughout the world, including land reclamation, dredging and beach nourishment, we are in a collaboration with an American firm called Helman Hurley Charvat Peacock / Architects, Inc.We have selected ten counties from the world to build man made islands which come with airports and harbors, this is a major change in the construction industry, well we are looking for future investors in these projects. Reply to this email address for more details.I'll upload some of my brochures for you to look at,\n\n\n\nThank you\nCEO: Pieter van Oord\n",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-05-05T11:16:31.567Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T13:32:02.543Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "664ab7ef2a659098226b63a0"
+  },
+  "fullName": "Demi",
+  "email": "demi@biuloo.com",
+  "phone": "+86 17708382403",
+  "message": "Bu, Chongqing Biulu Avtomobil, Çin Ticarət Komissiyası tərəfindən təsdiqlənmiş aparıcı avtomobil ixracatçısı olan Demi. Şirkətinizin EV avtomobili sahəsində olduğunu bilməkdən məmnunam.\n\nİdxal şöbənizlə danışa bilərəmmi?",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-05-20T02:39:43.354Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T13:31:56.728Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "664db27f2a659098226bea67"
+  },
+  "fullName": "Jackson Jia",
+  "email": "jiayifeng928@gmail.com",
+  "phone": "8615689927152",
+  "message": "Dear Sir, \n\n\n\nThis is Jackson from Qingdao Sino Tech&Dev Co., Ltd. Glad to hear that you are on the market for vehicles.\n\n \n\nWe are a leading producer and provider for the Energy Vehicles since 2019. We are also one of the biggest representatives of all EV brands like Volkswagen, Audi, Tesla,Toyota, and China own brands like BYD, Hongqi, GuangQi Aion, Baic, Weima,Nio, Xpeng,HiPhi, etc. You could find almost all desired EV cars from us!\n\n \n\nWe connect China with abroad automotive distributors and retailers together, with the hope of building full SUPPLY CHAIN to the whole world customers, meet our customers’ demands, achieving win-win goal!\n\n \n\nShould you have any questions ,pls do not hesitate to contact me.\n\n \n\nThank you & Best Regards\n\nJackson \n\nQingdao Sino Tech&Dev Co., Ltd.\n\nMob/Wechat/Whatsapp : +86-15689927152\n\nEmail:jiayifeng928@Gmail.com\n\nWebsite: https://www.motorevcar.com/ \n\n\n\nYoutube：https://www.youtube.com/channel/UC0V6uM7QDmdTaon8gHqTxkg\nFacebook：https://www.facebook.com/profile.php?id=100084683270793\nhttps://www.facebook.com/profile.php?id=100084848688746\nIns：https://www.instagram.com/sinotdmotor/reels/",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-05-22T08:53:19.382Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T13:31:32.292Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "666e56c32a65909822702f88"
+  },
+  "fullName": "Weiling",
+  "email": "weiling_li@zhonghelectric.com",
+  "phone": "86 133 6123 6776",
+  "message": "ZHONGHE, the manufacture of EV Charger with more than 20 years experiences, till now, we have clients from Portugal, Poland, Ireland, Iceland, Switzerland, Italy, France and Greece.\n\nHere is the features of our EV Charger:\n1-    CE (TUV) Certified\n2-    With POS Terminal (Payter) DC EV Charger\n3-    RFID with CE Certified which met Europe Standard.\n4-    Language: Support English, German, French Dutch (Customizable, but requires client assistance)\n\nKindly see the attached buyer feedback picture for reference, do you have the business related with the EV Charger?\n\nYour comments will be most welcomed.\n \nAll the best.\n",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-06-16T03:06:43.153Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T13:31:28.758Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "669779bd2a6590982276c541"
+  },
+  "fullName": "Kathy Jiao",
+  "email": "kathy@chengfong.com",
+  "phone": "86 132 6708 0658",
+  "message": "hello ,i am Kathy Jiao from Shenzhen Cheng Fong digital tech limited,China manufacturer，\nMain products:  \nSmartphone,tablet,Laptop,mini pc,projector,Removable tablet tv,EV Charger,solar panel,power station,Whatsapp/Wechat:0086 132 6708 0658，email:kathy@chengfong.com,\n Http://www.chengfong.com\n https://shenzhen-chengfong.manufacturer.globalsources.com",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-07-17T07:58:53.863Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-22T10:53:52.125Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "669ab0072a65909822776d78"
+  },
+  "fullName": "Shirin ",
+  "email": "ya.uvaydullayeva@gmail.com",
+  "phone": "+998974224446",
+  "message": "Добрый день, меня зовут Ширин Увайдуллаева!\nЯ из Узбекистана. Мы занимаемся разработкой готовых решений для управления зарядными станциями для электромобилей. Будем рады сотрудничеству. ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-07-19T18:27:19.806Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-22T10:53:47.200Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "669ab00e2a65909822776d7a"
+  },
+  "fullName": "Shirin ",
+  "email": "ya.uvaydullayeva@gmail.com",
+  "phone": "+998974224446",
+  "message": "Добрый день, меня зовут Ширин Увайдуллаева!\nЯ из Узбекистана. Мы занимаемся разработкой готовых решений для управления зарядными станциями для электромобилей. Будем рады сотрудничеству. ",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-07-19T18:27:26.036Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-22T10:53:34.519Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b07eba2a659098227b0ae0"
+  },
+  "fullName": "Tiger Yang",
+  "email": "tiger@ok-log.com.cn",
+  "phone": "13149905134",
+  "message": "Dear my friend,\n\nThis is Tiger From SHENZHEN OUKAI LOGISTICS.  It is a freight forwarder focusing on logistics of Air, Sea, Railway and Road. \n\nThe company provides a full range of services such as booking, customs declaration, and trailers.\n\nThe advantage of our company is railway transportation and I have sufficient expertise in freight forwarding.Mainly engaged in cargo transportation in countries along the Belt and Road.\n\nThere is some good shipping rate from China.\n\nIf you are troubled by the transportation of goods or want to optimize the existing transportation process, you might as well give us a chance. We will serve you wholeheartedly and provide strong support for your business development.\n\n\n\nIf you are not in charge of this business, please help me tell your colleagues.",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-08-05T07:26:50.612Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-22T10:53:30.802Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b618ec2a659098227c3a4a"
+  },
+  "fullName": "Rasim",
+  "email": "dr.rasim.agazade@gmail.com",
+  "phone": "055 777 32 95",
+  "message": "Salam, sizden id-4 ucun adi rozetkadan istifade etmeye zaryadka kabeli elde etmek olar?",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-08-09T13:26:04.167Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-22T10:52:54.910Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c704002a659098227f3c15"
+  },
+  "fullName": "Nigar Hasanova",
+  "email": "nigarhassanova.03@gmail.com",
+  "phone": "994515120002",
+  "message": "Salam,\nSizdə avtomobillərin kreditlə satışı mümkündür?",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-08-22T09:25:20.957Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-22T10:52:46.743Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c7040a2a659098227f3c17"
+  },
+  "fullName": "Nigar Hasanova",
+  "email": "nigarhassanova.03@gmail.com",
+  "phone": "994515120002",
+  "message": "Salam,\nSizdə avtomobillərin kreditlə satışı mümkündür?",
+  "seen": true,
+  "createdAt": {
+    "$date": "2024-08-22T09:25:30.779Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-22T10:52:41.834Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e009702a65909822836d6d"
+  },
+  "fullName": "Allen Law",
+  "email": "allenlaw8851@gmail.com",
+  "phone": "+8618028767002",
+  "message": "This is  Allen from China, we're the No.1 EV Charging station manufacturer in China. We offer reasonable prices and higher-quality charging stations. If you compare our prices with other suppliers, you may see that we have a good advantage.",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-09-10T08:55:12.255Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-10T08:55:12.255Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66fd1e7d2a659098228800bd"
+  },
+  "fullName": "Hakan Senakin",
+  "email": "hakan.senakin@vestel.com.tr",
+  "phone": "+90 554 472 94 30",
+  "message": "Dear All,\n\nI’m Hakan Senakin, the EVC Sales and Business Development Executive at Vestel, a leading EVC producer in Turkey. We are the market leader in Turkey and one of the largest EV charger suppliers worldwide.\n\nAzerbaijan is one of our target markets, and after reviewing your solutions in the EV charging sector, I would like to get in touch with you.\n\nI would appreciate the opportunity to meet, introduce our customized products, and discuss potential business development possibilities.\n\nThank you in advance for your interest. I look forward to your feedback.\n\nBest regards,\nHakan Senakin\nEVC Sales and Business Development Executive\nhakan.senakin@vestel.com.tr\n+90 554 472 94 30\n",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-10-02T10:20:45.590Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T10:20:45.590Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66fe62152a659098228839f7"
+  },
+  "fullName": "Samuel",
+  "email": "skatta2@Jaguarlandrover.com",
+  "phone": "07858161901",
+  "message": "Greetings Respected,\n\n Through the research made at Jaguar Landrover, we have noticed that ELCAR has been the pioneer for the EV Charging Infrastructure in Azerbaijan. \nHence, would like to understand what Charging standard is available? CCS2? or are there any signs of change for this?\nAlso, which chargers do customers desire? AC or DC? And what power levels?\n\nIt would be a pleasure to understand the vision of ELCAR in the EV charging Industry for Azerbaijan.\n\nLooking forward for your response\n \nThank you\nRegards",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-10-03T09:21:25.980Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-03T09:21:25.980Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66fe62162a659098228839f9"
+  },
+  "fullName": "Samuel",
+  "email": "skatta2@Jaguarlandrover.com",
+  "phone": "07858161901",
+  "message": "Greetings Respected,\n\n Through the research made at Jaguar Landrover, we have noticed that ELCAR has been the pioneer for the EV Charging Infrastructure in Azerbaijan. \nHence, would like to understand what Charging standard is available? CCS2? or are there any signs of change for this?\nAlso, which chargers do customers desire? AC or DC? And what power levels?\n\nIt would be a pleasure to understand the vision of ELCAR in the EV charging Industry for Azerbaijan.\n\nLooking forward for your response\n \nThank you\nRegards",
+  "seen": false,
+  "createdAt": {
+    "$date": "2024-10-03T09:21:26.065Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-03T09:21:26.065Z"
+  }
+}]

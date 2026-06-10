@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "629b85859b39810ff1d7b4e1"
+  },
+  "iso": "USD",
+  "name": "Dollar",
+  "symbol": "$"
+},
+{
+  "_id": {
+    "$oid": "63cd01614f40012e89150934"
+  },
+  "iso": "EUR",
+  "name": "Euro",
+  "symbol": "€"
+},
+{
+  "_id": {
+    "$oid": "63cd017c4f40012e89150935"
+  },
+  "iso": "AZN",
+  "name": "Manat",
+  "symbol": "₼"
+}]
