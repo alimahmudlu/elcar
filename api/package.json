@@ -1,0 +1,76 @@
+{
+    "name": "elcar-api",
+    "description": "",
+    "version": "0.0.1",
+    "homepage": "",
+    "private": true,
+    "main": "src",
+    "keywords": [],
+    "author": {
+        "name": "kamalbalayev",
+        "email": "kamal.balaev@gmail.com"
+    },
+    "contributors": [],
+    "bugs": {},
+    "directories": {
+        "lib": "src",
+        "config": "config/"
+    },
+    "engines": {
+        "node": "^20.0.0",
+        "npm": ">= 6.0.0"
+    },
+    "scripts": {
+        "dev": "nodemon src/",
+        "start": "node src/"
+    },
+    "standard": {
+        "ignore": []
+    },
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.693.0",
+        "@feathers-plus/batch-loader": "^0.3.6",
+        "@feathers-plus/cache": "^1.4.0",
+        "@feathersjs/authentication": "^4.5.15",
+        "@feathersjs/authentication-local": "^4.5.18",
+        "@feathersjs/authentication-oauth": "^4.5.18",
+        "@feathersjs/configuration": "^4.5.17",
+        "@feathersjs/errors": "^4.5.17",
+        "@feathersjs/express": "^4.5.18",
+        "@feathersjs/feathers": "^4.5.17",
+        "@feathersjs/socketio": "^4.5.18",
+        "@feathersjs/transport-commons": "^4.5.18",
+        "api-query-params": "latest",
+        "aws-sdk": "^2.1302.0",
+        "compression": "latest",
+        "cors": "latest",
+        "dotenv": "latest",
+        "feathers-casl": "^0.7.2",
+        "feathers-errors": "latest",
+        "feathers-memory": "latest",
+        "feathers-mongoose": "latest",
+        "feathers-populate-hook": "latest",
+        "helmet": "latest",
+        "mongodb-backup": "latest",
+        "mongodb-core": "latest",
+        "mongoose": "latest",
+        "mongoose-intl": "latest",
+        "multer": "latest",
+        "node-cron": "latest",
+        "node-fetch": "latest",
+        "nodemailer": "latest",
+        "otp-generator": "latest",
+        "serve-favicon": "latest",
+        "sharp": "latest",
+        "slugify": "latest",
+        "uniqid": "latest",
+        "winston": "^3.13.1",
+        "xml2js": "latest"
+    },
+    "devDependencies": {
+        "axios": "latest",
+        "cookie-parser": "latest",
+        "feathers-hooks-common": "^6.1.5",
+        "nodemon": "latest"
+    }
+}

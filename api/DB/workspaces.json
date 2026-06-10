@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "63d190cbca5d9899369fd1e0"
+  },
+  "createdAt": {
+    "$date": "2023-01-25T20:27:55.727Z"
+  },
+  "createdBy": {
+    "$oid": "63ecd5c43b01f4a8154e240a"
+  },
+  "name": "ELCAR",
+  "type": {
+    "$oid": "643c491bb56d677a8d76878e"
+  },
+  "updatedAt": {
+    "$date": "2023-01-25T20:27:55.727Z"
+  }
+}]

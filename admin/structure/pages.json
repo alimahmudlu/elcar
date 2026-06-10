@@ -1,0 +1,2037 @@
+[
+    {
+        "_id": "3f8d2a96-669c-431f-85b6-c240038d4761",
+        "config": {
+            "module": {
+                "name": "general",
+                "section": "index"
+            },
+            "route": {
+                "path": "index",
+                "i18n": null,
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "general",
+                "parent": null,
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Main dashboard"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "position": "top",
+                "icon": "mdiHomeOutline"
+            }
+        },
+        "body": {
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "MainWrapper",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "afd2f955-cc9f-400c-a47e-f3a5cc608c26",
+        "config": {
+            "module": {
+                "name": "general",
+                "section": "notifications",
+                "action": "read"
+            },
+            "route": {
+                "path": "general-notifications",
+                "i18n": {
+                    "path": "general/notifications/index",
+                    "slug": {
+                        "az": "/bildirisler"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "general",
+                "parent": null,
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Bildirişlər"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "position": "top",
+                "icon": "mdiBellOutline"
+            }
+        },
+        "body": {
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "NotificationsWrapper",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "ba2291d3-cb77-4fdd-9db3-46496824e8af",
+        "config": {
+            "module": {
+                "name": "general",
+                "section": "users",
+                "action": "read"
+            },
+            "route": {
+                "path": "general-users",
+                "i18n": {
+                    "path": "general/users/index",
+                    "slug": {
+                        "az": "/istifadeciler"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "general",
+                "parent": null,
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "İstifadəçilər"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "position": "bottom",
+                "icon": "mdiAccountGroupOutline"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "UsersAddNew",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "UsersDataTable",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "72c3304a-52b5-4ff3-a58e-f2d5801c17d3",
+        "config": {
+            "module": {
+                "name": "general",
+                "section": null,
+                "action": "update"
+            },
+            "route": {
+                "path": "general",
+                "i18n": {
+                    "path": "general/index",
+                    "slug": {
+                        "az": "/parammetrler"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "general",
+                "parent": null,
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Parametrlər"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "bottom",
+                "icon": "mdiCogOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "GeneralSettingsWrapper",
+                        "options": {
+                            "appId": "72c3304a-52b5-4ff3-a58e-f2d5801c17d3"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "2e7e6a5f-d407-4d9a-abbc-8e7aeb7b6721",
+        "config": {
+            "module": {
+                "name": "general",
+                "section": null
+            },
+            "route": {
+                "path": "auth-sign-in",
+                "i18n": {
+                    "path": "auth/sign-in/index",
+                    "slug": {
+                        "az": "/giris"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "type": "index",
+                "private": false,
+                "queries": [],
+                "group": "general",
+                "parent": null,
+                "childPage": null
+            },
+            "content": {
+                "type": "static"
+            }
+        },
+        "name": {
+            "az": "Giriş"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "position": "bottom",
+                "icon": "mdiHomeOutline"
+            }
+        },
+        "body": {
+            "wrapper": {
+                "options": {
+                    "class": "login-page fill-height d-flex"
+                },
+                "components": [
+                    {
+                        "uid": "AuthSignInWrapper",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": null,
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar",
+                "i18n": {
+                    "path": "apps/elcar/index",
+                    "slug": {
+                        "az": "/elcar",
+                        "en": "/elcar",
+                        "ru": "/elcar"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": null,
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "ELCAR",
+            "en": "ELCAR",
+            "ru": "ELCAR"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "position": "top",
+                "icon": "mdiSpeedometer",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarWrapper",
+                        "options": {
+                            "appId": "d83bd135-f2cd-4671-8aae-192ea432c7fc"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "bc2f1cad-4445-4675-bf0a-b8708855bf04",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "vehicles",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-vehicles",
+                "i18n": {
+                    "path": "apps/elcar/products/vehicles/index",
+                    "slug": {
+                        "az": "/elcar/vehicles",
+                        "en": "/elcar/vehicles",
+                        "ru": "/elcar/vehicles"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Nəqliyyat vasitələri",
+            "en": "Vehicles",
+            "ru": "Транспортные средства"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "vehicles",
+                            "title": "Vehicle"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "vehicles"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "39e19ce5-0e93-434c-a6b6-ba480a69e206",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "vehicles",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-vehicles-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/vehicles/_detail/index",
+                    "slug": {
+                        "az": "/elcar/vehicles/:detail",
+                        "en": "/elcar/vehicles/:detail",
+                        "ru": "/elcar/vehicles/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "vehicles"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "961fd54d-a837-47c1-82d7-792ecb1ee7a9",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "vehicles",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-vehicles-add",
+                "i18n": {
+                    "path": "apps/elcar/products/vehicles/add/index",
+                    "slug": {
+                        "az": "/elcar/vehicles/add",
+                        "en": "/elcar/vehicles/add",
+                        "ru": "/elcar/vehicles/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "vehicles"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "8555d524-62bc-4c45-a843-e8bacabb1679",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "charging-stations",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-charging-stations",
+                "i18n": {
+                    "path": "apps/elcar/products/charging-stations/index",
+                    "slug": {
+                        "az": "/elcar/charging-stations",
+                        "en": "/elcar/charging-stations",
+                        "ru": "/elcar/charging-stations"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Şarj stansiyaları",
+            "en": "Charging stations",
+            "ru": "Зарядные станции"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiEvPlugChademo",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "charging-stations",
+                            "title": "Charging station"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "charging-stations"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "28a27a8b-ee9a-4c81-85a0-9eb7982f393e",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "charging-stations",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-charging-stations-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/charging-stations/_detail/index",
+                    "slug": {
+                        "az": "/elcar/charging-stations/:detail",
+                        "en": "/elcar/charging-stations/:detail",
+                        "ru": "/elcar/charging-stations/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiEvPlugChademo",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "charging-stations"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "d51500a9-aa61-450a-b4d9-6065685be7e2",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "charging-stations",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-charging-stations-add",
+                "i18n": {
+                    "path": "apps/elcar/products/charging-stations/add/index",
+                    "slug": {
+                        "az": "/elcar/charging-stations/add",
+                        "en": "/elcar/charging-stations/add",
+                        "ru": "/elcar/charging-stations/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiEvPlugChademo",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "charging-stations"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "192ceefe-ea54-4e4d-9834-2944081e2f8c",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "accessories",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-accessories",
+                "i18n": {
+                    "path": "apps/elcar/products/accessories/index",
+                    "slug": {
+                        "az": "/elcar/accessories",
+                        "en": "/elcar/accessories",
+                        "ru": "/elcar/accessories"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Aksesuarlar",
+            "en": "Accessories",
+            "ru": "Аксессуары"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiConnection",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "accessories",
+                            "title": "Accessory"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "accessories"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "1ecfadf0-d80c-469a-ba98-6ac5d0a2e329",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "accessories",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-accessories-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/accessories/_detail/index",
+                    "slug": {
+                        "az": "/elcar/accessories/:detail",
+                        "en": "/elcar/accessories/:detail",
+                        "ru": "/elcar/accessories/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiConnection",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "accessories"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "ca77cbea-5c26-4090-a644-2df153ddd3e6",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "accessories",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-accessories-add",
+                "i18n": {
+                    "path": "apps/elcar/products/accessories/add/index",
+                    "slug": {
+                        "az": "/elcar/accessories/add",
+                        "en": "/elcar/accessories/add",
+                        "ru": "/elcar/accessories/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiConnection",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "accessories"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "0ad4533c-95c9-4862-88c6-2b9822c56595",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": null,
+                "action": null
+            },
+            "route": {
+                "path": null,
+                "i18n": null,
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "group",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Seçimlər",
+            "en": "Options",
+            "ru": "Опции"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiFormatListBulletedType",
+                "color": "teal"
+            }
+        },
+        "body": null
+    },
+    {
+        "_id": "1e6a9e02-f599-44be-963c-c13573f33ac3",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "brands",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-options-brands",
+                "i18n": {
+                    "path": "apps/elcar/products/options/brands/index",
+                    "slug": {
+                        "az": "/elcar/brands",
+                        "en": "/elcar/brands",
+                        "ru": "/elcar/brands"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "0ad4533c-95c9-4862-88c6-2b9822c56595",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Brendlər",
+            "en": "Brands",
+            "ru": "Бренды"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsActions",
+                        "options": {
+                            "title": "Brand",
+                            "section": "brands"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsBrandsDataTable",
+                        "options": {
+                            "section": "brands"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "5f936554-0cf7-41eb-a87b-9c61f0dd83d5",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "models",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-options-models",
+                "i18n": {
+                    "path": "apps/elcar/products/options/models/index",
+                    "slug": {
+                        "az": "/elcar/models",
+                        "en": "/elcar/models",
+                        "ru": "/elcar/models"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "0ad4533c-95c9-4862-88c6-2b9822c56595",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Modellər",
+            "en": "Models",
+            "ru": "Модели"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsActions",
+                        "options": {
+                            "title": "Model",
+                            "section": "models"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsModelsDataTable",
+                        "options": {
+                            "section": "models"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "8c927f48-f83c-44b7-838b-c2c60a24bb0b",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "categories",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-options-categories",
+                "i18n": {
+                    "path": "apps/elcar/products/options/categories/index",
+                    "slug": {
+                        "az": "/elcar/categories",
+                        "en": "/elcar/categories",
+                        "ru": "/elcar/categories"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "0ad4533c-95c9-4862-88c6-2b9822c56595",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Kateqoriyalar",
+            "en": "Categories",
+            "ru": "Категории"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsActions",
+                        "options": {
+                            "title": "Category",
+                            "section": "categories"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsCategoriesDataTable",
+                        "options": {
+                            "section": "categories"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "2096d912-3246-4fbd-a7a1-f4802049cec1",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "characteristic-groups",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-options-characteristic-groups",
+                "i18n": {
+                    "path": "apps/elcar/products/options/characteristic-groups/index",
+                    "slug": {
+                        "az": "/elcar/characteristic-groups",
+                        "en": "/elcar/characteristic-groups",
+                        "ru": "/elcar/characteristic-groups"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "0ad4533c-95c9-4862-88c6-2b9822c56595",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Xüsusiyyət qrupları",
+            "en": "Characteristic groups",
+            "ru": "Группы характеристик"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsActions",
+                        "options": {
+                            "title": "Group",
+                            "section": "characteristic-groups"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsCharacteristicGroupsDataTable",
+                        "options": {
+                            "section": "characteristic-groups"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "f3832a6b-4f05-4a2f-84de-5f19dfd66af4",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "characteristics",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-options-characteristics",
+                "i18n": {
+                    "path": "apps/elcar/products/options/characteristics/index",
+                    "slug": {
+                        "az": "/elcar/characteristics",
+                        "en": "/elcar/characteristics",
+                        "ru": "/elcar/characteristics"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "0ad4533c-95c9-4862-88c6-2b9822c56595",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Xüsusiyyətlər",
+            "en": "Characteristics",
+            "ru": "Характеристики"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsActions",
+                        "options": {
+                            "title": "Characteristic",
+                            "section": "characteristics"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsCharacteristicsDataTable",
+                        "options": {
+                            "section": "characteristics"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "38347042-6fd0-44b6-9bb8-83054b821d6d",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "characteristic-options",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-options-characteristic-options",
+                "i18n": {
+                    "path": "apps/elcar/products/options/characteristic-options/index",
+                    "slug": {
+                        "az": "/elcar/characteristic-options",
+                        "en": "/elcar/characteristic-options",
+                        "ru": "/elcar/characteristic-options"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "0ad4533c-95c9-4862-88c6-2b9822c56595",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Xüsusiyyət seçimləri",
+            "en": "Characteristic options",
+            "ru": "Варианты характеристик"
+        },
+        "header": {
+            "menu": {
+                "display": true,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCarSports",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsActions",
+                        "options": {
+                            "title": "Characteristic option",
+                            "section": "characteristic-options"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOptionsCharacteristicOptionsDataTable",
+                        "options": {
+                            "section": "characteristic-options"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "5a0b37f0-d18e-4a24-9f0e-f9905111eadf",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "orders",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-orders",
+                "i18n": {
+                    "path": "apps/elcar/products/orders/index",
+                    "slug": {
+                        "az": "/elcar/orders",
+                        "en": "/elcar/orders",
+                        "ru": "/elcar/orders"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Sifarişlər",
+            "en": "Orders",
+            "ru": "Заказы"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCartPlus",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": []
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOrdersDataTable",
+                        "options": {
+                            "section": "orders"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "c676ad5c-b298-4b74-8194-263257eb1827",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "orders",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-orders-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/orders/_detail/index",
+                    "slug": {
+                        "az": "/elcar/orders/:detail",
+                        "en": "/elcar/orders/:detail",
+                        "ru": "/elcar/orders/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "adf051ca-dedb-4648-9cf7-f522c76d66b9",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Sifariş detalları",
+            "en": "Order details",
+            "ru": "Информация о заказе"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCartPlus",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": []
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsOrdersDetail",
+                        "options": {
+                            "section": "orders"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "a29f7af7-520c-4c13-84a4-36c370857609",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "messages",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-messages",
+                "i18n": {
+                    "path": "apps/elcar/messages/index",
+                    "slug": {
+                        "az": "/elcar/messages",
+                        "en": "/elcar/messages",
+                        "ru": "/elcar/messages"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Mesajlar",
+            "en": "Messages",
+            "ru": "Сообщения"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiEmailMultipleOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": []
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarMessagesDataTable",
+                        "options": {
+                            "section": "messages"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "adf051ca-dedb-4648-9cf7-f522c76d66b9",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "blog",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-blog",
+                "i18n": {
+                    "path": "apps/elcar/blog/index",
+                    "slug": {
+                        "az": "/elcar/blog",
+                        "en": "/elcar/blog",
+                        "ru": "/elcar/blog"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Bloq",
+            "en": "Blog",
+            "ru": "Блог"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiLibraryOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarBlogAddContent",
+                        "options": {
+                            "section": "blog",
+                            "title": "Blog"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarBlogDataTable",
+                        "options": {
+                            "section": "blog"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "dc1ba96d-3598-485d-8edb-e50fdca6c7f0",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "blog",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-blog-detail",
+                "i18n": {
+                    "path": "apps/elcar/blog/_detail/index",
+                    "slug": {
+                        "az": "/elcar/blog/:detail",
+                        "en": "/elcar/blog/:detail",
+                        "ru": "/elcar/blog/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "adf051ca-dedb-4648-9cf7-f522c76d66b9",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiLibraryOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarBlogForm",
+                        "options": {
+                            "section": "blog"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "79c4a34d-980a-4455-890b-6726988ba848",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "blog",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-blog-add",
+                "i18n": {
+                    "path": "apps/elcar/blog/add/index",
+                    "slug": {
+                        "az": "/elcar/blog/add",
+                        "en": "/elcar/blog/add",
+                        "ru": "/elcar/blog/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "adf051ca-dedb-4648-9cf7-f522c76d66b9",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiLibraryOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarBlogForm",
+                        "options": {
+                            "section": "blog"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "_id": "48c904f4-9fb8-42d7-9448-99e775b958c7",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "settings",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-settings",
+                "i18n": {
+                    "path": "apps/elcar/settings/index",
+                    "slug": {
+                        "az": "/elcar/settings",
+                        "en": "/elcar/settings",
+                        "ru": "/elcar/settings"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Parametrlər",
+            "en": "Settings",
+            "ru": "Настройки"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCogOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": []
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarSettingsWrapper",
+                        "options": {
+                            "section": "settings"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    }
+]

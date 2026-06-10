@@ -1,0 +1,203 @@
+{
+  "pages": {
+    "home": "Home",
+    "chargingStations": "Charging Stations",
+    "electricVehicles": "Electric Vehicles",
+    "connectors": "Connectors and Accessories",
+    "blog": "Blog",
+    "ourCompany": "Our Company",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Electric Vehicles",
+    "cart": "Cart",
+    "emptyCart": "Your cart is empty",
+    "clear": "Clear",
+    "confirmOrder": "Complete Order",
+    "confirmModal": {
+      "title": "Complete Order",
+      "subtitle": "Customer Information",
+      "form": {
+        "fullName": "Full Name",
+        "phone": "Phone",
+        "email": "Email",
+        "note": "Note"
+      },
+      "table": {
+        "products": "Products",
+        "photo": "Photo",
+        "product": "Product",
+        "quantity": "Quantity",
+        "discount": "Discount",
+        "oldPrice": "Old Price",
+        "price": "Price",
+        "total": "Total",
+        "createOrder": "Place Order"
+      }
+    }
+  },
+  "hero": {
+    "sub-category": {
+      "output": "Output power",
+      "voltage": "Power input",
+      "phase": "Phase number",
+      "rating": "Rating"
+    },
+    "buttons": {
+      "buy": "Add to cart",
+      "see": "See details"
+    }
+  },
+  "services": {
+    "main": {
+      "title": "ELCAR - Russian distributor of electric cars",
+      "subtitle": "ELCAR company offers everything needed for <strong>electric cars</strong>, including <strong>power stations</strong>, <strong>accessories</strong> and other electrical devices, purchased under the best conditions and delivered to Russia.",
+      "button": "More information"
+    },
+    "second": {
+      "title": "Electric Vehicles",
+      "subtitle": "Discover today's Electric Cars with modern, environmentally friendly and economical technologies"
+    },
+    "third": {
+      "title": "Charging stations",
+      "subtitle": "Discover the new Charging Stations for Electric Vehicles, which differ in terms of charging speeds and connector types"
+    }
+  },
+  "popular-cars": {
+    "title": "Most Popular Electric Cars",
+    "subtitle": "We present to you the most liked and preferred Electric Cars with both comfort, functionality and modern design",
+    "battery": "Battery",
+    "fuel-type": "Fuel type",
+    "max-speed": "Max speed",
+    "max-horsepower": "Max horsepower"
+  },
+  "brands": {
+    "title": "Explore Best Selling Electric Car Makes",
+    "subtitle": "We present to you the most well-known, high-quality and best-selling Electric Car Brands in the whole world and in our country"
+  },
+  "charging-stations": {
+    "title": "Latest Charging Stations",
+    "subtitle": "All types of Charging Stations for your Electric Vehicles, distinguished by their quality and ease of use"
+  },
+  "connectors-and-accessories": {
+    "title": "Latest Connectors and Accessories for Electromobiles",
+    "subtitle": "All kinds of connectors and accessories for your electric Elektromobiles, selected for their comfort and ease of use"
+  },
+  "blog": {
+    "title": "Useful info about Electric Vehicles, Charging Stations and Accessories",
+    "subtitle": "In our blog section, you can get detailed information about ordering and bringing Electric Cars, Power Stations, Accessories and all these Electric Systems to Azerbaijan",
+    "similar-posts": "Similar articles"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "If you have questions or desires related to Electric Cars, Charging Stations and Connectors, contact us using contact information. We will make you back as soon as possible",
+
+    "info": {
+      "title": "Get in touch with us",
+      "subtitle": "You can contact us using the contact details below",
+      "phone": "Phone:",
+      "email": "Email:",
+      "address": "Address:",
+      "address-info": "4 Hasanoghlu Street, Narimanov District"
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "If you have any questions or requests, fill out the form below and send it to us",
+      "full-name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send Message",
+      "errors": {
+        "full-name": "Full name is required",
+        "email": "Email is required",
+        "phone": "Phone is required",
+        "message": "Message is required"
+      }
+    }
+  },
+  "about": {
+    "title": "About Our Company",
+    "subtitle": "ELCAR specializes in importing Electric Vehicles, all types of Electric Charging Stations, Connectors and Accessories, and other Electric Devices from China to Azerbaijan at the most affordable prices.",
+    "section1": "Our company was founded in 2022 in Baku, Azerbaijan, and is engaged in the <strong>sale of charging devices for electric vehicles</strong> as well as the <strong>import and sale of electric vehicles</strong>. We believe that transitioning to electric vehicles is one of the most important steps in today's modern world, and we are committed to providing our customers with the best solutions to support and charge their vehicles.",
+    "section2": "To help our customers choose the most suitable option for their needs, we proudly offer a wide range of electric vehicles from various brands and models. Our team consists of experienced specialists who will assist you in the selection process and answer any questions related to electric transportation.",
+    "section3": "We are confident that our experience and professionalism allow us to provide the best service in the <strong>sales and maintenance of electric vehicles</strong>. Thank you for choosing our company as your partner in <strong>electric vehicles and related services</strong>."
+  },
+  "buttons": {
+    "add-to-cart": "Add to cart"
+  },
+  "alerts": {
+    "contact": {
+      "success": {
+        "title": "Success",
+        "message": "Your message has been sent. You will be responded to as soon as possible. Thanks for contacting us"
+      },
+      "error": {
+        "title": "Error",
+        "message": "An error occurred while sending the message. Please try again later."
+      },
+      "info": {
+        "title": "Info",
+        "message": "Feel free to contact us if you have any further questions."
+      },
+      "warning": {
+        "title": "Warning",
+        "message": "Some fields are not filled correctly. Please check and try again."
+      }
+    },
+    "close": "Close"
+  },
+
+  "pages-content": {
+    "electric-vehicles": {
+      "title": "Sale and Order of Electric Cars in Azerbaijan",
+      "subtitle": "ELCAR Company brings the newest and highest quality Electric Cars from China to Azerbaijan at affordable prices.",
+      "filters": {
+        "title": "Filter",
+        "clear": "Clear",
+        "categories": "Categories",
+        "brands": "Brands",
+        "model": "Model",
+        "price": "Price Range",
+        "charging-controls": "Charging Control",
+        "phase": "Phase",
+        "steering-system": "Steering system",
+        "braking-system": "Braking system",
+        "all": "All",
+        "apply": "Apply"
+      },
+      "all-cars": "All Vehicles",
+      "sort": {
+        "title": "Sort",
+        "byDate": "By Date",
+        "asc": "Price: Low to High",
+        "desc": "Price: High to Low"
+      },
+      "models": "Models",
+      "noResults": "No results",
+      "details": {
+        "main": "Main characteristics",
+        "technical": "Technical specifications",
+        "interior": "Interior",
+        "exterior": "Exterior",
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "chargingStations": {
+      "title": "Charging Stations for Electric Vehicles",
+      "subtitle": "ELCAR Company organizes sale and online ordering of modern Power Stations for new generation Electric Vehicles at the most affordable prices in Azerbaijan.",
+      "all-products": "All Charging Stations"
+    },
+    "connectors": {
+      "title": "Connectors & Accessories for Electric Cars in Azerbaijan",
+      "subtitle": "ELCAR Company organizes the sale and online ordering of all types of Connectors & Accessories for the new generation of Electric Cars in Azerbaijan at the most affordable prices.      ",
+      "all-products": "All types of Connectors and Accessories for Electromobiles"
+    }
+  },
+
+  "footer": {
+    "title": "All rights reserved!"
+  }
+}

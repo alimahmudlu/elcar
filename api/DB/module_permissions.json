@@ -1,0 +1,1437 @@
+[{
+  "_id": {
+    "$oid": "6393cb757cf29fcde9b61443"
+  },
+  "module": {
+    "$oid": "6438cc063832796aa37bb38f"
+  },
+  "role": {
+    "$oid": "63751df89599fe208b318d88"
+  },
+  "sections": [
+    {
+      "key": "vehicles",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "charging-stations",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "accessories",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "brands",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "models",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "categories",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "characteristic-groups",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "characteristics",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "characteristic-options",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "categories",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "orders",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "blog",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "contacts",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "settings",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "file-folders",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "uploads",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "63ec21687ab109bab536aff7"
+  },
+  "module": {
+    "$oid": "6438cc063832796aa37bb38f"
+  },
+  "role": {
+    "$oid": "63751e0a9599fe208b318d89"
+  },
+  "sections": [
+    {
+      "key": "vehicles",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "charging-stations",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "accessories",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "brands",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "models",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "categories",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "characteristic-groups",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "characteristics",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "characteristic-options",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "categories",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "orders",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "blog",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "contacts",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "settings",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "file-folders",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "uploads",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "63ec21bd7ab109bab536aff8"
+  },
+  "module": {
+    "$oid": "6438cc063832796aa37bb38f"
+  },
+  "role": {
+    "$oid": "63cd03214f40012e89150940"
+  },
+  "sections": [
+    {
+      "key": "vehicles",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "charging-stations",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "accessories",
+      "alias": "products",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "brands",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "models",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "categories",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "characteristic-groups",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "characteristics",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "characteristic-options",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "categories",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "orders",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "blog",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "contacts",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "settings",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "file-folders",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "uploads",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "642de82cc7f87588fa73deae"
+  },
+  "module": {
+    "$oid": "642de7c2c7f87588fa73dea7"
+  },
+  "role": {
+    "$oid": "63751df89599fe208b318d88"
+  },
+  "sections": [
+    {
+      "key": "users",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": true
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": true
+        }
+      ]
+    },
+    {
+      "key": "notifications",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "642de85ec7f87588fa73deb3"
+  },
+  "module": {
+    "$oid": "642de7c2c7f87588fa73dea7"
+  },
+  "role": {
+    "$oid": "63751e0a9599fe208b318d89"
+  },
+  "sections": [
+    {
+      "key": "users",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "notifications",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "642de87ec7f87588fa73deb4"
+  },
+  "module": {
+    "$oid": "642de7c2c7f87588fa73dea7"
+  },
+  "role": {
+    "$oid": "63cd03214f40012e89150940"
+  },
+  "sections": [
+    {
+      "key": "users",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": false
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": false
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    },
+    {
+      "key": "notifications",
+      "actions": [
+        {
+          "name": "Create",
+          "key": "create",
+          "default": false
+        },
+        {
+          "name": "Read",
+          "key": "read",
+          "default": true
+        },
+        {
+          "name": "Update",
+          "key": "update",
+          "default": true
+        },
+        {
+          "name": "Delete",
+          "key": "delete",
+          "default": false
+        }
+      ]
+    }
+  ]
+}]

@@ -1,0 +1,3409 @@
+[{
+  "_id": {
+    "$oid": "63d19e8d1928185f2d797419"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "showOnItem": false,
+      "addToSlug": true
+    }
+  },
+  "group": {
+    "$oid": "63d193af7896d6d8d8aece34"
+  },
+  "name": {
+    "az": "Buraxılış ili",
+    "en": "Release year",
+    "ru": "Год выпуска"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "release-year"
+},
+{
+  "_id": {
+    "$oid": "63d445ee5976dd037bd5953c"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "hp",
+      "showOnItem": true,
+      "addToSlug": true
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Maks. at gücü",
+    "en": "Max. horsepower",
+    "ru": "Макс. мощность"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "max-horsepower"
+},
+{
+  "_id": {
+    "$oid": "63d45c024b9dad6f20a7de55"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "km/h",
+      "showOnItem": true,
+      "addToSlug": true
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Maks. sürət",
+    "en": "Max. speed",
+    "ru": "Макс. скорость"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "max-speed"
+},
+{
+  "_id": {
+    "$oid": "63d4461b5976dd037bd59549"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": false,
+      "showOnFilter": false
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Transmissiya",
+    "en": "Transmission",
+    "ru": "Передача инфекции"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "transmission"
+},
+{
+  "_id": {
+    "$oid": "63d450fd4b9dad6f20a7dc05"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": true,
+      "suffix": ""
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Ötürücü sistem",
+    "en": "Drive Unit",
+    "ru": "Привод "
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "drive-unit"
+},
+{
+  "_id": {
+    "$oid": "63d4632d4b9dad6f20a7e223"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": false,
+      "showOnItem": true,
+      "required": false
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Yanacaq növü",
+    "en": "Fuel type",
+    "ru": "Тип топлива"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    }
+  ],
+  "key": "fuel-type"
+},
+{
+  "_id": {
+    "$oid": "63d45ce54b9dad6f20a7df95"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "L"
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Yanacaq çəni həcmi",
+    "en": "Fuel tank volume",
+    "ru": "Емкость топливного бака"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "fuel-tank-volume"
+},
+{
+  "_id": {
+    "$oid": "63d445d05976dd037bd5952f"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number"
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Mühərrik həcmi",
+    "en": "Engine volume",
+    "ru": "Объем двигателя"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "engine-volume"
+},
+{
+  "_id": {
+    "$oid": "63d45e234b9dad6f20a7e124"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "L"
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Baqaj həcmi",
+    "en": "Luggage volume",
+    "ru": "Объем багажа"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "luggage-volume"
+},
+{
+  "_id": {
+    "$oid": "63d45dc44b9dad6f20a7e0ab"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "kg"
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Çəki",
+    "en": "Weight",
+    "ru": "Масса"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "weight"
+},
+{
+  "_id": {
+    "$oid": "63d461fd4b9dad6f20a7e19d"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": false,
+      "showOnFilter": true
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Əyləc sistemi",
+    "en": "Braking system",
+    "ru": "Система торможения"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "braking-system"
+},
+{
+  "_id": {
+    "$oid": "63d465ce4b9dad6f20a7e3be"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "sec"
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "100 km/s sürətlənmə",
+    "en": "100 km/h acceleration",
+    "ru": "100 км/ч ускорение"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    },
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    }
+  ],
+  "key": "100-kmh-acceleration"
+},
+{
+  "_id": {
+    "$oid": "63d466074b9dad6f20a7e437"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "kWh",
+      "showOnItem": true,
+      "addToSlug": true
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Batareya",
+    "en": "Battery",
+    "ru": "Батарея"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "battery"
+},
+{
+  "_id": {
+    "$oid": "63d4661c4b9dad6f20a7e4b0"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "kWh/100km"
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Sərfiyyat",
+    "en": "Consumption",
+    "ru": "Потребление"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    },
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    }
+  ],
+  "key": "consumption"
+},
+{
+  "_id": {
+    "$oid": "63d466264b9dad6f20a7e4bd"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "km"
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "NEDC diapazonu",
+    "en": "NEDC range",
+    "ru": "Диапазон NEDC"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "nedc-range"
+},
+{
+  "_id": {
+    "$oid": "63d4620f4b9dad6f20a7e1aa"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": false,
+      "showOnFilter": true
+    }
+  },
+  "group": {
+    "$oid": "63d4453e5976dd037bd59515"
+  },
+  "name": {
+    "az": "Sükan sistemi",
+    "en": "Steering system",
+    "ru": "Рулевая система"
+  },
+  "section": "vehicles",
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "steering-system"
+},
+{
+  "_id": {
+    "$oid": "63f237043b01f4a8154e7944"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45ada4b9dad6f20a7de48"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "mm",
+      "minLength": 1,
+      "maxLength": 10000,
+      "minValue": 1,
+      "maxValue": 10000
+    }
+  },
+  "name": {
+    "az": "Ölçülər",
+    "en": "Dimension",
+    "ru": "Размеры"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "dimension"
+},
+{
+  "_id": {
+    "$oid": "63f237c33b01f4a8154e79e4"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45ada4b9dad6f20a7de48"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "mm"
+    }
+  },
+  "name": {
+    "az": "Təkər bazası",
+    "en": "Wheel base",
+    "ru": "Колесная база"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "wheel-base"
+},
+{
+  "_id": {
+    "$oid": "63f2383c3b01f4a8154e7ac2"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45ada4b9dad6f20a7de48"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "Təkər Ölçüləri",
+    "en": "Tire sizes",
+    "ru": "Размеры Шин"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "tire-sizes"
+},
+{
+  "_id": {
+    "$oid": "63f238a23b01f4a8154e7afe"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45ada4b9dad6f20a7de48"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "BAN növü",
+    "en": "BAN type",
+    "ru": "Тип БАН"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "ban-type"
+},
+{
+  "_id": {
+    "$oid": "63f238ca3b01f4a8154e7b27"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45ada4b9dad6f20a7de48"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Rəng",
+    "en": "Color",
+    "ru": "Цвет"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "color"
+},
+{
+  "_id": {
+    "$oid": "63f239133b01f4a8154e7b50"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "İnteryerin Stili",
+    "en": "Style of the interior",
+    "ru": "Стиль интерьера"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "style-of-the-interior"
+},
+{
+  "_id": {
+    "$oid": "63f239823b01f4a8154e7b79"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "İşəsalma düyməsi",
+    "en": "Start button",
+    "ru": "Кнопка Пуск"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "start-button"
+},
+{
+  "_id": {
+    "$oid": "63f239bb3b01f4a8154e7ba2"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Yük yerinin 12 V elektrik yuvası",
+    "en": "Cargo space 12 V power socket",
+    "ru": "Багажное отделение Розетка 12 В"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "cargo-space-12-v-power-socket"
+},
+{
+  "_id": {
+    "$oid": "63f239e93b01f4a8154e7bcb"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Ön 12 V elektrik yuvası",
+    "en": "Front 12 V power socket",
+    "ru": "Передняя розетка 12 В"
+  },
+  "categories": [
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "front-12-v-power-socket"
+},
+{
+  "_id": {
+    "$oid": "63f23a1b3b01f4a8154e7bf4"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Qızdırılan oturacaqları",
+    "en": "Heated seats",
+    "ru": "Сиденья с подогревом"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    }
+  ],
+  "key": "heated-seats"
+},
+{
+  "_id": {
+    "$oid": "63f23a753b01f4a8154e7c1d"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Elektriklə tənzimlənən oturacaq",
+    "en": "Electrically adjustable seat",
+    "ru": "Электрически регулируемое сиденье"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "electrically-adjustable-seat"
+},
+{
+  "_id": {
+    "$oid": "63f23a9a3b01f4a8154e7c46"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Elektroxrom arxa görünüş güzgüsü",
+    "en": "Electrochromic rearview mirror",
+    "ru": "Электрохромное зеркало заднего вида"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "electrochromic-rearview-mirror"
+},
+{
+  "_id": {
+    "$oid": "63f23ad03b01f4a8154e7c6f"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Sükan çarxında idarə elementləri",
+    "en": "Steering wheel controls",
+    "ru": "Управление на руле"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "steering-wheel-controls"
+},
+{
+  "_id": {
+    "$oid": "63f23b113b01f4a8154e7c98"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Arxa görünüş kamera",
+    "en": "Rear view camera",
+    "ru": "Камера заднего вида"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "rear-view-camera"
+},
+{
+  "_id": {
+    "$oid": "63f23b2e3b01f4a8154e7cc1"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Simsiz mobil telefon enerji yükləyici",
+    "en": "Wireless mobile phone charger",
+    "ru": "Беспроводное зарядное устройство для мобильного телефона"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "wireless-mobile-phone-charger"
+},
+{
+  "_id": {
+    "$oid": "63f23b5d3b01f4a8154e7cea"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Elektrik şüşəqaldıranlar",
+    "en": "Electric windows",
+    "ru": "Электрические Стеклоподъемники"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "electric-windows"
+},
+{
+  "_id": {
+    "$oid": "63f23b7a3b01f4a8154e7d13"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Ön şüşətəmizləyicinin qızdırıcısı",
+    "en": "Windshield wiper heater",
+    "ru": "Обогреватель стеклоочистителей"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "windshield-wiper-heater"
+},
+{
+  "_id": {
+    "$oid": "63f23b983b01f4a8154e7d3c"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Rəngli TFT məlumat displeyi",
+    "en": "Color TFT information display",
+    "ru": "Цветной информационный TFT-дисплей"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "color-tft-information-display"
+},
+{
+  "_id": {
+    "$oid": "63f23bb93b01f4a8154e7d65"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Elektrik sükangücləndiricisi (EPS)",
+    "en": "Electric power steering (EPS)",
+    "ru": "Рулевое управление с электроусилителем (EPS)"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "electric-power-steering-eps"
+},
+{
+  "_id": {
+    "$oid": "63f23c123b01f4a8154e7d8e"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Sükan çarxında Hərəkət zolağından çıxma xəbərdarlığı sistemi",
+    "en": "Steering wheel Lane Departure Warning system",
+    "ru": "Система предупреждения о выходе из полосы движения на рулевом колесе"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "steering-wheel-lane-departure-warning-system"
+},
+{
+  "_id": {
+    "$oid": "63f23c4a3b01f4a8154e7db7"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Sürəti müəyyən edən avtomatik qapı kilidi",
+    "en": "Speed-detecting automatic door lock",
+    "ru": "Автоматический дверной замок с определением скорости"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "speed-detecting-automatic-door-lock"
+},
+{
+  "_id": {
+    "$oid": "63f23c6a3b01f4a8154e7de0"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Uşaqların təhlükəsizliyi üçün qapı kilidi",
+    "en": "Door lock for child safety",
+    "ru": "Дверной замок для безопасности детей"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "door-lock-for-child-safety"
+},
+{
+  "_id": {
+    "$oid": "63f23c903b01f4a8154e7e09"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "SRS təhlükəsizlik yastıqları",
+    "en": "SRS airbags",
+    "ru": "Подушки безопасности SRS"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "srs-airbags"
+},
+{
+  "_id": {
+    "$oid": "63f23cb73b01f4a8154e7e32"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "ISOFIX uşaq təhlükəsizlik oturacaqlarının bərkidilmə sistemi",
+    "en": "ISOFIX child safety seat fastening system",
+    "ru": "Система крепления детского кресла ISOFIX."
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "isofix-child-safety-seat-fastening-system"
+},
+{
+  "_id": {
+    "$oid": "63f23cd83b01f4a8154e7e5b"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Multimedia",
+    "en": "Multimedia",
+    "ru": "Мультимедиа"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "multimedia"
+},
+{
+  "_id": {
+    "$oid": "63f23cfb3b01f4a8154e7e84"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Smartfon İnteqrasiyası",
+    "en": "Smartphone Integration",
+    "ru": "Интеграция со смартфоном"
+  },
+  "categories": [
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "smartphone-integration"
+},
+{
+  "_id": {
+    "$oid": "63f23d403b01f4a8154e7ead"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d45acf4b9dad6f20a7de3b"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {
+      "multiple": false
+    }
+  },
+  "name": {
+    "az": "Bluetooth® təmassız idarəetmə sistemi",
+    "en": "Bluetooth® contactless control system",
+    "ru": "Бесконтактная система управления Bluetooth®"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "bluetooth(r)-contactless-control-system"
+},
+{
+  "_id": {
+    "$oid": "63f23e853b01f4a8154e80cf"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d193af7896d6d8d8aece34"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "km"
+    }
+  },
+  "name": {
+    "az": "Yürüş",
+    "en": "Mileage",
+    "ru": "Пробег"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "mileage"
+},
+{
+  "_id": {
+    "$oid": "63f23ed405ad36981cde8ea2"
+  },
+  "section": "vehicles",
+  "group": {
+    "$oid": "63d193af7896d6d8d8aece34"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Hansı Bazar üçün yığılıb",
+    "en": "Collected for which market",
+    "ru": "Для какого рынка собран"
+  },
+  "categories": [
+    {
+      "$oid": "63d470974b9dad6f20a7ecf0"
+    },
+    {
+      "$oid": "63d470634b9dad6f20a7ece3"
+    },
+    {
+      "$oid": "63d470024b9dad6f20a7ecd6"
+    },
+    {
+      "$oid": "63d19c1f81089a4b9393adf7"
+    }
+  ],
+  "key": "collected-for-which-market"
+},
+{
+  "_id": {
+    "$oid": "63f242fe4b72673b4c3f7bea"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": true
+    }
+  },
+  "name": {
+    "az": "Bağlayıcı növü",
+    "en": "Connector type ",
+    "ru": "Тип разъема"
+  },
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    },
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    }
+  ],
+  "key": "connector-type"
+},
+{
+  "_id": {
+    "$oid": "63f23fab05ad36981cde8fae"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": false,
+      "showOnItem": true,
+      "showOnFilter": true
+    }
+  },
+  "name": {
+    "az": "Faza sayı",
+    "en": "Phase number ",
+    "ru": "Количество фаз"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "phase-number"
+},
+{
+  "_id": {
+    "$oid": "63f2418b05ad36981cde9089"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "kW",
+      "showOnItem": true,
+      "addToSlug": true
+    }
+  },
+  "name": {
+    "az": "Çıxış gücü",
+    "en": "Output power ",
+    "ru": "Выходная мощность"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "output-power"
+},
+{
+  "_id": {
+    "$oid": "63f241af05ad36981cde90b2"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "A",
+      "addToSlug": false,
+      "showOnItem": false
+    }
+  },
+  "name": {
+    "az": "Çıxış cərəyanı",
+    "en": "Output current",
+    "ru": "Ток на выходе"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "output-current"
+},
+{
+  "_id": {
+    "$oid": "63f2409e05ad36981cde9000"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "V",
+      "showOnItem": true,
+      "addToSlug": false
+    }
+  },
+  "name": {
+    "az": "Güc sərfiyatı",
+    "en": "Power input",
+    "ru": "Потребляемая мощность"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "power-input"
+},
+{
+  "_id": {
+    "$oid": "63f30d3e5504ced7c52c7659"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": true,
+      "required": true,
+      "showOnFilter": true
+    }
+  },
+  "name": {
+    "az": "Şarz nəzarəti",
+    "en": "Charging control ",
+    "ru": "Контроль зарядки"
+  },
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "charging-control"
+},
+{
+  "_id": {
+    "$oid": "63f30dc05504ced7c52c76d4"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": true
+    }
+  },
+  "name": {
+    "az": "Rabitə interfeysi",
+    "en": "Communication interface",
+    "ru": "Коммуникационный интерфейс"
+  },
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "communication-interface"
+},
+{
+  "_id": {
+    "$oid": "63f30d725504ced7c52c7682"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Ekran göstəricisi",
+    "en": "Display",
+    "ru": "Монитор"
+  },
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "display"
+},
+{
+  "_id": {
+    "$oid": "63f30d965504ced7c52c76ab"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e533fde1890b59bb9ea67e"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "İndikatorlar",
+    "en": "Indicators",
+    "ru": "Индикаторы"
+  },
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "indicators"
+},
+{
+  "_id": {
+    "$oid": "63f30dfb5504ced7c52c76fd"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e53406e1890b59bb9ea68b"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "C"
+    }
+  },
+  "name": {
+    "az": "Saxlama temperaturu",
+    "en": "Storage temperature ",
+    "ru": "Температура хранения"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "storage-temperature"
+},
+{
+  "_id": {
+    "$oid": "63f30e185504ced7c52c7726"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e53406e1890b59bb9ea68b"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "C"
+    }
+  },
+  "name": {
+    "az": "İşləmə temperaturu",
+    "en": "Operating temperature ",
+    "ru": "Рабочая температура"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "operating-temperature"
+},
+{
+  "_id": {
+    "$oid": "63f30e525504ced7c52c774f"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e53406e1890b59bb9ea68b"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "Rütubətililiyə davamlılıq",
+    "en": "Operating humidity ",
+    "ru": "Рабочая влажность"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "operating-humidity"
+},
+{
+  "_id": {
+    "$oid": "63f30e975504ced7c52c7778"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e53406e1890b59bb9ea68b"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "m",
+      "translatable": false
+    }
+  },
+  "name": {
+    "az": "Hündürlük",
+    "en": "Altitude ",
+    "ru": "Высота"
+  },
+  "categories": [
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    }
+  ],
+  "key": "altitude"
+},
+{
+  "_id": {
+    "$oid": "63f30ed85504ced7c52c77ca"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Qısa qapanma mühafizəsi",
+    "en": "Short circuit protection ",
+    "ru": "Защита от короткого замыкания"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "short-circuit-protection"
+},
+{
+  "_id": {
+    "$oid": "63f30f035504ced7c52c77f3"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Həddindən artıq yükdən qorunma",
+    "en": "OverLoad protection ",
+    "ru": "Защита от перегрузки"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "overload-protection"
+},
+{
+  "_id": {
+    "$oid": "63f30f245504ced7c52c781c"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Elektrik xəttinin qorunması",
+    "en": "Power line protection ",
+    "ru": "Защита линии электропередач"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "power-line-protection"
+},
+{
+  "_id": {
+    "$oid": "63f30f3f5504ced7c52c7845"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Sızma mühafizəsi",
+    "en": "Leakage protection ",
+    "ru": "Защита от утечки"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "leakage-protection"
+},
+{
+  "_id": {
+    "$oid": "63f30fa65504ced7c52c786e"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Torpaqlama",
+    "en": "Ground protection ",
+    "ru": "Заземление"
+  },
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "ground-protection"
+},
+{
+  "_id": {
+    "$oid": "63f30eb85504ced7c52c77a1"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": false
+    }
+  },
+  "name": {
+    "az": "IP kodu",
+    "en": "IP Code ",
+    "ru": "IP-код"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "ip-code"
+},
+{
+  "_id": {
+    "$oid": "63f310da5504ced7c52c79f4"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e53482e1890b59bb9ea6bf"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Ön paneldə loqo",
+    "en": "Logo on front panel ",
+    "ru": "Логотип на передней панели"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "logo-on-front-panel"
+},
+{
+  "_id": {
+    "$oid": "63f310fa5504ced7c52c7a1d"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e53482e1890b59bb9ea6bf"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "İstifadəçi kitabçası",
+    "en": "User manual",
+    "ru": "Руководство пользователя"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "user-manual"
+},
+{
+  "_id": {
+    "$oid": "63f312505504ced7c52c7bb8"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311af5504ced7c52c7a59"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "Type 1 to GBT/AC ",
+    "en": "Type 1 to GB/T AC",
+    "ru": "Type 1 to GB/T AC"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "type-1-to-gbt-ac"
+},
+{
+  "_id": {
+    "$oid": "63f312785504ced7c52c7c9c"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311af5504ced7c52c7a59"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "Type 2 to GB/T AC",
+    "en": "Type 2 to GB/T AC",
+    "ru": "Type 2 to GB/T AC"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "type-2-to-gbt-ac"
+},
+{
+  "_id": {
+    "$oid": "63f3128e5504ced7c52c7cc5"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311af5504ced7c52c7a59"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "CCS1 to GB/T DC",
+    "en": "CCS1 to GB/T DC",
+    "ru": "CCS1 to GB/T DC"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "ccs1-to-gbt-dc"
+},
+{
+  "_id": {
+    "$oid": "63f312a35504ced7c52c7cee"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311af5504ced7c52c7a59"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": false
+    }
+  },
+  "name": {
+    "az": "CCS2 to GB/T DC",
+    "en": "CCS2 to GB/T DC",
+    "ru": "CCS2 to GB/T DC"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "ccs2-to-gbt-dc"
+},
+{
+  "_id": {
+    "$oid": "63f45b715504ced7c52c9bae"
+  },
+  "section": "charging-stations",
+  "group": {
+    "$oid": "63e53482e1890b59bb9ea6bf"
+  },
+  "component": {
+    "name": "checkbox",
+    "attrs": {}
+  },
+  "name": {
+    "az": "Şarj kabelinin uzunluğu",
+    "en": "Length of charging cable",
+    "ru": "Длина зарядного кабеля"
+  },
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "key": "length-of-charging-cable"
+},
+{
+  "_id": {
+    "$oid": "63f45c625504ced7c52c9bec"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Ağıllı açar",
+    "en": "Smart key",
+    "ru": "Смарт-ключ"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "smart-key"
+},
+{
+  "_id": {
+    "$oid": "63f45c7e5504ced7c52c9c15"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Avtomobil ayaqaltıları",
+    "en": "Car mat",
+    "ru": "Автомобильный коврик"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "car-mat"
+},
+{
+  "_id": {
+    "$oid": "63f45c965504ced7c52c9c3e"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Avtomobil oturacağının örtüyü",
+    "en": "Car seat cover",
+    "ru": "Чехол для автомобильного сиденья"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "car-seat-cover"
+},
+{
+  "_id": {
+    "$oid": "63f45cb75504ced7c52c9c67"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Avtomobil loqoları",
+    "en": "Car logos",
+    "ru": "Автомобильные логотипы"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "car-logos"
+},
+{
+  "_id": {
+    "$oid": "63f45ccf5504ced7c52c9c90"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "Avtomobil parfumu",
+    "en": "Car parfum",
+    "ru": "Авто парфюм"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "car-parfum"
+},
+{
+  "_id": {
+    "$oid": "63f45ce65504ced7c52c9cb9"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Spoiler",
+    "en": "Spoiler",
+    "ru": "Спойлер"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "spoiler"
+},
+{
+  "_id": {
+    "$oid": "63f45d065504ced7c52c9ce2"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Maşın yuma avadanlığı",
+    "en": "Car washer cleaning machine",
+    "ru": "Мойки автомобилей"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "car-washer-cleaning-machine"
+},
+{
+  "_id": {
+    "$oid": "63f45d225504ced7c52c9d0b"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Elektrik nasosu",
+    "en": "Electric pump",
+    "ru": "Электрический насос"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "electric-pump"
+},
+{
+  "_id": {
+    "$oid": "63f45d395504ced7c52c9d34"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Telefon tutucusu",
+    "en": "Phone holder",
+    "ru": "Держатель телефона"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "phone-holder"
+},
+{
+  "_id": {
+    "$oid": "63f45d515504ced7c52c9d5d"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Çoxfunksiyalı avtomobil qaldırıcı dəsti",
+    "en": "Multifunctional car lift kit",
+    "ru": "Многофункциональный автомобильный подъемник"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "multifunctional-car-lift-kit"
+},
+{
+  "_id": {
+    "$oid": "63f45d695504ced7c52c9d86"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Simsiz şarj cihazı",
+    "en": "Wireless charger",
+    "ru": "Беспроводная зарядка"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    },
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    }
+  ],
+  "key": "wireless-charger"
+},
+{
+  "_id": {
+    "$oid": "63f45d895504ced7c52c9daf"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Avtomobilin təcili elektrik qutusu",
+    "en": "Car emergency power box",
+    "ru": "Автомобильный аварийный блок питания"
+  },
+  "categories": [
+    {
+      "$oid": "63f64188267a280e84f011f2"
+    },
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    }
+  ],
+  "key": "car-emergency-power-box"
+},
+{
+  "_id": {
+    "$oid": "63f45da55504ced7c52c9dd8"
+  },
+  "section": "accessories",
+  "group": {
+    "$oid": "63f311e45504ced7c52c7a80"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "3D stiker",
+    "en": "3D sticker",
+    "ru": "3D наклейки"
+  },
+  "categories": [
+    {
+      "$oid": "63f641b6267a280e84f01219"
+    }
+  ],
+  "key": "3d-sticker"
+},
+{
+  "_id": {
+    "$oid": "64100ea8be394baf257bed9a"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "mm"
+    }
+  },
+  "name": {
+    "az": "Ölçü (HxExU, mm)",
+    "en": "Dimension (HxWxD, mm) ",
+    "ru": "Габаритные размеры (ВхШхГ, мм)"
+  },
+  "key": "dimension-hxwxd-mm"
+},
+{
+  "_id": {
+    "$oid": "64100edfbe394baf257bedc2"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "kg"
+    }
+  },
+  "name": {
+    "az": "Çəki",
+    "en": "Weight ",
+    "ru": "Масса"
+  },
+  "key": "weight"
+},
+{
+  "_id": {
+    "$oid": "64100f1dbe394baf257bedea"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "number",
+      "suffix": "m"
+    }
+  },
+  "name": {
+    "az": "Doldurma Kabelinin Uzunluğu",
+    "en": "Charging Cable Length",
+    "ru": "Длина зарядного кабеля"
+  },
+  "key": "charging-cable-length"
+},
+{
+  "_id": {
+    "$oid": "64100f61be394baf257bee12"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "group": {
+    "$oid": "63e5343ae1890b59bb9ea6a5"
+  },
+  "component": {
+    "name": "select",
+    "attrs": {
+      "multiple": true
+    }
+  },
+  "name": {
+    "az": "Qoruyucu material",
+    "en": "Enclosure Material ",
+    "ru": "Материал корпуса"
+  },
+  "key": "enclosure-material"
+},
+{
+  "_id": {
+    "$oid": "64115f1ff0806609e4b4a36c"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "kVA"
+    }
+  },
+  "name": {
+    "az": "Input AC Power Rating",
+    "en": "Input AC Power Rating",
+    "ru": "Input AC Power Rating"
+  },
+  "key": "input-ac-power-rating"
+},
+{
+  "_id": {
+    "$oid": "64115f61f0806609e4b4a483"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "VAC"
+    }
+  },
+  "name": {
+    "az": "Input vVoltage Range",
+    "en": "Input vVoltage Range",
+    "ru": "Input vVoltage Range"
+  },
+  "key": "input-vvoltage-range"
+},
+{
+  "_id": {
+    "$oid": "64115f92f0806609e4b4a4ab"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "Power Wiring",
+    "en": "Power Wiring",
+    "ru": "Power Wiring"
+  },
+  "key": "power-wiring"
+},
+{
+  "_id": {
+    "$oid": "64115fc2f0806609e4b4a4d3"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "VDC"
+    }
+  },
+  "name": {
+    "az": "DC Voltage Output",
+    "en": "DC Voltage Output",
+    "ru": "DC Voltage Output"
+  },
+  "key": "dc-voltage-output"
+},
+{
+  "_id": {
+    "$oid": "64116028f0806609e4b4a530"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "kW"
+    }
+  },
+  "name": {
+    "az": "DC Güc Çıxış Reytinqi",
+    "en": "DC Power Output Rating",
+    "ru": "Выходная мощность постоянного тока"
+  },
+  "key": "dc-power-output-rating"
+},
+{
+  "_id": {
+    "$oid": "64116050f0806609e4b4a558"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "A"
+    }
+  },
+  "name": {
+    "az": "Maksimum çıxış cərəyanı",
+    "en": "The Maximum Output Current",
+    "ru": "Максимальный выходной ток"
+  },
+  "key": "the-maximum-output-current"
+},
+{
+  "_id": {
+    "$oid": "64116074f0806609e4b4a5ae"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text"
+    }
+  },
+  "name": {
+    "az": "PF (Güc Faktoru)",
+    "en": "PF(Power Factor)",
+    "ru": "PF (коэффициент мощности)"
+  },
+  "key": "pf-power-factor"
+},
+{
+  "_id": {
+    "$oid": "641160a6f0806609e4b4a631"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "THD-I",
+    "en": "THD-I",
+    "ru": "THD-I"
+  },
+  "key": "thd-i"
+},
+{
+  "_id": {
+    "$oid": "641160ccf0806609e4b4a659"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "Pik E",
+    "en": "Peak E",
+    "ru": "Пик Е"
+  },
+  "key": "peak-e"
+},
+{
+  "_id": {
+    "$oid": "641160f0f0806609e4b4a681"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "Stabilləşdirilmiş gərginlik dəqiqliyi",
+    "en": "Voltage Stabilized Accuracy",
+    "ru": "Стабилизированная по напряжению точность"
+  },
+  "key": "voltage-stabilized-accuracy"
+},
+{
+  "_id": {
+    "$oid": "64116147f0806609e4b4a6a9"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "Cari Stabilləşdirilmiş Dəqiqlik",
+    "en": "Current Stabilized Accuracy",
+    "ru": "Текущая стабилизированная точность"
+  },
+  "key": "current-stabilized-accuracy"
+},
+{
+  "_id": {
+    "$oid": "6411616af0806609e4b4a6d1"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "Çıxış gərginliyi xətası",
+    "en": "Output Voltage Error",
+    "ru": "Ошибка выходного напряжения"
+  },
+  "key": "output-voltage-error"
+},
+{
+  "_id": {
+    "$oid": "64116190f0806609e4b4a6f9"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "Çıxış cərəyanı xətası",
+    "en": "Output Current Error",
+    "ru": "Ошибка выходного тока"
+  },
+  "key": "output-current-error"
+},
+{
+  "_id": {
+    "$oid": "641161c2f0806609e4b4a726"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "63e533f3e1890b59bb9ea671"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "%"
+    }
+  },
+  "name": {
+    "az": "Dalğalanma faktoru:",
+    "en": "Ripple Factor",
+    "ru": "Коэффициент пульсации:"
+  },
+  "key": "ripple-factor"
+},
+{
+  "_id": {
+    "$oid": "64143fc247484a3be2855bd4"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e5380075aee2122f7964a8"
+    },
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    },
+    {
+      "$oid": "63e537b875aee2122f79648e"
+    }
+  ],
+  "group": {
+    "$oid": "63e5340fe1890b59bb9ea698"
+  },
+  "component": {
+    "name": "checkbox"
+  },
+  "name": {
+    "az": "Təcili Stop",
+    "en": "Emergency Stop",
+    "ru": "Экстренная остановка"
+  },
+  "key": "emergency-stop"
+},
+{
+  "_id": {
+    "$oid": "6414426747484a3be2855c81"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "641441d847484a3be2855c0e"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "mm"
+    }
+  },
+  "name": {
+    "az": "Ölçüsü (G×D×H)",
+    "en": "Reference Dimension (W×D×H)",
+    "ru": "Базовый размер (Ш×Г×В)"
+  },
+  "key": "reference-dimension-wdh"
+},
+{
+  "_id": {
+    "$oid": "641442a147484a3be2855ca9"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "641441d847484a3be2855c0e"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "suffix": "kg"
+    }
+  },
+  "name": {
+    "az": "Avadanlığın çəkisi",
+    "en": "Equipment Weight",
+    "ru": "Вес оборудования"
+  },
+  "key": "equipment-weight"
+},
+{
+  "_id": {
+    "$oid": "641442e547484a3be2855ced"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "641441d847484a3be2855c0e"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Qoruyucu material",
+    "en": "Enclosure Material",
+    "ru": "Материал корпуса"
+  },
+  "key": "enclosure-material"
+},
+{
+  "_id": {
+    "$oid": "6414432747484a3be2855d15"
+  },
+  "section": "charging-stations",
+  "categories": [
+    {
+      "$oid": "63e537e675aee2122f79649b"
+    }
+  ],
+  "group": {
+    "$oid": "641441d847484a3be2855c0e"
+  },
+  "component": {
+    "name": "input",
+    "attrs": {
+      "type": "text",
+      "translatable": true
+    }
+  },
+  "name": {
+    "az": "Rəng",
+    "en": "Color",
+    "ru": "Цвет"
+  },
+  "key": "color"
+}]

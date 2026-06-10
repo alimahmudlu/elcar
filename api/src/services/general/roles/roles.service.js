@@ -1,0 +1,19 @@
+// Initializes the `roles` service on path `/roles`
+const { Roles } = require('./roles.class');
+const createModel = require('../../../models/general/roles.model');
+const hooks = require('./roles.hooks');
+
+module.exports = function (app) {
+  const options = {
+    Model: createModel(app),
+    paginate: false
+  };
+
+  // Initialize our service with any options it requires
+  app.use('/roles', new Roles(options, app));
+
+  // Get our initialized service so that we can register hooks
+  const service = app.service('roles');
+
+  service.hooks(hooks);
+};

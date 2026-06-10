@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "629b883b428758f46d9a061b"
+  },
+  "active": true,
+  "description": "Description for Small plan",
+  "discount": 0,
+  "module": {
+    "$oid": "629b87d5aac369c4a0a81ce8"
+  },
+  "name": "Free Plan",
+  "prices": [
+    {
+      "$oid": "629b861a7967105012a24423"
+    }
+  ]
+}]

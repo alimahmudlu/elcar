@@ -1,0 +1,16 @@
+import { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const nextConfig: NextConfig = {
+    images: {
+        remotePatterns: [
+#            new URL("http://localhost:3113/**"),
+#            new URL("http://localhost:3111/**"),
+            new URL("https://api.elcar.az/**"),
+#            new URL("https://elcar-az-nextjs.vercel.app/**")
+        ]
+    }
+}
+
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);
