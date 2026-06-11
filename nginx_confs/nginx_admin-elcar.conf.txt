@@ -1,26 +1,6 @@
 server {
-    if ($host = admin.elcar.az) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
-
-
     listen 80;
     listen [::]:80;
-    server_name admin.elcar.az www.admin.elcar.az;
-    return 302 https://$server_name$request_uri;
-
-
-}
-
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    ssl_certificate /etc/letsencrypt/live/admin.elcar.az/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/admin.elcar.az/privkey.pem; # managed by Certbot
-
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers HIGH:!aNULL:!MD5;
-    ssl_prefer_server_ciphers on;
 
     server_name admin.elcar.az;
 
