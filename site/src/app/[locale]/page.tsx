@@ -16,8 +16,8 @@ export default async function HomePage() {
       <HeroSlider data={sliderData} BASE_URL={BASE_URL || ""} />
       <Services />
       {/*<PopularCars />*/}
-      <Brands />
       <ChargingStations />
+      <Brands />
       <ConnectorsAndAccessories />
       <MobileServices />
     </section>
