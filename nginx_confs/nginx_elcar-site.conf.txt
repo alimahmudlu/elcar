@@ -1,0 +1,126 @@
+# Redirect HTTP to HTTPS
+server {
+    if ($host = elcar.az) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    listen 80;
+    listen [::]:80;
+    server_name elcar.az www.elcar.az;
+    return 301 https://$server_name$request_uri;
+
+
+}
+
+# Main HTTPS server
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name elcar.az www.elcar.az;
+
+    # SSL config
+    ssl_certificate /etc/letsencrypt/live/elcar.az-0001/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/elcar.az-0001/privkey.pem; # managed by Certbot
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
+
+    # Gzip compression
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1000;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types
+        text/plain
+        text/css
+        text/xml
+        text/javascript
+        application/json
+        application/javascript
+        application/xml+rss
+        application/atom+xml
+        image/svg+xml;
+
+    # Static files served directly (optional)
+    location ~ ^/(static|images|fonts|favicon\.ico|robots\.txt) {
+        root /home/ubuntu/www/elcar/site/public;
+        expires 1y;
+        access_log off;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Health check endpoint
+    location /health {
+        access_log off;
+        return 200 "healthy\n";
+        add_header Content-Type text/plain;
+    }
+
+    # Webhook endpoint for CI/CD
+    location /ci-webhook {
+        proxy_pass http://127.0.0.1:3001/webhook;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 75s;
+    }
+
+    location /_next/static/ {
+        alias /home/ubuntu/www/elcar/site/.next/static/;
+        access_log off;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+
+    # API endpoints (if handled separately)
+#    location /api/ {
+#        proxy_pass http://0.0.0.0:3114;
+#        proxy_http_version 1.1;
+#        proxy_set_header Upgrade $http_upgrade;
+#        proxy_set_header Connection 'upgrade';
+#        proxy_set_header Host $host;
+#        proxy_set_header X-Real-IP $remote_addr;
+#        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#        proxy_set_header X-Forwarded-Proto $scheme;
+#        proxy_cache_bypass $http_upgrade;
+#        proxy_read_timeout 300s;
+#        proxy_connect_timeout 75s;
+#    }
+
+    # Main Next.js frontend app
+    location / {
+        proxy_pass http://localhost:3111;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 75s;
+
+        # Buffering (optional for performance)
+        proxy_buffering on;
+        proxy_buffer_size 128k;
+        proxy_buffers 4 256k;
+        proxy_busy_buffers_size 256k;
+    }
+    # Error pages
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /var/www/html;
+    }
+
+    # Logging
+    access_log /var/log/nginx/elcar-access.log;
+    error_log /var/log/nginx/elcar-error.log;
+
+}
