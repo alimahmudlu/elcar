@@ -18,10 +18,10 @@ export const navigations = () => {
     az: [
       { name: "Ana Səhifə", href: routes.home.path },
       { name: "Yükləmə Stansiyaları", href: routes.chargingStations.path },
-      {
+      /*{
         name: "Elektrikli Nəqliyyat Vasitələri",
         href: routes.electricVehicles.path,
-      },
+      },*/
       { name: "Bağlayıcılar və Aksesuarlar", href: routes.connectors.path },
       { name: "Bloq", href: routes.blog.path },
       {
@@ -36,7 +36,7 @@ export const navigations = () => {
     en: [
       { name: "Home", href: routes.home.path },
       { name: "Charging Stations", href: routes.chargingStations.path },
-      { name: "Electric Vehicles", href: routes.electricVehicles.path },
+      /*{ name: "Electric Vehicles", href: routes.electricVehicles.path },*/
       { name: "Connectors & Accessories", href: routes.connectors.path },
       { name: "Blog", href: routes.blog.path },
       {
@@ -51,7 +51,7 @@ export const navigations = () => {
     ru: [
       { name: "Главная", href: routes.home.path },
       { name: "Зарядные станции", href: routes.chargingStations.path },
-      { name: "Электромобили", href: routes.electricVehicles.path },
+      /*{ name: "Электромобили", href: routes.electricVehicles.path },*/
       { name: "Разъемы и аксессуары", href: routes.connectors.path },
       { name: "Блог", href: routes.blog.path },
       {
