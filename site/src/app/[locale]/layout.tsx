@@ -30,6 +30,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  console.log(locale, params, 'locale');
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
@@ -41,7 +42,7 @@ export default async function LocaleLayout({
       >
         <PrimeReactProvider value={{ ripple: true }}>
           <ThemeProvider attribute="class" enableSystem defaultTheme="light">
-            <NextIntlClientProvider locale={locale}>
+            <NextIntlClientProvider locale={locale || 'az'}>
               <NextTopLoader showSpinner={false} color="#006965" />
               <Header />
               <CustomCursor />
