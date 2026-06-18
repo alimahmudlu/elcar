@@ -37,6 +37,7 @@ const uploadFile = async function (path, s3Key) {
             Key: s3Key,
             ACL: 'public-read'
         }, (error, data) => {
+            console.log(data, error, 'ci');
             if (error) return error;
             return data;
         });
