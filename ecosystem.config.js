@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'elcar-site',
-      cwd: 'home/developer/projects/site',
+      cwd: '/home/developer/projects/site',
       script: 'npm',
       args: 'start',
       instances: 1,
@@ -14,7 +14,7 @@ module.exports = {
     },
     {
       name: 'elcar-admin',
-      cwd: 'home/developer/projects/admin',
+      cwd: '/home/developer/projects/admin',
       script: 'npm', 
       args: 'start',
       instances: 1,
@@ -26,7 +26,7 @@ module.exports = {
     },
     {
       name: 'elcar-api',
-      cwd: 'home/developer/projects/api',
+      cwd: '/home/developer/projects/api',
       script: 'npm',
       args: 'start',
       instances: 1,
