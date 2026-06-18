@@ -4,7 +4,7 @@ module.exports = {
       name: 'site',
       script: 'node_modules/next/dist/bin/next',
       args: 'start',
-      cwd: '/root/projects/site',
+      cwd: '/home/developer/projects/site',
       instances: 'max',
       exec_mode: 'cluster',
       env: {
