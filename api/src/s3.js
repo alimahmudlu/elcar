@@ -12,8 +12,10 @@ const s3 = new AWS.S3({
     endpoint,
     accessKeyId,
     secretAccessKey,
-    s3BucketEndpoint: true,
-    s3ForcePathStyle: true
+    // s3BucketEndpoint: true,
+    // s3ForcePathStyle: true,
+    s3ForcePathStyle: true,
+    signatureVersion: 'v4'
 });
 
 /*====================================================================================================================*/
