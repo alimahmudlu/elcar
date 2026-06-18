@@ -34,7 +34,8 @@ const uploadFile = async function (path, s3Key) {
         return await s3.putObject({
             Bucket,
             Body: fileStream,
-            Key: s3Key
+            Key: s3Key,
+            ACL: 'public-read'
         }, (error, data) => {
             if (error) return error;
             return data;
