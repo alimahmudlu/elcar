@@ -1,9 +1,9 @@
 require('dotenv').config()
 const { exec  } = require('child_process')
 const cron = require('node-cron');
-// const fs = require('fs');
-// const path = require('path');
-// const { uploadFile } = require('./s3')
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
 
 module.exports = function (app) {
 
@@ -11,7 +11,56 @@ module.exports = function (app) {
     const OUT_PATH = 'backup/'
 
     cron.schedule('0 0 * * *', () => backupMongoDB());
-    // cron.schedule('*/15 * * * * *', () => backupMongoDB());
+    cron.schedule('0 1 * * *', () => cleanTempFiles());
+
+    function cleanTempFiles() {
+        const tempDir = os.tmpdir();
+        const now = Date.now();
+        const maxAge = 24 * 60 * 60 * 1000; // 24 hours
+
+        // Clean root temp directory
+        cleanDir(tempDir);
+
+        // Clean /tmp/dashboard if it exists
+        const dashboardDir = '/tmp/dashboard';
+        if (fs.existsSync(dashboardDir)) {
+            cleanDir(dashboardDir);
+        }
+
+        function cleanDir(dirPath) {
+            fs.readdir(dirPath, (err, files) => {
+                if (err) {
+                    console.error(`Error reading directory ${dirPath}:`, err);
+                    return;
+                }
+
+                files.forEach(file => {
+                    const filePath = path.join(dirPath, file);
+                    fs.stat(filePath, (err, stats) => {
+                        if (err) return;
+
+                        // Delete files that start with 'multer-' or are in dashboard and are old
+                        const isMulter = file.startsWith('multer-');
+                        const isDashboardFile = dirPath === dashboardDir;
+
+                        if ((isMulter || isDashboardFile) && (now - stats.mtimeMs) > maxAge) {
+                            if (stats.isDirectory()) {
+                                fs.rm(filePath, { recursive: true, force: true }, (err) => {
+                                    if (err) console.error(`Error deleting temp dir ${file}:`, err);
+                                    else console.log(`Deleted old temp dir: ${file}`);
+                                });
+                            } else {
+                                fs.unlink(filePath, (err) => {
+                                    if (err) console.error(`Error deleting temp file ${file}:`, err);
+                                    else console.log(`Deleted old temp file: ${file}`);
+                                });
+                            }
+                        }
+                    });
+                });
+            });
+        }
+    }
 
     async function backupMongoDB() {
         await exec(`mongodump --uri=mongodb://localhost:27017/${DB_NAME} --out=./${OUT_PATH}`, (error, stdout, stderr) => {

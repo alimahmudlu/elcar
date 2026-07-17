@@ -1,3 +1,4 @@
+const os = require('os');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const slugify = require('slugify');
@@ -51,6 +52,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({
     storage,
+    dest: os.tmpdir(), // Explicitly set temp directory for disk storage if needed
     limits: {
         fieldSize: 1e+8,
         fileSize: 1e+7
