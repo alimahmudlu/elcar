@@ -11,8 +11,8 @@ module.exports = function (app) {
     const OUT_PATH = 'backup/'
 
     cron.schedule('0 0 * * *', () => backupMongoDB());
-    cron.schedule('18 13 * * *', () => cleanTempFiles());
-    cron.schedule('19 09 * * *', () => cleanTempFiles());
+    cron.schedule('38 13 * * *', () => cleanTempFiles());
+    cron.schedule('40 09 * * *', () => cleanTempFiles());
 
     function cleanTempFiles() {
         const tempDir = os.tmpdir();
@@ -23,10 +23,23 @@ module.exports = function (app) {
         // Clean root temp directory
         cleanDir(tempDir);
 
-        // Clean /tmp/dashboard if it exists
+        // Clean /tmp/dashboard if it exists and is a directory
         const dashboardDir = '/tmp/dashboard';
-        if (fs.existsSync(dashboardDir)) {
-            cleanDir(dashboardDir);
+        try {
+            if (fs.existsSync(dashboardDir)) {
+                const stats = fs.statSync(dashboardDir);
+                if (stats.isDirectory()) {
+                    cleanDir(dashboardDir);
+                } else if ((now - stats.mtimeMs) > maxAge) {
+                    // If it's a file instead of a directory, delete it if old
+                    fs.unlink(dashboardDir, (err) => {
+                        if (err) console.error(`Error deleting old /tmp/dashboard file:`, err);
+                        else console.log(`Deleted old /tmp/dashboard file`);
+                    });
+                }
+            }
+        } catch (e) {
+            console.error('Error checking /tmp/dashboard:', e);
         }
 
         function cleanDir(dirPath) {
@@ -137,8 +150,21 @@ if (require.main === module) {
     const maxAge = 24 * 60 * 60 * 1000;
 
     cleanDir(tempDir, dashboardDir, now, maxAge);
-    if (fs.existsSync(dashboardDir)) {
-        cleanDir(dashboardDir, dashboardDir, now, maxAge);
+
+    try {
+        if (fs.existsSync(dashboardDir)) {
+            const stats = fs.statSync(dashboardDir);
+            if (stats.isDirectory()) {
+                cleanDir(dashboardDir, dashboardDir, now, maxAge);
+            } else if ((now - stats.mtimeMs) > maxAge) {
+                fs.unlink(dashboardDir, (err) => {
+                    if (err) console.error(`Error deleting /tmp/dashboard file:`, err);
+                    else console.log(`Deleted /tmp/dashboard file`);
+                });
+            }
+        }
+    } catch (e) {
+        console.error('Error checking /tmp/dashboard manually:', e);
     }
 }
 
