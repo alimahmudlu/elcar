@@ -47,71 +47,84 @@ module.exports = () => {
                 const newPath = path.resolve(filesPath, filename);
 
                 if (isImage) {
-                    const sharpImage = sharp(file.path);
-                    const metadata = await sharpImage.metadata();
+                    let sharpImage;
+                    try {
+                        sharpImage = sharp(file.path);
+                        const metadata = await sharpImage.metadata();
 
-                    const options = {
-                        fit: 'inside',
-                        width: metadata.width,
-                        height: metadata.height,
-                    };
+                        const options = {
+                            fit: 'inside',
+                            width: metadata.width,
+                            height: metadata.height,
+                        };
 
-                    const maxWidth = parseInt(query.maxWidth || 1200);
-                    const maxHeight = parseInt(query.maxHeight || 1200);
+                        const maxWidth = parseInt(query.maxWidth || 1200);
+                        const maxHeight = parseInt(query.maxHeight || 1200);
 
-                    if (metadata.width > maxWidth) {
-                        options.width = maxWidth;
-                    }
-
-                    if (metadata.height > maxHeight) {
-                        options.height = maxHeight;
-                    }
-
-                    const formatMap = {
-                        jpg: 'jpeg',
-                        jpeg: 'jpeg',
-                        png: 'png',
-                        webp: 'webp',
-                        tiff: 'tiff'
-                    };
-
-                    const sharpFormat = formatMap[file.extension];
-
-                    await new Promise((resolve, reject) => {
-                        let pipeline = sharpImage.resize(options);
-
-                        if (sharpFormat && typeof pipeline[sharpFormat] === 'function') {
-                            pipeline = pipeline[sharpFormat]({ quality: 100 });
+                        if (metadata.width > maxWidth) {
+                            options.width = maxWidth;
                         }
 
-                        pipeline.toFile(newPath, (error, data) => {
-                            if (error) {
-                                console.error(error);
-                                reject(error);
-                            } else {
-                                fileModel.width = data.width;
-                                fileModel.height = data.height;
-                                fileModel.size = data.size;
+                        if (metadata.height > maxHeight) {
+                            options.height = maxHeight;
+                        }
 
-                                const oldPath = path.resolve(tempPath, filename);
-                                if (fs.existsSync(oldPath)) {
-                                    fs.unlinkSync(oldPath);
-                                }
+                        const formatMap = {
+                            jpg: 'jpeg',
+                            jpeg: 'jpeg',
+                            png: 'png',
+                            webp: 'webp',
+                            tiff: 'tiff'
+                        };
 
-                                resolve(true);
+                        const sharpFormat = formatMap[file.extension];
+
+                        await new Promise((resolve, reject) => {
+                            let pipeline = sharpImage.resize(options);
+
+                            if (sharpFormat && typeof pipeline[sharpFormat] === 'function') {
+                                pipeline = pipeline[sharpFormat]({ quality: 80 }); // Reduced quality from 100 to 80
                             }
+
+                            pipeline.toFile(newPath, (error, data) => {
+                                if (error) {
+                                    console.error(error);
+                                    reject(error);
+                                } else {
+                                    fileModel.width = data.width;
+                                    fileModel.height = data.height;
+                                    fileModel.size = data.size;
+
+                                    const oldPath = path.resolve(tempPath, filename);
+                                    if (fs.existsSync(oldPath)) {
+                                        fs.unlinkSync(oldPath);
+                                    }
+
+                                    resolve(true);
+                                }
+                            });
                         });
-                    });
+                    } catch (err) {
+                        console.error('[upload-files.js] Sharp processing error:', err);
+                        // Ensure cleanup of source file if sharp fails
+                        if (fs.existsSync(file.path)) {
+                            fs.unlinkSync(file.path);
+                        }
+                        throw err;
+                    }
                 }
 
                 const s3Key = `${file.originalname}.${file.extension}`;
-                await uploadFile(newPath, s3Key);
-
-                setTimeout(() => {
+                try {
+                    await uploadFile(newPath, s3Key);
+                } finally {
                     if (fs.existsSync(newPath)) {
                         fs.unlinkSync(newPath);
                     }
-                }, 5000);
+                    if (fs.existsSync(file.path)) {
+                        fs.unlinkSync(file.path);
+                    }
+                }
 
                 formData.push(fileModel);
             }
