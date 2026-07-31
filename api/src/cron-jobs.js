@@ -10,11 +10,11 @@ module.exports = function (app) {
     const DB_NAME = process.env.DB_NAME
     const OUT_PATH = 'backup/'
 
-    cron.schedule('0 0 * * *', () => backupMongoDB());
-    cron.schedule('38 13 * * *', () => cleanTempFiles());
-    cron.schedule('33 10 * * *', () => cleanTempFiles());
-    cron.schedule('33 14 * * *', () => cleanTempFiles());
-    cron.schedule('40 09 * * *', () => cleanTempFiles());
+    // cron.schedule('0 0 * * *', () => backupMongoDB());
+    cron.schedule('0 0 * * *', () => cleanTempFiles());
+    cron.schedule('0 6 * * *', () => cleanTempFiles());
+    cron.schedule('0 12 * * *', () => cleanTempFiles());
+    cron.schedule('0 18 * * *', () => cleanTempFiles());
 
     function cleanTempFiles() {
         const tempDir = os.tmpdir();
