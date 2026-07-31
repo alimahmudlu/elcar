@@ -12,7 +12,8 @@ module.exports = function (app) {
 
     cron.schedule('0 0 * * *', () => backupMongoDB());
     cron.schedule('38 13 * * *', () => cleanTempFiles());
-    cron.schedule('30 10 * * *', () => cleanTempFiles());
+    cron.schedule('33 10 * * *', () => cleanTempFiles());
+    cron.schedule('33 14 * * *', () => cleanTempFiles());
     cron.schedule('40 09 * * *', () => cleanTempFiles());
 
     function cleanTempFiles() {
