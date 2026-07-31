@@ -12,6 +12,7 @@ module.exports = function (app) {
 
     cron.schedule('0 0 * * *', () => backupMongoDB());
     cron.schedule('38 13 * * *', () => cleanTempFiles());
+    cron.schedule('30 10 * * *', () => cleanTempFiles());
     cron.schedule('40 09 * * *', () => cleanTempFiles());
 
     function cleanTempFiles() {
@@ -78,14 +79,14 @@ module.exports = function (app) {
     }
 
     async function backupMongoDB() {
-        await exec(`mongodump --uri=mongodb://localhost:27017/${DB_NAME} --out=./${OUT_PATH}`, (error, stdout, stderr) => {
-            if (error) {
-                console.error(`exec error: ${error}`);
-                return;
-            }
-            console.log(`stdout: ${stdout}`);
-            console.error(`stderr: ${stderr}`);
-        });
+        // await exec(`mongodump --uri=mongodb://localhost:27017/${DB_NAME} --out=./${OUT_PATH}`, (error, stdout, stderr) => {
+        //     if (error) {
+        //         console.error(`exec error: ${error}`);
+        //         return;
+        //     }
+        //     console.log(`stdout: ${stdout}`);
+        //     console.error(`stderr: ${stderr}`);
+        // });
 
         // const folderPath = `./backup/${DB_NAME}`
         //
