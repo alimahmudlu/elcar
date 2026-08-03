@@ -74,15 +74,14 @@ exports.renameFile = renameFile;
 
 const deleteFile = async function (src) {
 
-    const Key = src.replace('uploads/files', '');
+    const Key = src.replace('uploads/files/', '');
 
-    s3.deleteObject({Bucket, Key}, function (error, data) {
-        if (error) {
-            console.log('error', error);
-        } else {
-            console.log('data', data);
-        }
-    });
+    try {
+        return await s3.deleteObject({Bucket, Key}).promise();
+    } catch (error) {
+        console.error(`Error deleting file ${Key}:`, error);
+        throw error;
+    }
 
 };
 
