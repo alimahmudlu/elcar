@@ -26,25 +26,16 @@ const uploadFile = async function (path, s3Key) {
 
     const fileStream = fs.createReadStream(path);
 
-    fileStream.on('error', (error) => {
-        console.error(`Error reading file ${path}: ${error}`);
-    });
-
     try {
         return await s3.putObject({
             Bucket,
             Body: fileStream,
             Key: s3Key,
             ACL: 'public-read'
-        }, (error, data) => {
-            console.log(data, error, 'ci');
-            if (error) return error;
-            return data;
-        });
-
+        }).promise();
     } catch (error) {
-        console.log(error);
-        return error;
+        console.error(`Error uploading file ${path} to ${s3Key}:`, error);
+        throw error;
     }
 };
 

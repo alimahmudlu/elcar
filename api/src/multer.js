@@ -1,4 +1,6 @@
+const fs = require('fs');
 const os = require('os');
+const path = require('path');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const slugify = require('slugify');
@@ -40,10 +42,14 @@ const checkExistFiles = async (checkedName)=> {
     }
 };
 
+const uploadsDir = path.join(__dirname, '../public/uploads');
+
+['temp', 'files'].forEach(dir => fs.mkdirSync(path.join(uploadsDir, dir), {recursive: true}));
+
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         const isImage = /(jpg|jpeg|png|gif|bmp|webp|tif|tiff)$/i.test(file.mimetype);
-        return cb(null, `public/uploads/${isImage ? 'temp' : 'files'}`);
+        return cb(null, path.join(uploadsDir, isImage ? 'temp' : 'files'));
     },
     filename: (req, file, cb) => {
         return cb(null, `${file.originalname}.${file.extension}`);
