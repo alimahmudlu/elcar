@@ -1,6 +1,6 @@
-import { Breadcrumbs } from "@mui/material";
-import { AiOutlineRight } from "react-icons/ai";
-import Link from "next/link";
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { getTranslations } from "next-intl/server";
 import {
   getBrands,
@@ -13,6 +13,23 @@ import { CategoryEnum, ProductEnum } from "@/constants/enums";
 import { groupCharacteristicsWithChildren } from "@/lib/utils";
 import { ChildCharacteristic } from "@/types";
 import ProductsSection from "../components/products/ProductsSection";
+
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.electricVehicles" });
+  return buildMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+    path: "/electric-vehicles",
+    withLanguages: true,
+  });
+}
 
 const Page = async () => {
   const t = await getTranslations();
@@ -32,27 +49,7 @@ const Page = async () => {
   return (
     <section className="container max-md:max-w-[90%] mt-20">
       <div className="mb-8">
-        <Breadcrumbs
-          separator={
-            <AiOutlineRight className="w-3 h-3 dark:text-primary-foreground" />
-          }
-          aria-label="breadcrumb"
-        >
-          <Link
-            color="inherit"
-            className="focused dark:text-primary-foreground"
-            href="/"
-          >
-            Elcar
-          </Link>
-          <Link
-            color="inherit"
-            className="dark:text-primary-foreground"
-            href="/electric-vehicles"
-          >
-            {t("pages.electricVehicles")}
-          </Link>
-        </Breadcrumbs>
+        <Breadcrumb items={[{ label: "Elcar", href: "/" }, { label: t("pages.electricVehicles") }]} />
 
         <h1 className="text-3xl md:text-5xl text-title font-extrabold mt-4 leading-tight  dark:text-primary-foreground">
           {t("pages-content.electric-vehicles.title")}
