@@ -114,7 +114,9 @@
         "phone": "Phone is required",
         "message": "Message is required"
       }
-    }
+    },
+    "whatsapp-message": "Hello, I would like information about a charging station.",
+    "whatsapp-label": "Message us on WhatsApp"
   },
   "about": {
     "title": "About Our Company",
@@ -195,7 +197,12 @@
     }
   },
   "footer": {
-    "title": "All rights reserved!"
+    "title": "All rights reserved!",
+    "about": "Since 2022 we have been selling and installing EV charging equipment in Azerbaijan.",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "hours": "Mon–Sat, 09:00–18:00"
   },
   "notFound": {
     "title": "Page not found",
@@ -234,5 +241,16 @@
       "title": "Contact — ELCAR, Baku",
       "description": "Baku, Narimanov district, Hasanoglu str. 4. Phone: (+994 77) 300 60 60. Get in touch with your questions and orders."
     }
+  },
+  "pagination": {
+    "prev": "Previous",
+    "next": "Next",
+    "pageLabel": "Pagination",
+    "allLoaded": "All products shown"
+  },
+  "charger": {
+    "output-power": "Output power",
+    "power-input": "Supply voltage",
+    "phase-number": "Phases"
   }
 }

@@ -114,7 +114,9 @@
         "phone": "Telefon nömrəsi düzgün deyil",
         "message": "Mesaj tələb olunur"
       }
-    }
+    },
+    "whatsapp-message": "Salam, şarj cihazı haqqında məlumat almaq istəyirəm.",
+    "whatsapp-label": "WhatsApp ilə yazın"
   },
   "about": {
     "title": "Şirkətimiz haqqında",
@@ -195,7 +197,12 @@
     }
   },
   "footer": {
-    "title": "Bütün haqqları qorunur!"
+    "title": "Bütün haqqları qorunur!",
+    "about": "2022-ci ildən Azərbaycanda elektromobil şarj avadanlığının satışı və quraşdırılması ilə məşğuluq.",
+    "products": "Məhsullar",
+    "company": "Şirkət",
+    "contact": "Əlaqə",
+    "hours": "B.e–Şənbə, 09:00–18:00"
   },
   "notFound": {
     "title": "Səhifə tapılmadı",
@@ -234,5 +241,16 @@
       "title": "Əlaqə — ELCAR, Bakı",
       "description": "Bakı, Nərimanov r., Həsənoğlu küç. 4. Tel: (+994 77) 300 60 60. Sual və sifarişləriniz üçün bizimlə əlaqə saxlayın."
     }
+  },
+  "pagination": {
+    "prev": "Əvvəlki",
+    "next": "Növbəti",
+    "pageLabel": "Səhifələmə",
+    "allLoaded": "Bütün məhsullar göstərildi"
+  },
+  "charger": {
+    "output-power": "Çıxış gücü",
+    "power-input": "Şəbəkə gərginliyi",
+    "phase-number": "Faza sayı"
   }
 }
