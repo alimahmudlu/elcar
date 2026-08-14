@@ -80,13 +80,14 @@ export const getCharacteristic = async (section:string) => {
     }
 }
 
-export const getVehicles = async (params?: { [key: string]: string | string[] }, skip?: string) => {
+export const getVehicles = async (params?: { [key: string]: string | string[] }, skip?: string, limit = 12) => {
     try {
         const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
             params: {
                 section: "vehicles",
                 ...params,
-                "$skip": skip || 0
+                "$skip": skip || 0,
+                "$limit": limit
             }
         });
         return response.data;
@@ -95,14 +96,14 @@ export const getVehicles = async (params?: { [key: string]: string | string[] },
         return [];
     }
 }
-export const chargingStations = async (params?: { [key: string]: string | string[] }, skip?: string) => {
+export const chargingStations = async (params?: { [key: string]: string | string[] }, skip?: string, limit = 12) => {
     try {
         const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
             params: {
                 section: "charging-stations",
                 ...params,
                 "$skip": skip || 0,
-                "$limit": 12
+                "$limit": limit
             }
         });
         return response.data;
@@ -111,14 +112,14 @@ export const chargingStations = async (params?: { [key: string]: string | string
         return [];
     }
 }
-export const chargingConnectors = async (params?: { [key: string]: string | string[] }, skip?: string) => {
+export const chargingConnectors = async (params?: { [key: string]: string | string[] }, skip?: string, limit = 12) => {
     try {
         const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
             params: {
                 section: "accessories",
                 ...params,
                 "$skip": skip || 0,
-                "$limit": 12
+                "$limit": limit
             }
         });
         return response.data;

@@ -30,9 +30,10 @@ const SwiperGallery = ({ images, BASE_URL }: SwiperGalleryProps) => {
 
   if (!images || images.length === 0 || !isClient) {
     return (
-      <div className="w-full h-64 bg-gray-200 dark:bg-gray-700 rounded-lg animate-pulse flex items-center justify-center">
-        <div className="text-gray-500">Loading...</div>
-      </div>
+      <div
+        className="w-full h-64 bg-gray-200 dark:bg-gray-700 rounded-lg animate-pulse"
+        aria-hidden="true"
+      />
     );
   }
 

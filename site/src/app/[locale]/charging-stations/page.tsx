@@ -1,3 +1,4 @@
+import Pagination from "@/components/common/Pagination";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/common/Breadcrumb";
@@ -8,6 +9,7 @@ import {
   getCharacteristic,
   getCharacteristicOptions,
   getModels,
+  chargingStations,
 } from "@/api/request";
 import { CategoryEnum, ProductEnum } from "@/constants/enums";
 import { groupCharacteristicsWithChildren } from "@/lib/utils";
@@ -31,8 +33,16 @@ export async function generateMetadata({
   });
 }
 
-const Page = async () => {
+type SearchParams = Promise<{ page?: string }>;
+
+const Page = async ({ searchParams }: { searchParams: SearchParams }) => {
+  const sp = await searchParams;
+  const page = Math.max(1, Number(sp?.page ?? 1) || 1);
+  const PER_PAGE = 12;
   const t = await getTranslations();
+  const initial = await chargingStations({}, String((page - 1) * PER_PAGE), PER_PAGE);
+  const initialProducts = initial?.data ?? [];
+  const initialTotal = initial?.meta?.total ?? 0;
   const categories = await getCategories(CategoryEnum.ChargingStation);
   const brands = await getBrands(CategoryEnum.ChargingStation);
   const characteristic = await getCharacteristic(CategoryEnum.ChargingStation);
@@ -67,6 +77,20 @@ const Page = async () => {
         brands={brands}
         models={models}
         filterOptions={filterOptions}
+        initialProducts={initialProducts}
+        initialTotal={initialTotal}
+      />
+
+      <Pagination
+        page={page}
+        total={initialTotal}
+        perPage={PER_PAGE}
+        basePath="/charging-stations"
+        labels={{
+          prev: t("pagination.prev"),
+          next: t("pagination.next"),
+          pageLabel: t("pagination.pageLabel"),
+        }}
       />
     </section>
   );

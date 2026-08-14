@@ -14,6 +14,8 @@ import Footer from "./components/common/Footer";
 import CustomCursor from "./components/common/CustomCursor";
 import { PrimeReactProvider } from "primereact/api";
 import NextTopLoader from "nextjs-toploader";
+import Analytics from "./components/common/Analytics";
+import WhatsAppButton from "./components/common/WhatsAppButton";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin", "latin-ext"],
@@ -73,6 +75,8 @@ export default async function LocaleLayout({
               <CustomCursor />
               {children}
               <Footer />
+              <WhatsAppButton />
+              <Analytics />
               <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{

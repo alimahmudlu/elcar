@@ -94,27 +94,29 @@ const BlogSwiper = ({
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent z-10" />
               {/* Content */}
               <div className="relative z-20 p-6 md:p-10 max-w-2xl">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="bg-red-600 text-white text-xs px-3 py-1 rounded flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                    {dayjs(blog?.createdAt)
-                      .locale(locale)
-                      .format("DD MMMM YYYY")}
-                  </span>
-                </div>
+                {blog?.createdAt && (
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="bg-red-600 text-white text-xs px-3 py-1 rounded flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
+                      </svg>
+                      {dayjs(blog?.createdAt)
+                        .locale(locale)
+                        .format("DD MMMM YYYY")}
+                    </span>
+                  </div>
+                )}
                 <h2 className="text-3xl md:text-5xl max-sm:text-xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
                   {blog?.title}
                 </h2>

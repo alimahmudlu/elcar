@@ -108,11 +108,13 @@ export default async function Page({ params }: { params: Params }) {
                     <CardContent className="p-4 max-lg:flex max-lg:items-center max-lg:gap-4 max-lg:justify-between">
                       <Link href={`/${locale}/blog/${blog?.slug}`}>
                         <div>
-                          <p className="text-sm bg-gray-300 dark:bg-gray-600 dark:text-secondary w-max rounded-lg px-2 py-1">
-                            {dayjs(blog?.createdAt)
-                              .locale(locale)
-                              .format("DD MMMM YYYY")}
-                          </p>
+                          {blog?.createdAt && (
+                            <p className="text-sm bg-gray-300 dark:bg-gray-600 dark:text-secondary w-max rounded-lg px-2 py-1">
+                              {dayjs(blog.createdAt)
+                                .locale(locale)
+                                .format("DD MMMM YYYY")}
+                            </p>
+                          )}
                           <p className="text-md font-medium text-black max-md:text-sm  dark:!text-primary-foreground  ">
                             {blog?.title}
                           </p>
