@@ -17,7 +17,7 @@ export const navigations = () => {
   return {
     az: [
       { name: "Ana Səhifə", href: routes.home.path },
-      { name: "Yükləmə Stansiyaları", href: routes.chargingStations.path },
+      { name: "Şarj Stansiyaları", href: routes.chargingStations.path },
       /*{
         name: "Elektrikli Nəqliyyat Vasitələri",
         href: routes.electricVehicles.path,

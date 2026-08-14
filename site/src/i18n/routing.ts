@@ -7,8 +7,8 @@ export const routing = defineRouting({
     // Used when no locale matches
     defaultLocale: 'az',
 
-    // Don't show the default locale (az) in the URL
-    localePrefix: 'as-needed',
+    // Dil prefiksi hemise URL-de qalsin (SEO: duplicate content ve hreflang ucun)
+    localePrefix: 'always',
 
     // Locale detection'ı devre dışı bırak
     localeDetection: false

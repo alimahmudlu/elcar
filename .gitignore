@@ -24,3 +24,7 @@ dist/
 *.log
 npm-debug.log*
 logs/
+
+# Build artefaktları
+site/.next/
+site/node_modules/

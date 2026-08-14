@@ -1,8 +1,26 @@
-import { Breadcrumbs } from "@mui/material";
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-import { AiOutlineRight } from "react-icons/ai";
+
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.about" });
+  return buildMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+    path: "/about",
+    withLanguages: true,
+  });
+}
 
 const Page = () => {
   const t = useTranslations();
@@ -11,27 +29,7 @@ const Page = () => {
       <h1 className="text-3xl md:text-5xl text-title font-extrabold mt-4 leading-tight  dark:text-primary-foreground">
         {t("about.title")}
       </h1>
-      <Breadcrumbs
-        separator={
-          <AiOutlineRight className="w-3 h-3 dark:text-primary-foreground" />
-        }
-        aria-label="breadcrumb"
-      >
-        <Link
-          className="focused dark:text-primary-foreground"
-          color="inherit"
-          href="/"
-        >
-          Elcar
-        </Link>
-        <Link
-          className="dark:text-primary-foreground"
-          color="inherit"
-          href="/about"
-        >
-          {t("pages.about")}
-        </Link>
-      </Breadcrumbs>
+      <Breadcrumb items={[{ label: "Elcar", href: "/" }, { label: t("pages.about") }]} />
 
       <p className="mt-4 text-subtitle text-sm md:text-base dark:text-secondary-foreground">
         {t.raw("about.subtitle")}

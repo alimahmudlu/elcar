@@ -1,7 +1,7 @@
 {
   "pages": {
     "home": "Ana səhifə",
-    "chargingStations": "Yükləmə Stansiyaları",
+    "chargingStations": "Şarj Stansiyaları",
     "electricVehicles": "Elektrikli Nəqliyyat Vasitələri",
     "connectors": "Bağlayıcılar və Aksesuarlar",
     "blog": "Bloq",
@@ -9,7 +9,6 @@
     "about": "Haqqımızda",
     "contact": "Əlaqə"
   },
-
   "header": {
     "title": "Elektrikli Avtomobillər",
     "cart": "Səbət",
@@ -83,12 +82,12 @@
   },
   "connectors-and-accessories": {
     "title": "Elektrikli Avtomobillər Üçün Ən Yeni Baglayicilar və Aksesuarlar",
-    "subtitle": "Elektrikli Avtomobilləriniz üçün keyfiyyəti və istifadə rahatlığı ilə seçilən bütün növ baglayicilar və aksesuarlar"
+    "subtitle": "Elektrikli Avtomobilləriniz üçün keyfiyyəti və istifadə rahatlığı ilə seçilən bütün növ bağlayıcılar və aksesuarlar"
   },
   "blog": {
     "title": "Elektrikli Avtomobillər, Şarj Stansiyaları və Bağlayıcılar və Aksesuarlar ilə bağlı faydalı məlumatlar",
     "subtitle": "Bloq bölməmizdə Elektrikli Avtomobillər, Şarj Stansiyaları, Bağlayıcılar, Aksesuarlar və bütün bu Elektrikli Sistemlərin sifariş edilərək Azərbaycana gətirilməsi ilə bağlı ətraflı məlumatları əldə edə bilərsiniz.",
-    "similar-posts": "Bənzır məqalələr"
+    "similar-posts": "Bənzər məqalələr"
   },
   "contact": {
     "title": "Bizimlə Əlaqə",
@@ -148,7 +147,6 @@
     },
     "close": "Bağla"
   },
-
   "pages-content": {
     "electric-vehicles": {
       "title": "Azərbaycanda Elektrikli Avtomobillərin Satışı və Sifarişi",
@@ -167,7 +165,6 @@
         "all": "Hamısı",
         "apply": "Təsdiqlə"
       },
-
       "all-cars": "Bütün Avtomobillər",
       "sort": {
         "title": "Sırala",
@@ -197,8 +194,45 @@
       "all-products": "Elektrikli Avtomobillər üçün bütün növ Baglayicilar və Aksesuarlar"
     }
   },
-
   "footer": {
     "title": "Bütün haqqları qorunur!"
+  },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "subtitle": "Axtardığınız səhifə mövcud deyil və ya ünvanı dəyişib.",
+    "home": "Ana səhifəyə qayıt",
+    "stations": "Şarj stansiyalarına bax",
+    "connectors": "Kabel və adapterlərə bax",
+    "help": "Kömək lazımdır?"
+  },
+  "seo": {
+    "default": {
+      "title": "Elektromobil Şarj Stansiyaları və Kabelləri — ELCAR",
+      "description": "Bakıda EV şarj stansiyalarının satışı və quraşdırılması. 7kW–22kW wallbox, Type 2 və GB/T kabellər, adapterlər. Zəmanətli, çatdırılma ilə."
+    },
+    "chargingStations": {
+      "title": "EV Şarj Stansiyaları — Qiymətlər və Modellər",
+      "description": "AC, DC və daşına bilən elektromobil şarj stansiyaları. 7kW-dan 22kW-a qədər, 510 AZN-dən. Bakıda quraşdırma xidməti ilə."
+    },
+    "connectors": {
+      "title": "EV Şarj Kabelləri və Adapterləri",
+      "description": "Type 1, Type 2, GB/T və Tesla adapterləri, 16A və 32A şarj kabelləri. 196 AZN-dən, Bakıda çatdırılma."
+    },
+    "electricVehicles": {
+      "title": "Elektromobillər",
+      "description": "ELCAR vasitəsilə sifariş edilə bilən elektromobil modelləri və onların şarj həlləri."
+    },
+    "blog": {
+      "title": "Elektromobil və Şarj Haqqında Bloq",
+      "description": "Elektromobil şarjı, kabel tipləri, quraşdırma və istismar haqqında Azərbaycan şəraitinə uyğun praktik məsləhətlər."
+    },
+    "about": {
+      "title": "ELCAR Haqqında — EV Şarj Həlləri, Bakı",
+      "description": "Azərbaycanda elektromobil şarj avadanlığının satışı və quraşdırılması. Komandamız və xidmətlərimiz haqqında."
+    },
+    "contact": {
+      "title": "Əlaqə — ELCAR, Bakı",
+      "description": "Bakı, Nərimanov r., Həsənoğlu küç. 4. Tel: (+994 77) 300 60 60. Sual və sifarişləriniz üçün bizimlə əlaqə saxlayın."
+    }
   }
 }
