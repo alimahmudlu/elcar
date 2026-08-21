@@ -41,6 +41,9 @@ type Props = {
   brands: Brand[];
   models: ModelType[];
   filterOptions: GroupedCharacteristic[];
+  /** Server-render olunmuş ilk səhifə — SEO üçün HTML-də hazır gəlir */
+  initialProducts?: ProductType[];
+  initialTotal?: number;
 };
 
 const ProductsSection = ({
@@ -49,15 +52,19 @@ const ProductsSection = ({
   brands,
   models,
   filterOptions,
+  initialProducts = [],
+  initialTotal = 0,
 }: Props) => {
   const t = useTranslations();
   const [filters, setFilters] = useState<any>({});
-  const [skip, setSkip] = useState(0);
+  const [skip, setSkip] = useState(initialProducts.length);
   const [limit] = useState(12);
   const [selectedModels, setSelectedModels] = useState<ModelType[]>([]);
-  const [products, setProducts] = useState<ProductType[]>([]);
+  const [products, setProducts] = useState<ProductType[]>(initialProducts);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasMore, setHasMore] = useState(true);
+  const [hasMore, setHasMore] = useState(
+    initialTotal > initialProducts.length
+  );
   const loaderRef = useRef<HTMLDivElement>(null);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 10000]);
   const [minMaxPrice, setMinMaxPrice] = useState<[number, number]>([0, 10000]);
@@ -152,17 +159,17 @@ const ProductsSection = ({
     };
   }, [hasMore, isLoading]);
 
+  // Server ilk səhifəni artıq verib — mount-da təkrar sorğu göndərmirik.
+  // Yalnız filtr dəyişəndə yenidən çəkilir.
+  const isFirstRender = useRef(true);
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      if (initialProducts.length > 0) return;
+    }
     setSkip(0);
     getProducts(false);
-  }, [filters]);
-
-  useEffect(() => {
-    getProducts(false);
-  }, []);
-
-  useEffect(() => {
-    getProducts(filters.$skip > 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters]);
 
   useEffect(() => {
@@ -529,9 +536,9 @@ const ProductsSection = ({
               {isLoading && (
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-elcar"></div>
               )}
-              {!hasMore && (
+              {!hasMore && products.length > 0 && (
                 <p className="text-gray-500 dark:text-gray-400">
-                  {t("pages-content.electric-vehicles.noResults")}
+                  {t("pagination.allLoaded")}
                 </p>
               )}
             </div>

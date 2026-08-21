@@ -86,6 +86,13 @@ export interface ProductType {
   slug: string;
   section: string;
   count?:number;
+  /** API bunları hazırda qaytarmır — sahə əlavə ediləndə
+   *  reytinq və stok statusu avtomatik işləyəcək */
+  rating?: number;
+  reviewCount?: number;
+  inStock?: boolean;
+  sku?: string;
+  updatedAt?: string;
   category: {
     name: string;
     _id: string;

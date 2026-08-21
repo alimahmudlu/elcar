@@ -51,8 +51,8 @@
   },
   "services": {
     "main": {
-      "title": "ELCAR - Russian distributor of electric cars",
-      "subtitle": "ELCAR company offers everything needed for <strong>electric cars</strong>, including <strong>power stations</strong>, <strong>accessories</strong> and other electrical devices, purchased under the best conditions and delivered to Russia.",
+      "title": "ELCAR - Azerbaijani distributor of electric cars",
+      "subtitle": "ELCAR company offers everything needed for <strong>electric cars</strong>, including <strong>power stations</strong>, <strong>accessories</strong> and other electrical devices, purchased under the best conditions and delivered to Azerbaijan.",
       "button": "More information"
     },
     "second": {
@@ -92,7 +92,6 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "If you have questions or desires related to Electric Cars, Charging Stations and Connectors, contact us using contact information. We will make you back as soon as possible",
-
     "info": {
       "title": "Get in touch with us",
       "subtitle": "You can contact us using the contact details below",
@@ -115,7 +114,9 @@
         "phone": "Phone is required",
         "message": "Message is required"
       }
-    }
+    },
+    "whatsapp-message": "Hello, I would like information about a charging station.",
+    "whatsapp-label": "Message us on WhatsApp"
   },
   "about": {
     "title": "About Our Company",
@@ -148,7 +149,6 @@
     },
     "close": "Close"
   },
-
   "pages-content": {
     "electric-vehicles": {
       "title": "Sale and Order of Electric Cars in Azerbaijan",
@@ -196,8 +196,61 @@
       "all-products": "All types of Connectors and Accessories for Electromobiles"
     }
   },
-
   "footer": {
-    "title": "All rights reserved!"
+    "title": "All rights reserved!",
+    "about": "Since 2022 we have been selling and installing EV charging equipment in Azerbaijan.",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "hours": "Mon–Sat, 09:00–18:00"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you are looking for does not exist or has moved.",
+    "home": "Back to home",
+    "stations": "Browse charging stations",
+    "connectors": "Browse cables and adapters",
+    "help": "Need help?"
+  },
+  "seo": {
+    "default": {
+      "title": "EV Charging Stations and Cables — ELCAR",
+      "description": "Sales and installation of EV charging stations in Baku. 7kW–22kW wallboxes, Type 2 and GB/T cables, adapters. Warranty and delivery included."
+    },
+    "chargingStations": {
+      "title": "EV Charging Stations — Prices and Models",
+      "description": "AC, DC and portable EV charging stations from 7kW to 22kW, starting at 510 AZN. Installation service available in Baku."
+    },
+    "connectors": {
+      "title": "EV Charging Cables and Adapters",
+      "description": "Type 1, Type 2, GB/T and Tesla adapters, 16A and 32A charging cables. From 196 AZN, delivered in Baku."
+    },
+    "electricVehicles": {
+      "title": "Electric Vehicles",
+      "description": "Electric vehicle models available to order through ELCAR, and the charging solutions that fit them."
+    },
+    "blog": {
+      "title": "Blog on Electric Vehicles and Charging",
+      "description": "Practical advice on EV charging, cable types, installation and daily use, written for Azerbaijani conditions."
+    },
+    "about": {
+      "title": "About ELCAR — EV Charging Solutions, Baku",
+      "description": "Sales and installation of electric vehicle charging equipment in Azerbaijan. About our team and services."
+    },
+    "contact": {
+      "title": "Contact — ELCAR, Baku",
+      "description": "Baku, Narimanov district, Hasanoglu str. 4. Phone: (+994 77) 300 60 60. Get in touch with your questions and orders."
+    }
+  },
+  "pagination": {
+    "prev": "Previous",
+    "next": "Next",
+    "pageLabel": "Pagination",
+    "allLoaded": "All products shown"
+  },
+  "charger": {
+    "output-power": "Output power",
+    "power-input": "Supply voltage",
+    "phase-number": "Phases"
   }
 }

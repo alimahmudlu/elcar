@@ -1,8 +1,8 @@
-import { AiOutlineRight } from "react-icons/ai";
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { Roboto } from "next/font/google";
 import BlogItem from "../components/blog/BlogItem";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Link from "next/link";
 import { ENDPOINTS } from "@/api/endpoints";
 import { getTranslations } from "next-intl/server";
 import { fetchData } from "@/api/request";
@@ -11,6 +11,23 @@ import BlogSwiper from "../components/blog/BlogSwiper";
 
 const roboto = Roboto({ subsets: ["latin"] });
 const BASE_URL = process.env.NEXT_PUBLIC_PROD_API_URL;
+
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.blog" });
+  return buildMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+    path: "/blog",
+    withLanguages: true,
+  });
+}
 
 const Page = async () => {
   const t = await getTranslations();
@@ -27,27 +44,7 @@ const Page = async () => {
     >
       <div className="px-4 md:px-12 lg:px-20 py-10 max-w-[1400px] mx-auto">
         <div className="mb-10">
-          <Breadcrumbs
-            separator={
-              <AiOutlineRight className="w-3 h-3 dark:text-primary-foreground" />
-            }
-            aria-label="breadcrumb"
-          >
-            <Link
-              color="inherit"
-              className="focused dark:text-primary-foreground"
-              href="/"
-            >
-              Elcar
-            </Link>
-            <Link
-              color="inherit"
-              className="dark:text-primary-foreground"
-              href="/blog"
-            >
-              {t("pages.blog")}
-            </Link>
-          </Breadcrumbs>
+          <Breadcrumb items={[{ label: "Elcar", href: "/" }, { label: t("pages.blog") }]} />
 
           <h1 className="text-3xl md:text-5xl text-title font-extrabold mt-4 leading-tight  dark:text-primary-foreground">
             {t("blog.title")}
