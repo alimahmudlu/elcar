@@ -100,17 +100,22 @@ const ProductItem = ({
               {extractTitlePrefix(product?.title, product?.category?.name)}
             </h3>
 
-            <Rating
-              icon={
-                <MdOutlineStarPurple500 className="w-4 text-[#ff5722] h-4" />
-              }
-              emptyIcon={
-                <MdOutlineStarPurple500 className="w-4 h-4 text-gray-400" />
-              }
-              name="read-only"
-              value={Number(5)}
-              readOnly
-            />
+            {/* Reytinq yalnız real rəy olduqda göstərilir.
+                Əvvəl hər məhsulda 5 dolu ulduz görünürdü, halbuki
+                bir dənə də rəy yoxdur — bu, yanıldıcıdır. */}
+            {Number(product?.reviewCount) > 0 && (
+              <Rating
+                icon={
+                  <MdOutlineStarPurple500 className="w-4 text-[#ff5722] h-4" />
+                }
+                emptyIcon={
+                  <MdOutlineStarPurple500 className="w-4 h-4 text-gray-400" />
+                }
+                name="read-only"
+                value={Number(product?.rating ?? 0)}
+                readOnly
+              />
+            )}
 
             <p className="text-[#00000099] text-sm dark:text-secondary-foreground">
               {product?.description}
@@ -124,11 +129,13 @@ const ProductItem = ({
               <ul className="grid grid-cols-3 justify-between px-6 text-[12px] mt-auto">
                 <li className="flex flex-col gap-1">
                   <span>
-                    {product?.characteristicGroups[1]?.characteristics?.find(
-                      (item) => item.battery
-                    )?.value
-                      ? t("popular-cars.battery")
-                      : t("popular-cars.fuel-type")}
+                    {type === ProductEnum.Car
+                      ? product?.characteristicGroups[1]?.characteristics?.find(
+                          (item) => item.battery
+                        )?.value
+                        ? t("popular-cars.battery")
+                        : t("popular-cars.fuel-type")
+                      : t("charger.output-power")}
                   </span>
                   <span className="font-bold">
                     {type === ProductEnum.Car
@@ -147,7 +154,11 @@ const ProductItem = ({
                   </span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span>{t("popular-cars.max-speed")}</span>
+                  <span>
+                    {type === ProductEnum.Car
+                      ? t("popular-cars.max-speed")
+                      : t("charger.power-input")}
+                  </span>
                   <span className="font-bold">
                     {type === ProductEnum.Car
                       ? product?.characteristicGroups[1]?.characteristics?.find(
@@ -159,7 +170,11 @@ const ProductItem = ({
                   </span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span>{t("popular-cars.max-horsepower")}</span>
+                  <span>
+                    {type === ProductEnum.Car
+                      ? t("popular-cars.max-horsepower")
+                      : t("charger.phase-number")}
+                  </span>
                   <span className="font-bold">
                     {type === ProductEnum.Car
                       ? product?.characteristicGroups[1]?.characteristics?.find(

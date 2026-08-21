@@ -1,11 +1,13 @@
+import type { Metadata } from "next";
+import { buildMetadata, productJsonLd } from "@/lib/seo";
+import { SITE_URL } from "@/config/site";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { Roboto } from "next/font/google";
 import AddToCartButton from "../../components/common/AddToCartButton";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import { Breadcrumbs, Rating } from "@mui/material";
+import { Rating } from "@mui/material";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { AiOutlineRight } from "react-icons/ai";
-import Link from "next/link";
 import { fetchProductDetails } from "@/api/request";
 import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { Characteristic, ProductType } from "@/types";
@@ -21,10 +23,32 @@ const getMainCharacteristic = (
     ?.value;
 };
 
-type Params = Promise<{ id: string }>;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; id: string }>;
+}): Promise<Metadata> {
+  const { locale, id } = await params;
+  const product: ProductType = await fetchProductDetails(
+    ENDPOINTS.products.detail.replace(":id", id)
+  );
+  if (!product?.title) return { title: "404" };
+
+  const price = product.discountedPrice ?? product.price;
+  return buildMetadata({
+    title: price ? `${product.title} — ${price} AZN` : product.title,
+    description: product.description,
+    locale,
+    path: `/charging-stations/${id}`,
+    image: product.image?.src ? BASE_URL + product.image.src : undefined,
+  });
+}
+
+type Params = Promise<{ id: string; locale: string }>;
 
 const Page = async ({ params }: { params: Params }) => {
-  const { id } = await params;
+  const { id, locale } = await params;
   const t = await getTranslations();
 
   const product: ProductType = await fetchProductDetails(
@@ -53,32 +77,23 @@ const Page = async ({ params }: { params: Params }) => {
     <section
       className={`container max-lg:max-w-[90%] mt-18 ${roboto.className}`}
     >
-      <Breadcrumbs
-        separator={
-          <AiOutlineRight className="w-3 h-3 dark:text-primary-foreground" />
-        }
-        aria-label="breadcrumb"
-        className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap"
-      >
-        <Link
-          className="focused dark:text-primary-foreground max-sm:text-xs"
-          href="/"
-        >
-          Elcar
-        </Link>
-        <Link
-          className="dark:text-primary-foreground max-sm:text-xs max-sm:text-nowrap"
-          href="/electric-vehicles"
-        >
-          {t("pages.chargingStations")}
-        </Link>
-        <Link
-          className="dark:text-primary-foreground max-sm:text-xs max-sm:text-nowrap"
-          href=""
-        >
-          {title}
-        </Link>
-      </Breadcrumbs>
+      <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.chargingStations"), href: "/charging-stations" }, { label: title }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            productJsonLd({
+              title,
+              description,
+              image: image?.src ? BASE_URL + image.src : undefined,
+              brand: product?.brand?.name,
+              price,
+              discountedPrice,
+              url: `${SITE_URL}/${locale}/charging-stations/${id}`,
+            })
+          ),
+        }}
+      />
 
       <div className="px-4 max-sm:px-2 py-8 mt-24 max-md:mt-14 max-sm:mt-8">
         <div className="grid md:grid-cols-2 gap-8 max-md:gap-6">

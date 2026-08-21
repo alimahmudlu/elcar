@@ -1,12 +1,11 @@
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { BASE_URL } from "@/api/endpoints";
 import { extractTitlePrefix } from "@/lib/utils";
 import { ProductType } from "@/types";
-import { Breadcrumbs, Rating } from "@mui/material";
+import { Rating } from "@mui/material";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { AiOutlineRight } from "react-icons/ai";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
 const ProductHero = ({ product }: { product: ProductType }) => {
@@ -16,35 +15,7 @@ const ProductHero = ({ product }: { product: ProductType }) => {
       <div className="product-hero-bg h-full overflow-hidden">
         <div className="container pt-18 h-full max-lg:max-w-[90%]">
           <div>
-            <Breadcrumbs
-              separator={
-                <AiOutlineRight className="w-3 h-3 dark:text-primary-foreground" />
-              }
-              aria-label="breadcrumb"
-              className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap"
-            >
-              <Link
-                color="inherit"
-                className="focused dark:text-primary-foreground max-sm:text-xs"
-                href="/"
-              >
-                Elcar
-              </Link>
-              <Link
-                color="inherit"
-                className="dark:text-primary-foreground max-sm:text-xs max-sm:text-nowrap"
-                href="/electric-vehicles"
-              >
-                {t("pages.electricVehicles")}
-              </Link>
-              <Link
-                color="inherit"
-                className="dark:text-primary-foreground max-sm:text-xs max-sm:text-nowrap"
-                href=""
-              >
-                {product?.title}
-              </Link>
-            </Breadcrumbs>
+            <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.electricVehicles"), href: "/electric-vehicles" }, { label: product?.title }]} />
           </div>
           <div className="h-full w-full flex pt-12 flex-col items-center justify-center">
             <div className="relative">

@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+import { CONTACT } from "@/config/site";
 
 const ContactInfo = () => {
   const t = useTranslations();
@@ -21,7 +22,11 @@ const ContactInfo = () => {
           <Typography className="font-bold dark:text-primary-foreground">
             {t("contact.info.email")}
           </Typography>
-          <Typography className="dark:text-secondary-foreground">info@elcar.az</Typography>
+          <Typography className="dark:text-secondary-foreground">
+            <a href={`mailto:${CONTACT.email}`} className="hover:underline">
+              {CONTACT.email}
+            </a>
+          </Typography>
         </div>
       </div>
 
@@ -33,7 +38,11 @@ const ContactInfo = () => {
           <Typography className="font-bold dark:text-primary-foreground">
             {t("contact.info.phone")}
           </Typography>
-          <Typography className="dark:text-secondary-foreground">(+994 77) 300 60 60</Typography>
+          <Typography className="dark:text-secondary-foreground">
+            <a href={`tel:${CONTACT.phone}`} className="hover:underline">
+              {CONTACT.phoneDisplay}
+            </a>
+          </Typography>
         </div>
       </div>
 

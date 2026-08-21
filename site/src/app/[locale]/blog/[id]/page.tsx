@@ -1,13 +1,13 @@
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { fetchData } from "@/api/request";
 import { formatDate } from "@/lib/utils";
 import { BlogType } from "@/types";
-import { Breadcrumbs, Card, CardContent } from "@mui/material";
+import { Card, CardContent } from "@mui/material";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineRight } from "react-icons/ai";
 import { FaFacebook, FaPinterest, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import dayjs from "dayjs";
 const roboto = Roboto({ subsets: ["latin"] });
@@ -65,34 +65,7 @@ export default async function Page({ params }: { params: Params }) {
     <section className={`${roboto.className} mt-12`}>
       <div className="container px-4 py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 max-lg:max-w-[95%] max-lg:flex max-lg:flex-col max-lg:gap-4">
         <article className="lg:col-span-7 pr-2 max-lg:w-full">
-          <Breadcrumbs
-            separator={
-              <AiOutlineRight className="w-3 h-3 dark:text-primary-foreground" />
-            }
-            aria-label="breadcrumb"
-          >
-            <Link
-              className="focused dark:text-primary-foreground"
-              color="inherit"
-              href="/"
-            >
-              Elcar
-            </Link>
-            <Link
-              className="dark:text-primary-foreground"
-              color="inherit"
-              href="/blog"
-            >
-              {t("pages.blog")}
-            </Link>
-            <Link
-              className="dark:text-primary-foreground"
-              color="inherit"
-              href="/blog"
-            >
-              {blog?.title}
-            </Link>
-          </Breadcrumbs>
+          <Breadcrumb items={[{ label: "Elcar", href: "/" }, { label: t("pages.blog"), href: "/blog" }, { label: blog?.title }]} />
 
           <h1 className="text-3xl font-bold mb-2 mt-6 dark:text-primary-foreground">{blog?.title}</h1>
           <p className="text-gray-700 mb-6 dark:text-secondary-foreground">{blog?.description}</p>
@@ -135,11 +108,13 @@ export default async function Page({ params }: { params: Params }) {
                     <CardContent className="p-4 max-lg:flex max-lg:items-center max-lg:gap-4 max-lg:justify-between">
                       <Link href={`/${locale}/blog/${blog?.slug}`}>
                         <div>
-                          <p className="text-sm bg-gray-300 dark:bg-gray-600 dark:text-secondary w-max rounded-lg px-2 py-1">
-                            {dayjs(blog?.createdAt)
-                              .locale(locale)
-                              .format("DD MMMM YYYY")}
-                          </p>
+                          {blog?.createdAt && (
+                            <p className="text-sm bg-gray-300 dark:bg-gray-600 dark:text-secondary w-max rounded-lg px-2 py-1">
+                              {dayjs(blog.createdAt)
+                                .locale(locale)
+                                .format("DD MMMM YYYY")}
+                            </p>
+                          )}
                           <p className="text-md font-medium text-black max-md:text-sm  dark:!text-primary-foreground  ">
                             {blog?.title}
                           </p>

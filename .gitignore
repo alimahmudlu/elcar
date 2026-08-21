@@ -1,0 +1,30 @@
+# Environment / secrets — ASLA commit edilməməlidir
+.env
+.env.local
+.env.save
+.env.*.local
+*/.env
+*/.env.save
+
+# Editor müvəqqəti faylları
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Asılılıqlar və build
+node_modules/
+.next/
+dist/
+.nuxt/
+.output/
+
+# Loglar
+*.log
+npm-debug.log*
+logs/
+
+# Build artefaktları
+site/.next/
+site/node_modules/

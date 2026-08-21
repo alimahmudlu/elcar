@@ -1,3 +1,8 @@
+import type { Metadata } from "next";
+import { buildMetadata, productJsonLd } from "@/lib/seo";
+import { SITE_URL } from "@/config/site";
+import type { ProductType } from "@/types";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { fetchProductDetails } from "@/api/request";
 import { Roboto } from "next/font/google";
@@ -5,19 +10,39 @@ import Image from "next/image";
 import React from "react";
 
 import DetailSection from "../../components/common/DetailSection";
-import { Breadcrumbs, Rating } from "@mui/material";
-import { AiOutlineRight } from "react-icons/ai";
-import Link from "next/link";
+import { Rating } from "@mui/material";
 import { getTranslations } from "next-intl/server";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import AddToCartButton from "../../components/common/AddToCartButton";
 
 const roboto = Roboto({ subsets: ["latin"] });
 
-type Params = Promise<{ id: string }>;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; id: string }>;
+}): Promise<Metadata> {
+  const { locale, id } = await params;
+  const product: ProductType = await fetchProductDetails(
+    ENDPOINTS.products.detail.replace(":id", id)
+  );
+  if (!product?.title) return { title: "404" };
+
+  const price = product.discountedPrice ?? product.price;
+  return buildMetadata({
+    title: price ? `${product.title} — ${price} AZN` : product.title,
+    description: product.description,
+    locale,
+    path: `/connectors-accessories/${id}`,
+    image: product.image?.src ? BASE_URL + product.image.src : undefined,
+  });
+}
+
+type Params = Promise<{ id: string; locale: string }>;
 
 const Page = async ({ params }: { params: Params }) => {
-  const { id } = await params;
+  const { id, locale } = await params;
   const t = await getTranslations();
 
   const product = await fetchProductDetails(
@@ -39,35 +64,23 @@ const Page = async ({ params }: { params: Params }) => {
     <section
       className={`container max-lg:max-w-[90%] mt-18 ${roboto.className}`}
     >
-      <Breadcrumbs
-        separator={
-          <AiOutlineRight className="w-3 h-3 dark:text-primary-foreground" />
-        }
-        aria-label="breadcrumb"
-        className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap"
-      >
-        <Link
-          color="inherit"
-          className="focused dark:text-primary-foreground max-sm:text-xs"
-          href="/"
-        >
-          Elcar
-        </Link>
-        <Link
-          color="inherit"
-          className="dark:text-primary-foreground max-sm:text-xs max-sm:text-nowrap"
-          href="/electric-vehicles"
-        >
-          {t("pages.connectors")}
-        </Link>
-        <Link
-          color="inherit"
-          className="dark:text-primary-foreground max-sm:text-xs max-sm:text-nowrap"
-          href=""
-        >
-          {title}
-        </Link>
-      </Breadcrumbs>
+      <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.connectors"), href: "/connectors-accessories" }, { label: title }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            productJsonLd({
+              title,
+              description,
+              image: image?.src ? BASE_URL + image.src : undefined,
+              brand: product?.brand?.name,
+              price,
+              discountedPrice,
+              url: `${SITE_URL}/${locale}/connectors-accessories/${id}`,
+            })
+          ),
+        }}
+      />
       <div className="px-4 py-8 mt-24 max-md:mt-14 max-sm:mt-8">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="relative w-full">
