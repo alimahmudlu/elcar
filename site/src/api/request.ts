@@ -128,6 +128,23 @@ export const chargingConnectors = async (params?: { [key: string]: string | stri
         return [];
     }
 }
+/** Enerji bölmələri (solar-energy, wind-energy, ...) üçün ümumi sorğu */
+export const getSectionProducts = async (section: string, params?: { [key: string]: string | string[] }, skip?: string, limit = 12) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
+            params: {
+                section,
+                ...params,
+                "$skip": skip || 0,
+                "$limit": limit
+            }
+        });
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
 
 
 

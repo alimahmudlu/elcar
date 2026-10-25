@@ -22,6 +22,8 @@ export function MobileSidebar() {
   const navigation = navigations();
   const currentPath = usePathname();
   const [open, setOpen] = useState(false);
+  // Hansı alt menyunun açıq olduğu (bir neçə açılan menyu var)
+  const [openItem, setOpenItem] = useState<string | null>(null);
 
   const isActive = (href: string, subItems?: NavigationItem["subItems"]) => {
     const pathWithoutLocale = currentPath.replace(`/${locale}`, "") || "/";
@@ -46,9 +48,13 @@ export function MobileSidebar() {
         } ${
           item.subItems && "justify-between"
         } hover:before:bg-transparent duration-300`}
-        onClick={() => {
-          setOpen(false);
-          if (item.subItems) setOpen(!open);
+        onClick={(e) => {
+          if (item.subItems) {
+            e.preventDefault();
+            setOpenItem(openItem === item.href ? null : item.href);
+          } else {
+            setOpen(false);
+          }
         }}
       >
         <span>{item.name}</span>
@@ -57,7 +63,7 @@ export function MobileSidebar() {
         {item.subItems && (
           <svg
             className={`w-4 h-4 ml-1 duration-200 ${
-              open ? "-rotate-180" : ""
+              openItem === item.href ? "-rotate-180" : ""
             } `}
             fill="none"
             stroke="currentColor"
@@ -73,7 +79,7 @@ export function MobileSidebar() {
           </svg>
         )}
       </Link>
-      {item.subItems && open && (
+      {item.subItems && openItem === item.href && (
         <ul className="flex flex-col">
           {item.subItems.map((subItem) => (
             <li key={subItem.href}>

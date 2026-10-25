@@ -10,7 +10,7 @@
     "contact": "Əlaqə"
   },
   "header": {
-    "title": "Elektrikli Avtomobillər",
+    "title": "Enerji Həlləri",
     "cart": "Səbət",
     "emptyCart": "Səbətiniz boşdur",
     "clear": "Təmizlə",
@@ -51,8 +51,8 @@
   },
   "services": {
     "main": {
-      "title": "ELCAR - Azərbaycanda Elektrikli Avtomobillərin Distribüteri",
-      "subtitle": "ELCAR şirkəti <strong>Elektrikli Avtomobillər</strong>, bu avtomobillər üçün lazım olan hər növ <strong>Elektrik stansiyaları</strong>, <strong>Aksesuarlar</strong> və digər Elektrikli cihazları Çindən ən sərfəli qiymətlərlə sifariş verilərək Azərbaycana gətirilməsini təşkil edir.",
+      "title": "ELCAR — Azərbaycanda Elektrik və Enerji Həlləri",
+      "subtitle": "ELCAR <strong>elektromobil şarj stansiyaları</strong> və <strong>aksesuarlardan</strong> başlayaraq <strong>günəş panelləri</strong>, <strong>külək turbinləri</strong>, <strong>enerji saxlama sistemləri (BESS)</strong> və <strong>sənaye lazer avadanlıqlarına</strong> qədər elektriklə bağlı bütün həlləri ən sərfəli qiymətlərlə Azərbaycana gətirir, quraşdırır və servis dəstəyi göstərir.",
       "button": "Ətraflı məlumat"
     },
     "second": {
@@ -198,7 +198,7 @@
   },
   "footer": {
     "title": "Bütün haqqları qorunur!",
-    "about": "2022-ci ildən Azərbaycanda elektromobil şarj avadanlığının satışı və quraşdırılması ilə məşğuluq.",
+    "about": "2022-ci ildən Azərbaycanda elektromobil şarj avadanlığı, günəş və külək enerjisi sistemləri, enerji saxlama və lazer avadanlıqlarının satışı və quraşdırılması ilə məşğuluq.",
     "products": "Məhsullar",
     "company": "Şirkət",
     "contact": "Əlaqə",
@@ -252,5 +252,59 @@
     "output-power": "Çıxış gücü",
     "power-input": "Şəbəkə gərginliyi",
     "phase-number": "Faza sayı"
+  },
+  "sections": {
+    "price-on-request": "Qiymət sorğu ilə",
+    "request-quote": "Qiymət sorğusu göndər",
+    "whatsapp-message": "Salam, \"{product}\" haqqında məlumat və qiymət almaq istəyirəm.",
+    "home": {
+      "title": "Enerji Həlləri",
+      "subtitle": "Günəş və külək enerjisindən enerji saxlama sistemlərinə və sənaye lazer avadanlıqlarına qədər — elektriklə bağlı bütün həllər bir ünvanda",
+      "more": "Bölməyə keç"
+    },
+    "solar-energy": {
+      "name": "Günəş Enerjisi",
+      "short": "Günəş panelləri, invertorlar, montaj sistemləri və ev, biznes üçün hazır dəstlər.",
+      "title": "Azərbaycanda Günəş Panelləri və Günəş Enerjisi Sistemləri",
+      "subtitle": "ELCAR ev, biznes və sənaye obyektləri üçün günəş panelləri, şəbəkəyə qoşulan və avtonom invertorlar, montaj konstruksiyaları və hazır günəş stansiyası dəstləri təqdim edir. Layihələndirmə və quraşdırma xidməti ilə.",
+      "all-products": "Bütün Günəş Enerjisi Məhsulları",
+      "seo": {
+        "title": "Günəş Panelləri və İnvertorlar — Qiymətlər",
+        "description": "Bakıda günəş panelləri, hibrid və şəbəkə invertorları, montaj sistemləri və hazır günəş stansiyası dəstləri. Layihələndirmə və quraşdırma ilə."
+      }
+    },
+    "wind-energy": {
+      "name": "Külək Enerjisi",
+      "short": "Kiçik və orta güclü külək turbinləri, nəzarət cihazları və hibrid günəş-külək sistemləri.",
+      "title": "Külək Turbinləri və Külək Enerjisi Sistemləri",
+      "subtitle": "Fərdi evlər, fermer təsərrüfatları və sənaye obyektləri üçün şaquli və üfüqi oxlu külək turbinləri, şarj kontrollerləri və günəş enerjisi ilə birlikdə işləyən hibrid sistemlər.",
+      "all-products": "Bütün Külək Enerjisi Məhsulları",
+      "seo": {
+        "title": "Külək Turbinləri — Ev və Sənaye üçün",
+        "description": "Şaquli və üfüqi oxlu külək turbinləri, kontrollerlər və hibrid günəş-külək sistemləri. Azərbaycanda çatdırılma və quraşdırma."
+      }
+    },
+    "energy-storage": {
+      "name": "Enerji Saxlama (BESS)",
+      "short": "Ev batareyaları, kommersiya və sənaye BESS sistemləri, LiFePO4 akkumulyatorlar.",
+      "title": "Enerji Saxlama Sistemləri (BESS) və Batareyalar",
+      "subtitle": "Günəş və külək enerjisini saxlamaq, işıq kəsilmələrində ehtiyat enerji və pik yükləri azaltmaq üçün ev batareyaları, kommersiya və sənaye miqyaslı BESS konteynerləri, LiFePO4 akkumulyator modulları.",
+      "all-products": "Bütün Enerji Saxlama Sistemləri",
+      "seo": {
+        "title": "BESS Enerji Saxlama Sistemləri və Batareyalar",
+        "description": "Ev, kommersiya və sənaye üçün BESS sistemləri, LiFePO4 batareyalar, hibrid invertorlarla uyğun enerji saxlama həlləri. Bakıda quraşdırma."
+      }
+    },
+    "laser-equipment": {
+      "name": "Lazer Avadanlıqları",
+      "short": "Lazer kəsmə, qaynaq, markalama və təmizləmə avadanlıqları.",
+      "title": "Sənaye Lazer Avadanlıqları: Kəsmə, Qaynaq, Markalama və Təmizləmə",
+      "subtitle": "Metal emalı və istehsal üçün fiber lazer kəsmə dəzgahları, əl və avtomatik lazer qaynaq aparatları, lazer markalama və lazerlə təmizləmə avadanlıqları. Quraşdırma, təlim və servis dəstəyi ilə.",
+      "all-products": "Bütün Lazer Avadanlıqları",
+      "seo": {
+        "title": "Lazer Kəsmə, Qaynaq və Markalama Avadanlıqları",
+        "description": "Fiber lazer kəsmə dəzgahları, lazer qaynaq, markalama və təmizləmə aparatları. Azərbaycanda satış, quraşdırma və servis."
+      }
+    }
   }
 }

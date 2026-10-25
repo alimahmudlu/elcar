@@ -5,6 +5,13 @@ export const navigations = () => {
     chargingStations: { path: "/charging-stations" },
     electricVehicles: { path: "/electric-vehicles" },
     connectors: { path: "/connectors-accessories" },
+    energy: {
+      path: "/solar-energy",
+      solar: { path: "/solar-energy" },
+      wind: { path: "/wind-energy" },
+      storage: { path: "/energy-storage" },
+      laser: { path: "/laser-equipment" },
+    },
     blog: { path: "/blog" },
     ourCompany: {
       path: "/about",
@@ -23,6 +30,16 @@ export const navigations = () => {
         href: routes.electricVehicles.path,
       },*/
       { name: "Bağlayıcılar və Aksesuarlar", href: routes.connectors.path },
+      {
+        name: "Enerji Həlləri",
+        href: routes.energy.path,
+        subItems: [
+          { name: "Günəş Enerjisi", href: routes.energy.solar.path },
+          { name: "Külək Enerjisi", href: routes.energy.wind.path },
+          { name: "Enerji Saxlama (BESS)", href: routes.energy.storage.path },
+          { name: "Lazer Avadanlıqları", href: routes.energy.laser.path },
+        ],
+      },
       { name: "Bloq", href: routes.blog.path },
       {
         name: "Şirkətimiz",
@@ -38,6 +55,16 @@ export const navigations = () => {
       { name: "Charging Stations", href: routes.chargingStations.path },
       /*{ name: "Electric Vehicles", href: routes.electricVehicles.path },*/
       { name: "Connectors & Accessories", href: routes.connectors.path },
+      {
+        name: "Energy Solutions",
+        href: routes.energy.path,
+        subItems: [
+          { name: "Solar Energy", href: routes.energy.solar.path },
+          { name: "Wind Energy", href: routes.energy.wind.path },
+          { name: "Energy Storage (BESS)", href: routes.energy.storage.path },
+          { name: "Laser Equipment", href: routes.energy.laser.path },
+        ],
+      },
       { name: "Blog", href: routes.blog.path },
       {
         name: "Our Company",
@@ -53,6 +80,16 @@ export const navigations = () => {
       { name: "Зарядные станции", href: routes.chargingStations.path },
       /*{ name: "Электромобили", href: routes.electricVehicles.path },*/
       { name: "Разъемы и аксессуары", href: routes.connectors.path },
+      {
+        name: "Энергетические решения",
+        href: routes.energy.path,
+        subItems: [
+          { name: "Солнечная энергия", href: routes.energy.solar.path },
+          { name: "Ветровая энергия", href: routes.energy.wind.path },
+          { name: "Накопители энергии (BESS)", href: routes.energy.storage.path },
+          { name: "Лазерное оборудование", href: routes.energy.laser.path },
+        ],
+      },
       { name: "Блог", href: routes.blog.path },
       {
         name: "Наша компания",

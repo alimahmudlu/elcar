@@ -10,7 +10,7 @@
     "contact": "Contact"
   },
   "header": {
-    "title": "Electric Vehicles",
+    "title": "Energy Solutions",
     "cart": "Cart",
     "emptyCart": "Your cart is empty",
     "clear": "Clear",
@@ -51,8 +51,8 @@
   },
   "services": {
     "main": {
-      "title": "ELCAR - Azerbaijani distributor of electric cars",
-      "subtitle": "ELCAR company offers everything needed for <strong>electric cars</strong>, including <strong>power stations</strong>, <strong>accessories</strong> and other electrical devices, purchased under the best conditions and delivered to Azerbaijan.",
+      "title": "ELCAR — Electrical and Energy Solutions in Azerbaijan",
+      "subtitle": "From <strong>EV charging stations</strong> and <strong>accessories</strong> to <strong>solar panels</strong>, <strong>wind turbines</strong>, <strong>battery energy storage systems (BESS)</strong> and <strong>industrial laser equipment</strong>, ELCAR supplies, installs and services electrical solutions across Azerbaijan at the best prices.",
       "button": "More information"
     },
     "second": {
@@ -198,7 +198,7 @@
   },
   "footer": {
     "title": "All rights reserved!",
-    "about": "Since 2022 we have been selling and installing EV charging equipment in Azerbaijan.",
+    "about": "Since 2022 we have been selling and installing EV charging equipment, solar and wind energy systems, energy storage and laser equipment in Azerbaijan.",
     "products": "Products",
     "company": "Company",
     "contact": "Contact",
@@ -252,5 +252,59 @@
     "output-power": "Output power",
     "power-input": "Supply voltage",
     "phase-number": "Phases"
+  },
+  "sections": {
+    "price-on-request": "Price on request",
+    "request-quote": "Request a quote",
+    "whatsapp-message": "Hello, I would like information and a price for \"{product}\".",
+    "home": {
+      "title": "Energy Solutions",
+      "subtitle": "From solar and wind power to energy storage and industrial laser equipment — every electrical solution in one place",
+      "more": "Explore"
+    },
+    "solar-energy": {
+      "name": "Solar Energy",
+      "short": "Solar panels, inverters, mounting systems and ready-made kits for homes and businesses.",
+      "title": "Solar Panels and Solar Energy Systems in Azerbaijan",
+      "subtitle": "ELCAR supplies solar panels, on-grid and off-grid inverters, mounting structures and complete solar power kits for homes, businesses and industrial sites, with design and installation services.",
+      "all-products": "All Solar Energy Products",
+      "seo": {
+        "title": "Solar Panels and Inverters — Prices",
+        "description": "Solar panels, hybrid and on-grid inverters, mounting systems and complete solar kits in Baku. Design and installation included."
+      }
+    },
+    "wind-energy": {
+      "name": "Wind Energy",
+      "short": "Small and mid-size wind turbines, controllers and hybrid solar-wind systems.",
+      "title": "Wind Turbines and Wind Energy Systems",
+      "subtitle": "Vertical and horizontal axis wind turbines, charge controllers and hybrid systems working together with solar power — for private homes, farms and industrial sites.",
+      "all-products": "All Wind Energy Products",
+      "seo": {
+        "title": "Wind Turbines for Home and Industry",
+        "description": "Vertical and horizontal axis wind turbines, controllers and hybrid solar-wind systems. Delivery and installation in Azerbaijan."
+      }
+    },
+    "energy-storage": {
+      "name": "Energy Storage (BESS)",
+      "short": "Home batteries, commercial and industrial BESS, LiFePO4 battery packs.",
+      "title": "Battery Energy Storage Systems (BESS) and Batteries",
+      "subtitle": "Home batteries, commercial and utility-scale BESS containers and LiFePO4 battery modules for storing solar and wind energy, backup power during outages and peak shaving.",
+      "all-products": "All Energy Storage Systems",
+      "seo": {
+        "title": "BESS Energy Storage Systems and Batteries",
+        "description": "Residential, commercial and industrial BESS, LiFePO4 batteries and storage solutions compatible with hybrid inverters. Installation in Baku."
+      }
+    },
+    "laser-equipment": {
+      "name": "Laser Equipment",
+      "short": "Laser cutting, welding, marking and cleaning equipment.",
+      "title": "Industrial Laser Equipment: Cutting, Welding, Marking and Cleaning",
+      "subtitle": "Fiber laser cutting machines, handheld and automated laser welders, laser marking and laser cleaning equipment for metalworking and manufacturing — with installation, training and service support.",
+      "all-products": "All Laser Equipment",
+      "seo": {
+        "title": "Laser Cutting, Welding and Marking Equipment",
+        "description": "Fiber laser cutting machines, laser welding, marking and cleaning machines. Sales, installation and service in Azerbaijan."
+      }
+    }
   }
 }

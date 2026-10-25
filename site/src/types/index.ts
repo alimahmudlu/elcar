@@ -21,6 +21,7 @@ export interface HeroSliderItem {
 export interface Characteristic {
   value: string | number | boolean | string[] | null;
   name?: string;
+  visible?: boolean;
   battery?: string;
   image?: {
     src: string;

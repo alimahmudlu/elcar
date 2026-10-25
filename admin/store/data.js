@@ -11,6 +11,22 @@ const defaultState = {
         {
             name: 'Accessories',
             key: 'accessories',
+        },
+        {
+            name: 'Solar Energy',
+            key: 'solar-energy',
+        },
+        {
+            name: 'Wind Energy',
+            key: 'wind-energy',
+        },
+        {
+            name: 'Energy Storage (BESS)',
+            key: 'energy-storage',
+        },
+        {
+            name: 'Laser Equipment',
+            key: 'laser-equipment',
         }
     ],
 }

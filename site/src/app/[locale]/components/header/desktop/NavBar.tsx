@@ -71,7 +71,7 @@ const NavBar: React.FC<NavBarProps> = ({ locale }) => {
       </Link>
       {item.subItems && (
         <div
-          className={`absolute left-0 mt-2 w-48 top-[140%]
+          className={`absolute left-0 mt-2 w-max min-w-48 top-[140%]
             group-hover:top-[100%]
             bg-white rounded-md shadow-lg py-1 z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 dark:bg-foreground`}
         >

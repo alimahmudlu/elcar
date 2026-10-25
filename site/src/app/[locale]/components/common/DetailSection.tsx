@@ -109,7 +109,8 @@ const DetailSection: React.FC<DetailSectionProps> = ({
                     },
                   }}
                 >
-                  {group.image.length > 0 ? (
+                  {/* Şəkli olmayan qrupda (image: []) əvvəl group.image[0].src xəta verirdi */}
+                  {Array.isArray(group.image) && group.image.length > 0 ? (
                     group.image.map((img, idx) => (
                       <SwiperSlide key={idx} className="w-full">
                         <div className="w-full flex items-center justify-center p-2 sm:p-4">
@@ -129,19 +130,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
                         </div>
                       </SwiperSlide>
                     ))
-                  ) : (
-                    <Image
-                      src={`${BASE_URL}/${group.image[0].src}`}
-                      alt={group.title}
-                      width={800}
-                      height={600}
-                      className="w-full h-auto object-contain rounded-md max-h-80 sm:max-h-96"
-                      style={{
-                        maxWidth: "100%",
-                        height: "auto",
-                      }}
-                    />
-                  )}
+                  ) : null}
                 </Swiper>
               </div>
 

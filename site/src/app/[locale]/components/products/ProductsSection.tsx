@@ -30,8 +30,10 @@ import { GenericFilter } from "./filters/GenericFilter";
 import {
   chargingConnectors,
   chargingStations,
+  getSectionProducts,
   getVehicles,
 } from "@/api/request";
+import { isEnergySection } from "@/config/sections";
 import ProductItem from "../common/ProductItem";
 import MobileFilter from "./filters/MobileFilter";
 
@@ -91,8 +93,9 @@ const ProductsSection = ({
           return acc;
         }, {} as { [key: string]: string | string[] });
 
-      const res =
-        type === ProductEnum.ChargingStation
+      const res = isEnergySection(type)
+        ? await getSectionProducts(type, cleanedFilters, loadMore ? `${skip}` : "0")
+        : type === ProductEnum.ChargingStation
           ? await chargingStations(cleanedFilters, loadMore ? `${skip}` : "0")
           : type === ProductEnum.Car
           ? await getVehicles(cleanedFilters, loadMore ? `${skip}` : "0")
@@ -437,7 +440,9 @@ const ProductsSection = ({
       <div className="md:col-span-9">
         <div className="flex justify-between mb-4 items-center max-md:flex-col max-md:gap-3">
           <h2 className="text-2xl font-black max-md:text-xl max-sm:text-base max-xs:text-sm mb-2 dark:text-primary-foreground">
-            {type === ProductEnum.Car
+            {isEnergySection(type)
+              ? t(`sections.${type}.all-products`)
+              : type === ProductEnum.Car
               ? t("pages-content.electric-vehicles.all-cars")
               : type === ProductEnum.ChargingStation
               ? t("pages-content.chargingStations.all-products")
