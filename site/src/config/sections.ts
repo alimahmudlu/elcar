@@ -1,5 +1,6 @@
 /**
- * Enerji həlləri bölmələri.
+ * Ortaq siyahı/detal səhifələri ilə işləyən bölmələr
+ * (enerji həlləri + ayrıca baş bölmə olan lazer avadanlıqları).
  *
  * Hər bölmə API-də məhsulun `section` sahəsinə uyğundur (məs. "solar-energy").
  * Sadəlik üçün `section`, URL yolu və ProductEnum dəyəri eynidir —
@@ -17,3 +18,9 @@ export type EnergySection = (typeof ENERGY_SECTIONS)[number];
 
 export const isEnergySection = (value: string): value is EnergySection =>
   (ENERGY_SECTIONS as readonly string[]).includes(value);
+
+/** "Enerji Həlləri" qrupuna daxil olan bölmələr (lazer ayrıca baş bölmədir) */
+export const ENERGY_SOLUTIONS = ENERGY_SECTIONS.filter(
+  (section): section is Exclude<EnergySection, "laser-equipment"> =>
+    section !== "laser-equipment"
+);

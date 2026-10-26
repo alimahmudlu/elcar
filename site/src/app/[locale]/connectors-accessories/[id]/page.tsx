@@ -64,7 +64,7 @@ const Page = async ({ params }: { params: Params }) => {
     <section
       className={`container max-lg:max-w-[90%] mt-18 ${roboto.className}`}
     >
-      <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.connectors"), href: "/connectors-accessories" }, { label: title }]} />
+      <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.chargingStations"), href: "/charging-stations" }, { label: t("pages.connectors"), href: "/connectors-accessories" }, { label: title }]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
