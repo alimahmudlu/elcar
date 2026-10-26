@@ -58,6 +58,17 @@ export function buildMetadata({
   };
 }
 
+/**
+ * JSON-LD-ni <script> teqinə təhlükəsiz yazmaq üçün serializasiya.
+ * `<`, `>`, `&` escape olunur ki, məzmundakı `</script>` teqi bağlaya bilməsin.
+ */
+export function jsonLdHtml(data: unknown): string {
+  return JSON.stringify(data)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026");
+}
+
 /** Product + Offer JSON-LD */
 export function productJsonLd(p: {
   title?: string;

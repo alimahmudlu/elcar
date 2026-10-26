@@ -4,7 +4,7 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { SITE_NAME, SITE_URL } from "@/config/site";
-import { alternatesFor } from "@/lib/seo";
+import { alternatesFor, jsonLdHtml } from "@/lib/seo";
 import { organizationJsonLd } from "@/config/organization";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
@@ -80,7 +80,7 @@ export default async function LocaleLayout({
               <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
-                  __html: JSON.stringify(organizationJsonLd),
+                  __html: jsonLdHtml(organizationJsonLd),
                 }}
               />
             </NextIntlClientProvider>

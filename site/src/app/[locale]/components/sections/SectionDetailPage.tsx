@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { buildMetadata, productJsonLd } from "@/lib/seo";
+import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
 import { CONTACT, SITE_URL } from "@/config/site";
 import type { EnergySection } from "@/config/sections";
 import type { ProductType } from "@/types";
@@ -17,7 +17,7 @@ import AddToCartButton from "../common/AddToCartButton";
 const roboto = Roboto({ subsets: ["latin"] });
 
 const getProduct = async (id: string): Promise<ProductType> =>
-  fetchProductDetails(ENDPOINTS.products.detail.replace(":id", id));
+  fetchProductDetails(ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id)));
 
 /** Enerji bölməsinin məhsul detal səhifəsi üçün metadata */
 export async function sectionDetailMetadata(
@@ -33,7 +33,7 @@ export async function sectionDetailMetadata(
     title: price ? `${product.title} — ${price} AZN` : product.title,
     description: product.description,
     locale,
-    path: `/${section}/${id}`,
+    path: `/${section}/${product?.slug ?? id}`,
     image: product.image?.src ? BASE_URL + product.image.src : undefined,
   });
 }
@@ -93,7 +93,7 @@ const SectionDetailPage = async ({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             productJsonLd({
               title,
               description,
@@ -101,7 +101,7 @@ const SectionDetailPage = async ({
               brand: product?.brand?.name,
               price,
               discountedPrice,
-              url: `${SITE_URL}/${locale}/${section}/${id}`,
+              url: `${SITE_URL}/${locale}/${section}/${product?.slug ?? id}`,
             })
           ),
         }}

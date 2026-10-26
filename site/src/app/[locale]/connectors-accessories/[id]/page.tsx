@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildMetadata, productJsonLd } from "@/lib/seo";
+import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
 import { SITE_URL } from "@/config/site";
 import type { ProductType } from "@/types";
 import Breadcrumb from "@/components/common/Breadcrumb";
@@ -25,7 +25,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, id } = await params;
   const product: ProductType = await fetchProductDetails(
-    ENDPOINTS.products.detail.replace(":id", id)
+    ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
   if (!product?.title) return { title: "404" };
 
@@ -34,7 +34,7 @@ export async function generateMetadata({
     title: price ? `${product.title} — ${price} AZN` : product.title,
     description: product.description,
     locale,
-    path: `/connectors-accessories/${id}`,
+    path: `/connectors-accessories/${product?.slug ?? id}`,
     image: product.image?.src ? BASE_URL + product.image.src : undefined,
   });
 }
@@ -46,7 +46,7 @@ const Page = async ({ params }: { params: Params }) => {
   const t = await getTranslations();
 
   const product = await fetchProductDetails(
-    ENDPOINTS.products.detail.replace(":id", id)
+    ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
 
   const {
@@ -68,7 +68,7 @@ const Page = async ({ params }: { params: Params }) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             productJsonLd({
               title,
               description,
@@ -76,7 +76,7 @@ const Page = async ({ params }: { params: Params }) => {
               brand: product?.brand?.name,
               price,
               discountedPrice,
-              url: `${SITE_URL}/${locale}/connectors-accessories/${id}`,
+              url: `${SITE_URL}/${locale}/connectors-accessories/${product?.slug ?? id}`,
             })
           ),
         }}
