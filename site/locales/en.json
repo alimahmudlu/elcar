@@ -259,7 +259,7 @@
     "whatsapp-message": "Hello, I would like information and a price for \"{product}\".",
     "home": {
       "title": "Energy Solutions",
-      "subtitle": "From solar and wind power systems to energy storage (BESS) — everything for renewable energy in one place",
+      "subtitle": "From solar and wind power systems to energy storage (BESS) and inverters — everything for renewable energy in one place",
       "more": "Explore"
     },
     "solar-energy": {
@@ -293,6 +293,17 @@
       "seo": {
         "title": "BESS Energy Storage Systems and Batteries",
         "description": "Residential, commercial and industrial BESS, LiFePO4 batteries and storage solutions compatible with hybrid inverters. Installation in Baku."
+      }
+    },
+    "inverters": {
+      "name": "Inverters",
+      "short": "On-grid, off-grid and hybrid inverters, microinverters.",
+      "title": "Solar Inverters: On-Grid, Off-Grid and Hybrid",
+      "subtitle": "On-grid, off-grid and hybrid inverters and microinverters that convert DC power from solar panels into AC power for homes and businesses. Battery-ready options with installation and service support.",
+      "all-products": "All Inverters",
+      "seo": {
+        "title": "Solar Inverters — Hybrid, On-Grid and Off-Grid",
+        "description": "Hybrid, on-grid and off-grid solar inverters and microinverters for homes and businesses. Compatible with BESS batteries, installation and service in Baku."
       }
     },
     "laser-equipment": {

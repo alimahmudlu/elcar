@@ -5,6 +5,7 @@ export const enum ProductEnum {
     Solar = "solar-energy",
     Wind = "wind-energy",
     EnergyStorage = "energy-storage",
+    Inverters = "inverters",
     Laser = "laser-equipment",
 }
 
@@ -15,5 +16,6 @@ export const enum CategoryEnum {
     Solar = "solar-energy",
     Wind = "wind-energy",
     EnergyStorage = "energy-storage",
+    Inverters = "inverters",
     Laser = "laser-equipment",
 }

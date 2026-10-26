@@ -1,14 +1,15 @@
-# Enerji bölmələri — Günəş, Külək, BESS, Lazer
+# Enerji bölmələri — Günəş, Külək, BESS, İnvertorlar, Lazer
 
 **Branch:** `feature/energy-sections`
 
-Sayta 4 yeni məhsul bölməsi əlavə olunur:
+Sayta 5 yeni məhsul bölməsi əlavə olunur:
 
 | Bölmə | `section` (API) | Sayt URL |
 |---|---|---|
 | Günəş enerjisi | `solar-energy` | `/{az,en,ru}/solar-energy` |
 | Külək enerjisi | `wind-energy` | `/{az,en,ru}/wind-energy` |
 | Enerji saxlama (BESS) | `energy-storage` | `/{az,en,ru}/energy-storage` |
+| İnvertorlar | `inverters` | `/{az,en,ru}/inverters` |
 | Lazer avadanlıqları | `laser-equipment` | `/{az,en,ru}/laser-equipment` |
 
 API-də kod dəyişikliyi **yoxdur**: məhsul, kateqoriya, brend, xüsusiyyət
@@ -39,16 +40,16 @@ istifadəçilər yeni menyu bəndlərində 404 görəcək.
 | Fayl | Dəyişiklik |
 |---|---|
 | `src/config/sections.ts` | **Yeni.** Enerji bölmələrinin siyahısı — yeni bölmə üçün tək mənbə |
-| `src/constants/enums.ts` | `ProductEnum` / `CategoryEnum`-a 4 dəyər |
+| `src/constants/enums.ts` | `ProductEnum` / `CategoryEnum`-a 5 dəyər |
 | `src/api/request.ts` | `getSectionProducts(section, …)` — ümumi məhsul sorğusu |
 | `src/app/[locale]/components/sections/SectionListPage.tsx` | **Yeni.** Ortaq siyahı səhifəsi (SSR ilk səhifə, filtrlər, səhifələmə) |
 | `src/app/[locale]/components/sections/SectionDetailPage.tsx` | **Yeni.** Ortaq detal səhifəsi: əsas xüsusiyyətlər, "Qiymət sorğu ilə", WhatsApp sorğu düyməsi, Product JSON-LD |
-| `src/app/[locale]/{solar-energy,wind-energy,energy-storage,laser-equipment}/` | **Yeni.** 4 × (siyahı + detal) route — nazik wrapper-lər |
-| `src/app/[locale]/components/home/EnergySolutions.tsx` | **Yeni.** Ana səhifədə 4 bölməyə keçid kartları |
+| `src/app/[locale]/{solar-energy,wind-energy,energy-storage,inverters,laser-equipment}/` | **Yeni.** 5 × (siyahı + detal) route — nazik wrapper-lər |
+| `src/app/[locale]/components/home/EnergySolutions.tsx` | **Yeni.** Ana səhifədə 4 enerji bölməsinə keçid kartları (lazer menyuda ayrıca baş bölmədir) |
 | `src/config/navigation.ts` | Menyuda "Enerji Həlləri" açılan bölməsi (3 dil) |
 | `components/common/ProductItem.tsx` | Enerji məhsullarına düzgün link; kartda ilk qrupun ilk 3 xüsusiyyəti; qiymət yoxdursa "Qiymət sorğu ilə" |
 | `components/products/ProductsSection.tsx` | Enerji bölmələri üçün sorğu və başlıq |
-| `components/common/Footer.tsx` | Məhsullar sütununa 4 bölmə |
+| `components/common/Footer.tsx` | Məhsullar sütununa 5 bölmə |
 | `src/app/sitemap.ts` | Yeni statik səhifələr + enerji məhsullarının düzgün URL-i |
 | `locales/{az,en,ru}.json` | `sections.*` mətnləri (başlıq, təsvir, SEO title/description); footer təsviri genişləndirildi |
 
@@ -81,7 +82,7 @@ Qiymət sahəsi boş və ya 0 olduqda kartda və detal səhifəsində
 | Fayl | Dəyişiklik |
 |---|---|
 | `structure/pages.json` | Hər bölmə üçün 3 səhifə (siyahı / əlavə et / redaktə), "ELCAR" altında, öz ikonu ilə |
-| `pages/apps/elcar/products/<section>/` | **Yeni.** 4 × 3 səhifə (charging-stations səhifələrinin surəti) |
+| `pages/apps/elcar/products/<section>/` | **Yeni.** 5 × 3 səhifə (charging-stations səhifələrinin surəti) |
 | `store/data.js` | `productSections` — kateqoriya, brend, xüsusiyyət formalarında bölmə seçimi |
 
 Məhsul forması, cədvəl və filtrlər artıq `section` parametri ilə işləyən ortaq
@@ -95,6 +96,7 @@ komponentlərdir (`ElcarProductsForm`, `ElcarProductsDataTable`) — yeni kod t�
    - Günəş: Güc (W), Səmərəlilik (%), Panel növü, Ölçülər, Zəmanət
    - Külək: Nominal güc, Başlanğıc külək sürəti, Ox növü, Gərginlik
    - BESS: Tutum (kWh), Güc (kW), Kimya (LiFePO4), Dövr sayı, Gərginlik
+   - İnvertor: Nominal güc (kW), Növ (hibrid/şəbəkə/avtonom), Faza, MPPT sayı, Maks. DC gərginlik, Səmərəlilik (%)
    - Lazer: Lazer gücü, Mənbə, İş sahəsi, Maks. qalınlıq
 2. **Brendlər** — brend formasında yeni bölmələri seçin
 3. **Məhsullar** — hər bölmədə "Əlavə et"

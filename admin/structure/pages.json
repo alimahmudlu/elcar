@@ -1698,6 +1698,231 @@
         }
     },
     {
+        "_id": "5e469832-ea26-5776-9280-2deb2706da67",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "inverters",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-inverters",
+                "i18n": {
+                    "path": "apps/elcar/products/inverters/index",
+                    "slug": {
+                        "az": "/elcar/inverters",
+                        "en": "/elcar/inverters",
+                        "ru": "/elcar/inverters"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "İnvertorlar",
+            "en": "Inverters",
+            "ru": "Инверторы"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCurrentAc",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "inverters",
+                            "title": "Inverter"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "inverters"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "d75980a6-0130-5c05-b4aa-5eb4c5ab7e2f",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "inverters",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-inverters-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/inverters/_detail/index",
+                    "slug": {
+                        "az": "/elcar/inverters/:detail",
+                        "en": "/elcar/inverters/:detail",
+                        "ru": "/elcar/inverters/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCurrentAc",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "inverters"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "a7731114-b26b-5999-8bb5-c97b108c278e",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "inverters",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-inverters-add",
+                "i18n": {
+                    "path": "apps/elcar/products/inverters/add/index",
+                    "slug": {
+                        "az": "/elcar/inverters/add",
+                        "en": "/elcar/inverters/add",
+                        "ru": "/elcar/inverters/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCurrentAc",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "inverters"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
         "_id": "4bef1bd9-5207-5b82-843a-b6a36378be19",
         "config": {
             "module": {

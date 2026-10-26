@@ -1,7 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { RiArrowRightLine } from "react-icons/ri";
-import { MdOutlineSolarPower, MdOutlineWindPower, MdBatteryChargingFull } from "react-icons/md";
+import {
+  MdOutlineSolarPower,
+  MdOutlineWindPower,
+  MdBatteryChargingFull,
+  MdOutlineElectricalServices,
+} from "react-icons/md";
 import type { IconType } from "react-icons";
 import { ENERGY_SOLUTIONS } from "@/config/sections";
 
@@ -9,6 +14,7 @@ const ICONS: Record<(typeof ENERGY_SOLUTIONS)[number], IconType> = {
   "solar-energy": MdOutlineSolarPower,
   "wind-energy": MdOutlineWindPower,
   "energy-storage": MdBatteryChargingFull,
+  inverters: MdOutlineElectricalServices,
 };
 
 /** Ana səhifədə enerji həlləri bölmələrinə keçid kartları */
@@ -26,7 +32,7 @@ const EnergySolutions = async () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
         {ENERGY_SOLUTIONS.map((section) => {
           const Icon = ICONS[section];
           return (

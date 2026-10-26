@@ -6,7 +6,7 @@
 // Skript idempotentdir — təkrar işə salınsa, artıq mövcud olan
 // bölmə/kateqoriyalar yenidən əlavə olunmur.
 
-const SECTIONS = ["solar-energy", "wind-energy", "energy-storage", "laser-equipment"];
+const SECTIONS = ["solar-energy", "wind-energy", "energy-storage", "inverters", "laser-equipment"];
 
 // 1) Rol icazələri.
 // root/owner rolları onsuz da "manage all" hüququna malikdir; admin/user
@@ -33,8 +33,6 @@ const CATEGORIES = {
   "solar-energy": [
     [{ az: "Günəş panelləri", en: "Solar panels", ru: "Солнечные панели" },
      { az: "gunes-panelleri", en: "solar-panels", ru: "solnechnye-paneli" }],
-    [{ az: "İnvertorlar", en: "Inverters", ru: "Инверторы" },
-     { az: "invertorlar", en: "inverters", ru: "invertory" }],
     [{ az: "Montaj sistemləri", en: "Mounting systems", ru: "Системы крепления" },
      { az: "montaj-sistemleri", en: "mounting-systems", ru: "sistemy-krepleniya" }],
     [{ az: "Hazır dəstlər", en: "Complete kits", ru: "Готовые комплекты" },
@@ -55,6 +53,16 @@ const CATEGORIES = {
      { az: "kommersiya-ve-senaye-bess", en: "commercial-industrial-bess", ru: "kommercheskie-i-promyshlennye-bess" }],
     [{ az: "Akkumulyator modulları", en: "Battery modules", ru: "Аккумуляторные модули" },
      { az: "akkumulyator-modullari", en: "battery-modules", ru: "akkumulyatornye-moduli" }],
+  ],
+  "inverters": [
+    [{ az: "Hibrid invertorlar", en: "Hybrid inverters", ru: "Гибридные инверторы" },
+     { az: "hibrid-invertorlar", en: "hybrid-inverters", ru: "gibridnye-invertory" }],
+    [{ az: "Şəbəkəyə qoşulan invertorlar", en: "On-grid inverters", ru: "Сетевые инверторы" },
+     { az: "sebekeye-qosulan-invertorlar", en: "on-grid-inverters", ru: "setevye-invertory" }],
+    [{ az: "Avtonom invertorlar", en: "Off-grid inverters", ru: "Автономные инверторы" },
+     { az: "avtonom-invertorlar", en: "off-grid-inverters", ru: "avtonomnye-invertory" }],
+    [{ az: "Mikroinvertorlar", en: "Microinverters", ru: "Микроинверторы" },
+     { az: "mikroinvertorlar", en: "microinverters", ru: "mikroinvertory" }],
   ],
   "laser-equipment": [
     [{ az: "Lazer kəsmə", en: "Laser cutting", ru: "Лазерная резка" },

@@ -25,6 +25,10 @@ const defaultState = {
             key: 'energy-storage',
         },
         {
+            name: 'Inverters',
+            key: 'inverters',
+        },
+        {
             name: 'Laser Equipment',
             key: 'laser-equipment',
         }

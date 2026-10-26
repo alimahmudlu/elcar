@@ -259,7 +259,7 @@
     "whatsapp-message": "Salam, \"{product}\" haqqında məlumat və qiymət almaq istəyirəm.",
     "home": {
       "title": "Enerji Həlləri",
-      "subtitle": "Günəş və külək enerjisi sistemlərindən enerji saxlama həllərinə (BESS) qədər — bərpa olunan enerji üçün hər şey bir ünvanda",
+      "subtitle": "Günəş və külək enerjisi sistemlərindən enerji saxlama həllərinə (BESS) və invertorlara qədər — bərpa olunan enerji üçün hər şey bir ünvanda",
       "more": "Bölməyə keç"
     },
     "solar-energy": {
@@ -293,6 +293,17 @@
       "seo": {
         "title": "BESS Enerji Saxlama Sistemləri və Batareyalar",
         "description": "Ev, kommersiya və sənaye üçün BESS sistemləri, LiFePO4 batareyalar, hibrid invertorlarla uyğun enerji saxlama həlləri. Bakıda quraşdırma."
+      }
+    },
+    "inverters": {
+      "name": "İnvertorlar",
+      "short": "Şəbəkəyə qoşulan, avtonom və hibrid invertorlar, mikroinvertorlar.",
+      "title": "Günəş İnvertorları: Şəbəkə, Avtonom və Hibrid",
+      "subtitle": "Günəş panellərindən alınan sabit cərəyanı (DC) ev və müəssisə şəbəkəsi üçün dəyişən cərəyana (AC) çevirən şəbəkəyə qoşulan, avtonom (off-grid) və hibrid invertorlar, eləcə də mikroinvertorlar. Batareya sistemləri ilə uyğunluq, quraşdırma və servis dəstəyi ilə.",
+      "all-products": "Bütün İnvertorlar",
+      "seo": {
+        "title": "Günəş İnvertorları — Hibrid, Şəbəkə və Avtonom",
+        "description": "Ev və müəssisələr üçün hibrid, şəbəkəyə qoşulan və avtonom günəş invertorları, mikroinvertorlar. BESS batareyaları ilə uyğun həllər, Bakıda quraşdırma və servis."
       }
     },
     "laser-equipment": {
