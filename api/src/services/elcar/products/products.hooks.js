@@ -281,7 +281,8 @@ const filterQueries = () => {
         }
 
         // discountedPrice yuxarıda priceRange-dən qurulur — xüsusiyyət filtri deyil
-        const ignoredParams = ['category', 'brand', 'model', 'priceRange', 'discountedPrice', 'section', 'top', '$skip', '$limit', '$select', '$sort', '$and', '$or', 'noPagination', 'filter']
+        // _id: müqayisə səhifəsi məhsulları ID siyahısı ilə çəkir (?_id[]=..)
+        const ignoredParams = ['_id', 'category', 'brand', 'model', 'priceRange', 'discountedPrice', 'section', 'top', '$skip', '$limit', '$select', '$sort', '$and', '$or', 'noPagination', 'filter']
 
         Object.entries(context.params.query).forEach(([key, val]) => {
             if (!ignoredParams.includes(key) && (Array.isArray(val) && val.length || !Array.isArray(val) && val)){

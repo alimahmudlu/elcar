@@ -335,5 +335,23 @@
     "years": "{n, plural, one {# year} other {# years}}",
     "documents": "Documents",
     "download": "Download"
+  },
+  "compare": {
+    "add": "Compare",
+    "added": "In comparison",
+    "limit": "You can compare up to {n} products",
+    "bar": "Compare ({n})",
+    "clear": "Clear",
+    "title": "Product comparison",
+    "empty": "No products selected. Use the compare button on product cards to add 2–4 products.",
+    "remove": "Remove",
+    "price": "Price",
+    "brand": "Brand",
+    "model": "Model",
+    "category": "Category",
+    "diffOnly": "Show differences only",
+    "more": "Add one more product",
+    "yes": "Yes",
+    "no": "No"
   }
 }

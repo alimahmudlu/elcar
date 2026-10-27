@@ -13,6 +13,7 @@ import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { Characteristic, ProductType } from "@/types";
 import CharacteristicGroupClient from "../../components/products/charging-stations/CharacteristicGroupClient";
 import ProductFacts from "../../components/common/ProductFacts";
+import CompareButton from "../../components/common/CompareButton";
 
 const roboto = Roboto({ subsets: ["latin"] });
 
@@ -79,6 +80,9 @@ const Page = async ({ params }: { params: Params }) => {
       className={`container max-lg:max-w-[90%] mt-18 ${roboto.className}`}
     >
       <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.chargingStations"), href: "/charging-stations" }, { label: title }]} />
+      <div className="mt-4">
+        <CompareButton product={product} variant="inline" />
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

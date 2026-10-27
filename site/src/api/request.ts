@@ -204,3 +204,16 @@ export const searchProducts = async (q: string, skip = 0, limit = 24) => {
         return { data: [], meta: { total: 0 } };
     }
 }
+
+/** Müqayisə üçün məhsulları ID siyahısı ilə çəkir (API: ?_id[]=..) */
+export const getProductsByIds = async (ids: string[]) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
+            params: { _id: ids, "$limit": ids.length }
+        });
+        return response.data?.data ?? [];
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

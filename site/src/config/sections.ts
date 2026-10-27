@@ -36,3 +36,11 @@ export const productTypeForSection = (section: string): string => {
   if (section === "accessories") return "connector-accessory";
   return "charging-station";
 };
+
+/** Məhsulun detal səhifəsinin yolu (dil prefiksi olmadan) */
+export const productPath = (section: string, slug: string): string => {
+  if (isEnergySection(section)) return `/${section}/${slug}`;
+  if (section === "vehicles") return `/electric-vehicles/${slug}`;
+  if (section === "accessories") return `/connectors-accessories/${slug}`;
+  return `/charging-stations/${slug}`;
+};

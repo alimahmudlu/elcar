@@ -14,6 +14,7 @@ import CheckCart from "../icons/CheckCart";
 import { useCartStore } from "@/lib/cartStore";
 import { useDrawerStore } from "@/lib/drawerStore";
 import { isEnergySection } from "@/config/sections";
+import CompareButton from "./CompareButton";
 
 const ProductItem = ({
   product,
@@ -238,6 +239,7 @@ const ProductItem = ({
           {!inCart ? <MdAddShoppingCart className="w-5 h-5" /> : <CheckCart />}
         </div>
       </Tooltip>
+      <CompareButton product={product} />
     </div>
   );
 };

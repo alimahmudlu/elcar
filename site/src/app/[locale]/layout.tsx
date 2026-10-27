@@ -16,6 +16,7 @@ import { PrimeReactProvider } from "primereact/api";
 import NextTopLoader from "nextjs-toploader";
 import Analytics from "./components/common/Analytics";
 import WhatsAppButton from "./components/common/WhatsAppButton";
+import CompareBar from "./components/common/CompareBar";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin", "latin-ext"],
@@ -76,6 +77,7 @@ export default async function LocaleLayout({
               {children}
               <Footer />
               <WhatsAppButton />
+              <CompareBar />
               <Analytics />
               <script
                 type="application/ld+json"

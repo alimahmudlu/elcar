@@ -335,5 +335,23 @@
     "years": "{n} il",
     "documents": "Sənədlər",
     "download": "Yüklə"
+  },
+  "compare": {
+    "add": "Müqayisə et",
+    "added": "Müqayisədədir",
+    "limit": "Ən çox {n} məhsulu müqayisə etmək olar",
+    "bar": "Müqayisə et ({n})",
+    "clear": "Təmizlə",
+    "title": "Məhsulların müqayisəsi",
+    "empty": "Müqayisə üçün məhsul seçilməyib. Məhsul kartındakı müqayisə düyməsi ilə 2–4 məhsul əlavə edin.",
+    "remove": "Çıxar",
+    "price": "Qiymət",
+    "brand": "Brend",
+    "model": "Model",
+    "category": "Kateqoriya",
+    "diffOnly": "Yalnız fərqləri göstər",
+    "more": "Daha bir məhsul əlavə edin",
+    "yes": "Bəli",
+    "no": "Xeyr"
   }
 }

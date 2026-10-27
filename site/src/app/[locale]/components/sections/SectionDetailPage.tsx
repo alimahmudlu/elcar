@@ -13,6 +13,7 @@ import { getTranslations } from "next-intl/server";
 import { FaWhatsapp } from "react-icons/fa";
 import DetailSection from "../common/DetailSection";
 import ProductFacts from "../common/ProductFacts";
+import CompareButton from "../common/CompareButton";
 import AddToCartButton from "../common/AddToCartButton";
 
 const roboto = Roboto({ subsets: ["latin"] });
@@ -91,6 +92,9 @@ const SectionDetailPage = async ({
           { label: title },
         ]}
       />
+      <div className="mt-4">
+        <CompareButton product={product} variant="inline" />
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
