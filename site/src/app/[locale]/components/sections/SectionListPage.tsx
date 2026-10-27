@@ -16,6 +16,10 @@ import type { EnergySection } from "@/config/sections";
 import { groupCharacteristicsWithChildren } from "@/lib/utils";
 import { ChildCharacteristic } from "@/types";
 import ProductsSection from "../products/ProductsSection";
+import CalculatorBanner from "../calculator/CalculatorBanner";
+
+/** Hesablayıcı bu bölmələr üçün aktualdır */
+const CALCULATOR_SECTIONS: EnergySection[] = ["solar-energy", "inverters", "energy-storage"];
 
 const PER_PAGE = 12;
 
@@ -87,6 +91,11 @@ const SectionListPage = async ({
         <p className="mt-4 text-subtitle text-sm md:text-base dark:text-secondary-foreground">
           {t(`sections.${section}.subtitle`)}
         </p>
+        {CALCULATOR_SECTIONS.includes(section) && (
+          <div className="mt-6">
+            <CalculatorBanner />
+          </div>
+        )}
       </div>
 
       <ProductsSection

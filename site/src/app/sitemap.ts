@@ -18,6 +18,7 @@ const STATIC_PATHS = [
   "/charging-stations",
   "/connectors-accessories",
   ...ENERGY_SECTIONS.map((section) => `/${section}`),
+  "/solar-calculator",
   "/blog",
   "/about",
   "/contact",

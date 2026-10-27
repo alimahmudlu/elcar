@@ -353,5 +353,73 @@
     "more": "Add one more product",
     "yes": "Yes",
     "no": "No"
+  },
+  "calculator": {
+    "nav": "Solar system calculator",
+    "title": "Solar System Calculator",
+    "subtitle": "Enter your monthly electricity use and get a first estimate of the panel capacity, inverter and battery you need. For an exact design and price, send a request with the form below.",
+    "seo": {
+      "title": "Solar Panel Calculator — How Many Panels Do I Need?",
+      "description": "Estimate the number of solar panels, inverter size and battery capacity from your monthly kWh use. Free preliminary sizing and installation quote in Azerbaijan."
+    },
+    "monthly": "Monthly consumption",
+    "monthly-hint": "kWh shown on your electricity bill",
+    "type": "System type",
+    "types": {
+      "on-grid": "On-grid",
+      "hybrid": "Hybrid (with battery)",
+      "off-grid": "Off-grid"
+    },
+    "type-hints": {
+      "on-grid": "No battery, surplus goes to the grid",
+      "hybrid": "Runs from the battery during outages",
+      "off-grid": "For places without grid power"
+    },
+    "backup": "Backup time",
+    "backup-unit": "hours",
+    "autonomy": "Days without sun",
+    "autonomy-unit": "days",
+    "advanced": "Advanced settings",
+    "sun-hours": "Sun hours (per day)",
+    "sun-hours-hint": "Annual average in Azerbaijan ≈ 4",
+    "panel-watt": "Panel power",
+    "result": "Estimate",
+    "daily": "Daily consumption",
+    "pv": "Panel capacity",
+    "panels": "Number of panels",
+    "inverter": "Inverter",
+    "battery": "Battery capacity",
+    "annual": "Annual generation (approx.)",
+    "roof": "Roof area needed",
+    "pcs": "{n, plural, one {# panel} other {# panels}}",
+    "disclaimer": "This is a preliminary planning estimate, not a design or a price quote. Actual sizing depends on roof orientation, shading, load profile and equipment specifications. Our engineers prepare the exact design after a site visit.",
+    "cta": "Request a quote with this estimate",
+    "banner-title": "How many panels do you need?",
+    "banner-text": "Size panels, inverter and battery from your monthly use in one minute.",
+    "banner-button": "Calculate"
+  },
+  "quote": {
+    "title": "Get an installation quote",
+    "subtitle": "Send your details and our engineer will contact you within 1 business day.",
+    "full-name": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "object": "Property type",
+    "objects": {
+      "home": "House / villa",
+      "business": "Office / shop",
+      "industry": "Industrial / farm",
+      "other": "Other"
+    },
+    "city": "City / district",
+    "note": "Notes",
+    "send": "Send request",
+    "subject": "Quote request",
+    "calc": "Estimate",
+    "errors": {
+      "full-name": "Enter your name using letters",
+      "phone": "Enter a phone number",
+      "email": "Enter a valid email"
+    }
   }
 }

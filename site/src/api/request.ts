@@ -169,7 +169,8 @@ export const sendMessage = async (data: {
         return response.data;
     } catch (error) {
         console.log(error);
-        return [];
+        // null — forma xəta göstərsin (əvvəl [] qaytarılırdı və uğur sayılırdı)
+        return null;
     }
 }
 

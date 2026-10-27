@@ -353,5 +353,73 @@
     "more": "Daha bir məhsul əlavə edin",
     "yes": "Bəli",
     "no": "Xeyr"
+  },
+  "calculator": {
+    "nav": "Günəş sistemi hesablayıcısı",
+    "title": "Günəş Sistemi Hesablayıcısı",
+    "subtitle": "Aylıq elektrik istehlakınızı yazın — sizə lazım olan panel gücünü, invertoru və batareya tutumunu ilkin olaraq hesablayaq. Dəqiq layihə və qiymət üçün aşağıdakı formadan sorğu göndərin.",
+    "seo": {
+      "title": "Günəş Paneli Hesablayıcısı — Neçə Panel Lazımdır?",
+      "description": "Aylıq kVt·saat istehlakınıza görə günəş paneli sayını, invertor gücünü və batareya tutumunu hesablayın. Azərbaycan üçün pulsuz ilkin hesablama və quraşdırma təklifi."
+    },
+    "monthly": "Aylıq istehlak",
+    "monthly-hint": "Elektrik qəbzindəki kVt·saat",
+    "type": "Sistem növü",
+    "types": {
+      "on-grid": "Şəbəkəyə qoşulan",
+      "hybrid": "Hibrid (batareya ilə)",
+      "off-grid": "Avtonom (şəbəkəsiz)"
+    },
+    "type-hints": {
+      "on-grid": "Batareyasız, artıq enerji şəbəkəyə verilir",
+      "hybrid": "İşıq kəsiləndə batareyadan işləyir",
+      "off-grid": "Şəbəkə olmayan yerlər üçün"
+    },
+    "backup": "Ehtiyat müddəti",
+    "backup-unit": "saat",
+    "autonomy": "Günəşsiz günlər",
+    "autonomy-unit": "gün",
+    "advanced": "Əlavə parametrlər",
+    "sun-hours": "Günəş saatları (gündə)",
+    "sun-hours-hint": "Azərbaycanda illik orta ≈ 4",
+    "panel-watt": "Panelin gücü",
+    "result": "İlkin nəticə",
+    "daily": "Gündəlik istehlak",
+    "pv": "Panel gücü",
+    "panels": "Panel sayı",
+    "inverter": "İnvertor",
+    "battery": "Batareya tutumu",
+    "annual": "İllik istehsal (təxmini)",
+    "roof": "Lazımi dam sahəsi",
+    "pcs": "{n} ədəd",
+    "disclaimer": "Bu, ilkin planlama hesablamasıdır, layihə və ya qiymət təklifi deyil. Faktiki ölçü damın istiqamətindən, kölgədən, yük profilindən və avadanlığın texniki göstəricilərindən asılıdır. Dəqiq layihəni mühəndislərimiz yerində baxışdan sonra hazırlayır.",
+    "cta": "Bu hesablama ilə təklif istəyin",
+    "banner-title": "Neçə panel lazımdır?",
+    "banner-text": "Aylıq istehlakınıza görə panel, invertor və batareyanı 1 dəqiqəyə hesablayın.",
+    "banner-button": "Hesabla"
+  },
+  "quote": {
+    "title": "Quraşdırma təklifi alın",
+    "subtitle": "Məlumatları göndərin — mühəndisimiz 1 iş günü ərzində sizinlə əlaqə saxlayacaq.",
+    "full-name": "Ad, soyad",
+    "phone": "Telefon",
+    "email": "E-poçt",
+    "object": "Obyekt növü",
+    "objects": {
+      "home": "Ev / villa",
+      "business": "Ofis / mağaza",
+      "industry": "Sənaye / ferma",
+      "other": "Digər"
+    },
+    "city": "Şəhər / rayon",
+    "note": "Əlavə qeyd",
+    "send": "Sorğu göndər",
+    "subject": "Təklif sorğusu",
+    "calc": "Hesablama",
+    "errors": {
+      "full-name": "Ad və soyadı hərflərlə yazın",
+      "phone": "Telefon nömrəsini yazın",
+      "email": "Düzgün e-poçt yazın"
+    }
   }
 }
