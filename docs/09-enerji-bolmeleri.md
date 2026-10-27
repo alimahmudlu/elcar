@@ -105,3 +105,38 @@ komponentlərdir (`ElcarProductsForm`, `ElcarProductsDataTable`) — yeni kod t�
 Yeni bölmə əlavə etmək lazım olsa: `site/src/config/sections.ts`,
 `site/locales/*.json` (`sections.<key>`), `site/src/app/[locale]/<key>/` route-u,
 `admin/structure/pages.json` + `admin/pages/...` və `admin/store/data.js`.
+
+---
+
+## Əlavə funksiyalar (eyni branch)
+
+| Funksiya | Harada | Qeyd |
+|---|---|---|
+| Axtarış | Header-də 🔍, `/{az,en,ru}/search?q=` | API: `products?q=` — hər söz məhsul adında olmalıdır. Nəticə səhifəsi `noindex`. |
+| Qiymət və model filtrləri | Bütün siyahı səhifələri | Qiymət filtri API-də heç vaxt nəticə qaytarmırdı (əlavə `discountedPrice` şərti) — düzəldildi. |
+| Xüsusiyyət filtrləri | Admin → Xüsusiyyətlər | Kod dəyişikliyi lazım deyil: xüsusiyyətdə **showOnFilter** işarələnəndə filtr kimi görünür. |
+| SKU, zəmanət, sənədlər | Admin məhsul forması → saytda "Əsas məlumatlar" və "Sənədlər" | Sənədlər media kitabxanasından seçilir (PDF dəstəklənir). Ölçü/çəki xüsusiyyətlərdə qalır. |
+| Müqayisə | Kartda və detalda ⇄ düyməsi, `/compare?ids=` | Maks. 4 məhsul, brauzerdə saxlanılır, link paylaşıla bilir. |
+| Günəş hesablayıcısı | `/{az,en,ru}/solar-calculator` | İlkin ölçü (qiymətsiz). Sorğu forması "Mesajlar"a düşür. |
+| Rəylər | Detal səhifəsi; Admin → Rəylər | Hər rəy "gözləmədə" yaranır, təsdiqdən sonra görünür və reytinqə düşür. |
+| Hazır dəstlər | Admin məhsul forması → "Dəstin tərkibi" | Dəst adi məhsuldur (məs. Günəş → "Hazır dəstlər"); tərkibi və qənaət detalda göstərilir. |
+
+Düzəldilən köhnə xətalar: Azərbaycan/kiril hərfli adlarla mesaj göndərmək olmurdu,
+xətada isə forma "göndərildi" göstərirdi; JSON-LD `<script>` XSS; sabit 5 ulduz.
+
+### Deploy ardıcıllığı (bu funksiyalar üçün)
+
+1. **API** əvvəl deploy olunur (yeni `reviews` xidməti, `q`/`_id` filtrləri, yeni sahələr).
+   API deploy olunmayınca axtarış 0 nəticə, müqayisə boş, rəylər boş göstərir.
+2. **Miqrasiya**: `mongosh "<MONGO_URI>" db/migrations/2026-10-energy-sections.mongosh.js`
+   (admin/user rollarına `reviews` və enerji bölmələri hüquqları; kateqoriyalar).
+3. **Admin**, sonra **sayt**.
+
+### Açıq qalan məsələlər
+
+- Rəy və sorğu formalarında sürət limiti (rate limit) yoxdur — yalnız bot tələsi var.
+  Spam olarsa nginx `limit_req` və ya API-də limit əlavə edilməlidir.
+- `send-message-to-email` hook-u bildirişləri `info@elcar.az` əvəzinə şəxsi
+  ünvana göndərir — ünvan biznes tərəfindən yoxlanılmalıdır.
+- Admin dəyişiklikləri (forma sahələri, Rəylər səhifəsi) lokal olaraq işə salınıb
+  yoxlanılmayıb — API və baza olmadan admin açılmır.
