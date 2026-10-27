@@ -421,5 +421,23 @@
       "phone": "Telefon nömrəsini yazın",
       "email": "Düzgün e-poçt yazın"
     }
+  },
+  "reviews": {
+    "title": "Müştəri rəyləri",
+    "average": "{n} rəy əsasında",
+    "empty": "Hələ rəy yoxdur. İlk rəyi siz yazın.",
+    "write": "Rəy yazın",
+    "name": "Adınız",
+    "rating": "Qiymətiniz",
+    "text": "Rəyiniz",
+    "text-hint": "Məhsuldan necə istifadə edirsiniz, nəyi bəyəndiniz, nəyi yox?",
+    "send": "Göndər",
+    "sent": "Təşəkkür edirik! Rəyiniz yoxlanıldıqdan sonra dərc olunacaq.",
+    "error": "Göndərmək alınmadı. Bir az sonra yenidən cəhd edin.",
+    "errors": {
+      "name": "Adınızı hərflərlə yazın",
+      "rating": "Ulduz seçin",
+      "text": "Ən azı 10 simvol yazın"
+    }
   }
 }

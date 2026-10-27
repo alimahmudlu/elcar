@@ -33,6 +33,7 @@ const categories = require('./elcar/categories/categories.service.js');
 const blog = require('./elcar/blog/blog.service.js');
 const orders = require('./elcar/orders/orders.service.js');
 const messages = require('./elcar/messages/messages.service.js');
+const reviews = require('./elcar/reviews/reviews.service.js');
 
 const bankTransactions = require('./elcar/bank-transactions/bank-transactions.service.js');
 
@@ -69,5 +70,6 @@ module.exports = function (app) {
     app.configure(blog);
     app.configure(orders);
     app.configure(messages);
+    app.configure(reviews);
     app.configure(bankTransactions);
 };

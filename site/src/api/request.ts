@@ -218,3 +218,33 @@ export const getProductsByIds = async (ids: string[]) => {
         return [];
     }
 }
+
+/** Məhsulun təsdiqlənmiş rəyləri */
+export const getReviews = async (productId: string, limit = 20) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + "/reviews", {
+            params: { product: productId, "$limit": limit }
+        });
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return { data: [], total: 0 };
+    }
+}
+
+/** Yeni rəy (admin təsdiqləyənə qədər görünmür). Xətada null qaytarır. */
+export const createReview = async (data: {
+    product: string;
+    fullName: string;
+    rating: number;
+    text: string;
+    website?: string;
+}) => {
+    try {
+        const response = await axiosInstance.post(BASE_URL + "/reviews", data);
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}

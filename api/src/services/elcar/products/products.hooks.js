@@ -4,8 +4,7 @@ const { iff } = require('feathers-hooks-common');
 const allowForSite = require('../../../hooks/allow-for-site');
 const checkAbilities = require('../../../hooks/check-abilities');
 const { cache } = require('feathers-hooks-common');
-const CacheMap = require('@feathers-plus/cache');
-const cacheMap = CacheMap({ max: 100 });
+const { cacheMap } = require('./products.cache');
 // const ObjectId = require('mongoose').Types.ObjectId;
 
 const setLean = require('../../../hooks/set-lean');

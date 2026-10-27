@@ -421,5 +421,23 @@
       "phone": "Enter a phone number",
       "email": "Enter a valid email"
     }
+  },
+  "reviews": {
+    "title": "Customer reviews",
+    "average": "based on {n, plural, one {# review} other {# reviews}}",
+    "empty": "No reviews yet. Be the first to write one.",
+    "write": "Write a review",
+    "name": "Your name",
+    "rating": "Your rating",
+    "text": "Your review",
+    "text-hint": "How do you use the product, what did you like and what not?",
+    "send": "Submit",
+    "sent": "Thank you! Your review will be published after moderation.",
+    "error": "Could not send. Please try again a little later.",
+    "errors": {
+      "name": "Enter your name using letters",
+      "rating": "Choose a star rating",
+      "text": "Write at least 10 characters"
+    }
   }
 }

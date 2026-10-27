@@ -80,6 +80,9 @@ export function productJsonLd(p: {
   discountedPrice?: number;
   inStock?: boolean;
   url: string;
+  /** Təsdiqlənmiş rəylər — yalnız real rəy olduqda aggregateRating əlavə olunur */
+  rating?: number;
+  reviewCount?: number;
 }) {
   return {
     "@context": "https://schema.org",
@@ -91,6 +94,15 @@ export function productJsonLd(p: {
       : {}),
     ...(p.brand ? { brand: { "@type": "Brand", name: p.brand } } : {}),
     ...(p.sku ? { sku: p.sku } : {}),
+    ...(p.reviewCount && p.rating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: p.rating,
+            reviewCount: p.reviewCount,
+          },
+        }
+      : {}),
     offers: {
       "@type": "Offer",
       url: p.url,

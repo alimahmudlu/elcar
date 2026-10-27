@@ -13,6 +13,7 @@ import { getTranslations } from "next-intl/server";
 import { FaWhatsapp } from "react-icons/fa";
 import DetailSection from "../common/DetailSection";
 import ProductFacts from "../common/ProductFacts";
+import ProductReviews from "../reviews/ProductReviews";
 import CompareButton from "../common/CompareButton";
 import AddToCartButton from "../common/AddToCartButton";
 
@@ -105,6 +106,8 @@ const SectionDetailPage = async ({
               image: image?.src ? BASE_URL + image.src : undefined,
               brand: product?.brand?.name,
               sku: product?.sku,
+              rating: product?.rating,
+              reviewCount: product?.reviewCount,
               price,
               discountedPrice,
               url: `${SITE_URL}/${locale}/${section}/${product?.slug ?? id}`,
@@ -185,6 +188,8 @@ const SectionDetailPage = async ({
         />
 
         <ProductFacts product={product} />
+
+        <ProductReviews product={product} />
 
         <AddToCartButton product={product} />
       </div>

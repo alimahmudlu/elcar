@@ -272,3 +272,11 @@ export interface ProductDocument {
   extension?: string;
   size?: number;
 }
+
+export interface ReviewType {
+  _id: string;
+  fullName: string;
+  rating: number;
+  text: string;
+  createdAt: string;
+}

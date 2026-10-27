@@ -2858,6 +2858,74 @@
         }
     },
     {
+        "_id": "5be0b7c5-a560-5ab2-bd05-04fa49147e4b",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "reviews",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-reviews",
+                "i18n": {
+                    "path": "apps/elcar/reviews/index",
+                    "slug": {
+                        "az": "/elcar/reviews",
+                        "en": "/elcar/reviews",
+                        "ru": "/elcar/reviews"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Rəylər",
+            "en": "Reviews",
+            "ru": "Отзывы"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiStarOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": []
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarReviewsDataTable",
+                        "options": {
+                            "section": "reviews"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
         "_id": "adf051ca-dedb-4648-9cf7-f522c76d66b9",
         "config": {
             "module": {

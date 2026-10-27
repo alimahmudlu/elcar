@@ -28,6 +28,18 @@ db.module_permissions.find({ "sections.key": "charging-stations" }).forEach((doc
   }
 });
 
+// 1b) Rəylər bölməsi: admin/user rollarına "messages" bölməsindəki hüquqlar
+// kopyalanır (oxumaq, təsdiqləmək = update, silmək)
+db.module_permissions.find({ "sections.key": "messages" }).forEach((doc) => {
+  if (doc.sections.some((s) => s.key === "reviews")) return;
+  const template = doc.sections.find((s) => s.key === "messages");
+  db.module_permissions.updateOne(
+    { _id: doc._id },
+    { $push: { sections: { ...template, key: "reviews", alias: "reviews" } } }
+  );
+  print(`module_permissions ${doc._id}: +reviews`);
+});
+
 // 2) Başlanğıc kateqoriyalar (admin paneldən sonradan dəyişdirilə bilər)
 const CATEGORIES = {
   "solar-energy": [

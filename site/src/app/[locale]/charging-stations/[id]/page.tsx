@@ -13,6 +13,7 @@ import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { Characteristic, ProductType } from "@/types";
 import CharacteristicGroupClient from "../../components/products/charging-stations/CharacteristicGroupClient";
 import ProductFacts from "../../components/common/ProductFacts";
+import ProductReviews from "../../components/reviews/ProductReviews";
 import CompareButton from "../../components/common/CompareButton";
 
 const roboto = Roboto({ subsets: ["latin"] });
@@ -93,6 +94,8 @@ const Page = async ({ params }: { params: Params }) => {
               image: image?.src ? BASE_URL + image.src : undefined,
               brand: product?.brand?.name,
               sku: product?.sku,
+              rating: product?.rating,
+              reviewCount: product?.reviewCount,
               price,
               discountedPrice,
               url: `${SITE_URL}/${locale}/charging-stations/${product?.slug ?? id}`,
@@ -197,6 +200,8 @@ const Page = async ({ params }: { params: Params }) => {
         ))}
 
         <ProductFacts product={product} />
+
+        <ProductReviews product={product} />
       </div>
 
       <AddToCartButton product={product} />

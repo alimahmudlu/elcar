@@ -49,6 +49,15 @@ module.exports = function (app) {
         sku: String,
         // Zəmanət müddəti (ay)
         warranty: Number,
+        // Təsdiqlənmiş rəylərdən hesablanır (reviews xidməti yeniləyir)
+        rating: {
+            type: Number,
+            default: 0
+        },
+        reviewCount: {
+            type: Number,
+            default: 0
+        },
         // Datasheet, təlimat, zəmanət şərtləri, sertifikatlar (PDF və s.)
         documents: {
             type: [Schema.Types.ObjectId],

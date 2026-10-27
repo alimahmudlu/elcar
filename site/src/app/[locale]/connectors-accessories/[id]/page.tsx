@@ -11,6 +11,7 @@ import React from "react";
 
 import DetailSection from "../../components/common/DetailSection";
 import ProductFacts from "../../components/common/ProductFacts";
+import ProductReviews from "../../components/reviews/ProductReviews";
 import CompareButton from "../../components/common/CompareButton";
 import { Rating } from "@mui/material";
 import { getTranslations } from "next-intl/server";
@@ -80,6 +81,8 @@ const Page = async ({ params }: { params: Params }) => {
               image: image?.src ? BASE_URL + image.src : undefined,
               brand: product?.brand?.name,
               sku: product?.sku,
+              rating: product?.rating,
+              reviewCount: product?.reviewCount,
               price,
               discountedPrice,
               url: `${SITE_URL}/${locale}/connectors-accessories/${product?.slug ?? id}`,
@@ -143,6 +146,8 @@ const Page = async ({ params }: { params: Params }) => {
         />
 
         <ProductFacts product={product} />
+
+        <ProductReviews product={product} />
 
         <AddToCartButton product={product} />
       </div>
