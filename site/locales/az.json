@@ -326,5 +326,14 @@
     "empty": "\"{q}\" üzrə heç nə tapılmadı. Başqa söz və ya daha qısa sorğu yoxlayın.",
     "prompt": "Axtarmaq üçün məhsul adını, brendi və ya gücünü yazın.",
     "close": "Bağla"
+  },
+  "product-facts": {
+    "title": "Əsas məlumatlar",
+    "sku": "SKU / artikul",
+    "warranty": "Zəmanət",
+    "months": "{n} ay",
+    "years": "{n} il",
+    "documents": "Sənədlər",
+    "download": "Yüklə"
   }
 }

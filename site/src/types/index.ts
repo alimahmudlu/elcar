@@ -93,6 +93,10 @@ export interface ProductType {
   reviewCount?: number;
   inStock?: boolean;
   sku?: string;
+  /** Zəmanət müddəti (ay) */
+  warranty?: number;
+  /** Datasheet, təlimat, sertifikat faylları (detal sorğusunda gəlir) */
+  documents?: ProductDocument[];
   updatedAt?: string;
   category: {
     name: string;
@@ -261,4 +265,10 @@ export interface ChildCharacteristic {
 
 export interface GroupedCharacteristic extends ParentCharacteristic {
   children: ChildCharacteristic[];
+}
+export interface ProductDocument {
+  name: string;
+  src: string;
+  extension?: string;
+  size?: number;
 }

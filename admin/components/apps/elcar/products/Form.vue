@@ -60,6 +60,26 @@
 
                 </v-row>
 
+                <v-row align="center">
+
+                    <v-col cols="12" sm="6" md="3">
+                        <v-text-field v-model.trim="form.sku" :label="$t('SKU')" outlined dense/>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="3">
+                        <v-text-field v-model.number.trim="form.warranty" :label="$t('Warranty')"
+                                      type="number" min="0" :suffix="$t('months')" outlined dense
+                                      :error-messages="$errorMessages($v.form.warranty, $t('Warranty'))"/>
+                    </v-col>
+
+                    <v-col cols="12">
+                        <span class="text-body-2 d-block mb-2" v-text="$t('Documents (datasheet, manual, warranty, certificates)')"/>
+                        <MediaMenu v-model="form.documents" :title="$t('Choose _', {n: $t('Documents')})"
+                                   :upload="false" :multiple="true" size="6"/>
+                    </v-col>
+
+                </v-row>
+
             </v-container>
 
             <div v-for="(group, i) in form.characteristicGroups" :key="`characteristic-groups-${i}`">
@@ -247,6 +267,9 @@ export default {
             discount: null,
             discountedPrice: null,
             top: false,
+            sku: null,
+            warranty: null,
+            documents: [],
             description: app.$setForLocale(),
             characteristicGroups: []
         },
@@ -294,6 +317,9 @@ export default {
                 },
                 image: {
                     required
+                },
+                warranty: {
+                    minValue: minValue(0),
                 },
                 description: this.$setForLocale({
                     required,
@@ -410,7 +436,13 @@ export default {
 
             if (detail) {
                 const data = await this.$fetchData({ api: `${ this.api }/${ detail }` })
-                this.form = structuredClone(data)
+                // Köhnə məhsullarda yeni sahələr yoxdur — reaktiv qalsınlar deyə əvvəlcədən verilir
+                this.form = {
+                    sku: null,
+                    warranty: null,
+                    documents: [],
+                    ...structuredClone(data)
+                }
                 if(copy) {delete this.form._id}
                 this.fillForm()
             }

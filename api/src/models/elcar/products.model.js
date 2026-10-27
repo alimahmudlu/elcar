@@ -45,6 +45,16 @@ module.exports = function (app) {
             intl: true,
         },
         alternatives: Schema.Types.Mixed,
+        // İstehsalçı kodu / artikul
+        sku: String,
+        // Zəmanət müddəti (ay)
+        warranty: Number,
+        // Datasheet, təlimat, zəmanət şərtləri, sertifikatlar (PDF və s.)
+        documents: {
+            type: [Schema.Types.ObjectId],
+            ref: 'uploads',
+            default: []
+        },
     }, {
         timestamps: true,
         versionKey: false,

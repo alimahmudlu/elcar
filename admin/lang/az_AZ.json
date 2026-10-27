@@ -5,6 +5,11 @@
     "Model": "Model",
     "Price": "Qiymət",
     "Discount": "Endirim",
+    "SKU": "SKU / artikul",
+    "Warranty": "Zəmanət",
+    "months": "ay",
+    "Documents": "Sənədlər",
+    "Documents (datasheet, manual, warranty, certificates)": "Sənədlər (datasheet, təlimat, zəmanət şərtləri, sertifikatlar)",
     "Slider": "Slayder",
 
     "_ folders": "{n} qovluq | {n} qovluq",

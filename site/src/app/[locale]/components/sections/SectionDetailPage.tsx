@@ -12,6 +12,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { FaWhatsapp } from "react-icons/fa";
 import DetailSection from "../common/DetailSection";
+import ProductFacts from "../common/ProductFacts";
 import AddToCartButton from "../common/AddToCartButton";
 
 const roboto = Roboto({ subsets: ["latin"] });
@@ -99,6 +100,7 @@ const SectionDetailPage = async ({
               description,
               image: image?.src ? BASE_URL + image.src : undefined,
               brand: product?.brand?.name,
+              sku: product?.sku,
               price,
               discountedPrice,
               url: `${SITE_URL}/${locale}/${section}/${product?.slug ?? id}`,
@@ -177,6 +179,8 @@ const SectionDetailPage = async ({
           characteristicGroups={characteristicGroups as any}
           BASE_URL={BASE_URL || ""}
         />
+
+        <ProductFacts product={product} />
 
         <AddToCartButton product={product} />
       </div>

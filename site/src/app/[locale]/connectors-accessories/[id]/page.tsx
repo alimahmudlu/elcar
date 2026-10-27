@@ -10,6 +10,7 @@ import Image from "next/image";
 import React from "react";
 
 import DetailSection from "../../components/common/DetailSection";
+import ProductFacts from "../../components/common/ProductFacts";
 import { Rating } from "@mui/material";
 import { getTranslations } from "next-intl/server";
 import { MdOutlineStarPurple500 } from "react-icons/md";
@@ -74,6 +75,7 @@ const Page = async ({ params }: { params: Params }) => {
               description,
               image: image?.src ? BASE_URL + image.src : undefined,
               brand: product?.brand?.name,
+              sku: product?.sku,
               price,
               discountedPrice,
               url: `${SITE_URL}/${locale}/connectors-accessories/${product?.slug ?? id}`,
@@ -135,6 +137,8 @@ const Page = async ({ params }: { params: Params }) => {
           characteristicGroups={characteristicGroups}
           BASE_URL={BASE_URL || ""}
         />
+
+        <ProductFacts product={product} />
 
         <AddToCartButton product={product} />
       </div>

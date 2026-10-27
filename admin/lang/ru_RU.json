@@ -4,6 +4,11 @@
     "Model": "Model",
     "Price": "Price",
     "Discount": "Discount",
+    "SKU": "Артикул",
+    "Warranty": "Гарантия",
+    "months": "мес.",
+    "Documents": "Документы",
+    "Documents (datasheet, manual, warranty, certificates)": "Документы (datasheet, инструкция, гарантия, сертификаты)",
     "Slider": "Slider",
 
     "_ folders": "{n} folder | {n} folders",

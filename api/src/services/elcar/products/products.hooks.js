@@ -82,6 +82,11 @@ const populateForSite = () => {
                 select: 'src -_id'
             },
             {
+                path: "documents",
+                model: "uploads",
+                select: 'name src extension size -_id'
+            },
+            {
                 path: 'characteristicGroups',
                 populate: [
                     {

@@ -326,5 +326,14 @@
     "empty": "Nothing found for \"{q}\". Try another word or a shorter query.",
     "prompt": "Type a product name, brand or power rating to search.",
     "close": "Close"
+  },
+  "product-facts": {
+    "title": "Key facts",
+    "sku": "SKU",
+    "warranty": "Warranty",
+    "months": "{n, plural, one {# month} other {# months}}",
+    "years": "{n, plural, one {# year} other {# years}}",
+    "documents": "Documents",
+    "download": "Download"
   }
 }
