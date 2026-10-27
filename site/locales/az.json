@@ -317,5 +317,14 @@
         "description": "Fiber lazer kəsmə dəzgahları, lazer qaynaq, markalama və təmizləmə aparatları. Azərbaycanda satış, quraşdırma və servis."
       }
     }
+  },
+  "search": {
+    "button": "Axtar",
+    "placeholder": "Məhsul adı, brend və ya güc (məs. 22kW)",
+    "title": "Axtarış",
+    "results": "\"{q}\" üzrə {count} nəticə",
+    "empty": "\"{q}\" üzrə heç nə tapılmadı. Başqa söz və ya daha qısa sorğu yoxlayın.",
+    "prompt": "Axtarmaq üçün məhsul adını, brendi və ya gücünü yazın.",
+    "close": "Bağla"
   }
 }

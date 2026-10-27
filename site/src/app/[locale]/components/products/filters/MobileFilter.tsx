@@ -32,7 +32,14 @@ interface MobileFilterProps {
   minMaxPrice: number[];
   filterOptions: GroupedCharacteristic[];
   handlePriceRangeChange: (event: Event, newValue: number | number[]) => void;
+  handlePriceRangeCommit: (
+    event: React.SyntheticEvent | Event,
+    newValue: number | number[]
+  ) => void;
   selectedModels: ModelType[];
+  selectedModelIds: string[];
+  toggleModel: (id: string) => void;
+  clearModels: () => void;
   handleFilterChange: (key: string, value: string | null | number[]) => void;
   hasActiveFilters: boolean;
   handleClearFilters: () => void;
@@ -45,8 +52,12 @@ const MobileFilter = ({
   priceRange,
   minMaxPrice,
   handlePriceRangeChange,
+  handlePriceRangeCommit,
   filterOptions,
   selectedModels,
+  selectedModelIds,
+  toggleModel,
+  clearModels,
   handleFilterChange,
   hasActiveFilters,
   handleClearFilters,
@@ -245,6 +256,8 @@ const MobileFilter = ({
                       <FormControlLabel
                         control={
                           <Checkbox
+                            checked={selectedModelIds.length === 0}
+                            onChange={clearModels}
                             sx={{
                               color: "#006965",
                               "&.Mui-checked": {
@@ -261,6 +274,8 @@ const MobileFilter = ({
                           key={model?._id}
                           control={
                             <Checkbox
+                              checked={selectedModelIds.includes(model?._id)}
+                              onChange={() => toggleModel(model?._id)}
                               sx={{
                                 color: "#006965",
                                 "&.Mui-checked": {
@@ -290,6 +305,7 @@ const MobileFilter = ({
                     min={minMaxPrice[0]}
                     max={minMaxPrice[1]}
                     onChange={handlePriceRangeChange}
+                    onChangeCommitted={handlePriceRangeCommit}
                     valueLabelDisplay="auto"
                     sx={{
                       color: "#006965",
@@ -314,7 +330,7 @@ const MobileFilter = ({
                   />
                 </div>
                 <div className="text-sm text-gray-700 mt-2 px-3 dark:text-secondary-foreground">
-                  {minMaxPrice[0]} AZN - {minMaxPrice[1]} AZN
+                  {priceRange[0]} AZN - {priceRange[1]} AZN
                 </div>
               </div>
             </div>

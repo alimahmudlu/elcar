@@ -5,7 +5,7 @@ type Props = {
   page: number;
   total: number;
   perPage: number;
-  /** dil prefiksi olmadan: "/charging-stations" */
+  /** dil prefiksi olmadan: "/charging-stations" (sorğu ilə də ola bilər) */
   basePath: string;
   labels: { prev: string; next: string; pageLabel: string };
 };
@@ -30,7 +30,9 @@ export default function Pagination({
     if (i === 1 || i === pages || Math.abs(i - page) <= 2) nums.push(i);
   }
 
-  const href = (n: number) => (n === 1 ? basePath : `${basePath}?page=${n}`);
+  // basePath-də artıq sorğu ola bilər (məs. axtarış: "/search?q=...")
+  const sep = basePath.includes("?") ? "&" : "?";
+  const href = (n: number) => (n === 1 ? basePath : `${basePath}${sep}page=${n}`);
 
   return (
     <nav

@@ -118,9 +118,10 @@ const setListModelForSite = () => {
         // params.query.noPagination = true
         // params.query.section = context.result.section
 
-        let options = await context.app.service('characteristic-options').Model.find({
-            section: params.query.section
-        })
+        // Axtarışda bölmə göstərilmir — onda bütün bölmələrin seçimləri lazımdır
+        let options = await context.app.service('characteristic-options').Model.find(
+            params.query.section ? { section: params.query.section } : {}
+        )
 
         if (context.result.data) {
             context.result.data = await Promise.all(context.result.data.map(async item => {
@@ -258,8 +259,24 @@ const filterQueries = () => {
 
         }
 
+        // Mətnlə axtarış (?q=...): hər söz məhsul adında (az/en/ru) olmalıdır.
+        // $regex operatoru whitelist-də olmadığı üçün RegExp obyekti istifadə olunur.
+        const { q } = context.params.query
+        delete context.params.query.q
+
         context.params.query.$and = []
-        const ignoredParams = ['category', 'brand', 'model', 'priceRange', 'section', 'top', '$skip', '$limit', '$select', '$sort', '$and', '$or', 'noPagination', 'filter']
+
+        if (typeof q === 'string' && q.trim()) {
+            q.trim().slice(0, 100).split(/\s+/).slice(0, 8).forEach(word => {
+                const pattern = new RegExp(word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i')
+                context.params.query.$and.push({
+                    $or: ['az', 'en', 'ru'].map(lang => ({ [`title.${lang}`]: pattern }))
+                })
+            })
+        }
+
+        // discountedPrice yuxarıda priceRange-dən qurulur — xüsusiyyət filtri deyil
+        const ignoredParams = ['category', 'brand', 'model', 'priceRange', 'discountedPrice', 'section', 'top', '$skip', '$limit', '$select', '$sort', '$and', '$or', 'noPagination', 'filter']
 
         Object.entries(context.params.query).forEach(([key, val]) => {
             if (!ignoredParams.includes(key) && (Array.isArray(val) && val.length || !Array.isArray(val) && val)){

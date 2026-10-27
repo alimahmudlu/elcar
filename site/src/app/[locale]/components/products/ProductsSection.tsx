@@ -68,8 +68,17 @@ const ProductsSection = ({
     initialTotal > initialProducts.length
   );
   const loaderRef = useRef<HTMLDivElement>(null);
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 10000]);
-  const [minMaxPrice, setMinMaxPrice] = useState<[number, number]>([0, 10000]);
+  // Slayder sərhədləri server-render olunmuş ilk məhsullardan başlayır
+  const initialBounds = ((): [number, number] => {
+    const prices = initialProducts
+      .map((p) => p.discountedPrice ?? p.price)
+      .filter((price): price is number => typeof price === "number");
+    return prices.length
+      ? [Math.floor(Math.min(...prices)), Math.ceil(Math.max(...prices))]
+      : [0, 10000];
+  })();
+  const [priceRange, setPriceRange] = useState<[number, number]>(initialBounds);
+  const [minMaxPrice, setMinMaxPrice] = useState<[number, number]>(initialBounds);
   const handleFilterChange = (key: string, value: string | null | number[]) => {
     setFilters((prevFilters: any) => {
       const newFilters = { ...prevFilters };
@@ -116,9 +125,11 @@ const ProductsSection = ({
         .map((p: ProductType) => p.discountedPrice ?? p.price)
         .filter((price: number) => typeof price === "number");
 
-      if (prices.length > 0) {
-        const min = Math.min(...prices);
-        const max = Math.max(...prices);
+      // Qiymət filtri aktiv olanda sərhədlər dəyişmir, yoxsa slayderi
+      // yenidən genişləndirmək mümkün olmazdı
+      if (prices.length > 0 && !filters.priceRange) {
+        const min = Math.floor(Math.min(...prices));
+        const max = Math.ceil(Math.max(...prices));
         setMinMaxPrice([min, max]);
         setPriceRange([min, max]);
       }
@@ -181,7 +192,38 @@ const ProductsSection = ({
     );
 
     setSelectedModels(selected);
+    setFilters((prev: any) => {
+      if (!prev.model) return prev;
+      const next = { ...prev };
+      delete next.model;
+      return next;
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters.brand]);
+
+  const selectedModelIds: string[] = Array.isArray(filters.model)
+    ? filters.model
+    : [];
+
+  const toggleModel = (id: string) => {
+    const next = selectedModelIds.includes(id)
+      ? selectedModelIds.filter((m) => m !== id)
+      : [...selectedModelIds, id];
+    setFilters((prev: any) => {
+      const updated = { ...prev };
+      if (next.length) updated.model = next;
+      else delete updated.model;
+      return updated;
+    });
+  };
+
+  const clearModels = () => {
+    setFilters((prev: any) => {
+      const updated = { ...prev };
+      delete updated.model;
+      return updated;
+    });
+  };
 
   const handleClearFilters = () => {
     setFilters({});
@@ -191,20 +233,22 @@ const ProductsSection = ({
     return Object.keys(filters).length > 0;
   };
 
-  // let priceRangeTimeout: ReturnType<typeof setTimeout>;
-
   const handlePriceRangeChange = (
     event: Event,
     newValue: number | number[]
   ) => {
+    setPriceRange(newValue as [number, number]);
+  };
+
+  // Filtr slayder buraxılanda tətbiq olunur (hər hərəkətdə sorğu getməsin)
+  const handlePriceRangeCommit = (
+    event: React.SyntheticEvent | Event,
+    newValue: number | number[]
+  ) => {
     const range = newValue as [number, number];
-    setPriceRange(range);
-
-    // if (priceRangeTimeout) clearTimeout(priceRangeTimeout);
-
-    // priceRangeTimeout = setTimeout(() => {
-    //   handleFilterChange("priceRange", range);
-    // }, 1500);
+    const isFullRange =
+      range[0] <= minMaxPrice[0] && range[1] >= minMaxPrice[1];
+    handleFilterChange("priceRange", isFullRange ? null : range);
   };
 
   return (
@@ -337,6 +381,8 @@ const ProductsSection = ({
                   <FormControlLabel
                     control={
                       <Checkbox
+                        checked={selectedModelIds.length === 0}
+                        onChange={clearModels}
                         sx={{
                           color: "#006965",
                           "&.Mui-checked": {
@@ -353,6 +399,8 @@ const ProductsSection = ({
                       key={model?._id}
                       control={
                         <Checkbox
+                          checked={selectedModelIds.includes(model?._id)}
+                          onChange={() => toggleModel(model?._id)}
                           sx={{
                             color: "#006965",
                             "&.Mui-checked": {
@@ -382,6 +430,7 @@ const ProductsSection = ({
                 min={minMaxPrice[0]}
                 max={minMaxPrice[1]}
                 onChange={handlePriceRangeChange}
+                onChangeCommitted={handlePriceRangeCommit}
                 valueLabelDisplay="auto"
                 sx={{
                   color: "#006965",
@@ -406,7 +455,7 @@ const ProductsSection = ({
               />
             </div>
             <div className="text-sm text-gray-700 mt-2 px-3 dark:text-secondary-foreground">
-              {minMaxPrice[0]} AZN - {minMaxPrice[1]} AZN
+              {priceRange[0]} AZN - {priceRange[1]} AZN
             </div>
           </div>
         </div>
@@ -429,6 +478,10 @@ const ProductsSection = ({
           priceRange={priceRange}
           minMaxPrice={minMaxPrice}
           handlePriceRangeChange={handlePriceRangeChange}
+          handlePriceRangeCommit={handlePriceRangeCommit}
+          selectedModelIds={selectedModelIds}
+          toggleModel={toggleModel}
+          clearModels={clearModels}
           filterOptions={filterOptions}
           selectedModels={selectedModels}
           handleFilterChange={handleFilterChange}

@@ -25,3 +25,14 @@ export const ENERGY_SOLUTIONS = ENERGY_SECTIONS.filter(
   (section): section is Exclude<EnergySection, "laser-equipment"> =>
     section !== "laser-equipment"
 );
+
+/**
+ * API-dəki məhsul `section` dəyərini saytdakı məhsul tipinə çevirir
+ * (ProductItem linki bu tipə görə qurulur). Axtarış nəticələrində istifadə olunur.
+ */
+export const productTypeForSection = (section: string): string => {
+  if (isEnergySection(section)) return section;
+  if (section === "vehicles") return "car";
+  if (section === "accessories") return "connector-accessory";
+  return "charging-station";
+};

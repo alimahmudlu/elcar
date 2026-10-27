@@ -6,6 +6,7 @@ import ThemeSwitcher from "../header/ThemeSwitcher";
 import { useLocale } from "next-intl";
 import LanguageSwitcher from "../header/desktop/LanguageSwitcher";
 import CartDrawer from "../header/CartDrawer";
+import SearchButton from "../header/SearchButton";
 import { MobileSidebar } from "../header/mobile/MobileSidebar";
 import { useEffect, useState } from "react";
 
@@ -41,6 +42,7 @@ const Header = () => {
         </div>
         <NavBar locale={locale} />
         <div className="flex items-center gap-2 max-xl:gap-1 max-sm:gap-0.5">
+          <SearchButton />
           <LanguageSwitcher currentLocale={locale} />
           <ThemeSwitcher />
           <CartDrawer />

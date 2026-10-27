@@ -317,5 +317,14 @@
         "description": "Fiber laser cutting machines, laser welding, marking and cleaning machines. Sales, installation and service in Azerbaijan."
       }
     }
+  },
+  "search": {
+    "button": "Search",
+    "placeholder": "Product name, brand or power (e.g. 22kW)",
+    "title": "Search",
+    "results": "{count} results for \"{q}\"",
+    "empty": "Nothing found for \"{q}\". Try another word or a shorter query.",
+    "prompt": "Type a product name, brand or power rating to search.",
+    "close": "Close"
   }
 }

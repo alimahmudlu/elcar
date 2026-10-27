@@ -192,3 +192,15 @@ export const createOrder = async (data: {
         return [];
     }
 }
+/** Bütün bölmələr üzrə məhsul adına görə axtarış (API: ?q=) */
+export const searchProducts = async (q: string, skip = 0, limit = 24) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
+            params: { q, "$skip": skip, "$limit": limit }
+        });
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return { data: [], meta: { total: 0 } };
+    }
+}
