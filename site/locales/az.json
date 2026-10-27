@@ -411,7 +411,10 @@
       "business": "Qənaət qeyri-əhali tarifi ilə hesablanıb: 12,5 qəpik/kVt·saat (ƏDV daxil). Şəbəkəyə verilən artıq enerji nəzərə alınmır.",
       "industry": "Qənaət sənaye və kənd təsərrüfatı tarifi ilə hesablanıb: 10,6 qəpik/kVt·saat (ƏDV daxil). Şəbəkəyə verilən artıq enerji nəzərə alınmır."
     },
-    "saving-offgrid": "Avtonom sistemdə elektrik qəbzi olmadığı üçün qənaət hesablanmır."
+    "saving-offgrid": "Avtonom sistemdə elektrik qəbzi olmadığı üçün qənaət hesablanmır.",
+    "coverage": "Günəş istehlakın neçə faizini örtsün",
+    "coverage-hint": "Büdcə məhduddursa azaldın. Evdə günəş əvvəlcə ən baha tarif pilləsini əvəz edir, ona görə kiçik sistem də nisbətən çox qənaət verir.",
+    "covered": "Günəşin örtdüyü pay"
   },
   "quote": {
     "title": "Quraşdırma təklifi alın",

@@ -20,6 +20,8 @@ export type SolarInput = {
   autonomyDays: number;
   /** Ev, biznes və ya sənaye/kənd təsərrüfatı — tarif fərqlidir */
   customerType: CustomerType;
+  /** Günəşin örtəcəyi istehlak payı, % (10–100); kiçik və ucuz sistem üçün azaldılır */
+  coverage: number;
 };
 
 export type SolarResult = {
@@ -92,6 +94,7 @@ export const DEFAULT_INPUT: SolarInput = {
   backupHours: 6,
   autonomyDays: 1,
   customerType: "home",
+  coverage: 100,
 };
 
 export function calculateSolar(input: SolarInput): SolarResult | null {
@@ -99,7 +102,10 @@ export function calculateSolar(input: SolarInput): SolarResult | null {
   if (!(monthlyKwh > 0 && sunHours > 0 && panelWatt > 0)) return null;
 
   const dailyKwh = monthlyKwh / 30;
-  const pvKwExact = dailyKwh / (sunHours * PERFORMANCE_RATIO);
+  // Avtonom sistem bütün istehlakı örtməlidir; boş dəyər 100% sayılır
+  const coverage =
+    systemType === "off-grid" ? 1 : Math.min(100, Math.max(10, input.coverage || 100)) / 100;
+  const pvKwExact = (dailyKwh * coverage) / (sunHours * PERFORMANCE_RATIO);
   const panelCount = Math.ceil((pvKwExact * 1000) / panelWatt);
   const pvKw = (panelCount * panelWatt) / 1000;
 

@@ -411,7 +411,10 @@
       "business": "Savings use the non-household tariff: 12.5 qəpik/kWh (VAT included). Surplus fed to the grid is not counted.",
       "industry": "Savings use the industry and agriculture tariff: 10.6 qəpik/kWh (VAT included). Surplus fed to the grid is not counted."
     },
-    "saving-offgrid": "Off-grid systems have no electricity bill, so savings are not calculated."
+    "saving-offgrid": "Off-grid systems have no electricity bill, so savings are not calculated.",
+    "coverage": "Share of consumption covered by solar",
+    "coverage-hint": "Lower it for a smaller budget. For homes, solar replaces the most expensive tariff tier first, so even a small system saves relatively much.",
+    "covered": "Share covered by solar"
   },
   "quote": {
     "title": "Get an installation quote",

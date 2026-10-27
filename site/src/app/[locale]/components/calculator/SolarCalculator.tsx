@@ -80,6 +80,11 @@ const SolarCalculator = () => {
         ...(input.systemType !== "on-grid"
           ? [{ label: t("battery"), value: `${result.batteryKwh} kWh`, strong: true }]
           : []),
+        {
+          label: t("covered"),
+          // panellər tam ədəd olduğu üçün faktiki pay seçilmişdən bir az çox ola bilər
+          value: `≈ ${Math.min(100, Math.round((result.annualKwh / (input.monthlyKwh * 12)) * 100))}%`,
+        },
         { label: t("annual"), value: `≈ ${result.annualKwh.toLocaleString("en-US").replace(/,/g, " ")} kWh` },
         { label: t("roof"), value: `≈ ${result.roofArea} m²` },
         ...(result.savings
@@ -98,6 +103,7 @@ const SolarCalculator = () => {
         `${t("monthly")}: ${input.monthlyKwh} kWh`,
         `${t("type")}: ${t(`types.${input.systemType}`)}`,
         `${t("customer")}: ${t(`customers.${input.customerType}`)}`,
+        input.systemType !== "off-grid" && `${t("coverage")}: ${input.coverage}%`,
         input.systemType === "hybrid" && `${t("backup")}: ${input.backupHours} ${t("backup-unit")}`,
         input.systemType === "off-grid" && `${t("autonomy")}: ${input.autonomyDays} ${t("autonomy-unit")}`,
         ...rows.map((row) => `${row.label}: ${row.value}`),
@@ -119,6 +125,27 @@ const SolarCalculator = () => {
           step={10}
           onChange={(v) => set("monthlyKwh", v)}
         />
+
+        {input.systemType !== "off-grid" && (
+          <label className="block">
+            <span className="flex justify-between text-sm font-bold mb-1 dark:text-primary-foreground">
+              {t("coverage")}
+              <span className="text-elcar dark:text-primary-foreground">{input.coverage}%</span>
+            </span>
+            <input
+              type="range"
+              min={10}
+              max={100}
+              step={5}
+              value={input.coverage}
+              onChange={(e) => set("coverage", Number(e.target.value))}
+              className="w-full accent-[#006965]"
+            />
+            <span className="block mt-1 text-xs text-[#00000099] dark:text-secondary-foreground">
+              {t("coverage-hint")}
+            </span>
+          </label>
+        )}
 
         <fieldset>
           <legend className="text-sm font-bold mb-2 dark:text-primary-foreground">{t("customer")}</legend>
