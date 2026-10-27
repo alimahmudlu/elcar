@@ -439,5 +439,11 @@
       "rating": "Ulduz seçin",
       "text": "Ən azı 10 simvol yazın"
     }
+  },
+  "bundle": {
+    "title": "Dəstə daxildir",
+    "separately": "Ayrı-ayrılıqda",
+    "saving": "Dəstlə qənaət",
+    "pcs": "{n} ədəd"
   }
 }

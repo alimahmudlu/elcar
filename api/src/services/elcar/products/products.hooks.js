@@ -86,6 +86,12 @@ const populateForSite = () => {
                 select: 'name src extension size -_id'
             },
             {
+                path: "bundleItems.product",
+                model: "products",
+                select: 'title slug section image price discount discountedPrice',
+                populate: { path: 'image', model: 'uploads', select: 'src -_id' }
+            },
+            {
                 path: 'characteristicGroups',
                 populate: [
                     {

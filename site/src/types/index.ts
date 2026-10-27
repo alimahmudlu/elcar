@@ -97,6 +97,8 @@ export interface ProductType {
   warranty?: number;
   /** Datasheet, təlimat, sertifikat faylları (detal sorğusunda gəlir) */
   documents?: ProductDocument[];
+  /** Hazır dəstin tərkibi (detal sorğusunda gəlir) */
+  bundleItems?: BundleItem[];
   updatedAt?: string;
   category: {
     name: string;
@@ -279,4 +281,18 @@ export interface ReviewType {
   rating: number;
   text: string;
   createdAt: string;
+}
+
+export interface BundleItem {
+  quantity: number;
+  /** Silinmiş məhsul ola bilər — onda null gəlir */
+  product: {
+    _id: string;
+    title: string;
+    slug: string;
+    section: string;
+    image?: { src: string };
+    price?: number;
+    discountedPrice?: number;
+  } | null;
 }

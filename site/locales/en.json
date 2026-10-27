@@ -439,5 +439,11 @@
       "rating": "Choose a star rating",
       "text": "Write at least 10 characters"
     }
+  },
+  "bundle": {
+    "title": "What's in the kit",
+    "separately": "Bought separately",
+    "saving": "You save with the kit",
+    "pcs": "× {n}"
   }
 }

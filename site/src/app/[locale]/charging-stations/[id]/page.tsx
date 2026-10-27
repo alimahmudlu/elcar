@@ -13,6 +13,7 @@ import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { Characteristic, ProductType } from "@/types";
 import CharacteristicGroupClient from "../../components/products/charging-stations/CharacteristicGroupClient";
 import ProductFacts from "../../components/common/ProductFacts";
+import ProductBundle from "../../components/common/ProductBundle";
 import ProductReviews from "../../components/reviews/ProductReviews";
 import CompareButton from "../../components/common/CompareButton";
 
@@ -198,6 +199,8 @@ const Page = async ({ params }: { params: Params }) => {
             translatedStrings={translatedStrings}
           />
         ))}
+
+        <ProductBundle product={product} />
 
         <ProductFacts product={product} />
 

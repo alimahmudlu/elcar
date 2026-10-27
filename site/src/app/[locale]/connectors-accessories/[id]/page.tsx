@@ -11,6 +11,7 @@ import React from "react";
 
 import DetailSection from "../../components/common/DetailSection";
 import ProductFacts from "../../components/common/ProductFacts";
+import ProductBundle from "../../components/common/ProductBundle";
 import ProductReviews from "../../components/reviews/ProductReviews";
 import CompareButton from "../../components/common/CompareButton";
 import { Rating } from "@mui/material";
@@ -144,6 +145,8 @@ const Page = async ({ params }: { params: Params }) => {
           characteristicGroups={characteristicGroups}
           BASE_URL={BASE_URL || ""}
         />
+
+        <ProductBundle product={product} />
 
         <ProductFacts product={product} />
 

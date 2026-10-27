@@ -13,6 +13,7 @@ import { getTranslations } from "next-intl/server";
 import { FaWhatsapp } from "react-icons/fa";
 import DetailSection from "../common/DetailSection";
 import ProductFacts from "../common/ProductFacts";
+import ProductBundle from "../common/ProductBundle";
 import ProductReviews from "../reviews/ProductReviews";
 import CompareButton from "../common/CompareButton";
 import AddToCartButton from "../common/AddToCartButton";
@@ -186,6 +187,8 @@ const SectionDetailPage = async ({
           characteristicGroups={characteristicGroups as any}
           BASE_URL={BASE_URL || ""}
         />
+
+        <ProductBundle product={product} />
 
         <ProductFacts product={product} />
 
