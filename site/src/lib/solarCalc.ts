@@ -4,6 +4,7 @@
  */
 
 export type SystemType = "on-grid" | "hybrid" | "off-grid";
+export type CustomerType = "home" | "business";
 
 export type SolarInput = {
   /** Aylıq istehlak, kVt·saat (elektrik qəbzində göstərilir) */
@@ -17,6 +18,8 @@ export type SolarInput = {
   backupHours: number;
   /** Avtonom sistemdə günəşsiz neçə gün dayanmalıdır */
   autonomyDays: number;
+  /** Ev və ya biznes — tarif fərqlidir */
+  customerType: CustomerType;
 };
 
 export type SolarResult = {
@@ -27,6 +30,12 @@ export type SolarResult = {
   batteryKwh: number;
   annualKwh: number;
   roofArea: number;
+  /** Elektrik qəbzi üzrə qənaət, AZN; avtonom sistemdə və ya tarif bilinmirsə null */
+  savings: {
+    monthlyBillNow: number;
+    monthlyBillWithSolar: number;
+    annualSaving: number;
+  } | null;
 };
 
 /** İtkilər (temperatur, kabel, invertor, çirklənmə) — tipik planlama dəyəri */
@@ -35,6 +44,39 @@ export const PERFORMANCE_RATIO = 0.8;
 export const DEPTH_OF_DISCHARGE = 0.9;
 /** 1 kVt panel üçün təxmini dam sahəsi, m² (≈ 550 W panel 2,6 m²) */
 export const AREA_PER_KW = 4.8;
+
+/**
+ * Əhali üçün pilləli tarif (Azərişıq), AZN/kVt·saat — aylıq istehlaka görə.
+ * Tariflər dəyişəndə yalnız bu cədvəl yenilənir.
+ */
+export const HOUSEHOLD_TARIFF = [
+  { upTo: 200, price: 0.084 },
+  { upTo: 300, price: 0.1 },
+  { upTo: Infinity, price: 0.15 },
+];
+
+/**
+ * Qeyri-əhali (biznes) tarifi, AZN/kVt·saat. null olduqda biznes üçün
+ * qənaət göstərilmir — tarif təsdiqlənəndə bura yazılmalıdır.
+ */
+export const BUSINESS_TARIFF: number | null = null;
+
+/** Aylıq elektrik qəbzi, AZN */
+export function monthlyBill(kwh: number, customerType: CustomerType): number | null {
+  if (customerType === "business") {
+    return BUSINESS_TARIFF === null ? null : kwh * BUSINESS_TARIFF;
+  }
+  let bill = 0;
+  let from = 0;
+  for (const tier of HOUSEHOLD_TARIFF) {
+    if (kwh <= from) break;
+    bill += (Math.min(kwh, tier.upTo) - from) * tier.price;
+    from = tier.upTo;
+  }
+  return bill;
+}
+
+const round2 = (n: number) => Math.round(n * 100) / 100;
 
 const INVERTER_SIZES = [3, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50, 60, 80, 100];
 
@@ -47,6 +89,7 @@ export const DEFAULT_INPUT: SolarInput = {
   panelWatt: 550,
   backupHours: 6,
   autonomyDays: 1,
+  customerType: "home",
 };
 
 export function calculateSolar(input: SolarInput): SolarResult | null {
@@ -71,13 +114,32 @@ export function calculateSolar(input: SolarInput): SolarResult | null {
     batteryKwh = (dailyKwh * Math.max(1, input.autonomyDays || 1)) / DEPTH_OF_DISCHARGE;
   }
 
+  const annualKwh = Math.round(pvKw * sunHours * PERFORMANCE_RATIO * 365);
+
+  // Qənaət: günəş istehlakın bir hissəsini örtür, qəbz qalan hissəyə görə gəlir.
+  // Pilləli tarifdə günəş əvvəlcə ən baha pilləni əvəz edir. Şəbəkəyə verilən
+  // artıq enerji nəzərə alınmır; aylar bərabər sayılır (mövsümilik yoxdur).
+  let savings: SolarResult["savings"] = null;
+  if (systemType !== "off-grid") {
+    const now = monthlyBill(monthlyKwh, input.customerType);
+    const withSolar = monthlyBill(Math.max(0, monthlyKwh - annualKwh / 12), input.customerType);
+    if (now !== null && withSolar !== null) {
+      savings = {
+        monthlyBillNow: round2(now),
+        monthlyBillWithSolar: round2(withSolar),
+        annualSaving: Math.round((now - withSolar) * 12),
+      };
+    }
+  }
+
   return {
     dailyKwh: round1(dailyKwh),
     pvKw: round1(pvKw),
     panelCount,
     inverterKw,
     batteryKwh: round1(batteryKwh),
-    annualKwh: Math.round(pvKw * sunHours * PERFORMANCE_RATIO * 365),
+    annualKwh,
     roofArea: Math.ceil(pvKw * AREA_PER_KW),
+    savings,
   };
 }

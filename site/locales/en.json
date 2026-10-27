@@ -396,7 +396,18 @@
     "cta": "Request a quote with this estimate",
     "banner-title": "How many panels do you need?",
     "banner-text": "Size panels, inverter and battery from your monthly use in one minute.",
-    "banner-button": "Calculate"
+    "banner-button": "Calculate",
+    "customer": "Customer type",
+    "customers": {
+      "home": "Home",
+      "business": "Business"
+    },
+    "bill-now": "Monthly bill (now)",
+    "bill-solar": "Monthly bill (with solar)",
+    "saving-year": "Savings in 1 year",
+    "saving-note": "Savings use Azerishiq tariffs (home: 8.4 qəpik up to 200 kWh, 10 qəpik for 200–300, 15 qəpik above 300). Solar replaces the most expensive tier first; surplus fed to the grid is not counted.",
+    "saving-offgrid": "Off-grid systems have no electricity bill, so savings are not calculated.",
+    "saving-unavailable": "Savings for the business tariff are coming soon — send a request for an exact estimate."
   },
   "quote": {
     "title": "Get an installation quote",

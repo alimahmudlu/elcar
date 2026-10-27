@@ -396,7 +396,18 @@
     "cta": "Bu hesablama ilə təklif istəyin",
     "banner-title": "Neçə panel lazımdır?",
     "banner-text": "Aylıq istehlakınıza görə panel, invertor və batareyanı 1 dəqiqəyə hesablayın.",
-    "banner-button": "Hesabla"
+    "banner-button": "Hesabla",
+    "customer": "Müştəri növü",
+    "customers": {
+      "home": "Ev",
+      "business": "Biznes"
+    },
+    "bill-now": "Aylıq qəbz (indi)",
+    "bill-solar": "Aylıq qəbz (günəşlə)",
+    "saving-year": "1 illik qənaət",
+    "saving-note": "Qənaət Azərişıq tarifləri ilə hesablanıb (ev: 200 kVt·saata qədər 8,4 qəpik, 200–300 arası 10 qəpik, 300-dən yuxarı 15 qəpik). Günəş əvvəlcə ən baha pilləni əvəz edir; şəbəkəyə verilən artıq enerji nəzərə alınmır.",
+    "saving-offgrid": "Avtonom sistemdə elektrik qəbzi olmadığı üçün qənaət hesablanmır.",
+    "saving-unavailable": "Biznes tarifi üzrə qənaət tezliklə əlavə olunacaq — dəqiq hesab üçün sorğu göndərin."
   },
   "quote": {
     "title": "Quraşdırma təklifi alın",

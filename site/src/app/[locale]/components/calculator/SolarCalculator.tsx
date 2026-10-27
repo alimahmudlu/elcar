@@ -5,12 +5,16 @@ import { useTranslations } from "next-intl";
 import {
   calculateSolar,
   DEFAULT_INPUT,
+  type CustomerType,
   type SolarInput,
   type SystemType,
 } from "@/lib/solarCalc";
 import QuoteRequestForm from "../quote/QuoteRequestForm";
 
 const TYPES: SystemType[] = ["on-grid", "hybrid", "off-grid"];
+const CUSTOMERS: CustomerType[] = ["home", "business"];
+
+const azn = (n: number) => `${n.toFixed(2).replace(/\.00$/, "")} AZN`;
 
 const inputClass =
   "w-full border rounded-md px-3 py-2 text-sm bg-transparent dark:border-secondary-foreground dark:text-primary-foreground";
@@ -78,6 +82,13 @@ const SolarCalculator = () => {
           : []),
         { label: t("annual"), value: `≈ ${result.annualKwh.toLocaleString("en-US").replace(/,/g, " ")} kWh` },
         { label: t("roof"), value: `≈ ${result.roofArea} m²` },
+        ...(result.savings
+          ? [
+              { label: t("bill-now"), value: azn(result.savings.monthlyBillNow) },
+              { label: t("bill-solar"), value: azn(result.savings.monthlyBillWithSolar) },
+              { label: t("saving-year"), value: `≈ ${result.savings.annualSaving} AZN`, strong: true },
+            ]
+          : []),
       ]
     : [];
 
@@ -86,6 +97,7 @@ const SolarCalculator = () => {
     ? [
         `${t("monthly")}: ${input.monthlyKwh} kWh`,
         `${t("type")}: ${t(`types.${input.systemType}`)}`,
+        `${t("customer")}: ${t(`customers.${input.customerType}`)}`,
         input.systemType === "hybrid" && `${t("backup")}: ${input.backupHours} ${t("backup-unit")}`,
         input.systemType === "off-grid" && `${t("autonomy")}: ${input.autonomyDays} ${t("autonomy-unit")}`,
         ...rows.map((row) => `${row.label}: ${row.value}`),
@@ -107,6 +119,32 @@ const SolarCalculator = () => {
           step={10}
           onChange={(v) => set("monthlyKwh", v)}
         />
+
+        <fieldset>
+          <legend className="text-sm font-bold mb-2 dark:text-primary-foreground">{t("customer")}</legend>
+          <div className="inline-flex rounded-full border p-1 dark:border-secondary-foreground">
+            {CUSTOMERS.map((customer) => (
+              <label
+                key={customer}
+                className={`cursor-pointer rounded-full px-4 py-1.5 text-sm font-bold transition-colors ${
+                  input.customerType === customer
+                    ? "bg-elcar text-white"
+                    : "text-elcar dark:text-primary-foreground"
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="customerType"
+                  value={customer}
+                  checked={input.customerType === customer}
+                  onChange={() => set("customerType", customer)}
+                  className="sr-only"
+                />
+                {t(`customers.${customer}`)}
+              </label>
+            ))}
+          </div>
+        </fieldset>
 
         <fieldset>
           <legend className="text-sm font-bold mb-2 dark:text-primary-foreground">{t("type")}</legend>
@@ -204,6 +242,14 @@ const SolarCalculator = () => {
             </dl>
           ) : (
             <p className="mt-4 text-sm">—</p>
+          )}
+          {result && !result.savings && (
+            <p className="mt-3 text-xs text-[#00000099] dark:text-secondary-foreground">
+              {input.systemType === "off-grid" ? t("saving-offgrid") : t("saving-unavailable")}
+            </p>
+          )}
+          {result?.savings && (
+            <p className="mt-3 text-xs text-[#00000099] dark:text-secondary-foreground">{t("saving-note")}</p>
           )}
           <p className="mt-4 text-xs text-[#00000099] dark:text-secondary-foreground">{t("disclaimer")}</p>
           <a
