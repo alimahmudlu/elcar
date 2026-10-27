@@ -400,14 +400,18 @@
     "customer": "Customer type",
     "customers": {
       "home": "Home",
-      "business": "Business"
+      "business": "Business",
+      "industry": "Industry / agriculture"
     },
     "bill-now": "Monthly bill (now)",
     "bill-solar": "Monthly bill (with solar)",
     "saving-year": "Savings in 1 year",
-    "saving-note": "Savings use Azerishiq tariffs (home: 8.4 qəpik up to 200 kWh, 10 qəpik for 200–300, 15 qəpik above 300). Solar replaces the most expensive tier first; surplus fed to the grid is not counted.",
-    "saving-offgrid": "Off-grid systems have no electricity bill, so savings are not calculated.",
-    "saving-unavailable": "Savings for the business tariff are coming soon — send a request for an exact estimate."
+    "saving-note": {
+      "home": "Savings use the Azerishiq household tariff (8.4 qəpik up to 200 kWh, 10 qəpik for 200–300, 15 qəpik above 300). Solar replaces the most expensive tier first; surplus fed to the grid is not counted.",
+      "business": "Savings use the non-household tariff: 12.5 qəpik/kWh (VAT included). Surplus fed to the grid is not counted.",
+      "industry": "Savings use the industry and agriculture tariff: 10.6 qəpik/kWh (VAT included). Surplus fed to the grid is not counted."
+    },
+    "saving-offgrid": "Off-grid systems have no electricity bill, so savings are not calculated."
   },
   "quote": {
     "title": "Get an installation quote",

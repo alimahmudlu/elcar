@@ -4,7 +4,7 @@
  */
 
 export type SystemType = "on-grid" | "hybrid" | "off-grid";
-export type CustomerType = "home" | "business";
+export type CustomerType = "home" | "business" | "industry";
 
 export type SolarInput = {
   /** Aylıq istehlak, kVt·saat (elektrik qəbzində göstərilir) */
@@ -18,7 +18,7 @@ export type SolarInput = {
   backupHours: number;
   /** Avtonom sistemdə günəşsiz neçə gün dayanmalıdır */
   autonomyDays: number;
-  /** Ev və ya biznes — tarif fərqlidir */
+  /** Ev, biznes və ya sənaye/kənd təsərrüfatı — tarif fərqlidir */
   customerType: CustomerType;
 };
 
@@ -30,7 +30,7 @@ export type SolarResult = {
   batteryKwh: number;
   annualKwh: number;
   roofArea: number;
-  /** Elektrik qəbzi üzrə qənaət, AZN; avtonom sistemdə və ya tarif bilinmirsə null */
+  /** Elektrik qəbzi üzrə qənaət, AZN; avtonom sistemdə null */
   savings: {
     monthlyBillNow: number;
     monthlyBillWithSolar: number;
@@ -56,16 +56,18 @@ export const HOUSEHOLD_TARIFF = [
 ];
 
 /**
- * Qeyri-əhali (biznes) tarifi, AZN/kVt·saat. null olduqda biznes üçün
- * qənaət göstərilmir — tarif təsdiqlənəndə bura yazılmalıdır.
+ * Qeyri-əhali tarifləri (ƏDV daxil), AZN/kVt·saat — sabit, pilləsiz.
+ * "business" = digər qeyri-əhali istehlakçıları (elektromobil doldurma
+ * stansiyaları da eyni tarifdədir).
  */
-export const BUSINESS_TARIFF: number | null = null;
+export const NON_HOUSEHOLD_TARIFF: Record<Exclude<CustomerType, "home">, number> = {
+  business: 0.125,
+  industry: 0.106,
+};
 
 /** Aylıq elektrik qəbzi, AZN */
-export function monthlyBill(kwh: number, customerType: CustomerType): number | null {
-  if (customerType === "business") {
-    return BUSINESS_TARIFF === null ? null : kwh * BUSINESS_TARIFF;
-  }
+export function monthlyBill(kwh: number, customerType: CustomerType): number {
+  if (customerType !== "home") return kwh * NON_HOUSEHOLD_TARIFF[customerType];
   let bill = 0;
   let from = 0;
   for (const tier of HOUSEHOLD_TARIFF) {
@@ -123,13 +125,11 @@ export function calculateSolar(input: SolarInput): SolarResult | null {
   if (systemType !== "off-grid") {
     const now = monthlyBill(monthlyKwh, input.customerType);
     const withSolar = monthlyBill(Math.max(0, monthlyKwh - annualKwh / 12), input.customerType);
-    if (now !== null && withSolar !== null) {
-      savings = {
-        monthlyBillNow: round2(now),
-        monthlyBillWithSolar: round2(withSolar),
-        annualSaving: Math.round((now - withSolar) * 12),
-      };
-    }
+    savings = {
+      monthlyBillNow: round2(now),
+      monthlyBillWithSolar: round2(withSolar),
+      annualSaving: Math.round((now - withSolar) * 12),
+    };
   }
 
   return {

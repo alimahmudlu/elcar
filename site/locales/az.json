@@ -400,14 +400,18 @@
     "customer": "Müştəri növü",
     "customers": {
       "home": "Ev",
-      "business": "Biznes"
+      "business": "Biznes",
+      "industry": "Sənaye / kənd təsərrüfatı"
     },
     "bill-now": "Aylıq qəbz (indi)",
     "bill-solar": "Aylıq qəbz (günəşlə)",
     "saving-year": "1 illik qənaət",
-    "saving-note": "Qənaət Azərişıq tarifləri ilə hesablanıb (ev: 200 kVt·saata qədər 8,4 qəpik, 200–300 arası 10 qəpik, 300-dən yuxarı 15 qəpik). Günəş əvvəlcə ən baha pilləni əvəz edir; şəbəkəyə verilən artıq enerji nəzərə alınmır.",
-    "saving-offgrid": "Avtonom sistemdə elektrik qəbzi olmadığı üçün qənaət hesablanmır.",
-    "saving-unavailable": "Biznes tarifi üzrə qənaət tezliklə əlavə olunacaq — dəqiq hesab üçün sorğu göndərin."
+    "saving-note": {
+      "home": "Qənaət Azərişıqın əhali tarifi ilə hesablanıb (200 kVt·saata qədər 8,4 qəpik, 200–300 arası 10 qəpik, 300-dən yuxarı 15 qəpik). Günəş əvvəlcə ən baha pilləni əvəz edir; şəbəkəyə verilən artıq enerji nəzərə alınmır.",
+      "business": "Qənaət qeyri-əhali tarifi ilə hesablanıb: 12,5 qəpik/kVt·saat (ƏDV daxil). Şəbəkəyə verilən artıq enerji nəzərə alınmır.",
+      "industry": "Qənaət sənaye və kənd təsərrüfatı tarifi ilə hesablanıb: 10,6 qəpik/kVt·saat (ƏDV daxil). Şəbəkəyə verilən artıq enerji nəzərə alınmır."
+    },
+    "saving-offgrid": "Avtonom sistemdə elektrik qəbzi olmadığı üçün qənaət hesablanmır."
   },
   "quote": {
     "title": "Quraşdırma təklifi alın",

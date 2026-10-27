@@ -12,7 +12,7 @@ import {
 import QuoteRequestForm from "../quote/QuoteRequestForm";
 
 const TYPES: SystemType[] = ["on-grid", "hybrid", "off-grid"];
-const CUSTOMERS: CustomerType[] = ["home", "business"];
+const CUSTOMERS: CustomerType[] = ["home", "business", "industry"];
 
 const azn = (n: number) => `${n.toFixed(2).replace(/\.00$/, "")} AZN`;
 
@@ -122,7 +122,7 @@ const SolarCalculator = () => {
 
         <fieldset>
           <legend className="text-sm font-bold mb-2 dark:text-primary-foreground">{t("customer")}</legend>
-          <div className="inline-flex rounded-full border p-1 dark:border-secondary-foreground">
+          <div className="inline-flex flex-wrap rounded-3xl border p-1 dark:border-secondary-foreground">
             {CUSTOMERS.map((customer) => (
               <label
                 key={customer}
@@ -244,12 +244,12 @@ const SolarCalculator = () => {
             <p className="mt-4 text-sm">—</p>
           )}
           {result && !result.savings && (
-            <p className="mt-3 text-xs text-[#00000099] dark:text-secondary-foreground">
-              {input.systemType === "off-grid" ? t("saving-offgrid") : t("saving-unavailable")}
-            </p>
+            <p className="mt-3 text-xs text-[#00000099] dark:text-secondary-foreground">{t("saving-offgrid")}</p>
           )}
           {result?.savings && (
-            <p className="mt-3 text-xs text-[#00000099] dark:text-secondary-foreground">{t("saving-note")}</p>
+            <p className="mt-3 text-xs text-[#00000099] dark:text-secondary-foreground">
+              {t(`saving-note.${input.customerType}`)}
+            </p>
           )}
           <p className="mt-4 text-xs text-[#00000099] dark:text-secondary-foreground">{t("disclaimer")}</p>
           <a
