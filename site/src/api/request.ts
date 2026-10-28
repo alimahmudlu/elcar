@@ -128,6 +128,23 @@ export const chargingConnectors = async (params?: { [key: string]: string | stri
         return [];
     }
 }
+/** Enerji bölmələri (solar-energy, wind-energy, ...) üçün ümumi sorğu */
+export const getSectionProducts = async (section: string, params?: { [key: string]: string | string[] }, skip?: string, limit = 12) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
+            params: {
+                section,
+                ...params,
+                "$skip": skip || 0,
+                "$limit": limit
+            }
+        });
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
 
 
 
@@ -152,7 +169,8 @@ export const sendMessage = async (data: {
         return response.data;
     } catch (error) {
         console.log(error);
-        return [];
+        // null — forma xəta göstərsin (əvvəl [] qaytarılırdı və uğur sayılırdı)
+        return null;
     }
 }
 
@@ -173,5 +191,60 @@ export const createOrder = async (data: {
     } catch (error) {
         console.log(error);
         return [];
+    }
+}
+/** Bütün bölmələr üzrə məhsul adına görə axtarış (API: ?q=) */
+export const searchProducts = async (q: string, skip = 0, limit = 24) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
+            params: { q, "$skip": skip, "$limit": limit }
+        });
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return { data: [], meta: { total: 0 } };
+    }
+}
+
+/** Müqayisə üçün məhsulları ID siyahısı ilə çəkir (API: ?_id[]=..) */
+export const getProductsByIds = async (ids: string[]) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
+            params: { _id: ids, "$limit": ids.length }
+        });
+        return response.data?.data ?? [];
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
+
+/** Məhsulun təsdiqlənmiş rəyləri */
+export const getReviews = async (productId: string, limit = 20) => {
+    try {
+        const response = await axiosInstance.get(BASE_URL + "/reviews", {
+            params: { product: productId, "$limit": limit }
+        });
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return { data: [], total: 0 };
+    }
+}
+
+/** Yeni rəy (admin təsdiqləyənə qədər görünmür). Xətada null qaytarır. */
+export const createReview = async (data: {
+    product: string;
+    fullName: string;
+    rating: number;
+    text: string;
+    website?: string;
+}) => {
+    try {
+        const response = await axiosInstance.post(BASE_URL + "/reviews", data);
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return null;
     }
 }

@@ -45,6 +45,41 @@ module.exports = function (app) {
             intl: true,
         },
         alternatives: Schema.Types.Mixed,
+        // İstehsalçı kodu / artikul
+        sku: String,
+        // Zəmanət müddəti (ay)
+        warranty: Number,
+        // Təsdiqlənmiş rəylərdən hesablanır (reviews xidməti yeniləyir)
+        rating: {
+            type: Number,
+            default: 0
+        },
+        reviewCount: {
+            type: Number,
+            default: 0
+        },
+        // Hazır dəst: tərkibindəki məhsullar və sayları (məs. panel ×8, invertor ×1)
+        bundleItems: {
+            type: [ {
+                _id: false,
+                product: {
+                    type: Schema.Types.ObjectId,
+                    ref: 'products'
+                },
+                quantity: {
+                    type: Number,
+                    default: 1,
+                    min: 1
+                }
+            } ],
+            default: []
+        },
+        // Datasheet, təlimat, zəmanət şərtləri, sertifikatlar (PDF və s.)
+        documents: {
+            type: [Schema.Types.ObjectId],
+            ref: 'uploads',
+            default: []
+        },
     }, {
         timestamps: true,
         versionKey: false,

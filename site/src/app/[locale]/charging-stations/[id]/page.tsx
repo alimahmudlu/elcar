@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildMetadata, productJsonLd } from "@/lib/seo";
+import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
 import { SITE_URL } from "@/config/site";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { Roboto } from "next/font/google";
@@ -12,6 +12,10 @@ import { fetchProductDetails } from "@/api/request";
 import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { Characteristic, ProductType } from "@/types";
 import CharacteristicGroupClient from "../../components/products/charging-stations/CharacteristicGroupClient";
+import ProductFacts from "../../components/common/ProductFacts";
+import ProductBundle from "../../components/common/ProductBundle";
+import ProductReviews from "../../components/reviews/ProductReviews";
+import CompareButton from "../../components/common/CompareButton";
 
 const roboto = Roboto({ subsets: ["latin"] });
 
@@ -31,7 +35,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, id } = await params;
   const product: ProductType = await fetchProductDetails(
-    ENDPOINTS.products.detail.replace(":id", id)
+    ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
   if (!product?.title) return { title: "404" };
 
@@ -40,7 +44,7 @@ export async function generateMetadata({
     title: price ? `${product.title} — ${price} AZN` : product.title,
     description: product.description,
     locale,
-    path: `/charging-stations/${id}`,
+    path: `/charging-stations/${product?.slug ?? id}`,
     image: product.image?.src ? BASE_URL + product.image.src : undefined,
   });
 }
@@ -52,7 +56,7 @@ const Page = async ({ params }: { params: Params }) => {
   const t = await getTranslations();
 
   const product: ProductType = await fetchProductDetails(
-    ENDPOINTS.products.detail.replace(":id", id)
+    ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
 
   const {
@@ -78,18 +82,24 @@ const Page = async ({ params }: { params: Params }) => {
       className={`container max-lg:max-w-[90%] mt-18 ${roboto.className}`}
     >
       <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.chargingStations"), href: "/charging-stations" }, { label: title }]} />
+      <div className="mt-4">
+        <CompareButton product={product} variant="inline" />
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             productJsonLd({
               title,
               description,
               image: image?.src ? BASE_URL + image.src : undefined,
               brand: product?.brand?.name,
+              sku: product?.sku,
+              rating: product?.rating,
+              reviewCount: product?.reviewCount,
               price,
               discountedPrice,
-              url: `${SITE_URL}/${locale}/charging-stations/${id}`,
+              url: `${SITE_URL}/${locale}/charging-stations/${product?.slug ?? id}`,
             })
           ),
         }}
@@ -156,22 +166,25 @@ const Page = async ({ params }: { params: Params }) => {
                   </span>
                 </p>
               </li>
-              <li className="text-[16px] tracking-[0.4px] mb-1 leading-4 max-sm:text-sm dark:text-secondary-foreground">
-                <p className="flex flex-col gap-1">
-                  <span>{t("hero.sub-category.rating")}</span>
-                  <Rating
-                    icon={
-                      <MdOutlineStarPurple500 className="w-4 text-[#ff5722] h-4" />
-                    }
-                    emptyIcon={
-                      <MdOutlineStarPurple500 className="w-4 h-4 text-gray-400" />
-                    }
-                    name="read-only"
-                    value={5}
-                    readOnly
-                  />
-                </p>
-              </li>
+              {/* Reytinq yalnız real rəy olduqda göstərilir (ProductItem ilə eyni qayda) */}
+              {Number(product?.reviewCount) > 0 && (
+                <li className="text-[16px] tracking-[0.4px] mb-1 leading-4 max-sm:text-sm dark:text-secondary-foreground">
+                  <p className="flex flex-col gap-1">
+                    <span>{t("hero.sub-category.rating")}</span>
+                    <Rating
+                      icon={
+                        <MdOutlineStarPurple500 className="w-4 text-[#ff5722] h-4" />
+                      }
+                      emptyIcon={
+                        <MdOutlineStarPurple500 className="w-4 h-4 text-gray-400" />
+                      }
+                      name="read-only"
+                      value={Number(product?.rating ?? 0)}
+                      readOnly
+                    />
+                  </p>
+                </li>
+              )}
             </ul>
           </div>
         </div>
@@ -186,6 +199,12 @@ const Page = async ({ params }: { params: Params }) => {
             translatedStrings={translatedStrings}
           />
         ))}
+
+        <ProductBundle product={product} />
+
+        <ProductFacts product={product} />
+
+        <ProductReviews product={product} />
       </div>
 
       <AddToCartButton product={product} />

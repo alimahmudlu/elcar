@@ -1,11 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { CONTACT } from "@/config/site";
+import { ENERGY_SECTIONS } from "@/config/sections";
 import { MdEmail, MdLocationOn, MdPhone, MdSchedule } from "react-icons/md";
 
 const Footer = async () => {
   const t = await getTranslations("footer");
   const p = await getTranslations("pages");
+  const sec = await getTranslations("sections");
 
   return (
     <footer className="bg-[#F5F5F5] dark:border-t dark:border-gray-700 dark:bg-foreground dark:text-primary-foreground mt-8">
@@ -30,6 +32,13 @@ const Footer = async () => {
                 {p("connectors")}
               </Link>
             </li>
+            {ENERGY_SECTIONS.map((section) => (
+              <li key={section}>
+                <Link href={`/${section}`} className="hover:underline">
+                  {sec(`${section}.name`)}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

@@ -10,7 +10,7 @@
     "contact": "Contact"
   },
   "header": {
-    "title": "Electric Vehicles",
+    "title": "Energy Solutions",
     "cart": "Cart",
     "emptyCart": "Your cart is empty",
     "clear": "Clear",
@@ -51,8 +51,8 @@
   },
   "services": {
     "main": {
-      "title": "ELCAR - Azerbaijani distributor of electric cars",
-      "subtitle": "ELCAR company offers everything needed for <strong>electric cars</strong>, including <strong>power stations</strong>, <strong>accessories</strong> and other electrical devices, purchased under the best conditions and delivered to Azerbaijan.",
+      "title": "ELCAR — Electrical and Energy Solutions in Azerbaijan",
+      "subtitle": "From <strong>EV charging stations</strong> and <strong>accessories</strong> to <strong>solar panels</strong>, <strong>wind turbines</strong>, <strong>battery energy storage systems (BESS)</strong> and <strong>industrial laser equipment</strong>, ELCAR supplies, installs and services electrical solutions across Azerbaijan at the best prices.",
       "button": "More information"
     },
     "second": {
@@ -198,7 +198,7 @@
   },
   "footer": {
     "title": "All rights reserved!",
-    "about": "Since 2022 we have been selling and installing EV charging equipment in Azerbaijan.",
+    "about": "Since 2022 we have been selling and installing EV charging equipment, solar and wind energy systems, energy storage and laser equipment in Azerbaijan.",
     "products": "Products",
     "company": "Company",
     "contact": "Contact",
@@ -252,5 +252,216 @@
     "output-power": "Output power",
     "power-input": "Supply voltage",
     "phase-number": "Phases"
+  },
+  "sections": {
+    "price-on-request": "Price on request",
+    "request-quote": "Request a quote",
+    "whatsapp-message": "Hello, I would like information and a price for \"{product}\".",
+    "home": {
+      "title": "Energy Solutions",
+      "subtitle": "From solar and wind power systems to energy storage (BESS) and inverters — everything for renewable energy in one place",
+      "more": "Explore"
+    },
+    "solar-energy": {
+      "name": "Solar Energy",
+      "short": "Solar panels, inverters, mounting systems and ready-made kits for homes and businesses.",
+      "title": "Solar Panels and Solar Energy Systems in Azerbaijan",
+      "subtitle": "ELCAR supplies solar panels, on-grid and off-grid inverters, mounting structures and complete solar power kits for homes, businesses and industrial sites, with design and installation services.",
+      "all-products": "All Solar Energy Products",
+      "seo": {
+        "title": "Solar Panels and Inverters — Prices",
+        "description": "Solar panels, hybrid and on-grid inverters, mounting systems and complete solar kits in Baku. Design and installation included."
+      }
+    },
+    "wind-energy": {
+      "name": "Wind Energy",
+      "short": "Small and mid-size wind turbines, controllers and hybrid solar-wind systems.",
+      "title": "Wind Turbines and Wind Energy Systems",
+      "subtitle": "Vertical and horizontal axis wind turbines, charge controllers and hybrid systems working together with solar power — for private homes, farms and industrial sites.",
+      "all-products": "All Wind Energy Products",
+      "seo": {
+        "title": "Wind Turbines for Home and Industry",
+        "description": "Vertical and horizontal axis wind turbines, controllers and hybrid solar-wind systems. Delivery and installation in Azerbaijan."
+      }
+    },
+    "energy-storage": {
+      "name": "Energy Storage (BESS)",
+      "short": "Home batteries, commercial and industrial BESS, LiFePO4 battery packs.",
+      "title": "Battery Energy Storage Systems (BESS) and Batteries",
+      "subtitle": "Home batteries, commercial and utility-scale BESS containers and LiFePO4 battery modules for storing solar and wind energy, backup power during outages and peak shaving.",
+      "all-products": "All Energy Storage Systems",
+      "seo": {
+        "title": "BESS Energy Storage Systems and Batteries",
+        "description": "Residential, commercial and industrial BESS, LiFePO4 batteries and storage solutions compatible with hybrid inverters. Installation in Baku."
+      }
+    },
+    "inverters": {
+      "name": "Inverters",
+      "short": "On-grid, off-grid and hybrid inverters, microinverters.",
+      "title": "Solar Inverters: On-Grid, Off-Grid and Hybrid",
+      "subtitle": "On-grid, off-grid and hybrid inverters and microinverters that convert DC power from solar panels into AC power for homes and businesses. Battery-ready options with installation and service support.",
+      "all-products": "All Inverters",
+      "seo": {
+        "title": "Solar Inverters — Hybrid, On-Grid and Off-Grid",
+        "description": "Hybrid, on-grid and off-grid solar inverters and microinverters for homes and businesses. Compatible with BESS batteries, installation and service in Baku."
+      }
+    },
+    "laser-equipment": {
+      "name": "Laser Equipment",
+      "short": "Laser cutting, welding, marking and cleaning equipment.",
+      "title": "Industrial Laser Equipment: Cutting, Welding, Marking and Cleaning",
+      "subtitle": "Fiber laser cutting machines, handheld and automated laser welders, laser marking and laser cleaning equipment for metalworking and manufacturing — with installation, training and service support.",
+      "all-products": "All Laser Equipment",
+      "seo": {
+        "title": "Laser Cutting, Welding and Marking Equipment",
+        "description": "Fiber laser cutting machines, laser welding, marking and cleaning machines. Sales, installation and service in Azerbaijan."
+      }
+    }
+  },
+  "search": {
+    "button": "Search",
+    "placeholder": "Product name, brand or power (e.g. 22kW)",
+    "title": "Search",
+    "results": "{count} results for \"{q}\"",
+    "empty": "Nothing found for \"{q}\". Try another word or a shorter query.",
+    "prompt": "Type a product name, brand or power rating to search.",
+    "close": "Close"
+  },
+  "product-facts": {
+    "title": "Key facts",
+    "sku": "SKU",
+    "warranty": "Warranty",
+    "months": "{n, plural, one {# month} other {# months}}",
+    "years": "{n, plural, one {# year} other {# years}}",
+    "documents": "Documents",
+    "download": "Download"
+  },
+  "compare": {
+    "add": "Compare",
+    "added": "In comparison",
+    "limit": "You can compare up to {n} products",
+    "bar": "Compare ({n})",
+    "clear": "Clear",
+    "title": "Product comparison",
+    "empty": "No products selected. Use the compare button on product cards to add 2–4 products.",
+    "remove": "Remove",
+    "price": "Price",
+    "brand": "Brand",
+    "model": "Model",
+    "category": "Category",
+    "diffOnly": "Show differences only",
+    "more": "Add one more product",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "calculator": {
+    "nav": "Solar system calculator",
+    "title": "Solar System Calculator",
+    "subtitle": "Enter your monthly electricity use and get a first estimate of the panel capacity, inverter and battery you need. For an exact design and price, send a request with the form below.",
+    "seo": {
+      "title": "Solar Panel Calculator — How Many Panels Do I Need?",
+      "description": "Estimate the number of solar panels, inverter size and battery capacity from your monthly kWh use. Free preliminary sizing and installation quote in Azerbaijan."
+    },
+    "monthly": "Monthly consumption",
+    "monthly-hint": "kWh shown on your electricity bill",
+    "type": "System type",
+    "types": {
+      "on-grid": "On-grid",
+      "hybrid": "Hybrid (with battery)",
+      "off-grid": "Off-grid"
+    },
+    "type-hints": {
+      "on-grid": "No battery, surplus goes to the grid",
+      "hybrid": "Runs from the battery during outages",
+      "off-grid": "For places without grid power"
+    },
+    "backup": "Backup time",
+    "backup-unit": "hours",
+    "autonomy": "Days without sun",
+    "autonomy-unit": "days",
+    "advanced": "Advanced settings",
+    "sun-hours": "Sun hours (per day)",
+    "sun-hours-hint": "Annual average in Azerbaijan ≈ 4",
+    "panel-watt": "Panel power",
+    "result": "Estimate",
+    "daily": "Daily consumption",
+    "pv": "Panel capacity",
+    "panels": "Number of panels",
+    "inverter": "Inverter",
+    "battery": "Battery capacity",
+    "annual": "Annual generation (approx.)",
+    "roof": "Roof area needed",
+    "pcs": "{n, plural, one {# panel} other {# panels}}",
+    "disclaimer": "This is a preliminary planning estimate, not a design or a price quote. Actual sizing depends on roof orientation, shading, load profile and equipment specifications. Our engineers prepare the exact design after a site visit.",
+    "cta": "Request a quote with this estimate",
+    "banner-title": "How many panels do you need?",
+    "banner-text": "Size panels, inverter and battery from your monthly use in one minute.",
+    "banner-button": "Calculate",
+    "customer": "Customer type",
+    "customers": {
+      "home": "Home",
+      "business": "Business",
+      "industry": "Industry / agriculture"
+    },
+    "bill-now": "Monthly bill (now)",
+    "bill-solar": "Monthly bill (with solar)",
+    "saving-year": "Savings in 1 year",
+    "saving-note": {
+      "home": "Savings use the Azerishiq household tariff (8.4 qəpik up to 200 kWh, 10 qəpik for 200–300, 15 qəpik above 300). Solar replaces the most expensive tier first; surplus fed to the grid is not counted.",
+      "business": "Savings use the non-household tariff: 12.5 qəpik/kWh (VAT included). Surplus fed to the grid is not counted.",
+      "industry": "Savings use the industry and agriculture tariff: 10.6 qəpik/kWh (VAT included). Surplus fed to the grid is not counted."
+    },
+    "saving-offgrid": "Off-grid systems have no electricity bill, so savings are not calculated.",
+    "coverage": "Share of consumption covered by solar",
+    "coverage-hint": "Lower it for a smaller budget. For homes, solar replaces the most expensive tariff tier first, so even a small system saves relatively much.",
+    "covered": "Share covered by solar"
+  },
+  "quote": {
+    "title": "Get an installation quote",
+    "subtitle": "Send your details and our engineer will contact you within 1 business day.",
+    "full-name": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "object": "Property type",
+    "objects": {
+      "home": "House / villa",
+      "business": "Office / shop",
+      "industry": "Industrial / farm",
+      "other": "Other"
+    },
+    "city": "City / district",
+    "note": "Notes",
+    "send": "Send request",
+    "subject": "Quote request",
+    "calc": "Estimate",
+    "errors": {
+      "full-name": "Enter your name using letters",
+      "phone": "Enter a phone number",
+      "email": "Enter a valid email"
+    }
+  },
+  "reviews": {
+    "title": "Customer reviews",
+    "average": "based on {n, plural, one {# review} other {# reviews}}",
+    "empty": "No reviews yet. Be the first to write one.",
+    "write": "Write a review",
+    "name": "Your name",
+    "rating": "Your rating",
+    "text": "Your review",
+    "text-hint": "How do you use the product, what did you like and what not?",
+    "send": "Submit",
+    "sent": "Thank you! Your review will be published after moderation.",
+    "error": "Could not send. Please try again a little later.",
+    "errors": {
+      "name": "Enter your name using letters",
+      "rating": "Choose a star rating",
+      "text": "Write at least 10 characters"
+    }
+  },
+  "bundle": {
+    "title": "What's in the kit",
+    "separately": "Bought separately",
+    "saving": "You save with the kit",
+    "pcs": "× {n}"
   }
 }

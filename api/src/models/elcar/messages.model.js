@@ -12,7 +12,8 @@ module.exports = function (app) {
             required: true,
             validate: {
                 validator: function(v) {
-                    const regex = /^[\sa-zA-Z]*$/;
+                    // Bütün əlifbaların hərfləri (ə, ç, ş, ö, ü, ğ, ı, kiril və s.)
+                    const regex = /^[\p{L}\s.'-]*$/u;
                     return regex.test(v)
                 },
                 message: 'Please enter a valid full name'

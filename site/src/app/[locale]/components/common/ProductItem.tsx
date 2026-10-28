@@ -13,6 +13,8 @@ import { cn, extractTitlePrefix } from "@/lib/utils";
 import CheckCart from "../icons/CheckCart";
 import { useCartStore } from "@/lib/cartStore";
 import { useDrawerStore } from "@/lib/drawerStore";
+import { isEnergySection } from "@/config/sections";
+import CompareButton from "./CompareButton";
 
 const ProductItem = ({
   product,
@@ -27,8 +29,11 @@ const ProductItem = ({
   const t = useTranslations();
   const locale = useLocale();
 
-  const rediretUrl =
-    type === ProductEnum.Car
+  const isEnergy = isEnergySection(type);
+
+  const rediretUrl = isEnergy
+    ? `/${type}/${product?.slug}`
+    : type === ProductEnum.Car
       ? `/electric-vehicles/${product?.slug}`
       : type === ProductEnum.ConnectorAccessory
       ? `/connectors-accessories/${product?.slug}`
@@ -37,6 +42,14 @@ const ProductItem = ({
   const { addToCart, getCount } = useCartStore();
   const { setIsOpen } = useDrawerStore();
   const inCart = getCount(product._id) > 0;
+
+  // Enerji bölmələrində xüsusiyyət açarları məhsuldan-məhsula fərqlidir,
+  // ona görə ilk qrupun ilk 3 görünən xüsusiyyəti göstərilir.
+  const energySpecs = isEnergy
+    ? (product?.characteristicGroups?.[0]?.characteristics ?? [])
+        .filter((item) => item.name && item.value !== "" && item.value != null && item.visible !== false)
+        .slice(0, 3)
+    : [];
 
   const handleClick = () => {
     addToCart(product);
@@ -65,7 +78,11 @@ const ProductItem = ({
           <div className="absolute bottom-4 right-4">
             <div className="relative">
               <div className="w-[80px] rotate-6 h-[80px] rounded-full bg-blue-600 flex flex-col justify-center items-center text-white font-bold text-[14px] shadow-md leading-[2px]">
-                {product?.discount ? (
+                {!product?.price ? (
+                  <span className="text-[12px] text-center leading-4 px-2">
+                    {t("sections.price-on-request")}
+                  </span>
+                ) : product?.discount ? (
                   <div className="flex flex-col items-center">
                     <del className="text-sm text-gray-300 -mb-1">
                       {product?.price}
@@ -122,7 +139,22 @@ const ProductItem = ({
             </p>
           </div>
 
-          {type !== ProductEnum.ConnectorAccessory && (
+          {isEnergy && energySpecs.length > 0 && (
+            <>
+              <div className="border-b border-[text-title] my-4" />
+
+              <ul className="grid grid-cols-3 justify-between gap-2 px-6 text-[12px] mt-auto">
+                {energySpecs.map((item, i) => (
+                  <li key={i} className="flex flex-col gap-1">
+                    <span>{item.name}</span>
+                    <span className="font-bold">{String(item.value)}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {!isEnergy && type !== ProductEnum.ConnectorAccessory && (
             <>
               <div className="border-b border-[text-title] my-4" />
 
@@ -207,6 +239,7 @@ const ProductItem = ({
           {!inCart ? <MdAddShoppingCart className="w-5 h-5" /> : <CheckCart />}
         </div>
       </Tooltip>
+      <CompareButton product={product} />
     </div>
   );
 };

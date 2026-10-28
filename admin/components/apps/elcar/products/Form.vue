@@ -60,6 +60,56 @@
 
                 </v-row>
 
+                <v-row align="center">
+
+                    <v-col cols="12" sm="6" md="3">
+                        <v-text-field v-model.trim="form.sku" :label="$t('SKU')" outlined dense/>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="3">
+                        <v-text-field v-model.number.trim="form.warranty" :label="$t('Warranty')"
+                                      type="number" min="0" :suffix="$t('months')" outlined dense
+                                      :error-messages="$errorMessages($v.form.warranty, $t('Warranty'))"/>
+                    </v-col>
+
+                    <v-col cols="12">
+                        <span class="text-body-2 d-block mb-2" v-text="$t('Documents (datasheet, manual, warranty, certificates)')"/>
+                        <MediaMenu v-model="form.documents" :title="$t('Choose _', {n: $t('Documents')})"
+                                   :upload="false" :multiple="true" size="6"/>
+                    </v-col>
+
+                </v-row>
+
+                <v-row>
+                    <v-col cols="12">
+                        <span class="text-body-2 d-block mb-2" v-text="$t('Bundle contents (for ready-made kits)')"/>
+
+                        <v-row v-for="(item, b) in form.bundleItems" :key="`bundle-item-${b}`" align="center" dense>
+                            <v-col cols="12" sm="8">
+                                <v-autocomplete v-model="item.product" :items="bundleProductOptions"
+                                                item-text="title" item-value="_id" :label="$t('Product')"
+                                                outlined dense hide-details :append-icon="mdiChevronDown"
+                                                :no-data-text="$t('No data')"/>
+                            </v-col>
+                            <v-col cols="8" sm="3">
+                                <v-text-field v-model.number="item.quantity" type="number" min="1"
+                                              :label="$t('Quantity')" outlined dense hide-details/>
+                            </v-col>
+                            <v-col cols="4" sm="1" class="text-right">
+                                <v-btn icon @click="form.bundleItems.splice(b, 1)">
+                                    <Icon name="mdiDeleteOutline"/>
+                                </v-btn>
+                            </v-col>
+                        </v-row>
+
+                        <v-btn text small color="primary" class="mt-2 px-0"
+                               @click="form.bundleItems.push({ product: null, quantity: 1 })">
+                            <Icon name="mdiPlus"/>
+                            {{ $t('Add item') }}
+                        </v-btn>
+                    </v-col>
+                </v-row>
+
             </v-container>
 
             <div v-for="(group, i) in form.characteristicGroups" :key="`characteristic-groups-${i}`">
@@ -247,6 +297,10 @@ export default {
             discount: null,
             discountedPrice: null,
             top: false,
+            sku: null,
+            warranty: null,
+            documents: [],
+            bundleItems: [],
             description: app.$setForLocale(),
             characteristicGroups: []
         },
@@ -295,6 +349,9 @@ export default {
                 image: {
                     required
                 },
+                warranty: {
+                    minValue: minValue(0),
+                },
                 description: this.$setForLocale({
                     required,
                     minLength: minLength(130),
@@ -324,6 +381,12 @@ export default {
 
         characteristics() {
             return structuredClone(this.$store.state.data.allCharacteristics)
+        },
+
+        // Dəstə daxil edilə bilən məhsullar (bütün bölmələrdən, cari məhsuldan başqa)
+        bundleProductOptions() {
+            return (this.$store.state.data.bundleProducts || [])
+                .filter(product => product._id !== this.form._id)
         },
 
         characteristicGroups() {
@@ -400,6 +463,16 @@ export default {
                         noPagination: 1
                     },
                     force: true
+                }),
+                this.$fetchData({
+                    store: 'data',
+                    api: 'products',
+                    key: 'bundleProducts',
+                    query: {
+                        // $select istifadə olunmur: API siyahı hook-u characteristicGroups gözləyir
+                        noPagination: 1
+                    },
+                    force: true
                 })
             ])
 
@@ -410,7 +483,14 @@ export default {
 
             if (detail) {
                 const data = await this.$fetchData({ api: `${ this.api }/${ detail }` })
-                this.form = structuredClone(data)
+                // Köhnə məhsullarda yeni sahələr yoxdur — reaktiv qalsınlar deyə əvvəlcədən verilir
+                this.form = {
+                    sku: null,
+                    warranty: null,
+                    documents: [],
+                    bundleItems: [],
+                    ...structuredClone(data)
+                }
                 if(copy) {delete this.form._id}
                 this.fillForm()
             }

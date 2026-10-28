@@ -5,6 +5,7 @@ import Brands from "./components/home/Brands";
 import ChargingStations from "./components/home/ChargingStations";
 import ConnectorsAndAccessories from "./components/home/ConnectorsAndAccessories";
 import MobileServices from "./components/home/MobileServices";
+import EnergySolutions from "./components/home/EnergySolutions";
 import { fetchData } from "@/api/request";
 import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 
@@ -17,6 +18,7 @@ export default async function HomePage() {
       <Services />
       {/*<PopularCars />*/}
       <ChargingStations />
+      <EnergySolutions />
       <Brands />
       <ConnectorsAndAccessories />
       <MobileServices />

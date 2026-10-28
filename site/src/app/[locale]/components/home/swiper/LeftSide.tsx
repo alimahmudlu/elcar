@@ -91,22 +91,25 @@ const LeftSide = ({ item }: { item: ProductType }) => {
               </span>
             </p>
           </li>
-          <li className="text-[12px] tracking-[0.4px] mb-1 leading-4">
-            <p className="flex flex-col gap-1">
-              <span>{t("sub-category.rating")}</span>
-              <Rating
-                icon={
-                  <MdOutlineStarPurple500 className="w-4 text-[#ff5722] h-4" />
-                }
-                emptyIcon={
-                  <MdOutlineStarPurple500 className="w-4 h-4 text-gray-400" />
-                }
-                name="read-only"
-                value={5}
-                readOnly
-              />
-            </p>
-          </li>
+          {/* Reytinq yalnız real rəy olduqda göstərilir (ProductItem ilə eyni qayda) */}
+          {Number(item?.reviewCount) > 0 && (
+            <li className="text-[12px] tracking-[0.4px] mb-1 leading-4">
+              <p className="flex flex-col gap-1">
+                <span>{t("sub-category.rating")}</span>
+                <Rating
+                  icon={
+                    <MdOutlineStarPurple500 className="w-4 text-[#ff5722] h-4" />
+                  }
+                  emptyIcon={
+                    <MdOutlineStarPurple500 className="w-4 h-4 text-gray-400" />
+                  }
+                  name="read-only"
+                  value={Number(item?.rating ?? 0)}
+                  readOnly
+                />
+              </p>
+            </li>
+          )}
         </ul>
         {/* divider */}
         <div className="w-full h-[1px] bg-gray-200 my-6 max-w-[80%] max-xs:my-2 dark:bg-popover" />

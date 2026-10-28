@@ -21,6 +21,7 @@ export interface HeroSliderItem {
 export interface Characteristic {
   value: string | number | boolean | string[] | null;
   name?: string;
+  visible?: boolean;
   battery?: string;
   image?: {
     src: string;
@@ -92,6 +93,12 @@ export interface ProductType {
   reviewCount?: number;
   inStock?: boolean;
   sku?: string;
+  /** Zəmanət müddəti (ay) */
+  warranty?: number;
+  /** Datasheet, təlimat, sertifikat faylları (detal sorğusunda gəlir) */
+  documents?: ProductDocument[];
+  /** Hazır dəstin tərkibi (detal sorğusunda gəlir) */
+  bundleItems?: BundleItem[];
   updatedAt?: string;
   category: {
     name: string;
@@ -260,4 +267,32 @@ export interface ChildCharacteristic {
 
 export interface GroupedCharacteristic extends ParentCharacteristic {
   children: ChildCharacteristic[];
+}
+export interface ProductDocument {
+  name: string;
+  src: string;
+  extension?: string;
+  size?: number;
+}
+
+export interface ReviewType {
+  _id: string;
+  fullName: string;
+  rating: number;
+  text: string;
+  createdAt: string;
+}
+
+export interface BundleItem {
+  quantity: number;
+  /** Silinmiş məhsul ola bilər — onda null gəlir */
+  product: {
+    _id: string;
+    title: string;
+    slug: string;
+    section: string;
+    image?: { src: string };
+    price?: number;
+    discountedPrice?: number;
+  } | null;
 }

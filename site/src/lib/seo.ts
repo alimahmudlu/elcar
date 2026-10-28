@@ -58,6 +58,17 @@ export function buildMetadata({
   };
 }
 
+/**
+ * JSON-LD-ni <script> teqinə təhlükəsiz yazmaq üçün serializasiya.
+ * `<`, `>`, `&` escape olunur ki, məzmundakı `</script>` teqi bağlaya bilməsin.
+ */
+export function jsonLdHtml(data: unknown): string {
+  return JSON.stringify(data)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026");
+}
+
 /** Product + Offer JSON-LD */
 export function productJsonLd(p: {
   title?: string;
@@ -69,6 +80,9 @@ export function productJsonLd(p: {
   discountedPrice?: number;
   inStock?: boolean;
   url: string;
+  /** Təsdiqlənmiş rəylər — yalnız real rəy olduqda aggregateRating əlavə olunur */
+  rating?: number;
+  reviewCount?: number;
 }) {
   return {
     "@context": "https://schema.org",
@@ -80,6 +94,15 @@ export function productJsonLd(p: {
       : {}),
     ...(p.brand ? { brand: { "@type": "Brand", name: p.brand } } : {}),
     ...(p.sku ? { sku: p.sku } : {}),
+    ...(p.reviewCount && p.rating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: p.rating,
+            reviewCount: p.reviewCount,
+          },
+        }
+      : {}),
     offers: {
       "@type": "Offer",
       url: p.url,

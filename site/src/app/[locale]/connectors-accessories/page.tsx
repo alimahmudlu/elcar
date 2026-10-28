@@ -63,7 +63,7 @@ const Page = async ({ searchParams }: { searchParams: SearchParams }) => {
   return (
     <section className="container max-md:max-w-[90%] mt-20">
       <div className="mb-8">
-        <Breadcrumb items={[{ label: "Elcar", href: "/" }, { label: t("pages.connectors") }]} />
+        <Breadcrumb items={[{ label: "Elcar", href: "/" }, { label: t("pages.chargingStations"), href: "/charging-stations" }, { label: t("pages.connectors") }]} />
 
         <h1 className="text-3xl md:text-5xl text-title font-extrabold mt-4 leading-tight  dark:text-primary-foreground">
           {t("pages-content.connectors.title")}

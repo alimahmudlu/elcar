@@ -4,7 +4,7 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { SITE_NAME, SITE_URL } from "@/config/site";
-import { alternatesFor } from "@/lib/seo";
+import { alternatesFor, jsonLdHtml } from "@/lib/seo";
 import { organizationJsonLd } from "@/config/organization";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
@@ -16,6 +16,7 @@ import { PrimeReactProvider } from "primereact/api";
 import NextTopLoader from "nextjs-toploader";
 import Analytics from "./components/common/Analytics";
 import WhatsAppButton from "./components/common/WhatsAppButton";
+import CompareBar from "./components/common/CompareBar";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin", "latin-ext"],
@@ -76,11 +77,12 @@ export default async function LocaleLayout({
               {children}
               <Footer />
               <WhatsAppButton />
+              <CompareBar />
               <Analytics />
               <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
-                  __html: JSON.stringify(organizationJsonLd),
+                  __html: jsonLdHtml(organizationJsonLd),
                 }}
               />
             </NextIntlClientProvider>

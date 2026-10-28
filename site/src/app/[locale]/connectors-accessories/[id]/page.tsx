@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildMetadata, productJsonLd } from "@/lib/seo";
+import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
 import { SITE_URL } from "@/config/site";
 import type { ProductType } from "@/types";
 import Breadcrumb from "@/components/common/Breadcrumb";
@@ -10,6 +10,10 @@ import Image from "next/image";
 import React from "react";
 
 import DetailSection from "../../components/common/DetailSection";
+import ProductFacts from "../../components/common/ProductFacts";
+import ProductBundle from "../../components/common/ProductBundle";
+import ProductReviews from "../../components/reviews/ProductReviews";
+import CompareButton from "../../components/common/CompareButton";
 import { Rating } from "@mui/material";
 import { getTranslations } from "next-intl/server";
 import { MdOutlineStarPurple500 } from "react-icons/md";
@@ -25,7 +29,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, id } = await params;
   const product: ProductType = await fetchProductDetails(
-    ENDPOINTS.products.detail.replace(":id", id)
+    ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
   if (!product?.title) return { title: "404" };
 
@@ -34,7 +38,7 @@ export async function generateMetadata({
     title: price ? `${product.title} — ${price} AZN` : product.title,
     description: product.description,
     locale,
-    path: `/connectors-accessories/${id}`,
+    path: `/connectors-accessories/${product?.slug ?? id}`,
     image: product.image?.src ? BASE_URL + product.image.src : undefined,
   });
 }
@@ -46,7 +50,7 @@ const Page = async ({ params }: { params: Params }) => {
   const t = await getTranslations();
 
   const product = await fetchProductDetails(
-    ENDPOINTS.products.detail.replace(":id", id)
+    ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
 
   const {
@@ -64,19 +68,25 @@ const Page = async ({ params }: { params: Params }) => {
     <section
       className={`container max-lg:max-w-[90%] mt-18 ${roboto.className}`}
     >
-      <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.connectors"), href: "/connectors-accessories" }, { label: title }]} />
+      <Breadcrumb className="max-md:flex items-center flex-nowrap overflow-x-auto max-sm:[&>.MuiBreadcrumbs-ol]:!flex-nowrap" items={[{ label: "Elcar", href: "/" }, { label: t("pages.chargingStations"), href: "/charging-stations" }, { label: t("pages.connectors"), href: "/connectors-accessories" }, { label: title }]} />
+      <div className="mt-4">
+        <CompareButton product={product} variant="inline" />
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             productJsonLd({
               title,
               description,
               image: image?.src ? BASE_URL + image.src : undefined,
               brand: product?.brand?.name,
+              sku: product?.sku,
+              rating: product?.rating,
+              reviewCount: product?.reviewCount,
               price,
               discountedPrice,
-              url: `${SITE_URL}/${locale}/connectors-accessories/${id}`,
+              url: `${SITE_URL}/${locale}/connectors-accessories/${product?.slug ?? id}`,
             })
           ),
         }}
@@ -135,6 +145,12 @@ const Page = async ({ params }: { params: Params }) => {
           characteristicGroups={characteristicGroups}
           BASE_URL={BASE_URL || ""}
         />
+
+        <ProductBundle product={product} />
+
+        <ProductFacts product={product} />
+
+        <ProductReviews product={product} />
 
         <AddToCartButton product={product} />
       </div>

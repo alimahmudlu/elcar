@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { fetchData } from "@/api/request";
 import { ENDPOINTS } from "@/api/endpoints";
 import { LOCALES, SITE_URL } from "@/config/site";
+import { ENERGY_SECTIONS, isEnergySection } from "@/config/sections";
 
 export const revalidate = 3600;
 
@@ -16,6 +17,8 @@ const STATIC_PATHS = [
   "",
   "/charging-stations",
   "/connectors-accessories",
+  ...ENERGY_SECTIONS.map((section) => `/${section}`),
+  "/solar-calculator",
   "/blog",
   "/about",
   "/contact",
@@ -41,9 +44,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     for (const p of products) {
       if (!p.slug) continue;
-      // section: charging-stations | accessories | vehicles
-      const segment =
-        p.section === "accessories"
+      // section: charging-stations | accessories | vehicles | enerji bölmələri
+      const segment = p.section && isEnergySection(p.section)
+        ? p.section
+        : p.section === "accessories"
           ? "connectors-accessories"
           : p.section === "vehicles"
             ? "electric-vehicles"

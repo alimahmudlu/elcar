@@ -10,7 +10,7 @@
     "contact": "Əlaqə"
   },
   "header": {
-    "title": "Elektrikli Avtomobillər",
+    "title": "Enerji Həlləri",
     "cart": "Səbət",
     "emptyCart": "Səbətiniz boşdur",
     "clear": "Təmizlə",
@@ -51,8 +51,8 @@
   },
   "services": {
     "main": {
-      "title": "ELCAR - Azərbaycanda Elektrikli Avtomobillərin Distribüteri",
-      "subtitle": "ELCAR şirkəti <strong>Elektrikli Avtomobillər</strong>, bu avtomobillər üçün lazım olan hər növ <strong>Elektrik stansiyaları</strong>, <strong>Aksesuarlar</strong> və digər Elektrikli cihazları Çindən ən sərfəli qiymətlərlə sifariş verilərək Azərbaycana gətirilməsini təşkil edir.",
+      "title": "ELCAR — Azərbaycanda Elektrik və Enerji Həlləri",
+      "subtitle": "ELCAR <strong>elektromobil şarj stansiyaları</strong> və <strong>aksesuarlardan</strong> başlayaraq <strong>günəş panelləri</strong>, <strong>külək turbinləri</strong>, <strong>enerji saxlama sistemləri (BESS)</strong> və <strong>sənaye lazer avadanlıqlarına</strong> qədər elektriklə bağlı bütün həlləri ən sərfəli qiymətlərlə Azərbaycana gətirir, quraşdırır və servis dəstəyi göstərir.",
       "button": "Ətraflı məlumat"
     },
     "second": {
@@ -198,7 +198,7 @@
   },
   "footer": {
     "title": "Bütün haqqları qorunur!",
-    "about": "2022-ci ildən Azərbaycanda elektromobil şarj avadanlığının satışı və quraşdırılması ilə məşğuluq.",
+    "about": "2022-ci ildən Azərbaycanda elektromobil şarj avadanlığı, günəş və külək enerjisi sistemləri, enerji saxlama və lazer avadanlıqlarının satışı və quraşdırılması ilə məşğuluq.",
     "products": "Məhsullar",
     "company": "Şirkət",
     "contact": "Əlaqə",
@@ -252,5 +252,216 @@
     "output-power": "Çıxış gücü",
     "power-input": "Şəbəkə gərginliyi",
     "phase-number": "Faza sayı"
+  },
+  "sections": {
+    "price-on-request": "Qiymət sorğu ilə",
+    "request-quote": "Qiymət sorğusu göndər",
+    "whatsapp-message": "Salam, \"{product}\" haqqında məlumat və qiymət almaq istəyirəm.",
+    "home": {
+      "title": "Enerji Həlləri",
+      "subtitle": "Günəş və külək enerjisi sistemlərindən enerji saxlama həllərinə (BESS) və invertorlara qədər — bərpa olunan enerji üçün hər şey bir ünvanda",
+      "more": "Bölməyə keç"
+    },
+    "solar-energy": {
+      "name": "Günəş Enerjisi",
+      "short": "Günəş panelləri, invertorlar, montaj sistemləri və ev, biznes üçün hazır dəstlər.",
+      "title": "Azərbaycanda Günəş Panelləri və Günəş Enerjisi Sistemləri",
+      "subtitle": "ELCAR ev, biznes və sənaye obyektləri üçün günəş panelləri, şəbəkəyə qoşulan və avtonom invertorlar, montaj konstruksiyaları və hazır günəş stansiyası dəstləri təqdim edir. Layihələndirmə və quraşdırma xidməti ilə.",
+      "all-products": "Bütün Günəş Enerjisi Məhsulları",
+      "seo": {
+        "title": "Günəş Panelləri və İnvertorlar — Qiymətlər",
+        "description": "Bakıda günəş panelləri, hibrid və şəbəkə invertorları, montaj sistemləri və hazır günəş stansiyası dəstləri. Layihələndirmə və quraşdırma ilə."
+      }
+    },
+    "wind-energy": {
+      "name": "Külək Enerjisi",
+      "short": "Kiçik və orta güclü külək turbinləri, nəzarət cihazları və hibrid günəş-külək sistemləri.",
+      "title": "Külək Turbinləri və Külək Enerjisi Sistemləri",
+      "subtitle": "Fərdi evlər, fermer təsərrüfatları və sənaye obyektləri üçün şaquli və üfüqi oxlu külək turbinləri, şarj kontrollerləri və günəş enerjisi ilə birlikdə işləyən hibrid sistemlər.",
+      "all-products": "Bütün Külək Enerjisi Məhsulları",
+      "seo": {
+        "title": "Külək Turbinləri — Ev və Sənaye üçün",
+        "description": "Şaquli və üfüqi oxlu külək turbinləri, kontrollerlər və hibrid günəş-külək sistemləri. Azərbaycanda çatdırılma və quraşdırma."
+      }
+    },
+    "energy-storage": {
+      "name": "Enerji Saxlama (BESS)",
+      "short": "Ev batareyaları, kommersiya və sənaye BESS sistemləri, LiFePO4 akkumulyatorlar.",
+      "title": "Enerji Saxlama Sistemləri (BESS) və Batareyalar",
+      "subtitle": "Günəş və külək enerjisini saxlamaq, işıq kəsilmələrində ehtiyat enerji və pik yükləri azaltmaq üçün ev batareyaları, kommersiya və sənaye miqyaslı BESS konteynerləri, LiFePO4 akkumulyator modulları.",
+      "all-products": "Bütün Enerji Saxlama Sistemləri",
+      "seo": {
+        "title": "BESS Enerji Saxlama Sistemləri və Batareyalar",
+        "description": "Ev, kommersiya və sənaye üçün BESS sistemləri, LiFePO4 batareyalar, hibrid invertorlarla uyğun enerji saxlama həlləri. Bakıda quraşdırma."
+      }
+    },
+    "inverters": {
+      "name": "İnvertorlar",
+      "short": "Şəbəkəyə qoşulan, avtonom və hibrid invertorlar, mikroinvertorlar.",
+      "title": "Günəş İnvertorları: Şəbəkə, Avtonom və Hibrid",
+      "subtitle": "Günəş panellərindən alınan sabit cərəyanı (DC) ev və müəssisə şəbəkəsi üçün dəyişən cərəyana (AC) çevirən şəbəkəyə qoşulan, avtonom (off-grid) və hibrid invertorlar, eləcə də mikroinvertorlar. Batareya sistemləri ilə uyğunluq, quraşdırma və servis dəstəyi ilə.",
+      "all-products": "Bütün İnvertorlar",
+      "seo": {
+        "title": "Günəş İnvertorları — Hibrid, Şəbəkə və Avtonom",
+        "description": "Ev və müəssisələr üçün hibrid, şəbəkəyə qoşulan və avtonom günəş invertorları, mikroinvertorlar. BESS batareyaları ilə uyğun həllər, Bakıda quraşdırma və servis."
+      }
+    },
+    "laser-equipment": {
+      "name": "Lazer Avadanlıqları",
+      "short": "Lazer kəsmə, qaynaq, markalama və təmizləmə avadanlıqları.",
+      "title": "Sənaye Lazer Avadanlıqları: Kəsmə, Qaynaq, Markalama və Təmizləmə",
+      "subtitle": "Metal emalı və istehsal üçün fiber lazer kəsmə dəzgahları, əl və avtomatik lazer qaynaq aparatları, lazer markalama və lazerlə təmizləmə avadanlıqları. Quraşdırma, təlim və servis dəstəyi ilə.",
+      "all-products": "Bütün Lazer Avadanlıqları",
+      "seo": {
+        "title": "Lazer Kəsmə, Qaynaq və Markalama Avadanlıqları",
+        "description": "Fiber lazer kəsmə dəzgahları, lazer qaynaq, markalama və təmizləmə aparatları. Azərbaycanda satış, quraşdırma və servis."
+      }
+    }
+  },
+  "search": {
+    "button": "Axtar",
+    "placeholder": "Məhsul adı, brend və ya güc (məs. 22kW)",
+    "title": "Axtarış",
+    "results": "\"{q}\" üzrə {count} nəticə",
+    "empty": "\"{q}\" üzrə heç nə tapılmadı. Başqa söz və ya daha qısa sorğu yoxlayın.",
+    "prompt": "Axtarmaq üçün məhsul adını, brendi və ya gücünü yazın.",
+    "close": "Bağla"
+  },
+  "product-facts": {
+    "title": "Əsas məlumatlar",
+    "sku": "SKU / artikul",
+    "warranty": "Zəmanət",
+    "months": "{n} ay",
+    "years": "{n} il",
+    "documents": "Sənədlər",
+    "download": "Yüklə"
+  },
+  "compare": {
+    "add": "Müqayisə et",
+    "added": "Müqayisədədir",
+    "limit": "Ən çox {n} məhsulu müqayisə etmək olar",
+    "bar": "Müqayisə et ({n})",
+    "clear": "Təmizlə",
+    "title": "Məhsulların müqayisəsi",
+    "empty": "Müqayisə üçün məhsul seçilməyib. Məhsul kartındakı müqayisə düyməsi ilə 2–4 məhsul əlavə edin.",
+    "remove": "Çıxar",
+    "price": "Qiymət",
+    "brand": "Brend",
+    "model": "Model",
+    "category": "Kateqoriya",
+    "diffOnly": "Yalnız fərqləri göstər",
+    "more": "Daha bir məhsul əlavə edin",
+    "yes": "Bəli",
+    "no": "Xeyr"
+  },
+  "calculator": {
+    "nav": "Günəş sistemi hesablayıcısı",
+    "title": "Günəş Sistemi Hesablayıcısı",
+    "subtitle": "Aylıq elektrik istehlakınızı yazın — sizə lazım olan panel gücünü, invertoru və batareya tutumunu ilkin olaraq hesablayaq. Dəqiq layihə və qiymət üçün aşağıdakı formadan sorğu göndərin.",
+    "seo": {
+      "title": "Günəş Paneli Hesablayıcısı — Neçə Panel Lazımdır?",
+      "description": "Aylıq kVt·saat istehlakınıza görə günəş paneli sayını, invertor gücünü və batareya tutumunu hesablayın. Azərbaycan üçün pulsuz ilkin hesablama və quraşdırma təklifi."
+    },
+    "monthly": "Aylıq istehlak",
+    "monthly-hint": "Elektrik qəbzindəki kVt·saat",
+    "type": "Sistem növü",
+    "types": {
+      "on-grid": "Şəbəkəyə qoşulan",
+      "hybrid": "Hibrid (batareya ilə)",
+      "off-grid": "Avtonom (şəbəkəsiz)"
+    },
+    "type-hints": {
+      "on-grid": "Batareyasız, artıq enerji şəbəkəyə verilir",
+      "hybrid": "İşıq kəsiləndə batareyadan işləyir",
+      "off-grid": "Şəbəkə olmayan yerlər üçün"
+    },
+    "backup": "Ehtiyat müddəti",
+    "backup-unit": "saat",
+    "autonomy": "Günəşsiz günlər",
+    "autonomy-unit": "gün",
+    "advanced": "Əlavə parametrlər",
+    "sun-hours": "Günəş saatları (gündə)",
+    "sun-hours-hint": "Azərbaycanda illik orta ≈ 4",
+    "panel-watt": "Panelin gücü",
+    "result": "İlkin nəticə",
+    "daily": "Gündəlik istehlak",
+    "pv": "Panel gücü",
+    "panels": "Panel sayı",
+    "inverter": "İnvertor",
+    "battery": "Batareya tutumu",
+    "annual": "İllik istehsal (təxmini)",
+    "roof": "Lazımi dam sahəsi",
+    "pcs": "{n} ədəd",
+    "disclaimer": "Bu, ilkin planlama hesablamasıdır, layihə və ya qiymət təklifi deyil. Faktiki ölçü damın istiqamətindən, kölgədən, yük profilindən və avadanlığın texniki göstəricilərindən asılıdır. Dəqiq layihəni mühəndislərimiz yerində baxışdan sonra hazırlayır.",
+    "cta": "Bu hesablama ilə təklif istəyin",
+    "banner-title": "Neçə panel lazımdır?",
+    "banner-text": "Aylıq istehlakınıza görə panel, invertor və batareyanı 1 dəqiqəyə hesablayın.",
+    "banner-button": "Hesabla",
+    "customer": "Müştəri növü",
+    "customers": {
+      "home": "Ev",
+      "business": "Biznes",
+      "industry": "Sənaye / kənd təsərrüfatı"
+    },
+    "bill-now": "Aylıq qəbz (indi)",
+    "bill-solar": "Aylıq qəbz (günəşlə)",
+    "saving-year": "1 illik qənaət",
+    "saving-note": {
+      "home": "Qənaət Azərişıqın əhali tarifi ilə hesablanıb (200 kVt·saata qədər 8,4 qəpik, 200–300 arası 10 qəpik, 300-dən yuxarı 15 qəpik). Günəş əvvəlcə ən baha pilləni əvəz edir; şəbəkəyə verilən artıq enerji nəzərə alınmır.",
+      "business": "Qənaət qeyri-əhali tarifi ilə hesablanıb: 12,5 qəpik/kVt·saat (ƏDV daxil). Şəbəkəyə verilən artıq enerji nəzərə alınmır.",
+      "industry": "Qənaət sənaye və kənd təsərrüfatı tarifi ilə hesablanıb: 10,6 qəpik/kVt·saat (ƏDV daxil). Şəbəkəyə verilən artıq enerji nəzərə alınmır."
+    },
+    "saving-offgrid": "Avtonom sistemdə elektrik qəbzi olmadığı üçün qənaət hesablanmır.",
+    "coverage": "Günəş istehlakın neçə faizini örtsün",
+    "coverage-hint": "Büdcə məhduddursa azaldın. Evdə günəş əvvəlcə ən baha tarif pilləsini əvəz edir, ona görə kiçik sistem də nisbətən çox qənaət verir.",
+    "covered": "Günəşin örtdüyü pay"
+  },
+  "quote": {
+    "title": "Quraşdırma təklifi alın",
+    "subtitle": "Məlumatları göndərin — mühəndisimiz 1 iş günü ərzində sizinlə əlaqə saxlayacaq.",
+    "full-name": "Ad, soyad",
+    "phone": "Telefon",
+    "email": "E-poçt",
+    "object": "Obyekt növü",
+    "objects": {
+      "home": "Ev / villa",
+      "business": "Ofis / mağaza",
+      "industry": "Sənaye / ferma",
+      "other": "Digər"
+    },
+    "city": "Şəhər / rayon",
+    "note": "Əlavə qeyd",
+    "send": "Sorğu göndər",
+    "subject": "Təklif sorğusu",
+    "calc": "Hesablama",
+    "errors": {
+      "full-name": "Ad və soyadı hərflərlə yazın",
+      "phone": "Telefon nömrəsini yazın",
+      "email": "Düzgün e-poçt yazın"
+    }
+  },
+  "reviews": {
+    "title": "Müştəri rəyləri",
+    "average": "{n} rəy əsasında",
+    "empty": "Hələ rəy yoxdur. İlk rəyi siz yazın.",
+    "write": "Rəy yazın",
+    "name": "Adınız",
+    "rating": "Qiymətiniz",
+    "text": "Rəyiniz",
+    "text-hint": "Məhsuldan necə istifadə edirsiniz, nəyi bəyəndiniz, nəyi yox?",
+    "send": "Göndər",
+    "sent": "Təşəkkür edirik! Rəyiniz yoxlanıldıqdan sonra dərc olunacaq.",
+    "error": "Göndərmək alınmadı. Bir az sonra yenidən cəhd edin.",
+    "errors": {
+      "name": "Adınızı hərflərlə yazın",
+      "rating": "Ulduz seçin",
+      "text": "Ən azı 10 simvol yazın"
+    }
+  },
+  "bundle": {
+    "title": "Dəstə daxildir",
+    "separately": "Ayrı-ayrılıqda",
+    "saving": "Dəstlə qənaət",
+    "pcs": "{n} ədəd"
   }
 }

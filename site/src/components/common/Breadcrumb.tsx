@@ -3,6 +3,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import { getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SITE_URL } from "@/config/site";
+import { jsonLdHtml } from "@/lib/seo";
 
 export type Crumb = {
   label: string;
@@ -76,7 +77,7 @@ export default async function Breadcrumb({ items, className }: Props) {
       </Breadcrumbs>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }}
       />
     </>
   );

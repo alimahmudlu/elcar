@@ -284,7 +284,6 @@
             }
         }
     },
-
     {
         "_id": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
         "config": {
@@ -348,7 +347,6 @@
             }
         }
     },
-
     {
         "_id": "bc2f1cad-4445-4675-bf0a-b8708855bf04",
         "config": {
@@ -574,7 +572,6 @@
             }
         }
     },
-
     {
         "_id": "8555d524-62bc-4c45-a843-e8bacabb1679",
         "config": {
@@ -800,7 +797,6 @@
             }
         }
     },
-
     {
         "_id": "192ceefe-ea54-4e4d-9834-2944081e2f8c",
         "config": {
@@ -1026,7 +1022,1131 @@
             }
         }
     },
-
+    {
+        "_id": "c99aeca1-4bdf-549d-9b2d-aa634d48596a",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "solar-energy",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-solar-energy",
+                "i18n": {
+                    "path": "apps/elcar/products/solar-energy/index",
+                    "slug": {
+                        "az": "/elcar/solar-energy",
+                        "en": "/elcar/solar-energy",
+                        "ru": "/elcar/solar-energy"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Günəş enerjisi",
+            "en": "Solar energy",
+            "ru": "Солнечная энергия"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiSolarPower",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "solar-energy",
+                            "title": "Solar product"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "solar-energy"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "870ab479-10a2-5d32-a272-62563af512ec",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "solar-energy",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-solar-energy-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/solar-energy/_detail/index",
+                    "slug": {
+                        "az": "/elcar/solar-energy/:detail",
+                        "en": "/elcar/solar-energy/:detail",
+                        "ru": "/elcar/solar-energy/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiSolarPower",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "solar-energy"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "237a5c77-4cc9-543a-8211-d1b769be9f9d",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "solar-energy",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-solar-energy-add",
+                "i18n": {
+                    "path": "apps/elcar/products/solar-energy/add/index",
+                    "slug": {
+                        "az": "/elcar/solar-energy/add",
+                        "en": "/elcar/solar-energy/add",
+                        "ru": "/elcar/solar-energy/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiSolarPower",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "solar-energy"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "2ad99c49-9290-5a77-90dd-f80e1b0b11cd",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "wind-energy",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-wind-energy",
+                "i18n": {
+                    "path": "apps/elcar/products/wind-energy/index",
+                    "slug": {
+                        "az": "/elcar/wind-energy",
+                        "en": "/elcar/wind-energy",
+                        "ru": "/elcar/wind-energy"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Külək enerjisi",
+            "en": "Wind energy",
+            "ru": "Ветровая энергия"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiWindTurbine",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "wind-energy",
+                            "title": "Wind product"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "wind-energy"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "3ac9ae6c-6508-5789-b887-d59e6d321905",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "wind-energy",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-wind-energy-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/wind-energy/_detail/index",
+                    "slug": {
+                        "az": "/elcar/wind-energy/:detail",
+                        "en": "/elcar/wind-energy/:detail",
+                        "ru": "/elcar/wind-energy/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiWindTurbine",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "wind-energy"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "ea33b60f-8e9f-535c-91ae-a52767f9c150",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "wind-energy",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-wind-energy-add",
+                "i18n": {
+                    "path": "apps/elcar/products/wind-energy/add/index",
+                    "slug": {
+                        "az": "/elcar/wind-energy/add",
+                        "en": "/elcar/wind-energy/add",
+                        "ru": "/elcar/wind-energy/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiWindTurbine",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "wind-energy"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "0cf7c5bd-3575-52e1-a305-5a42dbd56841",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "energy-storage",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-energy-storage",
+                "i18n": {
+                    "path": "apps/elcar/products/energy-storage/index",
+                    "slug": {
+                        "az": "/elcar/energy-storage",
+                        "en": "/elcar/energy-storage",
+                        "ru": "/elcar/energy-storage"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Enerji saxlama (BESS)",
+            "en": "Energy storage (BESS)",
+            "ru": "Накопители энергии (BESS)"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiHomeBattery",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "energy-storage",
+                            "title": "Energy storage product"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "energy-storage"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "ee52268d-0334-5c1f-8f1b-f2945be51fc2",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "energy-storage",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-energy-storage-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/energy-storage/_detail/index",
+                    "slug": {
+                        "az": "/elcar/energy-storage/:detail",
+                        "en": "/elcar/energy-storage/:detail",
+                        "ru": "/elcar/energy-storage/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiHomeBattery",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "energy-storage"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "031bad0d-c328-5ffb-a9ef-8e813401743e",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "energy-storage",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-energy-storage-add",
+                "i18n": {
+                    "path": "apps/elcar/products/energy-storage/add/index",
+                    "slug": {
+                        "az": "/elcar/energy-storage/add",
+                        "en": "/elcar/energy-storage/add",
+                        "ru": "/elcar/energy-storage/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiHomeBattery",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "energy-storage"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "5e469832-ea26-5776-9280-2deb2706da67",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "inverters",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-inverters",
+                "i18n": {
+                    "path": "apps/elcar/products/inverters/index",
+                    "slug": {
+                        "az": "/elcar/inverters",
+                        "en": "/elcar/inverters",
+                        "ru": "/elcar/inverters"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "İnvertorlar",
+            "en": "Inverters",
+            "ru": "Инверторы"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiCurrentAc",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "inverters",
+                            "title": "Inverter"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "inverters"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "d75980a6-0130-5c05-b4aa-5eb4c5ab7e2f",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "inverters",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-inverters-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/inverters/_detail/index",
+                    "slug": {
+                        "az": "/elcar/inverters/:detail",
+                        "en": "/elcar/inverters/:detail",
+                        "ru": "/elcar/inverters/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCurrentAc",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "inverters"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "a7731114-b26b-5999-8bb5-c97b108c278e",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "inverters",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-inverters-add",
+                "i18n": {
+                    "path": "apps/elcar/products/inverters/add/index",
+                    "slug": {
+                        "az": "/elcar/inverters/add",
+                        "en": "/elcar/inverters/add",
+                        "ru": "/elcar/inverters/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiCurrentAc",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "inverters"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "4bef1bd9-5207-5b82-843a-b6a36378be19",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "laser-equipment",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-laser-equipment",
+                "i18n": {
+                    "path": "apps/elcar/products/laser-equipment/index",
+                    "slug": {
+                        "az": "/elcar/laser-equipment",
+                        "en": "/elcar/laser-equipment",
+                        "ru": "/elcar/laser-equipment"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Lazer avadanlıqları",
+            "en": "Laser equipment",
+            "ru": "Лазерное оборудование"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiLaserPointer",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "laser-equipment",
+                            "title": "Laser product"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "laser-equipment"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "42eef42a-5f81-54e7-8c5b-4f9c773b7b2a",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "laser-equipment",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-laser-equipment-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/laser-equipment/_detail/index",
+                    "slug": {
+                        "az": "/elcar/laser-equipment/:detail",
+                        "en": "/elcar/laser-equipment/:detail",
+                        "ru": "/elcar/laser-equipment/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiLaserPointer",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "laser-equipment"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "064b1222-66de-508b-8ed7-ccf7b64cdf50",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "laser-equipment",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-laser-equipment-add",
+                "i18n": {
+                    "path": "apps/elcar/products/laser-equipment/add/index",
+                    "slug": {
+                        "az": "/elcar/laser-equipment/add",
+                        "en": "/elcar/laser-equipment/add",
+                        "ru": "/elcar/laser-equipment/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiLaserPointer",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "laser-equipment"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
     {
         "_id": "0ad4533c-95c9-4862-88c6-2b9822c56595",
         "config": {
@@ -1533,7 +2653,6 @@
             }
         }
     },
-
     {
         "_id": "5a0b37f0-d18e-4a24-9f0e-f9905111eadf",
         "config": {
@@ -1670,7 +2789,6 @@
             }
         }
     },
-
     {
         "_id": "a29f7af7-520c-4c13-84a4-36c370857609",
         "config": {
@@ -1739,7 +2857,74 @@
             }
         }
     },
-
+    {
+        "_id": "5be0b7c5-a560-5ab2-bd05-04fa49147e4b",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "reviews",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-reviews",
+                "i18n": {
+                    "path": "apps/elcar/reviews/index",
+                    "slug": {
+                        "az": "/elcar/reviews",
+                        "en": "/elcar/reviews",
+                        "ru": "/elcar/reviews"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Rəylər",
+            "en": "Reviews",
+            "ru": "Отзывы"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiStarOutline",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": []
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarReviewsDataTable",
+                        "options": {
+                            "section": "reviews"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
     {
         "_id": "adf051ca-dedb-4648-9cf7-f522c76d66b9",
         "config": {
@@ -1965,7 +3150,6 @@
             }
         }
     },
-
     {
         "_id": "48c904f4-9fb8-42d7-9448-99e775b958c7",
         "config": {
