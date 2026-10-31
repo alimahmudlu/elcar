@@ -140,7 +140,9 @@ xətada isə forma "göndərildi" göstərirdi; JSON-LD `<script>` XSS; sabit 5 
   nginx konfiqurasiyasına bu sətir əlavə edilməlidir** (repodakı `nginx_confs/nginx_elcar-api.conf.txt`
   artıq yenilənib):
   `proxy_set_header X-Real-IP $remote_addr;` → sonra `sudo nginx -t && sudo systemctl reload nginx`.
-  Başlıq olmasa limit sadəcə işləmir (sayt sınmır), API logunda xəbərdarlıq çıxır.
+  Başlıq olmasa IP-si bilinməyən bütün sorğular bir ortaq limitlə sayılır (20 qat yüksək:
+  100 mesaj / 60 rəy / 10 dəq) və API logunda xəbərdarlıq çıxır. Limit REST və Socket.IO
+  üçün eyni işləyir.
 - Mesaj bildirişləri `NOTIFY_EMAIL` ünvanına gedir (API `.env`), boşdursa `info@elcar.az`.
   Əvvəl şəxsi ünvana gedirdi.
 

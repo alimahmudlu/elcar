@@ -14,22 +14,31 @@ setInterval(() => {
 
 let warned = false;
 
+// IP bilinməyən bütün sorğular (məs. nginx X-Real-IP göndərmir) bir ortaq
+// açar altında, daha yüksək limitlə sayılır: normal trafik bloklanmır,
+// amma limitsiz spam da mümkün olmur
+const UNKNOWN_IP_MULTIPLIER = 20;
+
 module.exports = ({ max = 5, windowMs = 10 * 60 * 1000, key = 'default' } = {}) => {
     return context => {
-        const ip = context.params.clientIp;
+        // Daxili (serverin öz) çağırışları limitlənmir
+        if (!context.params.provider) return context;
 
-        // IP bilinmirsə (məs. nginx X-Real-IP göndərmir) limit tətbiq olunmur —
-        // yoxsa bütün istifadəçilər bir "127.0.0.1" kimi birlikdə bloklanardı
+        const ip = context.params.clientIp;
+        let limit = max;
+        let subject = ip;
+
         if (!ip) {
             if (!warned) {
                 console.warn('[rate-limit] client IP unknown — add "proxy_set_header X-Real-IP $remote_addr;" to nginx');
                 warned = true;
             }
-            return context;
+            limit = max * UNKNOWN_IP_MULTIPLIER;
+            subject = 'unknown-ip';
         }
 
         const now = Date.now();
-        const id = `${key}:${ip}`;
+        const id = `${key}:${subject}`;
         let entry = hits.get(id);
 
         if (!entry || entry.resetAt <= now) {
@@ -39,7 +48,7 @@ module.exports = ({ max = 5, windowMs = 10 * 60 * 1000, key = 'default' } = {}) 
 
         entry.count += 1;
 
-        if (entry.count > max) {
+        if (entry.count > limit) {
             const retryAfter = Math.ceil((entry.resetAt - now) / 1000);
             throw new TooManyRequests('Too many requests, please try again later', { retryAfter });
         }
