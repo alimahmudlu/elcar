@@ -132,11 +132,22 @@ xətada isə forma "göndərildi" göstərirdi; JSON-LD `<script>` XSS; sabit 5 
    (admin/user rollarına `reviews` və enerji bölmələri hüquqları; kateqoriyalar).
 3. **Admin**, sonra **sayt**.
 
+### Spam qoruması və bildirişlər
+
+- Saytdan bir IP-dən 10 dəqiqədə ən çox **5 mesaj/təklif sorğusu** və **3 rəy** qəbul olunur
+  (artıq olanlar 429 alır). Rəydə əlavə olaraq bot tələsi var.
+- Limit üçün API müştərinin IP-sini nginx-in `X-Real-IP` başlığından oxuyur. **Serverdə API
+  nginx konfiqurasiyasına bu sətir əlavə edilməlidir** (repodakı `nginx_confs/nginx_elcar-api.conf.txt`
+  artıq yenilənib):
+  `proxy_set_header X-Real-IP $remote_addr;` → sonra `sudo nginx -t && sudo systemctl reload nginx`.
+  Başlıq olmasa limit sadəcə işləmir (sayt sınmır), API logunda xəbərdarlıq çıxır.
+- Mesaj bildirişləri `NOTIFY_EMAIL` ünvanına gedir (API `.env`), boşdursa `info@elcar.az`.
+  Əvvəl şəxsi ünvana gedirdi.
+
 ### Açıq qalan məsələlər
 
-- Rəy və sorğu formalarında sürət limiti (rate limit) yoxdur — yalnız bot tələsi var.
-  Spam olarsa nginx `limit_req` və ya API-də limit əlavə edilməlidir.
-- `send-message-to-email` hook-u bildirişləri `info@elcar.az` əvəzinə şəxsi
-  ünvana göndərir — ünvan biznes tərəfindən yoxlanılmalıdır.
+- Limit yaddaşda saxlanılır — API yenidən başlayanda sıfırlanır və yalnız bir API prosesi
+  üçün düzgündür (hazırkı PM2 fork rejimi). Bir neçə nüsxəyə keçilərsə Redis lazım olacaq.
+- Yeni rəy gələndə e-poçt bildirişi yoxdur — rəylər admin → Rəylər-dən izlənilir.
 - Admin dəyişiklikləri (forma sahələri, Rəylər səhifəsi) lokal olaraq işə salınıb
   yoxlanılmayıb — API və baza olmadan admin açılmır.

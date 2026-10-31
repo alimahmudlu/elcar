@@ -6,6 +6,7 @@ const { Types } = require('mongoose');
 const allowForSite = require('../../../hooks/allow-for-site');
 const checkAbilities = require('../../../hooks/check-abilities');
 const sortData = require('../../../hooks/sort-data');
+const rateLimit = require('../../../hooks/rate-limit');
 const { clearProductsCache } = require('../products/products.cache');
 
 // Sayt yalnız təsdiqlənmiş rəyləri, yalnız lazımi sahələrlə və məhsula görə görür
@@ -106,7 +107,8 @@ module.exports = {
         all: [],
         find: [ iff(allowForSite(), siteFindQuery()).else(...adminOnly, populateProductForAdmin(), sortData()) ],
         get: [ ...adminOnly ],
-        create: [ iff(allowForSite({ methods: [ 'create' ] }), sanitizeSiteReview()).else(...adminOnly) ],
+        // Saytdan: bir IP-dən 10 dəqiqədə ən çox 3 rəy
+        create: [ iff(allowForSite({ methods: [ 'create' ] }), rateLimit({ key: 'reviews', max: 3 }), sanitizeSiteReview()).else(...adminOnly) ],
         update: [ ...adminOnly ],
         patch: [ ...adminOnly ],
         remove: [ ...adminOnly ]
