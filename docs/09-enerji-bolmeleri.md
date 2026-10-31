@@ -153,3 +153,5 @@ xətada isə forma "göndərildi" göstərirdi; JSON-LD `<script>` XSS; sabit 5 
 - Yeni rəy gələndə e-poçt bildirişi yoxdur — rəylər admin → Rəylər-dən izlənilir.
 - Admin dəyişiklikləri (forma sahələri, Rəylər səhifəsi) lokal olaraq işə salınıb
   yoxlanılmayıb — API və baza olmadan admin açılmır.
+
+> Developer üçün addım-addım deploy bələdçisi: [10-deploy-energy-sections.md](10-deploy-energy-sections.md)
