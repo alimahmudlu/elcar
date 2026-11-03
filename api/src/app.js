@@ -12,6 +12,7 @@ const casl = require('feathers-casl');
 const cronJobs = require('./cron-jobs');
 
 const middleware = require('./middleware');
+const clientIp = require('./middleware/client-ip');
 const services = require('./services');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
@@ -56,7 +57,17 @@ app.use('/', express.static(app.get('public')));
 
 // Set up Plugins and providers
 app.configure(express.rest());
-app.configure(socketio());
+// Socket.IO bağlantıları da rate limit üçün müştəri IP-sini alır
+// (yoxsa limit websocket üzərindən yan keçilə bilərdi)
+app.configure(socketio(io => {
+    io.use((socket, next) => {
+        socket.feathers = {
+            ...(socket.feathers || {}),
+            clientIp: clientIp(socket.handshake.address, socket.handshake.headers)
+        };
+        next();
+    });
+}));
 
 app.configure(mongoose);
 

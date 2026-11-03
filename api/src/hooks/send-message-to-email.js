@@ -6,10 +6,9 @@ const { messages } = require( '../email-templates' );
 module.exports = (options = {}) => {
     return async context => {
 
-        console.log()
-
+        // Bildiriş ünvanı .env-dən (NOTIFY_EMAIL), yoxdursa info@elcar.az
         await sendMail( {
-            to: 'kamal.balaev@gmail.com',//'info@elcar.az',
+            to: process.env.NOTIFY_EMAIL || 'info@elcar.az',
             replyTo: 'info@elcar.az',
             subject: 'İstifadəçi mesajı',
             template: 'messages',
