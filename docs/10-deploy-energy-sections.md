@@ -89,6 +89,20 @@ mongosh "$MONGO_URI" /path/to/2026-10-energy-sections.mongosh.js
 Gözlənilən çıxış: `module_permissions ...: +solar-energy, ...`, `+reviews`,
 `categories: + ...` və sonda `Hazırdır.` Təkrar işə salmaq təhlükəsizdir.
 
+### 2.4b. Xüsusiyyətlər miqrasiyası (enerji bölmələri)
+
+`db/migrations/2026-11-energy-characteristics.mongosh.js` — günəş, külək, BESS,
+invertor və lazer üçün 15 qrup, 78 xüsusiyyət və 98 filtr seçimi yaradır
+(AZ/EN/RU). 2.4-dən **sonra** işə salınmalıdır (kateqoriyalara bağlanır).
+İdempotentdir; admin-də sonradan edilən dəyişikliklərə toxunmur.
+
+```bash
+mongosh "$MONGO_URI" /path/to/2026-11-energy-characteristics.mongosh.js
+```
+
+Gözlənilən çıxış: `+ group ...`, `+ char ...` sətirləri və sonda
+`Hazırdır. Yeni: 15 qrup, 78 xüsusiyyət, 98 seçim.` Kod deploy tələb etmir.
+
 ### 2.5. Admin
 
 ```bash
