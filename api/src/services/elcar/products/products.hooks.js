@@ -253,31 +253,35 @@ const setItemForSite = async (item, options, lang, list) => {
 const filterQueries = () => {
     return context => {
 
+        // Qeyd: qlobal set-queries hook-u (api-query-params) parametrləri buraya
+        // çatmadan çevirir: priceRange[]=500&priceRange[]=900 → { $in: [500, 900] },
+        // q=550 → 550 (rəqəm), q=a,b → { $in: ['a', 'b'] }. Hər iki forma qəbul olunur.
         const { priceRange } = context.params.query
+        delete context.params.query.priceRange
 
-        if (priceRange) {
+        const range = (Array.isArray(priceRange) ? priceRange : priceRange?.$in || [])
+            .map(Number)
+            .filter(Number.isFinite)
 
-            context.params.query = {
-                ...context.params.query,
-                discountedPrice: {
-                    $gte: priceRange[0],
-                    $lte: priceRange[1],
-                }
+        if (range.length === 2) {
+            context.params.query.discountedPrice = {
+                $gte: Math.min(...range),
+                $lte: Math.max(...range),
             }
-
-            delete context.params.query.priceRange
-
         }
 
         // Mətnlə axtarış (?q=...): hər söz məhsul adında (az/en/ru) olmalıdır.
         // $regex operatoru whitelist-də olmadığı üçün RegExp obyekti istifadə olunur.
-        const { q } = context.params.query
+        const rawQ = context.params.query.q
         delete context.params.query.q
+        const q = Array.isArray(rawQ?.$in) ? rawQ.$in.join(' ')
+            : (typeof rawQ === 'string' || typeof rawQ === 'number') ? String(rawQ)
+            : ''
 
         context.params.query.$and = []
 
-        if (typeof q === 'string' && q.trim()) {
-            q.trim().slice(0, 100).split(/\s+/).slice(0, 8).forEach(word => {
+        if (q.trim()) {
+            q.trim().slice(0, 100).split(/[\s,]+/).filter(Boolean).slice(0, 8).forEach(word => {
                 const pattern = new RegExp(word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i')
                 context.params.query.$and.push({
                     $or: ['az', 'en', 'ru'].map(lang => ({ [`title.${lang}`]: pattern }))
