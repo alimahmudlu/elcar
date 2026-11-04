@@ -2,7 +2,9 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { fetchData } from "@/api/request";
 import { formatDate } from "@/lib/utils";
+import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
 import { BlogType } from "@/types";
+import { notFound } from "next/navigation";
 import { Card, CardContent } from "@mui/material";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Roboto } from "next/font/google";
@@ -48,6 +50,9 @@ export default async function Page({ params }: { params: Params }) {
   const locale = await getLocale();
 
   const blog = await fetchData(ENDPOINTS.blog.detail.replace(":id", id));
+  if (!blog?.title) notFound();
+  redirectToLocalizedSlug(locale, "/blog", id, blog.slug);
+
   const similarBlogs = await fetchData(
     ENDPOINTS.blog.list +
       `?filter=` +

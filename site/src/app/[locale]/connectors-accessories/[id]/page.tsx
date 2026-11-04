@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
+import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
 import { SITE_URL } from "@/config/site";
 import type { ProductType } from "@/types";
 import Breadcrumb from "@/components/common/Breadcrumb";
@@ -52,6 +54,8 @@ const Page = async ({ params }: { params: Params }) => {
   const product = await fetchProductDetails(
     ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
+  if (!product?.title) notFound();
+  redirectToLocalizedSlug(locale, "/connectors-accessories", id, product.slug);
 
   const {
     title,

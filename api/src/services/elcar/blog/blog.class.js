@@ -1,4 +1,5 @@
 const { Service } = require('feathers-mongoose');
+const findBySlug = require('../find-by-slug');
 
 exports.Blog = class Blog extends Service {
 
@@ -6,7 +7,8 @@ exports.Blog = class Blog extends Service {
 
 exports.SiteBlog = class SiteBlog extends Service {
     get(slug, params) {
-        const lang = params.headers['content-language'], key = `slug.${lang}`;
-        return this.options.Model.findOne({[key]: slug, params}).select(params.query.select);
+        return findBySlug(slug, params, key =>
+            this.options.Model.findOne({[key]: slug}).select(params.query.select)
+        )
     }
 };
