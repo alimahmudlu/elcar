@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
+import { formatCharacteristicValue } from "@/lib/characteristicValue";
 import { CONTACT, SITE_URL } from "@/config/site";
 import type { EnergySection } from "@/config/sections";
 import type { ProductType } from "@/types";
@@ -158,7 +159,12 @@ const SectionDetailPage = async ({
                     className="flex flex-col gap-1 text-[16px] max-sm:text-sm dark:text-secondary-foreground"
                   >
                     <span>{item.name}</span>
-                    <span className="font-bold">{String(item.value)}</span>
+                    <span className="font-bold">
+                      {formatCharacteristicValue(item.value, {
+                        yes: t("compare.yes"),
+                        no: t("compare.no"),
+                      })}
+                    </span>
                   </li>
                 ))}
               </ul>
