@@ -380,7 +380,13 @@ export default {
         },
 
         characteristics() {
-            return structuredClone(this.$store.state.data.allCharacteristics)
+            return structuredClone(this.sortedCharacteristics)
+        },
+
+        // API admin üçün ən yenidən köhnəyə qaytarır — formada yaradılma sırası lazımdır.
+        // Məhsul saxlananda bu sıra saytdakı göstəricilərin sırası olur.
+        sortedCharacteristics() {
+            return this.byCreation(this.$store.state.data.allCharacteristics)
         },
 
         // Dəstə daxil edilə bilən məhsullar (bütün bölmələrdən, cari məhsuldan başqa)
@@ -591,8 +597,13 @@ export default {
             return this.characteristicGroups.find(group => group._id === id)
         },
 
+        // ObjectId yaradılma vaxtı ilə artır, ona görə mətn kimi müqayisə kifayətdir
+        byCreation(items) {
+            return [ ...(items || []) ].sort((a, b) => (a._id < b._id ? -1 : 1))
+        },
+
         characteristicsByGroup(group) {
-            return this.$store.state.data.allCharacteristics.filter(char => char.group === group)
+            return this.sortedCharacteristics.filter(char => char.group === group)
         },
 
         characteristicById(id) {
@@ -600,7 +611,8 @@ export default {
         },
 
         charOptions(id) {
-            return this.$store.state.data['characteristic-options']?.filter(option => option.characteristic._id === id)
+            return this.byCreation(this.$store.state.data['characteristic-options'])
+                .filter(option => option.characteristic._id === id)
         },
 
         charComponent(id) {
