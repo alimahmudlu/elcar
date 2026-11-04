@@ -48,7 +48,7 @@ const ProductHero = ({ product }: { product: ProductType }) => {
                     )}
                   </div>
 
-                  {product?.discount && (
+                  {(product?.discount ?? 0) > 0 && (
                     <div className="absolute rotate-6 -top-2 left-2 w-9 h-9 rounded-full bg-orange-500 text-white flex justify-center items-center text-xs font-bold shadow">
                       -{product?.discount}%
                     </div>
