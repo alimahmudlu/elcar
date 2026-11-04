@@ -26,26 +26,16 @@ const LanguageSwitcher = ({ currentLocale }: { currentLocale: string }) => {
     languages.find((lang) => lang.code === currentLocale) || languages[0];
 
   const switchLanguage = (locale: string) => {
-    let newPath: string;
-    if (locale === "az") {
-      const segments = pathname.split("/");
-      if (segments[1] === "en" || segments[1] === "ru") {
-        segments.splice(1, 1);
-        newPath = "/az/" + segments.join("/") || "/";
-      } else {
-        newPath = pathname;
-      }
+    // Bütün dillərin ünvanı dil prefiksi ilə başlayır (/az/..., /en/..., /ru/...)
+    const segments = pathname.split("/");
+    if (languages.some((lang) => lang.code === segments[1])) {
+      segments[1] = locale;
     } else {
-      if (currentLocale === "az") {
-        newPath = `/${locale}${pathname}`;
-      } else {
-        const segments = pathname.split("/");
-        segments[1] = locale;
-        newPath = segments.join("/");
-      }
+      segments.splice(1, 0, locale);
     }
 
-    router.push(newPath);
+    const newPath = segments.join("/").replace(/\/$/, "");
+    router.push(newPath + window.location.search);
     // setIsOpen(false);
   };
 
