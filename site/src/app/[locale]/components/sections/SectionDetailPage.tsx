@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
 import { formatCharacteristicValue } from "@/lib/characteristicValue";
+import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
 import { CONTACT, SITE_URL } from "@/config/site";
 import type { EnergySection } from "@/config/sections";
 import type { ProductType } from "@/types";
@@ -60,6 +61,7 @@ const SectionDetailPage = async ({
   const t = await getTranslations();
   const product = await getProduct(id);
   if (!product?.title) notFound();
+  redirectToLocalizedSlug(locale, `/${section}`, id, product.slug);
 
   const {
     title,

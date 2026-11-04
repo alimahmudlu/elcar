@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
+import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
 import { SITE_URL } from "@/config/site";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { Roboto } from "next/font/google";
@@ -58,6 +60,8 @@ const Page = async ({ params }: { params: Params }) => {
   const product: ProductType = await fetchProductDetails(
     ENDPOINTS.products.detail.replace(":id", encodeURIComponent(id))
   );
+  if (!product?.title) notFound();
+  redirectToLocalizedSlug(locale, "/charging-stations", id, product.slug);
 
   const {
     title,
