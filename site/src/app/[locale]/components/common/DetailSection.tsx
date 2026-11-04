@@ -6,13 +6,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import type { Swiper as SwiperType } from "swiper";
+import { useTranslations } from "next-intl";
+import { formatCharacteristicValue } from "@/lib/characteristicValue";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
 interface Characteristic {
   name: string;
-  value: string | number | null;
+  value: string | number | boolean | string[] | null;
 }
 
 interface GroupImage {
@@ -27,7 +29,8 @@ interface CharacteristicGroup {
   title: string;
   description?: string;
   characteristics: Characteristic[];
-  image: GroupImage[];
+  // API tək şəkli obyekt, şəkilsiz qrupu null kimi qaytara bilər
+  image?: GroupImage | GroupImage[] | null;
   photo?: GroupPhoto;
 }
 
@@ -42,10 +45,18 @@ const DetailSection: React.FC<DetailSectionProps> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const swiperRef = useRef<SwiperType | null>(null);
+  const t = useTranslations();
+  const labels = { yes: t("compare.yes"), no: t("compare.no") };
 
   return (
     <div className="w-full overflow-hidden">
       {characteristicGroups.map((group, index) => {
+        const images: GroupImage[] = Array.isArray(group.image)
+          ? group.image
+          : group.image?.src
+            ? [group.image]
+            : [];
+
         return (
           <div
             key={index}
@@ -70,7 +81,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
                       {char.name ?? "-- --"}:
                     </span>
                     <span className="text-right break-words min-w-0">
-                      {char.value ?? "-- --"}
+                      {formatCharacteristicValue(char.value, labels) ?? "-- --"}
                     </span>
                   </div>
                 ))}
@@ -109,28 +120,25 @@ const DetailSection: React.FC<DetailSectionProps> = ({
                     },
                   }}
                 >
-                  {/* Şəkli olmayan qrupda (image: []) əvvəl group.image[0].src xəta verirdi */}
-                  {Array.isArray(group.image) && group.image.length > 0 ? (
-                    group.image.map((img, idx) => (
-                      <SwiperSlide key={idx} className="w-full">
-                        <div className="w-full flex items-center justify-center p-2 sm:p-4">
-                          <div className="relative w-full max-w-lg mx-auto">
-                            <Image
-                              src={`${BASE_URL}/${img.src}`}
-                              alt={group.title}
-                              width={800}
-                              height={600}
-                              className="w-full h-auto object-contain rounded-md max-h-80 sm:max-h-96"
-                              style={{
-                                maxWidth: "100%",
-                                height: "auto",
-                              }}
-                            />
-                          </div>
+                  {images.map((img, idx) => (
+                    <SwiperSlide key={idx} className="w-full">
+                      <div className="w-full flex items-center justify-center p-2 sm:p-4">
+                        <div className="relative w-full max-w-lg mx-auto">
+                          <Image
+                            src={`${BASE_URL}/${img.src}`}
+                            alt={group.title}
+                            width={800}
+                            height={600}
+                            className="w-full h-auto object-contain rounded-md max-h-80 sm:max-h-96"
+                            style={{
+                              maxWidth: "100%",
+                              height: "auto",
+                            }}
+                          />
                         </div>
-                      </SwiperSlide>
-                    ))
-                  ) : null}
+                      </div>
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
 
@@ -156,12 +164,9 @@ const DetailSection: React.FC<DetailSectionProps> = ({
                 opacity-0 translate-x-4 pointer-events-none
                 group-hover:opacity-100 group-hover:translate-x-0 rounded-full group-hover:pointer-events-auto 
                 text-gray-700 disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
-                disabled={currentIndex === group.image.length * 2 - 1}
+                disabled={currentIndex >= images.length - 1}
                 onClick={() => {
-                  if (
-                    swiperRef.current &&
-                    currentIndex < group.image.length * 2 - 1
-                  ) {
+                  if (swiperRef.current && currentIndex < images.length - 1) {
                     swiperRef.current.slideNext();
                   }
                 }}
@@ -170,13 +175,15 @@ const DetailSection: React.FC<DetailSectionProps> = ({
               </button>
 
               {/* Slide Counter */}
-              <div
-                className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 
-                bg-black/50 text-white px-3 py-1 rounded-full text-sm opacity-0 
-                group-hover:opacity-100 transition-opacity duration-300"
-              >
-                {currentIndex + 1} / {group.image.length * 2}
-              </div>
+              {images.length > 0 && (
+                <div
+                  className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10
+                  bg-black/50 text-white px-3 py-1 rounded-full text-sm opacity-0
+                  group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  {currentIndex + 1} / {images.length}
+                </div>
+              )}
             </div>
           </div>
         );
