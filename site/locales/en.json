@@ -2,7 +2,6 @@
   "pages": {
     "home": "Home",
     "chargingStations": "Charging Stations",
-    "electricVehicles": "Electric Vehicles",
     "connectors": "Connectors and Accessories",
     "blog": "Blog",
     "ourCompany": "Our Company",
@@ -55,26 +54,10 @@
       "subtitle": "From <strong>EV charging stations</strong> and <strong>accessories</strong> to <strong>solar panels</strong>, <strong>wind turbines</strong>, <strong>battery energy storage systems (BESS)</strong> and <strong>industrial laser equipment</strong>, ELCAR supplies, installs and services electrical solutions across Azerbaijan at the best prices.",
       "button": "More information"
     },
-    "second": {
-      "title": "Electric Vehicles",
-      "subtitle": "Discover today's Electric Cars with modern, environmentally friendly and economical technologies"
-    },
     "third": {
       "title": "Charging stations",
       "subtitle": "Discover the new Charging Stations for Electric Vehicles, which differ in terms of charging speeds and connector types"
     }
-  },
-  "popular-cars": {
-    "title": "Most Popular Electric Cars",
-    "subtitle": "We present to you the most liked and preferred Electric Cars with both comfort, functionality and modern design",
-    "battery": "Battery",
-    "fuel-type": "Fuel type",
-    "max-speed": "Max speed",
-    "max-horsepower": "Max horsepower"
-  },
-  "brands": {
-    "title": "Explore Best Selling Electric Car Makes",
-    "subtitle": "We present to you the most well-known, high-quality and best-selling Electric Car Brands in the whole world and in our country"
   },
   "charging-stations": {
     "title": "Latest Charging Stations",
@@ -85,13 +68,13 @@
     "subtitle": "All kinds of connectors and accessories for your electric Elektromobiles, selected for their comfort and ease of use"
   },
   "blog": {
-    "title": "Useful info about Electric Vehicles, Charging Stations and Accessories",
-    "subtitle": "In our blog section, you can get detailed information about ordering and bringing Electric Cars, Power Stations, Accessories and all these Electric Systems to Azerbaijan",
+    "title": "Useful info about Energy Solutions, Charging Stations and Accessories",
+    "subtitle": "In our blog section, you can get detailed information about energy solutions, charging stations, connectors and accessories.",
     "similar-posts": "Similar articles"
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "If you have questions or desires related to Electric Cars, Charging Stations and Connectors, contact us using contact information. We will make you back as soon as possible",
+    "subtitle": "If you have questions or requests about energy solutions, charging stations or connectors, contact us using the details below. We will get back to you as soon as possible",
     "info": {
       "title": "Get in touch with us",
       "subtitle": "You can contact us using the contact details below",
@@ -120,10 +103,10 @@
   },
   "about": {
     "title": "About Our Company",
-    "subtitle": "ELCAR specializes in importing Electric Vehicles, all types of Electric Charging Stations, Connectors and Accessories, and other Electric Devices from China to Azerbaijan at the most affordable prices.",
-    "section1": "Our company was founded in 2022 in Baku, Azerbaijan, and is engaged in the <strong>sale of charging devices for electric vehicles</strong> as well as the <strong>import and sale of electric vehicles</strong>. We believe that transitioning to electric vehicles is one of the most important steps in today's modern world, and we are committed to providing our customers with the best solutions to support and charge their vehicles.",
-    "section2": "To help our customers choose the most suitable option for their needs, we proudly offer a wide range of electric vehicles from various brands and models. Our team consists of experienced specialists who will assist you in the selection process and answer any questions related to electric transportation.",
-    "section3": "We are confident that our experience and professionalism allow us to provide the best service in the <strong>sales and maintenance of electric vehicles</strong>. Thank you for choosing our company as your partner in <strong>electric vehicles and related services</strong>."
+    "subtitle": "ELCAR supplies, installs and services solar and wind energy systems, battery energy storage systems (BESS), inverters, EV charging stations and industrial laser equipment across Azerbaijan.",
+    "section1": "Our company was founded in 2022 in Baku, Azerbaijan, and works in <strong>Energy Solutions</strong>: <strong>solar and wind energy systems</strong>, <strong>energy storage systems</strong>, <strong>inverters</strong> and <strong>EV charging stations</strong>. We believe that moving to clean, economical energy is one of the most important steps in today's world, and we are committed to providing our customers with the best solutions.",
+    "section2": "To help our customers choose the most suitable option, we offer equipment in a range of powers and capacities for homes, businesses and industrial sites. Our team consists of specialists who will assist you in the selection process and answer any questions about energy systems.",
+    "section3": "We are confident that our experience and professionalism allow us to provide the best service in the <strong>sale, installation and maintenance of energy equipment</strong>. Thank you for choosing our company as your partner in <strong>energy solutions</strong>."
   },
   "buttons": {
     "add-to-cart": "Add to cart"
@@ -151,8 +134,6 @@
   },
   "pages-content": {
     "electric-vehicles": {
-      "title": "Sale and Order of Electric Cars in Azerbaijan",
-      "subtitle": "ELCAR Company brings the newest and highest quality Electric Cars from China to Azerbaijan at affordable prices.",
       "filters": {
         "title": "Filter",
         "clear": "Clear",
@@ -167,7 +148,6 @@
         "all": "All",
         "apply": "Apply"
       },
-      "all-cars": "All Vehicles",
       "sort": {
         "title": "Sort",
         "byDate": "By Date",
@@ -225,17 +205,13 @@
       "title": "EV Charging Cables and Adapters",
       "description": "Type 1, Type 2, GB/T and Tesla adapters, 16A and 32A charging cables. From 196 AZN, delivered in Baku."
     },
-    "electricVehicles": {
-      "title": "Electric Vehicles",
-      "description": "Electric vehicle models available to order through ELCAR, and the charging solutions that fit them."
-    },
     "blog": {
       "title": "Blog on Electric Vehicles and Charging",
       "description": "Practical advice on EV charging, cable types, installation and daily use, written for Azerbaijani conditions."
     },
     "about": {
-      "title": "About ELCAR — EV Charging Solutions, Baku",
-      "description": "Sales and installation of electric vehicle charging equipment in Azerbaijan. About our team and services."
+      "title": "About ELCAR — Energy Solutions, Baku",
+      "description": "Sales and installation of solar, wind, energy storage, inverter and charging equipment in Azerbaijan. About our team and services."
     },
     "contact": {
       "title": "Contact — ELCAR, Baku",

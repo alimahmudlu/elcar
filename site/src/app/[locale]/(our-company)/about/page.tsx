@@ -45,8 +45,8 @@ const Page = () => {
 
         <div className="w-full">
           <Image
-            src="/images/electric-car.webp"
-            alt="Popular Cars"
+            src="/images/about-solar.webp"
+            alt="Solar panel"
             width={500}
             height={500}
             className="mx-auto"
@@ -57,8 +57,8 @@ const Page = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex flex-col gap-6">
           <Image
-            src="/images/electric-car-2.webp"
-            alt="Popular Cars"
+            src="/images/about-storage.webp"
+            alt="Energy storage container"
             width={500}
             height={500}
             className="mx-auto"
@@ -83,8 +83,8 @@ const Page = () => {
 
         <div className="w-full">
           <Image
-            src="/images/electric-car-1.webp"
-            alt="Popular Cars"
+            src="/images/2.webp"
+            alt="EV charging station"
             width={500}
             height={500}
             className="mx-auto"

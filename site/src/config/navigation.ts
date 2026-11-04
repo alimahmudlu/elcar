@@ -3,7 +3,6 @@ export const navigations = () => {
   const routes = {
     home: { path: "/" },
     chargingStations: { path: "/charging-stations" },
-    electricVehicles: { path: "/electric-vehicles" },
     connectors: { path: "/connectors-accessories" },
     energy: {
       path: "/solar-energy",
@@ -34,10 +33,6 @@ export const navigations = () => {
           { name: "Bağlayıcılar və Aksesuarlar", href: routes.connectors.path },
         ],
       },
-      /*{
-        name: "Elektrikli Nəqliyyat Vasitələri",
-        href: routes.electricVehicles.path,
-      },*/
       {
         name: "Enerji Həlləri",
         href: routes.energy.path,
@@ -70,7 +65,6 @@ export const navigations = () => {
           { name: "Connectors & Accessories", href: routes.connectors.path },
         ],
       },
-      /*{ name: "Electric Vehicles", href: routes.electricVehicles.path },*/
       {
         name: "Energy Solutions",
         href: routes.energy.path,
@@ -103,7 +97,6 @@ export const navigations = () => {
           { name: "Разъемы и аксессуары", href: routes.connectors.path },
         ],
       },
-      /*{ name: "Электромобили", href: routes.electricVehicles.path },*/
       {
         name: "Энергетические решения",
         href: routes.energy.path,

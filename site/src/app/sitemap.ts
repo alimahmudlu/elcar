@@ -44,14 +44,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     for (const p of products) {
       if (!p.slug) continue;
-      // section: charging-stations | accessories | vehicles | enerji bölmələri
+      // section: charging-stations | accessories | enerji bölmələri
       const segment = p.section && isEnergySection(p.section)
         ? p.section
         : p.section === "accessories"
           ? "connectors-accessories"
-          : p.section === "vehicles"
-            ? "electric-vehicles"
-            : "charging-stations";
+          : "charging-stations";
       entries.push({
         url: `${SITE_URL}/${locale}/${segment}/${p.slug}`,
         lastModified: p.updatedAt ? new Date(p.updatedAt) : new Date(),

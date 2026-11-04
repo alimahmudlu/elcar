@@ -1,5 +1,4 @@
 export const enum ProductEnum {
-    Car = "car",
     ChargingStation = "charging-station",
     ConnectorAccessory = "connector-accessory",
     Solar = "solar-energy",
@@ -10,7 +9,6 @@ export const enum ProductEnum {
 }
 
 export const enum CategoryEnum {
-    Car = "vehicles",
     ChargingStation = "charging-stations",
     ConnectorAccessory = "accessories",
     Solar = "solar-energy",
