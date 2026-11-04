@@ -82,22 +82,6 @@ export const getCharacteristic = async (section:string) => {
     }
 }
 
-export const getVehicles = async (params?: { [key: string]: string | string[] }, skip?: string, limit = 12) => {
-    try {
-        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {
-            params: {
-                section: "vehicles",
-                ...params,
-                "$skip": skip || 0,
-                "$limit": limit
-            }
-        });
-        return response.data;
-    } catch (error) {
-        console.log(error);
-        return [];
-    }
-}
 export const chargingStations = async (params?: { [key: string]: string | string[] }, skip?: string, limit = 12) => {
     try {
         const response = await axiosInstance.get(BASE_URL + ENDPOINTS.products.list, {

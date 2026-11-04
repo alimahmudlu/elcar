@@ -33,9 +33,7 @@ const ProductItem = ({
 
   const rediretUrl = isEnergy
     ? `/${type}/${product?.slug}`
-    : type === ProductEnum.Car
-      ? `/electric-vehicles/${product?.slug}`
-      : type === ProductEnum.ConnectorAccessory
+    : type === ProductEnum.ConnectorAccessory
       ? `/connectors-accessories/${product?.slug}`
       : `/charging-stations/${product?.slug}`;
 
@@ -160,61 +158,27 @@ const ProductItem = ({
 
               <ul className="grid grid-cols-3 justify-between px-6 text-[12px] mt-auto">
                 <li className="flex flex-col gap-1">
-                  <span>
-                    {type === ProductEnum.Car
-                      ? product?.characteristicGroups[1]?.characteristics?.find(
-                          (item) => item.battery
-                        )?.value
-                        ? t("popular-cars.battery")
-                        : t("popular-cars.fuel-type")
-                      : t("charger.output-power")}
-                  </span>
+                  <span>{t("charger.output-power")}</span>
                   <span className="font-bold">
-                    {type === ProductEnum.Car
-                      ? product?.characteristicGroups[1]?.characteristics?.find(
-                          (item) => item.battery
-                        )?.value
-                        ? product?.characteristicGroups[1]?.characteristics?.find(
-                            (item) => item.battery
-                          )?.value
-                        : product?.characteristicGroups[1]?.characteristics?.find(
-                            (item) => item["fuel-type"]
-                          )?.value
-                      : product?.characteristicGroups[0]?.characteristics?.find(
-                          (item) => item["output-power"]
-                        )?.value ?? "-"}
+                    {product?.characteristicGroups[0]?.characteristics?.find(
+                      (item) => item["output-power"]
+                    )?.value ?? "-"}
                   </span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span>
-                    {type === ProductEnum.Car
-                      ? t("popular-cars.max-speed")
-                      : t("charger.power-input")}
-                  </span>
+                  <span>{t("charger.power-input")}</span>
                   <span className="font-bold">
-                    {type === ProductEnum.Car
-                      ? product?.characteristicGroups[1]?.characteristics?.find(
-                          (item) => item["max-speed"]
-                        )?.value ?? ""
-                      : product?.characteristicGroups[0]?.characteristics?.find(
-                          (item) => item["power-input"]
-                        )?.value ?? ""}
+                    {product?.characteristicGroups[0]?.characteristics?.find(
+                      (item) => item["power-input"]
+                    )?.value ?? ""}
                   </span>
                 </li>
                 <li className="flex flex-col gap-1">
-                  <span>
-                    {type === ProductEnum.Car
-                      ? t("popular-cars.max-horsepower")
-                      : t("charger.phase-number")}
-                  </span>
+                  <span>{t("charger.phase-number")}</span>
                   <span className="font-bold">
-                    {type === ProductEnum.Car
-                      ? product?.characteristicGroups[1]?.characteristics?.find(
-                          (item) => item["max-horsepower"]
-                        )?.value ?? ""
-                      : product?.characteristicGroups[0]?.characteristics?.find(
-                          (item) => item["phase-number"]
-                        )?.value ?? ""}
+                    {product?.characteristicGroups[0]?.characteristics?.find(
+                      (item) => item["phase-number"]
+                    )?.value ?? ""}
                   </span>
                 </li>
               </ul>

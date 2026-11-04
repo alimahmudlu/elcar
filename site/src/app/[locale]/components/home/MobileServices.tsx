@@ -24,21 +24,7 @@ const MobileServices = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div>
-          <h2 className="text-xl font-bold mb-2 text-title dark:text-primary-foreground">
-            {t("second.title")}
-          </h2>
-          <p
-            className="text-subtitle mb-4 dark:text-secondary-foreground"
-            dangerouslySetInnerHTML={{ __html: t.raw("second.subtitle") }}
-          />
-          <button className="inline-flex items-center gap-2 bg-elcar-opacity text-elcar font-medium p-2 rounded-full dark:bg-primary dark:hover:bg-primary/80 duration-200 dark:hover:text-card-foreground transition">
-            <HiArrowRight size={18} />
-          </button>
-        </div>
-
-        {/* Sağ blok */}
+      <div className="grid grid-cols-1 gap-10">
         <div>
           <h2 className="text-xl font-bold mb-2 text-title dark:text-primary-foreground">
             {t("third.title")}

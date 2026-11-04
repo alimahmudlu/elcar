@@ -33,21 +33,6 @@ const Services = () => {
           </Link>
         </div>
       </div>
-      {/*<div className="col-span-1 p-8 relative overflow-hidden max-lg:col-span-2">*/}
-      {/*  <h2 className="text-2xl z-10 relative text-wrap mb-6 text-black tracking-[0.25px] max-w-[80%] font-black dark:text-primary-foreground">*/}
-      {/*    {t("second.title")}*/}
-      {/*  </h2>*/}
-      {/*  <div*/}
-      {/*    className="text-gray-600 z-10 relative mx-0 text-sm tracking-normal leading-6 mb-4 max-w-[80%] dark:text-secondary-foreground"*/}
-      {/*    dangerouslySetInnerHTML={{ __html: t.raw("second.subtitle") }}*/}
-      {/*  />*/}
-      {/*  <div className="flex gap-4 z-10 relative max-w-[80%]">*/}
-      {/*    <button className="bg-elcar-opacity flex items-center gap-2 text-elcar p-1 focused py-2 px-2 rounded-full dark:bg-primary dark:hover:bg-primary/80 duration-200 dark:hover:text-card-foreground">*/}
-      {/*      <RiArrowRightLine className="w-5 h-5" />*/}
-      {/*    </button>*/}
-      {/*  </div>*/}
-      {/*  <div className="absolute -bottom-12 -right-20 z-0 w-[250px] h-[250px] bg-[url('/images/electric-vehicle.png')] bg-no-repeat bg-size-[250px]"></div>*/}
-      {/*</div>*/}
       <div className="col-span-1 p-8 relative overflow-hidden max-lg:col-span-2">
         <h2 className="text-2xl z-10 relative text-wrap mb-6 text-black tracking-[0.25px] max-w-[80%] font-black dark:text-primary-foreground">
           {t("third.title")}

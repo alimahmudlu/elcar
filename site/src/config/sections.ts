@@ -32,7 +32,6 @@ export const ENERGY_SOLUTIONS = ENERGY_SECTIONS.filter(
  */
 export const productTypeForSection = (section: string): string => {
   if (isEnergySection(section)) return section;
-  if (section === "vehicles") return "car";
   if (section === "accessories") return "connector-accessory";
   return "charging-station";
 };
@@ -40,7 +39,6 @@ export const productTypeForSection = (section: string): string => {
 /** Məhsulun detal səhifəsinin yolu (dil prefiksi olmadan) */
 export const productPath = (section: string, slug: string): string => {
   if (isEnergySection(section)) return `/${section}/${slug}`;
-  if (section === "vehicles") return `/electric-vehicles/${slug}`;
   if (section === "accessories") return `/connectors-accessories/${slug}`;
   return `/charging-stations/${slug}`;
 };

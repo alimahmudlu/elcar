@@ -9,12 +9,14 @@ const nextConfig: NextConfig = {
         const paths = [
             'charging-stations',
             'connectors-accessories',
-            'electric-vehicles',
             'blog',
             'about',
             'contact',
         ];
         return [
+            // Avtomobil satışı dayandırılıb: köhnə ünvanlar şarj stansiyalarına yönəlir
+            { source: '/electric-vehicles/:path*', destination: '/az/charging-stations', permanent: true },
+            { source: '/:locale(az|en|ru)/electric-vehicles/:path*', destination: '/:locale/charging-stations', permanent: true },
             // /charging-stations -> /az/charging-stations
             ...paths.map((p) => ({
                 source: `/${p}`,

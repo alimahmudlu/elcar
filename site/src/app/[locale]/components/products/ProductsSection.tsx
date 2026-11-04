@@ -31,7 +31,6 @@ import {
   chargingConnectors,
   chargingStations,
   getSectionProducts,
-  getVehicles,
 } from "@/api/request";
 import { isEnergySection } from "@/config/sections";
 import ProductItem from "../common/ProductItem";
@@ -106,8 +105,6 @@ const ProductsSection = ({
         ? await getSectionProducts(type, cleanedFilters, loadMore ? `${skip}` : "0")
         : type === ProductEnum.ChargingStation
           ? await chargingStations(cleanedFilters, loadMore ? `${skip}` : "0")
-          : type === ProductEnum.Car
-          ? await getVehicles(cleanedFilters, loadMore ? `${skip}` : "0")
           : await chargingConnectors(
               cleanedFilters,
               loadMore ? `${skip}` : "0"
@@ -495,8 +492,6 @@ const ProductsSection = ({
           <h2 className="text-2xl font-black max-md:text-xl max-sm:text-base max-xs:text-sm mb-2 dark:text-primary-foreground">
             {isEnergySection(type)
               ? t(`sections.${type}.all-products`)
-              : type === ProductEnum.Car
-              ? t("pages-content.electric-vehicles.all-cars")
               : type === ProductEnum.ChargingStation
               ? t("pages-content.chargingStations.all-products")
               : t("pages-content.connectors.all-products")}
