@@ -108,7 +108,7 @@ const Page = async ({ params }: { params: Params }) => {
       <div className="px-4 max-sm:px-2 py-8 mt-24 max-md:mt-14 max-sm:mt-8">
         <div className="grid md:grid-cols-2 gap-8 max-md:gap-6">
           <div className="relative w-full">
-            {discount && discount > 0 && (
+            {(discount ?? 0) > 0 && (
               <div className="absolute -top-6 -left-6 bg-blue-600 text-white w-24 h-24 max-md:w-20 max-md:h-20 max-sm:w-16 max-sm:h-16 rounded-full flex flex-col items-center justify-center text-center shadow-xl z-10">
                 <span className="line-through text-sm max-sm:text-xs">
                   {price}₼

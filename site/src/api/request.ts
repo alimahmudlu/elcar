@@ -35,7 +35,9 @@ export const getCategories = async (params?: string) => {
 
 export const getBrands = async (params?: string) => {
     try {
-        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.brands.list + `?section=${params}`);
+        // Markada sahə "sections"-dur (siyahı); "section" göndəriləndə API filtrləmir və hamısını qaytarır
+        const query = params ? `?sections=${encodeURIComponent(params)}` : "";
+        const response = await axiosInstance.get(BASE_URL + ENDPOINTS.brands.list + query);
         return response.data;
     } catch (error) {
         console.log(error);
