@@ -31,7 +31,9 @@
 
                     <v-col>
                         <v-text-field v-model.number.trim="form.price" :label="$t('Price')"
-                                      type="number" outlined dense suffix="₼"
+                                      type="number" outlined dense suffix="₼" min="0"
+                                      :hint="priceRequired ? '' : $t('Empty means price on request')"
+                                      :persistent-hint="!priceRequired"
                                       :error-messages="$errorMessages($v.form.price, $t('Price'))"/>
                     </v-col>
 
@@ -272,6 +274,9 @@ import {
 import { validationMixin } from 'vuelidate'
 import { required, minLength, maxLength, minValue, maxValue } from 'vuelidate/lib/validators'
 
+// Bu bölmələrin saytdakı səhifələri qiymətsiz məhsulda "Qiymət sorğu ilə" göstərir
+const PRICE_OPTIONAL_SECTIONS = ['solar-energy', 'wind-energy', 'energy-storage', 'inverters', 'laser-equipment']
+
 export default {
 
     name: "FormWrapper",
@@ -339,9 +344,9 @@ export default {
                 model: {
                     required
                 },
-                price: {
-                    required
-                },
+                price: this.priceRequired
+                    ? { required, minValue: minValue(0) }
+                    : { minValue: minValue(0) },
                 discount: {
                     minValue: minValue(0),
                     maxValue: maxValue(100),
@@ -366,6 +371,10 @@ export default {
     },
 
     computed: {
+
+        priceRequired() {
+            return !PRICE_OPTIONAL_SECTIONS.includes(this.component.options.section)
+        },
 
         categories() {
             return this.$store.state.data.categories
@@ -406,7 +415,11 @@ export default {
         form:{
             deep: true,
             handler(){
-                this.form.discountedPrice = this.form.discount ? this.form.price - (this.form.price * this.form.discount / 100) : this.form.price
+                const { price, discount } = this.form
+                // Qiymət silinəndə sahə boş sətir olur — bazaya null getsin
+                if (price === '') this.form.price = null
+                const hasPrice = price !== null && price !== undefined && price !== ''
+                this.form.discountedPrice = !hasPrice ? null : discount ? price - (price * discount / 100) : price
             }
         }
     },

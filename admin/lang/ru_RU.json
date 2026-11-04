@@ -3,6 +3,7 @@
     "Brand": "Brand",
     "Model": "Model",
     "Price": "Price",
+    "Empty means price on request": "Пусто: по запросу",
     "Discount": "Discount",
     "Bundle contents (for ready-made kits)": "Состав комплекта (для готовых комплектов)",
     "Quantity": "Количество",
