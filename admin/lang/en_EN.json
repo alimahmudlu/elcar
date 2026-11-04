@@ -3,6 +3,7 @@
     "Brand": "Brand",
     "Model": "Model",
     "Price": "Price",
+    "Empty means price on request": "Empty: on request",
     "Discount": "Discount",
     "Bundle contents (for ready-made kits)": "Bundle contents (for ready-made kits)",
     "Quantity": "Quantity",
