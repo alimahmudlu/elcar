@@ -1,10 +1,6 @@
 const defaultState = {
     productSections: [
         {
-            name: 'Vehicles',
-            key: 'vehicles',
-        },
-        {
             name: 'Charging stations',
             key: 'charging-stations',
         },
