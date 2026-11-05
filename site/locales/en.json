@@ -417,8 +417,10 @@
     },
     "city": "City / district",
     "note": "Notes",
-    "send": "Send request",
-    "whatsapp": "Message us on WhatsApp",
+    "send": "Send via WhatsApp",
+    "whatsapp": "Open WhatsApp",
+    "last-step": "Last step",
+    "last-step-text": "To complete your request, send the prepared message in WhatsApp. If WhatsApp did not open, press the button below.",
     "subject": "Quote request",
     "calc": "Estimate",
     "errors": {

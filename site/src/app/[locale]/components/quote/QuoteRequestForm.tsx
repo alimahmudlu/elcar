@@ -6,11 +6,10 @@ import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { MdSend } from "react-icons/md";
 import { FaSpinner, FaWhatsapp } from "react-icons/fa";
 import { sendMessage } from "@/api/request";
 import { CONTACT } from "@/config/site";
-import { AlertModal, AlertType } from "../common/AlertModal";
+import { AlertModal } from "../common/AlertModal";
 
 const OBJECTS = ["home", "business", "industry", "other"] as const;
 
@@ -18,16 +17,15 @@ const OBJECTS = ["home", "business", "industry", "other"] as const;
 const WHATSAPP_MAX_CHARS = 1500;
 
 /**
- * Quraşdırma təklifi sorğusu. Mövcud "messages" xidmətinə göndərilir —
- * admin paneldə Mesajlar bölməsində görünür və e-poçtla bildiriş gedir.
+ * Quraşdırma təklifi sorğusu. Əsas kanal WhatsApp-dır: düymə basılanda hazır
+ * mətnlə açılır, mesajı müştəri göndərir. Surəti "messages" xidmətinə yazılır
+ * və admin paneldə Mesajlar bölməsində görünür. Nəticə yalnız surətə aiddir,
+ * ona görə müştəriyə göstərilmir; pəncərədəki düymə WhatsApp bloklananda lazımdır.
  * `summary` (məs. hesablayıcının nəticəsi) mesajın sonuna əlavə olunur.
- * Göndərişdən sonra müştəri eyni mətni WhatsApp-da da yaza bilər; xəta
- * olanda sorğu bazaya düşmür, ona görə düymə o halda da göstərilir.
  */
 const QuoteRequestForm = ({ summary }: { summary?: string }) => {
   const t = useTranslations("quote");
   const [open, setOpen] = useState(false);
-  const [type, setType] = useState<AlertType>("success");
   const [loading, setLoading] = useState(false);
   const [whatsappHref, setWhatsappHref] = useState("");
 
@@ -73,9 +71,10 @@ const QuoteRequestForm = ({ summary }: { summary?: string }) => {
     )
       .slice(0, WHATSAPP_MAX_CHARS)
       .join("");
-    setWhatsappHref(
-      `https://wa.me/${CONTACT.phone.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappText)}`
-    );
+    const href = `https://wa.me/${CONTACT.phone.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappText)}`;
+    setWhatsappHref(href);
+    // Sorğunu gözləmədən açılır, yoxsa brauzer yeni pəncərəni bloklaya bilər
+    window.open(href, "_blank", "noopener,noreferrer");
 
     const res = await sendMessage({
       fullName: data.fullName,
@@ -84,7 +83,6 @@ const QuoteRequestForm = ({ summary }: { summary?: string }) => {
       message,
     });
     setLoading(false);
-    setType(res ? "success" : "error");
     setOpen(true);
     if (res) reset({ object: data.object });
   };
@@ -180,7 +178,7 @@ const QuoteRequestForm = ({ summary }: { summary?: string }) => {
             className="!rounded-3xl !bg-elcar !text-white flex items-center gap-2"
           >
             {t("send")}
-            {loading ? <FaSpinner className="animate-spin" /> : <MdSend />}
+            {loading ? <FaSpinner className="animate-spin" /> : <FaWhatsapp />}
           </Button>
         </div>
       </form>
@@ -188,7 +186,9 @@ const QuoteRequestForm = ({ summary }: { summary?: string }) => {
       <AlertModal
         open={open}
         onClose={() => setOpen(false)}
-        type={type}
+        type="info"
+        title={t("last-step")}
+        message={t("last-step-text")}
         action={
           <a
             href={whatsappHref}
