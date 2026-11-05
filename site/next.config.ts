@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
             // Avtomobil satışı dayandırılıb: köhnə ünvanlar şarj stansiyalarına yönəlir
             { source: '/electric-vehicles/:path*', destination: '/az/charging-stations', permanent: true },
             { source: '/:locale(az|en|ru)/electric-vehicles/:path*', destination: '/:locale/charging-stations', permanent: true },
+            // İnvertor brendi QD-dən MOGOWIN-ə dəyişib: köhnə məhsul linkləri yeni ünvana yönəlir
+            { source: '/az/inverters/hibrid-invertorlar-qd-:rest', destination: '/az/inverters/hibrid-invertorlar-mogowin-:rest', permanent: true },
+            { source: '/en/inverters/hybrid-inverters-qd-:rest', destination: '/en/inverters/hybrid-inverters-mogowin-:rest', permanent: true },
+            { source: '/ru/inverters/gibridnye-invertory-qd-:rest', destination: '/ru/inverters/gibridnye-invertory-mogowin-:rest', permanent: true },
             // Silinmiş məqalənin köhnə linkləri yerinə yazılan məqaləyə yönəlir
             { source: '/az/blog/cinden-getirilmis-elektromobili-azerbaycanda-nece-sarj-etmek-olar', destination: '/az/blog/gunes-paneli-nece-secilir-ev-ve-biznes-ucun-praktik-beledci', permanent: true },
             { source: '/en/blog/how-to-charge-a-chinese-imported-electric-car-in-azerbaijan', destination: '/en/blog/how-to-choose-solar-panels-a-practical-guide-for-homes-and-businesses', permanent: true },
