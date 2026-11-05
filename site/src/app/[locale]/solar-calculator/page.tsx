@@ -2,7 +2,29 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import { ENDPOINTS } from "@/api/endpoints";
+import { fetchData } from "@/api/request";
+import type { CatalogueItem } from "@/lib/solarCatalogue";
+import type { ProductType } from "@/types";
 import SolarCalculator from "../components/calculator/SolarCalculator";
+
+const CATALOGUE_SECTIONS = ["solar-energy", "inverters", "energy-storage"];
+
+const fetchCatalogue = async (): Promise<CatalogueItem[]> => {
+  const lists = await Promise.all(
+    CATALOGUE_SECTIONS.map(async (section) => {
+      const filter = encodeURIComponent(JSON.stringify({ section }));
+      const { data } = await fetchData(`${ENDPOINTS.products.list}?filter=${filter}&$limit=50`);
+      return ((data as ProductType[]) ?? []).map((product) => ({
+        title: product.title,
+        slug: product.slug,
+        section,
+        description: product.description,
+      }));
+    })
+  );
+  return lists.flat();
+};
 
 export async function generateMetadata({
   params,
@@ -22,6 +44,7 @@ export async function generateMetadata({
 
 const Page = async () => {
   const t = await getTranslations();
+  const catalogue = await fetchCatalogue();
 
   return (
     <section className="container max-md:max-w-[90%] mt-20 mb-10">
@@ -39,7 +62,7 @@ const Page = async () => {
         {t("calculator.subtitle")}
       </p>
 
-      <SolarCalculator />
+      <SolarCalculator catalogue={catalogue} />
     </section>
   );
 };

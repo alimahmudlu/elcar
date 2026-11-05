@@ -9,6 +9,8 @@ import {
   type SolarInput,
   type SystemType,
 } from "@/lib/solarCalc";
+import { matchCatalogue, type CatalogueItem } from "@/lib/solarCatalogue";
+import { Link } from "@/i18n/navigation";
 import QuoteRequestForm from "../quote/QuoteRequestForm";
 
 const TYPES: SystemType[] = ["on-grid", "hybrid", "off-grid"];
@@ -63,7 +65,7 @@ const NumberField = ({
 );
 
 /** Günəş sisteminin ilkin ölçülməsi + nəticə ilə təklif sorğusu */
-const SolarCalculator = () => {
+const SolarCalculator = ({ catalogue = [] }: { catalogue?: CatalogueItem[] }) => {
   const t = useTranslations("calculator");
   const [input, setInput] = useState<SolarInput>(DEFAULT_INPUT);
   const set = <K extends keyof SolarInput>(key: K, value: SolarInput[K]) =>
@@ -97,6 +99,11 @@ const SolarCalculator = () => {
       ]
     : [];
 
+  const matches = useMemo(
+    () => (result ? matchCatalogue(catalogue, result, input.systemType, input.panelWatt) : []),
+    [catalogue, result, input.systemType, input.panelWatt]
+  );
+
   // Sorğu ilə birlikdə göndərilən mətn
   const summary = result
     ? [
@@ -107,6 +114,7 @@ const SolarCalculator = () => {
         input.systemType === "hybrid" && `${t("backup")}: ${input.backupHours} ${t("backup-unit")}`,
         input.systemType === "off-grid" && `${t("autonomy")}: ${input.autonomyDays} ${t("autonomy-unit")}`,
         ...rows.map((row) => `${row.label}: ${row.value}`),
+        ...matches.map((match) => `${match.item.title} × ${match.quantity}`),
       ]
         .filter(Boolean)
         .join("\n")
@@ -286,6 +294,37 @@ const SolarCalculator = () => {
             {t("cta")}
           </a>
         </div>
+
+        {matches.length > 0 && (
+          <div className="mt-4 border p-6 dark:border-secondary-foreground">
+            <h3 className="text-lg font-black text-title dark:text-primary-foreground">
+              {t("match-title")}
+            </h3>
+            <ul className="mt-3 divide-y divide-elcar/20">
+              {matches.map((match) => (
+                <li key={match.kind} className="flex items-start justify-between gap-4 py-2 text-sm">
+                  <span>
+                    <span className="block text-xs text-[#00000099] dark:text-secondary-foreground">
+                      {t(`match-kinds.${match.kind}`)}
+                    </span>
+                    <Link
+                      href={`/${match.item.section}/${match.item.slug}`}
+                      className="font-bold text-elcar underline dark:text-primary-foreground"
+                    >
+                      {match.item.title}
+                    </Link>
+                  </span>
+                  <span className="shrink-0 font-black dark:text-primary-foreground">
+                    {t("pcs", { n: match.quantity })}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-xs text-[#00000099] dark:text-secondary-foreground">
+              {t("match-note")}
+            </p>
+          </div>
+        )}
       </div>
 
       <div id="quote" className="lg:col-span-2 scroll-mt-24">

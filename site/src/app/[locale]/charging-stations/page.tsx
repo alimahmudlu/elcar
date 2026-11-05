@@ -1,4 +1,5 @@
 import Pagination from "@/components/common/Pagination";
+import { Link } from "@/i18n/navigation";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/common/Breadcrumb";
@@ -69,6 +70,19 @@ const Page = async ({ searchParams }: { searchParams: SearchParams }) => {
         <p className="mt-4 text-subtitle text-sm md:text-base dark:text-secondary-foreground">
           {t("pages-content.chargingStations.subtitle")}
         </p>
+      </div>
+
+      <div className="mb-8 flex items-center gap-4 bg-elcar-opacity p-4 md:p-5 dark:bg-popover max-sm:flex-col max-sm:items-start">
+        <div className="flex-1">
+          <p className="font-black text-title dark:text-primary-foreground">{t("guide.banner-title")}</p>
+          <p className="text-sm text-subtitle dark:text-secondary-foreground">{t("guide.banner-text")}</p>
+        </div>
+        <Link
+          href="/charger-guide"
+          className="shrink-0 bg-elcar text-white text-sm font-bold rounded-full px-5 py-2"
+        >
+          {t("guide.banner-button")}
+        </Link>
       </div>
 
       <ProductsSection
