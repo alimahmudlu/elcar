@@ -17,5 +17,5 @@ export const organizationJsonLd = {
     addressRegion: CONTACT.address.district,
     addressCountry: CONTACT.address.country,
   },
-  openingHours: "Mo-Sa 09:00-18:00",
+  openingHours: "Mo-Su 10:00-19:00",
 };

@@ -105,7 +105,7 @@ export const navigations = () => {
         ],
       },
       {
-        name: "Энергетические решения",
+        name: "Энергорешения",
         href: routes.energy.path,
         subItems: [
           { name: "Солнечная энергия", href: routes.energy.solar.path },
@@ -115,10 +115,10 @@ export const navigations = () => {
           { name: "Калькулятор солнечной системы", href: routes.energy.calculator.path },
         ],
       },
-      { name: "Лазерное оборудование", href: routes.laser.path },
+      { name: "Лазеры", href: routes.laser.path },
       { name: "Блог", href: routes.blog.path },
       {
-        name: "Наша компания",
+        name: "Компания",
         href: routes.ourCompany.path,
         subItems: [
           { name: "О нас", href: routes.ourCompany.about.path },
