@@ -9,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { CheckCircle, XCircle, Info, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { JSX } from "react";
+import { JSX, ReactNode } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { useTranslations } from "next-intl";
 
@@ -21,6 +21,8 @@ interface AlertModalProps {
   type: AlertType;
   title?: string;
   message?: string;
+  /** Mətnin altında göstərilən əlavə düymə və ya link */
+  action?: ReactNode;
 }
 
 export function AlertModal({
@@ -29,6 +31,7 @@ export function AlertModal({
   type,
   title,
   message,
+  action,
 }: AlertModalProps) {
   const t = useTranslations("alerts");
 
@@ -77,6 +80,7 @@ export function AlertModal({
         <div className="text-sm text-muted-foreground px-2">
           {message || config.message}
         </div>
+        {action && <div className="mt-4 flex justify-center">{action}</div>}
         <DialogFooter className="mt-4 !justify-center">
           <Button
             variant="outline"

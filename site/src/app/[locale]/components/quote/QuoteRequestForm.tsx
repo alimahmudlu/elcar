@@ -7,22 +7,29 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { MdSend } from "react-icons/md";
-import { FaSpinner } from "react-icons/fa";
+import { FaSpinner, FaWhatsapp } from "react-icons/fa";
 import { sendMessage } from "@/api/request";
+import { CONTACT } from "@/config/site";
 import { AlertModal, AlertType } from "../common/AlertModal";
 
 const OBJECTS = ["home", "business", "industry", "other"] as const;
+
+/** WhatsApp linki həddən uzun olmasın. Array.from emojini yarıdan kəsmir. */
+const WHATSAPP_MAX_CHARS = 1500;
 
 /**
  * Quraşdırma təklifi sorğusu. Mövcud "messages" xidmətinə göndərilir —
  * admin paneldə Mesajlar bölməsində görünür və e-poçtla bildiriş gedir.
  * `summary` (məs. hesablayıcının nəticəsi) mesajın sonuna əlavə olunur.
+ * Göndərişdən sonra müştəri eyni mətni WhatsApp-da da yaza bilər; xəta
+ * olanda sorğu bazaya düşmür, ona görə düymə o halda da göstərilir.
  */
 const QuoteRequestForm = ({ summary }: { summary?: string }) => {
   const t = useTranslations("quote");
   const [open, setOpen] = useState(false);
   const [type, setType] = useState<AlertType>("success");
   const [loading, setLoading] = useState(false);
+  const [whatsappHref, setWhatsappHref] = useState("");
 
   const schema = z.object({
     // API ilə eyni qayda: istənilən əlifbanın hərfləri, boşluq, . ' -
@@ -60,6 +67,15 @@ const QuoteRequestForm = ({ summary }: { summary?: string }) => {
     ]
       .filter(Boolean)
       .join("\n");
+
+    const whatsappText = Array.from(
+      `${t("full-name")}: ${data.fullName}\n${t("phone")}: ${data.phone}\n${message}`
+    )
+      .slice(0, WHATSAPP_MAX_CHARS)
+      .join("");
+    setWhatsappHref(
+      `https://wa.me/${CONTACT.phone.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappText)}`
+    );
 
     const res = await sendMessage({
       fullName: data.fullName,
@@ -169,7 +185,22 @@ const QuoteRequestForm = ({ summary }: { summary?: string }) => {
         </div>
       </form>
 
-      <AlertModal open={open} onClose={() => setOpen(false)} type={type} />
+      <AlertModal
+        open={open}
+        onClose={() => setOpen(false)}
+        type={type}
+        action={
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-3xl bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90"
+          >
+            <FaWhatsapp className="w-5 h-5" />
+            {t("whatsapp")}
+          </a>
+        }
+      />
     </div>
   );
 };
