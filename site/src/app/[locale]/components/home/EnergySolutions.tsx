@@ -3,19 +3,23 @@ import { Link } from "@/i18n/navigation";
 import { RiArrowRightLine } from "react-icons/ri";
 import {
   MdOutlineSolarPower,
-  MdOutlineWindPower,
   MdBatteryChargingFull,
   MdOutlineElectricalServices,
+  MdOutlinePrecisionManufacturing,
 } from "react-icons/md";
 import type { IconType } from "react-icons";
-import { ENERGY_SOLUTIONS } from "@/config/sections";
+import type { EnergySection } from "@/config/sections";
 
-const ICONS: Record<(typeof ENERGY_SOLUTIONS)[number], IconType> = {
-  "solar-energy": MdOutlineSolarPower,
-  "wind-energy": MdOutlineWindPower,
-  "energy-storage": MdBatteryChargingFull,
-  inverters: MdOutlineElectricalServices,
-};
+/**
+ * Ana səhifədəki kartlar. Külək enerjisində hələ məhsul olmadığı üçün göstərilmir;
+ * məhsul əlavə olunanda bura MdOutlineWindPower ikonu ilə yazılır.
+ */
+const HOME_CARDS: [EnergySection, IconType][] = [
+  ["solar-energy", MdOutlineSolarPower],
+  ["energy-storage", MdBatteryChargingFull],
+  ["inverters", MdOutlineElectricalServices],
+  ["laser-equipment", MdOutlinePrecisionManufacturing],
+];
 
 /** Ana səhifədə enerji həlləri bölmələrinə keçid kartları */
 const EnergySolutions = async () => {
@@ -33,8 +37,7 @@ const EnergySolutions = async () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
-        {ENERGY_SOLUTIONS.map((section) => {
-          const Icon = ICONS[section];
+        {HOME_CARDS.map(([section, Icon]) => {
           return (
             <Link
               key={section}

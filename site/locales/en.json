@@ -51,7 +51,7 @@
   "services": {
     "main": {
       "title": "ELCAR — Electrical and Energy Solutions in Azerbaijan",
-      "subtitle": "From <strong>EV charging stations</strong> and <strong>accessories</strong> to <strong>solar panels</strong>, <strong>wind turbines</strong>, <strong>battery energy storage systems (BESS)</strong> and <strong>industrial laser equipment</strong>, ELCAR supplies, installs and services electrical solutions across Azerbaijan at the best prices.",
+      "subtitle": "ELCAR supplies, installs and services electrical solutions across Azerbaijan, including <strong>solar panels</strong>, <strong>inverters</strong>, <strong>battery energy storage systems (BESS)</strong>, <strong>industrial laser equipment</strong>, <strong>EV charging stations</strong> and <strong>accessories</strong>.",
       "button": "More information"
     },
     "third": {
@@ -61,11 +61,12 @@
   },
   "charging-stations": {
     "title": "Latest Charging Stations",
-    "subtitle": "All types of Charging Stations for your Electric Vehicles, distinguished by their quality and ease of use"
+    "subtitle": "All types of Charging Stations for your Electric Vehicles, distinguished by their quality and ease of use",
+    "all-products": "All Charging Stations"
   },
   "connectors-and-accessories": {
-    "title": "Latest Connectors and Accessories for Electromobiles",
-    "subtitle": "All kinds of connectors and accessories for your electric Elektromobiles, selected for their comfort and ease of use"
+    "title": "Latest Connectors and Accessories for Electric Vehicles",
+    "subtitle": "All kinds of connectors and accessories for your electric vehicles, selected for their comfort and ease of use"
   },
   "blog": {
     "title": "Useful info about Energy Solutions, Charging Stations and Accessories",
@@ -235,8 +236,10 @@
     "whatsapp-message": "Hello, I would like information and a price for \"{product}\".",
     "home": {
       "title": "Energy Solutions",
-      "subtitle": "From solar and wind power systems to energy storage (BESS) and inverters — everything for renewable energy in one place",
-      "more": "Explore"
+      "subtitle": "From solar panels to energy storage, and from inverters to laser equipment: solutions for homes, businesses and industry.",
+      "more": "Explore",
+      "featured-title": "Featured Products",
+      "featured-subtitle": "Solar panels, inverters, batteries and laser equipment from our catalogue. Contact us for prices and technical advice."
     },
     "solar-energy": {
       "name": "Solar Energy",

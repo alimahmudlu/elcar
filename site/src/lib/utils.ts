@@ -34,7 +34,8 @@ export const extractTitlePrefix = (title: string, category: string) => {
   let prefix = title.replace(/\s+\d{4}\b/, '');
 
   const escapedCategory = category.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const categoryRegex = new RegExp(`\\b${escapedCategory}\\b`, 'i');
+  // \b "ə" kimi hərfləri söz hissəsi saymır, ona görə Unicode sərhədi işlədilir
+  const categoryRegex = new RegExp(`(?<![\\p{L}\\p{N}])${escapedCategory}(?![\\p{L}\\p{N}])`, 'iu');
   prefix = prefix.replace(categoryRegex, '').trim();
 
   return prefix;
