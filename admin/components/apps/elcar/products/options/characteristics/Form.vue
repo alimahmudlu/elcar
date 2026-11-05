@@ -147,7 +147,7 @@ export default {
         api: 'characteristics',
 
         form: {
-            section: 'vehicles',
+            section: 'charging-stations',
             name: app.$setForLocale(),
             categories: [],
             group: null,
