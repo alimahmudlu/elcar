@@ -1,8 +1,10 @@
+import type { Metadata } from "next";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { fetchData } from "@/api/request";
 import { formatDate } from "@/lib/utils";
 import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
+import { buildMetadata } from "@/lib/seo";
 import { BlogType } from "@/types";
 import { notFound } from "next/navigation";
 import { Card, CardContent } from "@mui/material";
@@ -40,6 +42,27 @@ if (!dayjs.Ls.az) {
       LLL: "D MMMM YYYY HH:mm",
       LLLL: "dddd, D MMMM YYYY HH:mm",
     },
+  });
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; id: string }>;
+}): Promise<Metadata> {
+  const { locale, id } = await params;
+  const blog: BlogType = await fetchData(
+    ENDPOINTS.blog.detail.replace(":id", id)
+  );
+  if (!blog?.title) return { title: "404" };
+
+  return buildMetadata({
+    title: blog.title,
+    description: blog.description,
+    locale,
+    path: `/blog/${blog.slug ?? id}`,
+    image: blog.image?.src ? `${BASE_URL}/${blog.image.src}` : undefined,
+    type: "article",
   });
 }
 
