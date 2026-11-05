@@ -17,6 +17,7 @@
     "confirmModal": {
       "title": "Оформить заказ",
       "subtitle": "Информация о клиенте",
+      "subject": "Заказ",
       "form": {
         "fullName": "Полное имя",
         "phone": "Телефон",
@@ -32,7 +33,7 @@
         "oldPrice": "Старая цена",
         "price": "Цена",
         "total": "Итого",
-        "createOrder": "Оформить заказ"
+        "createOrder": "Заказать в WhatsApp"
       }
     }
   },

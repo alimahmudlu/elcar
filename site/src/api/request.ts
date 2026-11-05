@@ -146,7 +146,7 @@ export const getModels = async (type:string) => {
 
 export const sendMessage = async (data: {
     fullName: string;
-    email: string;
+    email?: string;
     message: string;
     phone: string;
 }) => {

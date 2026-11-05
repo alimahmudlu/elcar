@@ -8,13 +8,10 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FaSpinner, FaWhatsapp } from "react-icons/fa";
 import { sendMessage } from "@/api/request";
-import { CONTACT } from "@/config/site";
+import { buildWhatsAppHref } from "@/lib/whatsapp";
 import { AlertModal } from "../common/AlertModal";
 
 const OBJECTS = ["home", "business", "industry", "other"] as const;
-
-/** WhatsApp linki həddən uzun olmasın. Array.from emojini yarıdan kəsmir. */
-const WHATSAPP_MAX_CHARS = 1500;
 
 /**
  * Quraşdırma təklifi sorğusu. Əsas kanal WhatsApp-dır: düymə basılanda hazır
@@ -66,12 +63,9 @@ const QuoteRequestForm = ({ summary }: { summary?: string }) => {
       .filter(Boolean)
       .join("\n");
 
-    const whatsappText = Array.from(
+    const href = buildWhatsAppHref(
       `${t("full-name")}: ${data.fullName}\n${t("phone")}: ${data.phone}\n${message}`
-    )
-      .slice(0, WHATSAPP_MAX_CHARS)
-      .join("");
-    const href = `https://wa.me/${CONTACT.phone.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappText)}`;
+    );
     setWhatsappHref(href);
     // Sorğunu gözləmədən açılır, yoxsa brauzer yeni pəncərəni bloklaya bilər
     window.open(href, "_blank", "noopener,noreferrer");

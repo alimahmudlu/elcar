@@ -17,6 +17,7 @@
     "confirmModal": {
       "title": "Sifarişi tamamla",
       "subtitle": "Müştəri məlumatları",
+      "subject": "Sifariş",
       "form": {
         "fullName": "Tam ad",
         "phone": "Telefon",
@@ -32,7 +33,7 @@
         "oldPrice": "Köhnə qiymət",
         "price": "Qiymət",
         "total": "Ümumi",
-        "createOrder": "Sifariş ver"
+        "createOrder": "WhatsApp-da sifariş ver"
       }
     }
   },
