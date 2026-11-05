@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
+import { buildMetadata, jsonLdHtml, productJsonLd, shareImageUrl } from "@/lib/seo";
 import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
 import { SITE_URL } from "@/config/site";
 import type { ProductType } from "@/types";
@@ -41,7 +41,7 @@ export async function generateMetadata({
     description: product.description,
     locale,
     path: `/connectors-accessories/${product?.slug ?? id}`,
-    image: product.image?.src ? BASE_URL + product.image.src : undefined,
+    image: shareImageUrl(product.image?.src),
   });
 }
 
@@ -83,7 +83,7 @@ const Page = async ({ params }: { params: Params }) => {
             productJsonLd({
               title,
               description,
-              image: image?.src ? BASE_URL + image.src : undefined,
+              image: shareImageUrl(image?.src),
               brand: product?.brand?.name,
               sku: product?.sku,
               rating: product?.rating,

@@ -21,6 +21,17 @@ export function canonicalFor(locale: string, path: string): Metadata["alternates
   return { canonical: `${SITE_URL}/${locale}${path}` };
 }
 
+/**
+ * Paylaşım (og:image) və JSON-LD üçün şəkil ünvanı.
+ * Fayl API-dən `application/octet-stream` kimi gəlir və sosial şəbəkələr onu
+ * şəkil saymaya bilər, ona görə Next.js çeviricisindən (JPEG/WebP) keçirilir.
+ */
+export function shareImageUrl(src?: string | null): string | undefined {
+  if (!src) return undefined;
+  const source = `${process.env.NEXT_PUBLIC_PROD_API_URL}/${src.replace(/^\/+/, "")}`;
+  return `${SITE_URL}/_next/image?url=${encodeURIComponent(source)}&w=1200&q=75`;
+}
+
 type BuildArgs = {
   title: string;
   description?: string;

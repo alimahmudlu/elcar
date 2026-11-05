@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { buildMetadata, jsonLdHtml, productJsonLd } from "@/lib/seo";
+import { buildMetadata, jsonLdHtml, productJsonLd, shareImageUrl } from "@/lib/seo";
 import { formatCharacteristicValue } from "@/lib/characteristicValue";
 import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
 import { CONTACT, SITE_URL } from "@/config/site";
@@ -40,7 +40,7 @@ export async function sectionDetailMetadata(
     description: product.description,
     locale,
     path: `/${section}/${product?.slug ?? id}`,
-    image: product.image?.src ? BASE_URL + product.image.src : undefined,
+    image: shareImageUrl(product.image?.src),
   });
 }
 
@@ -107,7 +107,7 @@ const SectionDetailPage = async ({
             productJsonLd({
               title,
               description,
-              image: image?.src ? BASE_URL + image.src : undefined,
+              image: shareImageUrl(image?.src),
               brand: product?.brand?.name,
               sku: product?.sku,
               rating: product?.rating,
