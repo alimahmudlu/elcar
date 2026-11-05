@@ -15,14 +15,16 @@ import {
   TableBody,
   TableCell,
 } from "@mui/material";
-import { FaTimes, FaShoppingCart } from "react-icons/fa";
+import { FaTimes, FaShoppingCart, FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { BasketProductType } from "@/types";
 import { extractTitlePrefix } from "@/lib/utils";
-import { createOrder } from "@/api/request";
-import { AlertModal, AlertType } from "../common/AlertModal";
+import { sendMessage } from "@/api/request";
+import { useCartStore } from "@/lib/cartStore";
+import { buildWhatsAppHref } from "@/lib/whatsapp";
+import { AlertModal } from "../common/AlertModal";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -33,53 +35,93 @@ interface Props {
   products: BasketProductType[];
 }
 
-const orderSchema = z.object({
-  purchaser: z.string().min(2, "Ad çox qısadır"),
-  phone: z.string().min(5, "Telefon düzgün deyil"),
-  email: z.string().optional(),
-  note: z.string().optional(),
-});
+const formatAmount = (value: number) => `${Number(value.toFixed(2))} AZN`;
 
-type OrderFormType = z.infer<typeof orderSchema>;
-
+/**
+ * Sifariş WhatsApp ilə verilir: düymə basılanda səbətin mətni ilə açılır, mesajı
+ * müştəri göndərir. Surəti admin paneldə Mesajlar bölməsinə yazılır. Bank ödənişi
+ * yaradan /orders xidməti burada işlədilmir.
+ */
 export default function OrderCheckoutModal({ open, onClose, products }: Props) {
   const t = useTranslations("header");
+  const tQuote = useTranslations("quote");
+  const clearBasket = useCartStore((state) => state.clearBasket);
 
   const [openAlert, setOpenAlert] = useState(false);
-  const [alertType, setAlertType] = useState<AlertType>("success");
-  const [alertMessage, setAlertMessage] = useState("");
+  const [whatsappHref, setWhatsappHref] = useState("");
 
-  const totalPrice = products.reduce((sum, item) => sum + item.price, 0);
+  const lineTotal = (item: BasketProductType) => item.price * item.count;
+  const totalPrice = products.reduce((sum, item) => sum + lineTotal(item), 0);
+
+  // API ilə eyni ad qaydası: istənilən əlifbanın hərfləri, boşluq, . ' -
+  const orderSchema = z.object({
+    purchaser: z
+      .string()
+      .trim()
+      .min(2, tQuote("errors.full-name"))
+      .regex(/^[\p{L}\s.'-]+$/u, tQuote("errors.full-name")),
+    phone: z.string().trim().min(7, tQuote("errors.phone")),
+    email: z
+      .string()
+      .trim()
+      .email(tQuote("errors.email"))
+      .optional()
+      .or(z.literal("")),
+    note: z.string().trim().max(1000).optional(),
+  });
+  type OrderFormType = z.infer<typeof orderSchema>;
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitting },
   } = useForm<OrderFormType>({
     resolver: zodResolver(orderSchema),
   });
+
   const onSubmit = async (values: OrderFormType) => {
-    const data = {
-      purchaser: values.purchaser,
-      email: values.email,
-      message: values.note,
+    const label = (key: string) => t(`confirmModal.${key}`);
+    const productLines = products.map((item, i) => {
+      const title = extractTitlePrefix(item.title, item.category.name);
+      const price = item.price ? `: ${formatAmount(lineTotal(item))}` : "";
+      return `${i + 1}. ${title} × ${item.count}${price}`;
+    });
+    // Mətn kəsilsə məbləğ itməsin deyə məhsullardan əvvəl yazılır
+    const order = [
+      totalPrice > 0 && `${label("table.total")}: ${formatAmount(totalPrice)}`,
+      `\n${label("table.products")}:`,
+      ...productLines,
+      values.note && `\n${label("form.note")}: ${values.note}`,
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const subject = `[${label("subject")}]`;
+
+    const href = buildWhatsAppHref(
+      [
+        subject,
+        `${label("form.fullName")}: ${values.purchaser}`,
+        `${label("form.phone")}: ${values.phone}`,
+        values.email && `${label("form.email")}: ${values.email}`,
+        order,
+      ]
+        .filter(Boolean)
+        .join("\n")
+    );
+    setWhatsappHref(href);
+    // Sorğunu gözləmədən açılır, yoxsa brauzer yeni pəncərəni bloklaya bilər
+    window.open(href, "_blank", "noopener,noreferrer");
+
+    await sendMessage({
+      fullName: values.purchaser,
+      email: values.email || undefined,
       phone: values.phone,
-      products: products.map((item) => ({
-        detail: item._id,
-        amount: item.count,
-      })),
-    };
+      message: `${subject}\n${order}`,
+    });
 
-    const res = await createOrder(data);
-
-    if (!res || res.error) {
-      setAlertType("error");
-      setAlertMessage(res?.message || "Xəta baş verdi");
-    } else {
-      setAlertType("success");
-      setAlertMessage(res.message);
-    }
-
+    clearBasket();
+    reset();
     setOpenAlert(true);
     onClose();
   };
@@ -231,17 +273,19 @@ export default function OrderCheckoutModal({ open, onClose, products }: Props) {
 
             <Divider className="my-3" />
             <Typography align="right" fontWeight="bold" color="success.main">
-              {t("confirmModal.table.total")}: {totalPrice} AZN
+              {t("confirmModal.table.total")}: {formatAmount(totalPrice)}
             </Typography>
           </DialogContent>
 
           <DialogActions className="dark:bg-card dark:text-primary-foreground">
             <Button
               variant="contained"
-              className="!rounded-2xl !bg-elcar"
+              className="!rounded-2xl !bg-elcar flex items-center gap-2"
               color="primary"
               type="submit"
+              disabled={isSubmitting}
             >
+              <FaWhatsapp />
               {t("confirmModal.table.createOrder")}
             </Button>
           </DialogActions>
@@ -250,8 +294,20 @@ export default function OrderCheckoutModal({ open, onClose, products }: Props) {
       <AlertModal
         open={openAlert}
         onClose={() => setOpenAlert(false)}
-        type={alertType}
-        message={alertMessage}
+        type="info"
+        title={tQuote("last-step")}
+        message={tQuote("last-step-text")}
+        action={
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-3xl bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90"
+          >
+            <FaWhatsapp className="w-5 h-5" />
+            {tQuote("whatsapp")}
+          </a>
+        }
       />
     </>
   );

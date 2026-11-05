@@ -17,6 +17,7 @@
     "confirmModal": {
       "title": "Complete Order",
       "subtitle": "Customer Information",
+      "subject": "Order",
       "form": {
         "fullName": "Full Name",
         "phone": "Phone",
@@ -32,7 +33,7 @@
         "oldPrice": "Old Price",
         "price": "Price",
         "total": "Total",
-        "createOrder": "Place Order"
+        "createOrder": "Order via WhatsApp"
       }
     }
   },

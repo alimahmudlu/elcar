@@ -20,12 +20,12 @@ module.exports = function (app) {
             }
         },
         email: {
+            // Səbət sifarişində e-poçt məcburi deyil; əlaqə formaları onu özü tələb edir
             type: String,
-            required: true,
             trim: true,
             validate: {
                 validator: function(v) {
-                    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v);
+                    return !v || /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v);
                 },
                 message: "Please enter a valid email"
             },
