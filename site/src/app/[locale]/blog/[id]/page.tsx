@@ -4,7 +4,7 @@ import { BASE_URL, ENDPOINTS } from "@/api/endpoints";
 import { fetchData } from "@/api/request";
 import { formatDate } from "@/lib/utils";
 import { redirectToLocalizedSlug } from "@/lib/localizedSlug";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, shareImageUrl } from "@/lib/seo";
 import { BlogType } from "@/types";
 import { notFound } from "next/navigation";
 import { Card, CardContent } from "@mui/material";
@@ -61,7 +61,7 @@ export async function generateMetadata({
     description: blog.description,
     locale,
     path: `/blog/${blog.slug ?? id}`,
-    image: blog.image?.src ? `${BASE_URL}/${blog.image.src}` : undefined,
+    image: shareImageUrl(blog.image?.src),
     type: "article",
   });
 }
