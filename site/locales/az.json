@@ -417,8 +417,10 @@
     },
     "city": "Şəhər / rayon",
     "note": "Əlavə qeyd",
-    "send": "Sorğu göndər",
-    "whatsapp": "WhatsApp-da yazın",
+    "send": "WhatsApp-da göndər",
+    "whatsapp": "WhatsApp-ı açın",
+    "last-step": "Son addım",
+    "last-step-text": "Sorğunu tamamlamaq üçün WhatsApp-da hazır mesajı göndərin. WhatsApp açılmayıbsa, aşağıdakı düyməni basın.",
     "subject": "Təklif sorğusu",
     "calc": "Hesablama",
     "errors": {
