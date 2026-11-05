@@ -75,6 +75,7 @@ const LanguageSwitcher = ({ currentLocale }: { currentLocale: string }) => {
             alt={currentLanguage.name}
             width={50}
             height={50}
+            unoptimized
             className="w-[30px] h-[30px] rounded-sm"
           />
         </button>
@@ -105,6 +106,7 @@ const LanguageSwitcher = ({ currentLocale }: { currentLocale: string }) => {
                   alt={language.name}
                   width={20}
                   height={15}
+                  unoptimized
                   className="w-5 h-auto rounded-sm mr-2"
                 />
                 {language.name}
