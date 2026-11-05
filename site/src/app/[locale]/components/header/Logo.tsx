@@ -7,7 +7,7 @@ import CustomRipple from "../common/CustomRipple";
 const Logo = () => {
   const t = useTranslations("header");
   return (
-    <div>
+    <div className="shrink-0">
       <Link
         href="/"
         className="flex p-ripple items-center h-full gap-2 text-elcar"
@@ -23,7 +23,7 @@ const Logo = () => {
           <h1 className="text-[25px] uppercase block mb-1 font-black tracking-[1.1px] space-x-[1.1px] leading-3 max-lg:text-[20px] dark:text-primary-foreground ">
             ELCAR
           </h1>
-          <span className="text-[10px] leading-3 tracking-[0.1px] max-lg:text-[8px] dark:text-primary-foreground">
+          <span className="text-[10px] leading-3 tracking-[0.1px] whitespace-nowrap max-[360px]:whitespace-normal max-lg:text-[8px] dark:text-primary-foreground">
             {t("title")}
           </span>
         </div>
