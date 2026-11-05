@@ -90,7 +90,7 @@ export const DEFAULT_INPUT: SolarInput = {
   monthlyKwh: 400,
   systemType: "hybrid",
   sunHours: 4,
-  panelWatt: 550,
+  panelWatt: 600,
   backupHours: 6,
   autonomyDays: 1,
   customerType: "home",

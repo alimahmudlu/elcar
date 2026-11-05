@@ -4,6 +4,7 @@ export const navigations = () => {
     home: { path: "/" },
     chargingStations: { path: "/charging-stations" },
     connectors: { path: "/connectors-accessories" },
+    chargerGuide: { path: "/charger-guide" },
     energy: {
       path: "/solar-energy",
       solar: { path: "/solar-energy" },
@@ -17,6 +18,7 @@ export const navigations = () => {
     ourCompany: {
       path: "/about",
       about: { path: "/about" },
+      services: { path: "/services" },
       contact: { path: "/contact" },
     },
   }
@@ -31,6 +33,7 @@ export const navigations = () => {
         subItems: [
           { name: "Şarj Stansiyaları", href: routes.chargingStations.path },
           { name: "Bağlayıcılar və Aksesuarlar", href: routes.connectors.path },
+          { name: "Stansiya seçim bələdçisi", href: routes.chargerGuide.path },
         ],
       },
       {
@@ -51,6 +54,7 @@ export const navigations = () => {
         href: routes.ourCompany.path,
         subItems: [
           { name: "Haqqımızda", href: routes.ourCompany.about.path },
+          { name: "Quraşdırma və Servis", href: routes.ourCompany.services.path },
           { name: "Əlaqə", href: routes.ourCompany.contact.path },
         ],
       },
@@ -63,6 +67,7 @@ export const navigations = () => {
         subItems: [
           { name: "Charging Stations", href: routes.chargingStations.path },
           { name: "Connectors & Accessories", href: routes.connectors.path },
+          { name: "Charger selection guide", href: routes.chargerGuide.path },
         ],
       },
       {
@@ -83,6 +88,7 @@ export const navigations = () => {
         href: routes.ourCompany.path,
         subItems: [
           { name: "About Us", href: routes.ourCompany.about.path },
+          { name: "Installation & Service", href: routes.ourCompany.services.path },
           { name: "Contact", href: routes.ourCompany.contact.path },
         ],
       },
@@ -95,6 +101,7 @@ export const navigations = () => {
         subItems: [
           { name: "Зарядные станции", href: routes.chargingStations.path },
           { name: "Разъемы и аксессуары", href: routes.connectors.path },
+          { name: "Как выбрать станцию", href: routes.chargerGuide.path },
         ],
       },
       {
@@ -115,6 +122,7 @@ export const navigations = () => {
         href: routes.ourCompany.path,
         subItems: [
           { name: "О нас", href: routes.ourCompany.about.path },
+          { name: "Монтаж и сервис", href: routes.ourCompany.services.path },
           { name: "Контакты", href: routes.ourCompany.contact.path },
         ],
       },

@@ -19,6 +19,8 @@ const STATIC_PATHS = [
   "/connectors-accessories",
   ...ENERGY_SECTIONS.map((section) => `/${section}`),
   "/solar-calculator",
+  "/charger-guide",
+  "/services",
   "/blog",
   "/about",
   "/contact",

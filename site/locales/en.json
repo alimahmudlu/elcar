@@ -393,7 +393,14 @@
     "saving-offgrid": "Off-grid systems have no electricity bill, so savings are not calculated.",
     "coverage": "Share of consumption covered by solar",
     "coverage-hint": "Lower it for a smaller budget. For homes, solar replaces the most expensive tariff tier first, so even a small system saves relatively much.",
-    "covered": "Share covered by solar"
+    "covered": "Share covered by solar",
+    "match-title": "Matching products from our catalogue",
+    "match-kinds": {
+      "panel": "Solar panel",
+      "inverter": "Hybrid inverter",
+      "battery": "Battery"
+    },
+    "match-note": "This is an initial selection based on the calculation. Voltage and current compatibility are checked separately in the design."
   },
   "quote": {
     "title": "Get an installation quote",
@@ -442,5 +449,140 @@
     "separately": "Bought separately",
     "saving": "You save with the kit",
     "pcs": "× {n}"
+  },
+  "guide": {
+    "title": "Charging Station Selection Guide",
+    "subtitle": "Answer a few questions and we will show the models from our catalogue that suit your car and power supply. There is no need to buy a more expensive station than you need.",
+    "seo": {
+      "title": "Which Charging Station Do I Need? Selection Guide",
+      "description": "Hybrid or fully electric? 7 kW or 22 kW? Type 2, GB/T or Type 1? Find the charging station that suits your car in a few questions."
+    },
+    "banner-title": "Not sure which station you need?",
+    "banner-text": "Find the model that suits your car in a few questions.",
+    "banner-button": "Open the guide",
+    "questions": {
+      "usage": "How will you use the charger?",
+      "car": "What type of car do you have?",
+      "connector": "Which charging inlet does your car have?",
+      "phase": "How many phases does your power supply have?"
+    },
+    "hints": {
+      "usage": "A fixed station is mounted on a wall; a portable charger travels with you.",
+      "car": "Plug-in hybrids and range-extended (EREV) cars count as hybrids.",
+      "connector": "Open the charging flap and look at the inlet. Cars imported from China usually have GB/T.",
+      "phase": "You can check this at your distribution board or ask an electrician."
+    },
+    "options": {
+      "usage": {
+        "fixed": "Fixed: wall station",
+        "portable": "Portable: carry it with me"
+      },
+      "car": {
+        "hybrid": "Hybrid (PHEV / EREV)",
+        "electric": "Fully electric"
+      },
+      "connector": {
+        "type2": "Type 2",
+        "gbt": "GB/T",
+        "type1": "Type 1",
+        "unknown": "Not sure"
+      },
+      "phase": {
+        "one": "Single phase (220 V)",
+        "three": "Three phase (380 V)",
+        "unknown": "Not sure"
+      }
+    },
+    "result-title": "Models that suit you",
+    "reasons": {
+      "hybrid": "Most hybrid cars have a 3–6 kW on-board charger. A 22 kW station will not charge them any faster, so 7 kW is enough. With this station most hybrids charge in 3–6 hours.",
+      "type1": "The Type 1 connector is single phase, so the 7 kW models are the right fit.",
+      "ev-three": "The 22 kW models suit a three-phase supply and a fully electric car. The real speed is set by the car's on-board charger, so check its power in the car's documents. If it does not accept 22 kW, a 7 kW model may be enough.",
+      "ev-one": "The 7 kW models suit a single-phase supply.",
+      "ev-unknown": "Since the number of phases is unknown, we show the 7 kW models that also work on a single-phase supply. Have a specialist check your distribution board: with three phases the choice may change.",
+      "portable": "The 3.5 kW models work up to 16 A and the 7.4 kW models up to 32 A. On a normal socket, reduce the current to 10–13 A and check that the socket is not overheating. A dedicated 32 A line must be installed by a specialist."
+    },
+    "unknown-connector": "Send us a photo of the inlet and we will confirm which model fits.",
+    "no-match": "No model in the catalogue matches this choice. Write to us using the form below and we will look together.",
+    "install-note": "A wall station must be installed by a qualified specialist, who checks the line capacity and protective devices first."
+  },
+  "service": {
+    "title": "Installation & Service",
+    "subtitle": "ELCAR installs the equipment it sells and provides service support. Here you can see how the work goes and what information to prepare.",
+    "seo": {
+      "title": "Installation & Service — Solar, BESS, EV Charging",
+      "description": "Installation and service for solar systems, energy storage, charging stations and laser equipment: the process, warranty, what to prepare and answers to common questions."
+    },
+    "areas-title": "What we do",
+    "steps-title": "How it works",
+    "safety-title": "Why not to install it yourself",
+    "safety-text": "A charging station works with high current, and solar panels produce DC voltage whenever there is daylight. A wrong connection can damage equipment and create a risk of fire or electric shock. Connection work should only be done by qualified specialists.",
+    "faq-title": "Frequently asked questions",
+    "areas": {
+      "charging": {
+        "title": "Charging stations",
+        "text": "Checking the line, installing the wall station and commissioning it."
+      },
+      "solar": {
+        "title": "Solar systems",
+        "text": "Sizing the system, installing panels and inverters, and connecting them."
+      },
+      "storage": {
+        "title": "Energy storage & inverters",
+        "text": "Choosing and installing batteries and inverters and connecting them to your system."
+      },
+      "laser": {
+        "title": "Laser equipment",
+        "text": "Support with choosing, delivering and commissioning the equipment."
+      }
+    },
+    "steps": {
+      "request": {
+        "title": "Request",
+        "text": "Contact us by phone, WhatsApp or the form below: what you need and where the site is."
+      },
+      "check": {
+        "title": "Checking the details",
+        "text": "We review details such as electricity use, the power line, and the roof or installation location."
+      },
+      "offer": {
+        "title": "Offer",
+        "text": "We prepare an offer with the equipment list and price."
+      },
+      "install": {
+        "title": "Delivery & installation",
+        "text": "We deliver and install the equipment on the agreed date."
+      },
+      "handover": {
+        "title": "Testing & handover",
+        "text": "We start up the system, test it and explain how to use it."
+      },
+      "support": {
+        "title": "Service",
+        "text": "After installation, contact us if you have a question or a fault."
+      }
+    },
+    "faq": {
+      "price": {
+        "q": "How much does installation cost?",
+        "a": "It depends on the equipment, the distance and the condition of the site. You will see the exact amount in the offer."
+      },
+      "self": {
+        "q": "Can I install the station myself?",
+        "a": "We do not recommend it. Connection work should be done by a qualified specialist, because a wrong connection is dangerous."
+      },
+      "prepare": {
+        "q": "What should I prepare for a request?",
+        "a": "For a charging station: a photo of the car's inlet and the number of phases. For a solar system: your monthly electricity use and the approximate size of the roof. We also need the site address."
+      },
+      "warranty": {
+        "q": "How long is the warranty?",
+        "a": "It varies by product and, where available, is shown on the product page. For example, JinkoSolar panels have a 12-year product and 30-year linear power warranty, and Maven laser equipment has a 12-month warranty."
+      },
+      "location": {
+        "q": "Do you work outside Baku?",
+        "a": "Write the address in your request and we will confirm the options and terms with you."
+      }
+    }
   }
 }

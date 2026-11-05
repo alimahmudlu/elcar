@@ -393,7 +393,14 @@
     "saving-offgrid": "Avtonom sistemdə elektrik qəbzi olmadığı üçün qənaət hesablanmır.",
     "coverage": "Günəş istehlakın neçə faizini örtsün",
     "coverage-hint": "Büdcə məhduddursa azaldın. Evdə günəş əvvəlcə ən baha tarif pilləsini əvəz edir, ona görə kiçik sistem də nisbətən çox qənaət verir.",
-    "covered": "Günəşin örtdüyü pay"
+    "covered": "Günəşin örtdüyü pay",
+    "match-title": "Kataloqdan uyğun məhsullar",
+    "match-kinds": {
+      "panel": "Günəş paneli",
+      "inverter": "Hibrid invertor",
+      "battery": "Batareya"
+    },
+    "match-note": "Bu, hesablamaya görə ilkin seçimdir. Gərginlik və cərəyan uyğunluğu layihədə ayrıca yoxlanır."
   },
   "quote": {
     "title": "Quraşdırma təklifi alın",
@@ -442,5 +449,140 @@
     "separately": "Ayrı-ayrılıqda",
     "saving": "Dəstlə qənaət",
     "pcs": "{n} ədəd"
+  },
+  "guide": {
+    "title": "Şarj Stansiyası Seçim Bələdçisi",
+    "subtitle": "Bir neçə suala cavab verin, avtomobilinizə və xəttinizə uyğun modelləri kataloqumuzdan göstərək. Lazım olandan bahalı stansiya almağa ehtiyac yoxdur.",
+    "seo": {
+      "title": "Hansı Şarj Stansiyası Lazımdır? Seçim Bələdçisi",
+      "description": "Hibrid, yoxsa tam elektrik? 7 kW, yoxsa 22 kW? Type 2, GB/T və ya Type 1? Bir neçə sualla avtomobilinizə uyğun şarj stansiyasını tapın."
+    },
+    "banner-title": "Hansı stansiyanın lazım olduğunu bilmirsiniz?",
+    "banner-text": "Bir neçə sualla avtomobilinizə uyğun modeli tapın.",
+    "banner-button": "Bələdçini aç",
+    "questions": {
+      "usage": "Cihazı necə işlədəcəksiniz?",
+      "car": "Avtomobiliniz hansı növdür?",
+      "connector": "Avtomobilin şarj yuvası hansıdır?",
+      "phase": "Elektrik xəttiniz neçə fazalıdır?"
+    },
+    "hints": {
+      "usage": "Sabit stansiya divara quraşdırılır, portativ cihaz özünüzlə daşınır.",
+      "car": "Plug-in hibrid və uzadılmış məsafəli (EREV) avtomobillər hibrid sayılır.",
+      "connector": "Şarj qapağını açıb yuvaya baxın. Çindən gələn avtomobillərdə adətən GB/T olur.",
+      "phase": "Bunu elektrik lövhənizdən və ya elektrikçidən öyrənə bilərsiniz."
+    },
+    "options": {
+      "usage": {
+        "fixed": "Sabit: divar stansiyası",
+        "portable": "Portativ: özümlə daşıyım"
+      },
+      "car": {
+        "hybrid": "Hibrid (PHEV / EREV)",
+        "electric": "Tam elektrik"
+      },
+      "connector": {
+        "type2": "Type 2",
+        "gbt": "GB/T",
+        "type1": "Type 1",
+        "unknown": "Bilmirəm"
+      },
+      "phase": {
+        "one": "1 faza (220 V)",
+        "three": "3 faza (380 V)",
+        "unknown": "Bilmirəm"
+      }
+    },
+    "result-title": "Sizə uyğun modellər",
+    "reasons": {
+      "hybrid": "Hibrid avtomobillərin əksəriyyətində daxili şarj cihazı 3–6 kW-dır. 22 kW stansiya belə avtomobili daha sürətli doldurmur, ona görə 7 kW kifayətdir. Bu stansiya ilə hibridlərin əksəriyyəti 3–6 saata dolur.",
+      "type1": "Type 1 bağlayıcı birfazalıdır, ona görə 7 kW modelləri uyğundur.",
+      "ev-three": "Üçfazalı xətt və tam elektrik avtomobil üçün 22 kW modelləri uyğundur. Faktiki sürəti isə avtomobilin daxili şarj cihazı təyin edir: onun gücünü avtomobilin sənədlərindən yoxlayın. Daxili cihaz 22 kW qəbul etmirsə, 7 kW modeli də kifayət edə bilər.",
+      "ev-one": "Birfazalı xətt üçün 7 kW modelləri uyğundur.",
+      "ev-unknown": "Xəttin fazası bilinmədiyi üçün birfazalı xəttdə də işləyən 7 kW modellərini göstəririk. Elektrik lövhənizi mütəxəssisə yoxladın: üç faza varsa, seçim dəyişə bilər.",
+      "portable": "3,5 kW modelləri 16 A-ya, 7,4 kW modelləri 32 A-ya qədər işləyir. Adi rozetkada cərəyanı 10–13 A-ya endirin və rozetkanın qızmadığını yoxlayın. 32 A üçün ayrıca xətti mütəxəssis çəkməlidir."
+    },
+    "unknown-connector": "Yuvanın fotosunu bizə göndərin, hansı modelin uyğun olduğunu dəqiqləşdirək.",
+    "no-match": "Kataloqda bu seçimə uyğun model tapılmadı. Aşağıdakı formadan yazın, birlikdə baxaq.",
+    "install-note": "Divar stansiyasını ixtisaslı mütəxəssis quraşdırmalıdır: xəttin gücü və qoruyucular əvvəlcədən yoxlanır."
+  },
+  "service": {
+    "title": "Quraşdırma və Servis",
+    "subtitle": "ELCAR satdığı avadanlığı quraşdırır və servis dəstəyi göstərir. Burada iş prosesini və əvvəlcədən hazırlamalı olduğunuz məlumatları görə bilərsiniz.",
+    "seo": {
+      "title": "Quraşdırma və Servis — Günəş, BESS, Şarj Stansiyası",
+      "description": "Günəş sistemi, enerji saxlama, şarj stansiyası və lazer avadanlığı üçün quraşdırma və servis: iş prosesi, zəmanət, hazırlanmalı məlumatlar və suallara cavablar."
+    },
+    "areas-title": "Hansı işləri görürük",
+    "steps-title": "İş necə gedir",
+    "safety-title": "Niyə özünüz quraşdırmamalısınız",
+    "safety-text": "Şarj stansiyası güclü cərəyanla, günəş panelləri isə gün işığında dayanmayan sabit gərginliklə işləyir. Səhv qoşulma avadanlığa zərər verə və yanğın və ya elektrik zərbəsi riski yarada bilər. Qoşulma işlərini yalnız ixtisaslı mütəxəssislər görməlidir.",
+    "faq-title": "Tez-tez verilən suallar",
+    "areas": {
+      "charging": {
+        "title": "Şarj stansiyaları",
+        "text": "Xəttin yoxlanması, divar stansiyasının quraşdırılması və işə salınması."
+      },
+      "solar": {
+        "title": "Günəş sistemləri",
+        "text": "Sistemin hesablanması, panel və invertorun quraşdırılması, qoşulma."
+      },
+      "storage": {
+        "title": "Enerji saxlama və invertorlar",
+        "text": "Batareya və invertorun seçilməsi, quraşdırılması və mövcud sistemə qoşulması."
+      },
+      "laser": {
+        "title": "Lazer avadanlıqları",
+        "text": "Avadanlığın seçilməsi, çatdırılması və işə salınmasında dəstək."
+      }
+    },
+    "steps": {
+      "request": {
+        "title": "Sorğu",
+        "text": "Telefon, WhatsApp və ya aşağıdakı form ilə yazırsınız: nə lazımdır və obyekt haradadır."
+      },
+      "check": {
+        "title": "Məlumatın yoxlanması",
+        "text": "Elektrik sərfiyyatı, xətt, dam və ya quraşdırma yeri kimi məlumatlara baxırıq."
+      },
+      "offer": {
+        "title": "Təklif",
+        "text": "Avadanlıq siyahısı və qiymətlə təklif hazırlayırıq."
+      },
+      "install": {
+        "title": "Çatdırılma və quraşdırma",
+        "text": "Razılaşdırılmış tarixdə avadanlığı çatdırır və quraşdırırıq."
+      },
+      "handover": {
+        "title": "Yoxlama və təhvil",
+        "text": "Sistemi işə salır, yoxlayır və istifadəsini sizə izah edirik."
+      },
+      "support": {
+        "title": "Servis",
+        "text": "Quraşdırmadan sonra sual və ya nasazlıq olanda bizə müraciət edirsiniz."
+      }
+    },
+    "faq": {
+      "price": {
+        "q": "Quraşdırma nə qədərdir?",
+        "a": "Qiymət avadanlıqdan, məsafədən və obyektin vəziyyətindən asılıdır. Dəqiq məbləği təklifdə görəcəksiniz."
+      },
+      "self": {
+        "q": "Stansiyanı özüm quraşdıra bilərəm?",
+        "a": "Tövsiyə etmirik. Qoşulma işlərini ixtisaslı mütəxəssis görməlidir, çünki səhv qoşulma təhlükəlidir."
+      },
+      "prepare": {
+        "q": "Sorğu üçün nə hazırlamalıyam?",
+        "a": "Şarj stansiyası üçün avtomobilin yuvasının fotosu və xəttin fazası. Günəş sistemi üçün aylıq elektrik sərfiyyatı və damın təxmini ölçüsü. Obyektin ünvanı da lazımdır."
+      },
+      "warranty": {
+        "q": "Zəmanət nə qədərdir?",
+        "a": "Müddət məhsula görə dəyişir və olduqda məhsul səhifəsində göstərilir. Məsələn, JinkoSolar panellərində 12 il məhsul və 30 il xətti güc zəmanəti, Maven lazer avadanlıqlarında 12 ay zəmanət var."
+      },
+      "location": {
+        "q": "Bakıdan kənarda da işləyirsiniz?",
+        "a": "Ünvanı sorğuda yazın, imkanı və şərtləri sizinlə dəqiqləşdirək."
+      }
+    }
   }
 }
