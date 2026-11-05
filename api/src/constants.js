@@ -7,9 +7,10 @@ module.exports = {
         specialChars: false,
     },
     MAIL_SETTINGS: {
-        // elcar.az poçtu Mail.ru-dadır (MX: emx.mail.ru); EMAIL_PASSWORD tətbiq
-        // parolu olmalıdır. 587 + STARTTLS: serverdə 25 və 465 portları bağlıdır.
-        host: 'smtp.mail.ru',
+        // Göndərən poçtun serveri EMAIL_HOST-dan; elcar.az poçtu Mail.ru-dadır.
+        // EMAIL_PASSWORD tətbiq parolu olmalıdır.
+        // 587 + STARTTLS: serverdə 25 və 465 portları bağlıdır.
+        host: process.env.EMAIL_HOST || 'smtp.mail.ru',
         port: 587,
         secure: false,
         requireTLS: true,
