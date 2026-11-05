@@ -9,9 +9,9 @@ const MobileServices = () => {
   return (
     <section className="container max-md:max-w-[90%] md:hidden">
       <div className="mb-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-title dark:text-primary-foreground">
+        <h2 className="text-2xl md:text-3xl font-bold text-title dark:text-primary-foreground">
           {t("main.title")}
-        </h1>
+        </h2>
         <p
           className="text-subtitle mt-4 dark:text-secondary-foreground"
           dangerouslySetInnerHTML={{ __html: t.raw("main.subtitle") }}
@@ -33,9 +33,13 @@ const MobileServices = () => {
             className="text-subtitle mb-4 dark:text-secondary-foreground"
             dangerouslySetInnerHTML={{ __html: t.raw("third.subtitle") }}
           />
-          <button className="inline-flex items-center gap-2 bg-elcar-opacity text-elcar font-medium p-2  rounded-full dark:bg-primary dark:hover:bg-primary/80 duration-200 dark:hover:text-card-foreground transition">
+          <Link
+            href={`/${locale}/charging-stations`}
+            aria-label={t("third.title")}
+            className="inline-flex items-center gap-2 bg-elcar-opacity text-elcar font-medium p-2  rounded-full dark:bg-primary dark:hover:bg-primary/80 duration-200 dark:hover:text-card-foreground transition"
+          >
             <HiArrowRight size={18} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

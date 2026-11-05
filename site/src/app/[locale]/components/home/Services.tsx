@@ -42,9 +42,13 @@ const Services = () => {
           dangerouslySetInnerHTML={{ __html: t.raw("third.subtitle") }}
         />
         <div className="flex gap-4 z-10 relative max-w-[80%]">
-          <button className="bg-elcar-opacity flex items-center gap-2 text-elcar p-1 focused py-2 px-2 rounded-full dark:bg-primary dark:hover:bg-primary/80 duration-200 dark:hover:text-card-foreground">
+          <Link
+            href={`/${locale}/charging-stations`}
+            aria-label={t("third.title")}
+            className="bg-elcar-opacity flex items-center gap-2 text-elcar p-1 focused py-2 px-2 rounded-full dark:bg-primary dark:hover:bg-primary/80 duration-200 dark:hover:text-card-foreground"
+          >
             <RiArrowRightLine className="w-5 h-5" />
-          </button>
+          </Link>
         </div>
         <div className="absolute -bottom-12 -right-22 z-0 w-[250px] h-[250px] bg-[url('/images/charging-tool.webp')] bg-no-repeat bg-size-[250px]"></div>
       </div>

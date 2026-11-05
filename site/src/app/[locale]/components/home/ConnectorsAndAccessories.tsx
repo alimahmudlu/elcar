@@ -17,9 +17,9 @@ const ConnectorsAndAccessories = async () => {
   return (
     <section className="container my-12">
       <div className="text-center">
-        <h1 className="text-[34px] font-black text-title dark:text-primary-foreground">
+        <h2 className="text-[34px] font-black text-title dark:text-primary-foreground">
           {t("title")}
-        </h1>
+        </h2>
         <p className="mt-3 text-subtitle text-[14px] dark:text-secondary-foreground">
           {t("subtitle")}
         </p>

@@ -51,7 +51,7 @@
   "services": {
     "main": {
       "title": "ELCAR — Azərbaycanda Elektrik və Enerji Həlləri",
-      "subtitle": "ELCAR <strong>elektromobil şarj stansiyaları</strong> və <strong>aksesuarlardan</strong> başlayaraq <strong>günəş panelləri</strong>, <strong>külək turbinləri</strong>, <strong>enerji saxlama sistemləri (BESS)</strong> və <strong>sənaye lazer avadanlıqlarına</strong> qədər elektriklə bağlı bütün həlləri ən sərfəli qiymətlərlə Azərbaycana gətirir, quraşdırır və servis dəstəyi göstərir.",
+      "subtitle": "ELCAR <strong>günəş panelləri</strong>, <strong>invertorlar</strong>, <strong>enerji saxlama sistemləri (BESS)</strong>, <strong>sənaye lazer avadanlıqları</strong>, <strong>elektromobil şarj stansiyaları</strong> və <strong>aksesuarlar</strong> daxil olmaqla elektriklə bağlı həlləri Azərbaycana gətirir, quraşdırır və servis dəstəyi göstərir.",
       "button": "Ətraflı məlumat"
     },
     "third": {
@@ -61,10 +61,11 @@
   },
   "charging-stations": {
     "title": "Ən Yeni Şarj Stansiyaları",
-    "subtitle": "Elektrikli Avtomobilləriniz üçün keyfiyyəti və istifadə rahatlığı ilə seçilən bütün növ Şarj Stansiyaları"
+    "subtitle": "Elektrikli Avtomobilləriniz üçün keyfiyyəti və istifadə rahatlığı ilə seçilən bütün növ Şarj Stansiyaları",
+    "all-products": "Bütün Şarj Stansiyaları"
   },
   "connectors-and-accessories": {
-    "title": "Elektrikli Avtomobillər Üçün Ən Yeni Baglayicilar və Aksesuarlar",
+    "title": "Elektrikli Avtomobillər Üçün Ən Yeni Bağlayıcılar və Aksesuarlar",
     "subtitle": "Elektrikli Avtomobilləriniz üçün keyfiyyəti və istifadə rahatlığı ilə seçilən bütün növ bağlayıcılar və aksesuarlar"
   },
   "blog": {
@@ -235,8 +236,10 @@
     "whatsapp-message": "Salam, \"{product}\" haqqında məlumat və qiymət almaq istəyirəm.",
     "home": {
       "title": "Enerji Həlləri",
-      "subtitle": "Günəş və külək enerjisi sistemlərindən enerji saxlama həllərinə (BESS) və invertorlara qədər — bərpa olunan enerji üçün hər şey bir ünvanda",
-      "more": "Bölməyə keç"
+      "subtitle": "Günəş panellərindən enerji saxlama sistemlərinə, invertorlardan lazer avadanlıqlarına qədər ev, biznes və sənaye üçün həllər.",
+      "more": "Bölməyə keç",
+      "featured-title": "Seçilmiş Məhsullar",
+      "featured-subtitle": "Kataloqumuzdan günəş panelləri, invertorlar, batareyalar və lazer avadanlıqları. Qiymət və texniki məsləhət üçün bizə yazın."
     },
     "solar-energy": {
       "name": "Günəş Enerjisi",
