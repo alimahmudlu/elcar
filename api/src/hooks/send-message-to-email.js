@@ -6,8 +6,10 @@ const { messages } = require( '../email-templates' );
 module.exports = (options = {}) => {
     return async context => {
 
-        // Bildiriş ünvanı .env-dən (NOTIFY_EMAIL), yoxdursa info@elcar.az
-        await sendMail( {
+        // Bildiriş ünvanı .env-dən (NOTIFY_EMAIL), yoxdursa info@elcar.az.
+        // Gözlənilmir: mesaj artıq bazadadır, mail gecikməsi müştəriyə xəta kimi
+        // qayıtmamalıdır. sendMail xətanı özü tutub loga yazır.
+        sendMail( {
             to: process.env.NOTIFY_EMAIL || 'info@elcar.az',
             replyTo: 'info@elcar.az',
             subject: 'İstifadəçi mesajı',
