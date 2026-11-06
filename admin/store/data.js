@@ -25,6 +25,10 @@ const defaultState = {
             key: 'inverters',
         },
         {
+            name: 'Insulation Cleaning',
+            key: 'insulation-cleaning',
+        },
+        {
             name: 'Laser Equipment',
             key: 'laser-equipment',
         }

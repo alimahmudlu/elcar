@@ -275,7 +275,7 @@ import { validationMixin } from 'vuelidate'
 import { required, minLength, maxLength, minValue, maxValue } from 'vuelidate/lib/validators'
 
 // Bu bölmələrin saytdakı səhifələri qiymətsiz məhsulda "Qiymət sorğu ilə" göstərir
-const PRICE_OPTIONAL_SECTIONS = ['solar-energy', 'wind-energy', 'energy-storage', 'inverters', 'laser-equipment']
+const PRICE_OPTIONAL_SECTIONS = ['solar-energy', 'wind-energy', 'energy-storage', 'inverters', 'insulation-cleaning', 'laser-equipment']
 
 export default {
 

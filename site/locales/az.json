@@ -286,6 +286,17 @@
         "description": "Ev və müəssisələr üçün hibrid, şəbəkəyə qoşulan və avtonom günəş invertorları, mikroinvertorlar. BESS batareyaları ilə uyğun həllər, Bakıda quraşdırma və servis."
       }
     },
+    "insulation-cleaning": {
+      "name": "İzolyasiya Təmizləmə Avadanlığı",
+      "short": "Elektrik qurğularında izolyasiyanı gərginlik altında təmizləmək üçün alətlər və təmizləyici mayelər.",
+      "title": "Gərginlik Altında İzolyasiya Təmizləmə Avadanlığı",
+      "subtitle": "Paylayıcı şkaflar, transformatorlar və yarımstansiya avadanlığının izolyasiyasına baxım üçün CHAOTUO təmizləmə alətləri və təmizləyici mayelər. Gərginlik hədləri istehsalçının məlumatına əsaslanır. Avadanlıq yalnız səlahiyyətli, təlimli heyət üçündür.",
+      "all-products": "Bütün İzolyasiya Təmizləmə Avadanlığı",
+      "seo": {
+        "title": "Gərginlik Altında İzolyasiya Təmizləmə Avadanlığı",
+        "description": "CHAOTUO izolyasiya təmizləmə alətləri və DCT686 təmizləyici mayeləri: paylayıcı şkaflar, transformatorlar və yarımstansiya avadanlığı üçün. Qiymət sorğu ilə."
+      }
+    },
     "laser-equipment": {
       "name": "Lazer Avadanlıqları",
       "short": "Lazer kəsmə, qaynaq, markalama və təmizləmə avadanlıqları.",
