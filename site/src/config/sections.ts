@@ -12,6 +12,7 @@ export const ENERGY_SECTIONS = [
   "wind-energy",
   "energy-storage",
   "inverters",
+  "insulation-cleaning",
   "laser-equipment",
 ] as const;
 

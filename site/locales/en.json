@@ -286,6 +286,17 @@
         "description": "Hybrid, on-grid and off-grid solar inverters and microinverters for homes and businesses. Compatible with BESS batteries, installation and service in Baku."
       }
     },
+    "insulation-cleaning": {
+      "name": "Insulation Cleaning Equipment",
+      "short": "Tools and cleaning fluids for cleaning insulation on live electrical installations.",
+      "title": "Live Insulation Cleaning Equipment",
+      "subtitle": "CHAOTUO cleaning tools and fluids for maintaining the insulation of switchgear, transformers and substation equipment. Voltage limits are based on manufacturer data. This equipment is for authorised, trained personnel only.",
+      "all-products": "All Insulation Cleaning Equipment",
+      "seo": {
+        "title": "Live Insulation Cleaning Equipment",
+        "description": "CHAOTUO insulation cleaning tools and DCT686 cleaning fluids for switchgear, transformers and substation equipment. Price on request."
+      }
+    },
     "laser-equipment": {
       "name": "Laser Equipment",
       "short": "Laser cutting, welding, marking and cleaning equipment.",

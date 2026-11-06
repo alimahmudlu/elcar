@@ -1923,6 +1923,231 @@
         }
     },
     {
+        "_id": "d102304e-8dc9-4bc6-987c-f6b446614ffe",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "insulation-cleaning",
+                "action": "read"
+            },
+            "route": {
+                "path": "apps-elcar-products-insulation-cleaning",
+                "i18n": {
+                    "path": "apps/elcar/products/insulation-cleaning/index",
+                    "slug": {
+                        "az": "/elcar/insulation-cleaning",
+                        "en": "/elcar/insulation-cleaning",
+                        "ru": "/elcar/insulation-cleaning"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "İzolyasiya təmizləmə",
+            "en": "Insulation cleaning",
+            "ru": "Очистка изоляции"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": true,
+                "position": "top",
+                "icon": "mdiBroom",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsAddContent",
+                        "options": {
+                            "section": "insulation-cleaning",
+                            "title": "Insulation cleaning product"
+                        },
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsDataTable",
+                        "options": {
+                            "section": "insulation-cleaning"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "80d2cd53-cea2-46b2-900c-467eec95fdb5",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "insulation-cleaning",
+                "action": "update"
+            },
+            "route": {
+                "path": "apps-elcar-products-insulation-cleaning-detail",
+                "i18n": {
+                    "path": "apps/elcar/products/insulation-cleaning/_detail/index",
+                    "slug": {
+                        "az": "/elcar/insulation-cleaning/:detail",
+                        "en": "/elcar/insulation-cleaning/:detail",
+                        "ru": "/elcar/insulation-cleaning/:detail"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Redaktə et",
+            "en": "Edit",
+            "ru": "Редактировать"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiBroom",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "insulation-cleaning"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "_id": "f791720e-cde6-4af1-be71-1ced3d049cec",
+        "config": {
+            "module": {
+                "name": "elcar",
+                "section": "insulation-cleaning",
+                "action": "create"
+            },
+            "route": {
+                "path": "apps-elcar-products-insulation-cleaning-add",
+                "i18n": {
+                    "path": "apps/elcar/products/insulation-cleaning/add/index",
+                    "slug": {
+                        "az": "/elcar/insulation-cleaning/add",
+                        "en": "/elcar/insulation-cleaning/add",
+                        "ru": "/elcar/insulation-cleaning/add"
+                    }
+                },
+                "redirect": {
+                    "type": null,
+                    "http": null,
+                    "to": null
+                },
+                "middleware": null,
+                "type": "dynamic",
+                "private": true,
+                "queries": [],
+                "group": "apps",
+                "parent": "d83bd135-f2cd-4671-8aae-192ea432c7fc",
+                "childPage": null
+            },
+            "content": {
+                "type": "dynamic"
+            }
+        },
+        "name": {
+            "az": "Əlavə et",
+            "en": "Add new",
+            "ru": "Добавить новый"
+        },
+        "header": {
+            "menu": {
+                "display": false,
+                "subMenu": false,
+                "position": "top",
+                "icon": "mdiBroom",
+                "color": "teal"
+            }
+        },
+        "body": {
+            "header": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ChangeContentLocale",
+                        "options": {},
+                        "components": []
+                    }
+                ]
+            },
+            "wrapper": {
+                "options": {},
+                "components": [
+                    {
+                        "uid": "ElcarProductsForm",
+                        "options": {
+                            "section": "insulation-cleaning"
+                        },
+                        "components": []
+                    }
+                ]
+            }
+        }
+    },
+    {
         "_id": "0ad4533c-95c9-4862-88c6-2b9822c56595",
         "config": {
             "module": {
